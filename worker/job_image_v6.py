@@ -23,9 +23,10 @@ PALE = (238, 244, 249)
 
 def afont(size: int, bold: bool = False):
     names = [
+        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf' if bold else '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
+        '/usr/share/fonts/opentype/noto/NotoSansArabic-Bold.ttf' if bold else '/usr/share/fonts/opentype/noto/NotoSansArabic-Regular.ttf',
         '/usr/share/fonts/truetype/noto/NotoKufiArabic-Bold.ttf' if bold else '/usr/share/fonts/truetype/noto/NotoKufiArabic-Regular.ttf',
         '/usr/share/fonts/opentype/noto/NotoKufiArabic-Bold.ttf' if bold else '/usr/share/fonts/opentype/noto/NotoKufiArabic-Regular.ttf',
-        '/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf' if bold else '/usr/share/fonts/truetype/noto/NotoSansArabic-Regular.ttf',
         '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf' if bold else '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
     ]
     for p in names:
@@ -88,8 +89,8 @@ def wrap(draw, text, font, width, max_lines=2):
 
 
 def salary_from(text: str):
-    t = str(text or '')
-    m = re.search(r'(\d{2,4})\s*(?:إلى|الى|-|–)\s*(\d{2,4})\s*دينار', t)
+    t = clean(text)
+    m = re.search(r'(\d{2,4})\s*(?:إلى|الى|-)\s*(\d{2,4})\s*دينار', t)
     if m:
         return f'رواتب متوقعة من {m.group(1)} إلى {m.group(2)} دينار'
     m = re.search(r'(?:حتى|تصل إلى|تصل الى)\s*(\d{2,4})\s*دينار', t)
@@ -113,7 +114,7 @@ def headline(title: str, employer: str):
     t = clean(title)
     t = re.sub(r'\s*[-:]?\s*(?:ب?رواتب?|راتب)\s+متوقعة?.*$', '', t).strip(' :-')
     emp = display_employer(employer)
-    for token in [emp, employer]:
+    for token in [emp, clean(employer)]:
         if token and token in t:
             t = t.replace(token, '', 1).strip(' :-')
             break
@@ -159,9 +160,9 @@ def card(draw, box, kind, label, value):
     cx = (x1 + x2) // 2
     icon(draw, cx, y1+37, kind)
     ar(draw, (cx, y1+88), label, afont(22, True), INK, 'mm')
-    f = fit(draw, value, 27, 20, x2-x1-30)
+    f = fit(draw, clean(value), 27, 20, x2-x1-30)
     yy = y1 + 136
-    for line in wrap(draw, value, f, x2-x1-30, 2):
+    for line in wrap(draw, clean(value), f, x2-x1-30, 2):
         ar(draw, (cx, yy), line, f, INK, 'mm')
         yy += 33
 
@@ -183,7 +184,8 @@ def generate(job: dict, title: str):
     draw.rectangle((0, 0, WIDTH, header_h), fill=NAVY)
     draw.rectangle((0, HEIGHT-footer_h, WIDTH, HEIGHT), fill=NAVY)
 
-    photo = fetch_company_photo(job) or fallback_photo()
+    employer = str(job.get('employer_name') or 'جهة توظيف')
+    photo = fetch_company_photo(job) or fallback_photo(employer)
     photo = crop_photo(photo, (left_w, HEIGHT-header_h-footer_h))
     img.paste(photo, (0, header_h))
     fade = Image.new('L', (170, HEIGHT-header_h-footer_h), 0)
@@ -206,11 +208,11 @@ def generate(job: dict, title: str):
     ar(draw, (1385, 66), 'إعلان توظيف جديد', afont(44, True), INK, 'rm')
     draw.polygon([(1430,52),(1460,42),(1460,78),(1430,68)], fill=INK)
 
-    emp, rest = headline(title, str(job.get('employer_name') or 'جهة توظيف'))
-    ar(draw, (1470, 210), emp, fit(draw, emp, 78, 50, 790), INK)
-    rf = fit(draw, rest, 51, 35, 790)
+    emp, rest = headline(title, employer)
+    ar(draw, (1470, 210), emp, fit(draw, emp, 78, 46, 760), INK)
+    rf = fit(draw, rest, 51, 34, 760)
     y = 326
-    for line in wrap(draw, rest, rf, 790, 2):
+    for line in wrap(draw, rest, rf, 760, 2):
         ar(draw, (1470, y), line, rf, INK)
         y += 59
 
