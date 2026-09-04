@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import html
 import json
-from pathlib import Path
+
+from taxonomy import category_links, classify_labels
 
 MISSING = "غير مذكور في الإعلان"
 GUIDANCE_LABEL = "معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف"
@@ -13,7 +14,7 @@ def esc(value) -> str:
 
 
 def clean_items(items) -> list[str]:
-    out = []
+    out: list[str] = []
     for x in items or []:
         value = str(x or "").strip()
         if value and value != MISSING:
@@ -33,7 +34,7 @@ def detail(label: str, value) -> str:
 
 
 def faq_html(items) -> str:
-    out = []
+    out: list[str] = []
     for item in items or []:
         if not isinstance(item, dict):
             continue
@@ -60,18 +61,32 @@ def deterministic_faq(job: dict, official: dict) -> list[dict]:
     ]
 
 
+def related_links_html(job: dict, enriched: dict) -> str:
+    links = category_links(job, enriched)
+    chips = "".join(
+        f"<a class='job-related-chip' href='{esc(url)}'>{esc(label)}</a>" for label, url in links
+    )
+    return f"""
+  <div class='job-related-box'>
+    <h2>وظائف مشابهة قد تهمك</h2>
+    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>
+    <div class='job-related-links'>{chips}<a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>
+  </div>
+"""
+
+
 def render(job: dict, enriched: dict) -> dict:
     official = enriched.get("official_details") or {}
     guidance = enriched.get("general_guidance") or {}
     reader_value = enriched.get("reader_value") or {}
-    labels = [str(x).strip() for x in enriched.get("labels", []) if str(x).strip()][:5]
+    labels = classify_labels(job, enriched)
     title = enriched.get("seo_title") or job.get("job_title") or job.get("title") or "فرصة عمل جديدة"
     verified_at = job.get("verified_at") or job.get("date_discovered") or MISSING
     featured_image_url = str(job.get("featured_image_url") or "").strip()
 
     image_html = ""
     if featured_image_url:
-        image_html = f"<figure class='job-featured-image'><img src='{esc(featured_image_url)}' alt='{esc(title)}' loading='eager'/></figure>"
+        image_html = f"<figure class='job-featured-image'><img src='{esc(featured_image_url)}' alt='{esc(title)}' loading='eager' fetchpriority='high'/></figure>"
 
     repost_note = ""
     if job.get("repost_of"):
@@ -98,7 +113,7 @@ def render(job: dict, enriched: dict) -> dict:
     requirements_html = f"<ul>{li(requirements)}</ul>" if requirements else "<p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>"
     duties_html = f"<ul>{li(duties)}</ul>" if duties else "<p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>"
 
-    guidance_sections = []
+    guidance_sections: list[str] = []
     skills = clean_items(guidance.get("skills_that_may_help"))
     cv_tips = clean_items(guidance.get("cv_tips"))
     before = clean_items(guidance.get("before_applying"))
@@ -161,6 +176,8 @@ def render(job: dict, enriched: dict) -> dict:
 
   {f"<h2>أسئلة شائعة عن هذه الفرصة</h2>{faqs}" if faqs else ""}
 
+  {related_links_html(job, enriched)}
+
   <div class='job-safety-box'>
     <h2>تنبيه مهم للباحثين عن عمل</h2>
     <p>{esc(enriched.get('safety_note') or 'تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.')}</p>
@@ -175,7 +192,7 @@ def render(job: dict, enriched: dict) -> dict:
 .jordan-job-article{{line-height:2}}
 .job-featured-image{{margin:0 0 20px}}
 .job-featured-image img{{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}}
-.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}}
+.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}}
 .job-kicker{{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}}
 .job-facts-grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}}
 .job-fact{{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}}
@@ -185,16 +202,19 @@ def render(job: dict, enriched: dict) -> dict:
 .job-value-box{{border-right:4px solid #2563eb;background:#f8fbff}}
 .job-guidance-box{{border-right:4px solid #0f766e}}
 .job-safety-box{{border-right:4px solid #f59e0b;background:#fffaf0}}
+.job-related-box{{border-right:4px solid #0f766e;background:#f7fffd}}
+.job-related-links{{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}}
+.job-related-chip{{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}}
 .job-faq{{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}}
 .job-faq summary{{font-weight:800;cursor:pointer;color:#172033}}
 .job-faq p{{margin:8px 0 0}}
 .job-apply-btn{{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}}
-@media(max-width:640px){{.job-facts-grid{{grid-template-columns:1fr}}}}
+@media(max-width:640px){{.job-facts-grid{{grid-template-columns:1fr}}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{{padding:15px}}}}
 </style>
 """.strip()
 
     supported = set(enriched.get("schema_supported_fields") or [])
-    schema = {"@context": "https://schema.org", "@type": "JobPosting"}
+    schema: dict = {"@context": "https://schema.org", "@type": "JobPosting"}
     job_title = official.get("job_title")
     if "title" in supported and job_title not in (None, "", MISSING):
         schema["title"] = job_title
@@ -232,19 +252,3 @@ def render(job: dict, enriched: dict) -> dict:
         "meta_description": enriched.get("meta_description"),
         "featured_image_url": featured_image_url or None,
     }
-
-
-if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument("job_json")
-    parser.add_argument("enriched_json")
-    parser.add_argument("output_json")
-    args = parser.parse_args()
-    job = json.loads(Path(args.job_json).read_text(encoding="utf-8"))
-    enriched = json.loads(Path(args.enriched_json).read_text(encoding="utf-8"))
-    result = render(job, enriched)
-    path = Path(args.output_json)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(path)
