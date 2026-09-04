@@ -46,7 +46,6 @@ def usable(value) -> bool:
 def merge_ai_facts(job: dict, enriched: dict) -> dict:
     out = dict(job)
     official = enriched.get("official_details") or {}
-
     mappings = {
         "job_title": "job_title",
         "employer_name": "employer",
@@ -58,13 +57,10 @@ def merge_ai_facts(job: dict, enriched: dict) -> dict:
         value = official.get(source)
         if usable(value):
             out[target] = value
-
     if usable(official.get("location")):
         out["location_text"] = official["location"]
     if usable(official.get("application_method")):
         out["application_method"] = official["application_method"]
-
-    # RSS publication date is traceable source metadata, not a fabricated deadline.
     out["date_posted"] = feed_date_to_iso(out.get("feed_published"))
     out["field_confidence"] = {
         "official_facts": "source_or_ai_extracted_under_no-invention-policy",
@@ -85,8 +81,12 @@ def main() -> None:
     resolved = resolve(candidate)
     enriched = run_qwen(resolved)
 
-    if enriched.get("paid_api_used") is not False or enriched.get("ai_provider") != "local_qwen_llama_cpp":
-        raise RuntimeError("ZERO-PAID-AI guard failed")
+    if enriched.get("paid_api_used") is not False:
+        raise RuntimeError("ZERO-PAID-AI guard failed: paid API usage detected")
+    if enriched.get("paid_fallback_used") is not False:
+        raise RuntimeError("ZERO-PAID-AI guard failed: paid fallback detected")
+    if enriched.get("ai_provider") != "groq_free_plan":
+        raise RuntimeError("ZERO-PAID-AI guard failed: unexpected AI provider")
 
     canonical = merge_ai_facts(resolved, enriched)
     dedupe = classify(canonical)
@@ -110,11 +110,12 @@ def main() -> None:
         register(canonical, dedupe)
 
     result = {
-        "worker_version": 1,
+        "worker_version": 2,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
             "paid_ai_allowed": False,
+            "paid_fallback_allowed": False,
             "missing_information_causes_rejection": False,
             "invent_official_facts": False,
             "cross_source_duplicates_create_new_posts": False,
@@ -148,6 +149,8 @@ def main() -> None:
             "provider": enriched.get("ai_provider"),
             "model": enriched.get("ai_model"),
             "paid_api_used": enriched.get("paid_api_used"),
+            "paid_fallback_used": enriched.get("paid_fallback_used"),
+            "usage": enriched.get("usage"),
             "seo_title": enriched.get("seo_title"),
             "meta_description": enriched.get("meta_description"),
             "official_details": enriched.get("official_details"),
@@ -165,6 +168,7 @@ def main() -> None:
         "ok": True,
         "candidate": candidate.get("title"),
         "ai": result["ai"]["provider"],
+        "model": result["ai"]["model"],
         "dedupe": dedupe.action,
         "publication_action": package["action"],
         "output": str(out),
