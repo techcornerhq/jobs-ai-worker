@@ -62,9 +62,17 @@ jobs:
       - name: Run Groq Qwen worker
         shell: bash
         run: |
-          INDEX="${{ github.event.inputs.candidate_index || '0' }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            INDEX="${{ github.event.inputs.candidate_index }}"
+            REGISTER="${{ github.event.inputs.register_state }}"
+          else
+            INDEX="$(awk -F': *' '/^candidate_index:/ {print $2; exit}' run-trigger.txt)"
+            REGISTER="$(awk -F': *' '/^register_state:/ {print $2; exit}' run-trigger.txt)"
+            INDEX="${INDEX:-0}"
+            REGISTER="${REGISTER:-false}"
+          fi
+          echo "Candidate index: $INDEX"
           ARGS=(--index "$INDEX" --output data/results/latest.json)
-          REGISTER="${{ github.event.inputs.register_state || 'false' }}"
           if [ "$REGISTER" != "true" ]; then
             ARGS+=(--no-register)
           fi
