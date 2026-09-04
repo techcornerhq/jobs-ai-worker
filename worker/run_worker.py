@@ -8,6 +8,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 from job_dedupe import classify, register
+from job_image import generate as generate_job_image
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
@@ -93,6 +94,8 @@ def main() -> None:
     canonical["campaign_id"] = dedupe.campaign_id
     canonical["repost_of"] = dedupe.matched_campaign_id if dedupe.action == "publish_genuine_repost" else None
 
+    image_path = None
+    image_url = None
     if dedupe.action == "merge_same_campaign":
         package = {
             "action": "do_not_republish",
@@ -100,6 +103,9 @@ def main() -> None:
             "existing_campaign_id": dedupe.campaign_id,
         }
     else:
+        image_title = enriched.get("social_title") or enriched.get("seo_title") or canonical.get("job_title") or candidate.get("title")
+        image_path, image_url = generate_job_image(canonical, image_title)
+        canonical["featured_image_url"] = image_url
         rendered = render(canonical, enriched)
         package = {
             "action": "publish_new_post" if dedupe.action == "publish_new_campaign" else "publish_genuine_repost",
@@ -110,7 +116,7 @@ def main() -> None:
         register(canonical, dedupe)
 
     result = {
-        "worker_version": 2,
+        "worker_version": 3,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
@@ -120,6 +126,8 @@ def main() -> None:
             "invent_official_facts": False,
             "cross_source_duplicates_create_new_posts": False,
             "genuine_employer_reposts_allowed": True,
+            "competitor_discovery_links_publicly_exposed": False,
+            "branded_featured_image_required": True,
         },
         "candidate": candidate,
         "source_resolution": {
@@ -144,6 +152,8 @@ def main() -> None:
             "source_discovery_url": canonical.get("source_discovery_url"),
             "source_original_url": canonical.get("source_original_url"),
             "country": canonical.get("country"),
+            "featured_image_url": image_url,
+            "featured_image_path": image_path,
         },
         "ai": {
             "provider": enriched.get("ai_provider"),
@@ -171,6 +181,7 @@ def main() -> None:
         "model": result["ai"]["model"],
         "dedupe": dedupe.action,
         "publication_action": package["action"],
+        "featured_image": image_url,
         "output": str(out),
     }, ensure_ascii=False, indent=2))
 
