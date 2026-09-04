@@ -1,0 +1,72 @@
+name: UI Migration Worker
+
+on:
+  push:
+    paths:
+      - 'ui-migration-trigger.txt'
+      - 'worker/run_ui_migration.py'
+      - '.github/workflows/ui-migration.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ui-migration-worker
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      UI_MIGRATION_INDICES: '0,1,2,6,7,8,9'
+      UI_MIGRATION_DELAY_SECONDS: '68'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -U requests pillow
+
+      - name: Build redesigned content for all current live jobs
+        run: python -u worker/run_ui_migration.py
+
+      - name: Validate migration package
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('data/results/ui-migration.json').read_text(encoding='utf-8'))
+          assert d['count'] == 7, d
+          assert d['failure_count'] == 0, d
+          for item in d['items']:
+              assert item['ai']['provider'] == 'groq_free_plan'
+              assert item['quality_gate']['passed'] is True
+              p=item['publication_package']
+              assert "class='job-page-hero'" in p['content']
+              assert "id='job-apply'" in p['content']
+              assert '-v12.png' in item['canonical']['featured_image_url']
+          print('All seven current jobs are ready for UX migration')
+          PY
+
+      - name: Save migration package and images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/results/ui-migration.json data/images/*.png
+          if git diff --cached --quiet; then
+            echo 'No migration changes'
+          else
+            git commit -m 'Build current jobs for UI migration'
+            git pull --rebase origin main
+            git push
+          fi
