@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 
 MISSING = "غير مذكور في الإعلان"
+REQUIRED_POSTER_VERSION = "-v11.png"
 
 
 def validate(job: dict, enriched: dict, rendered: dict) -> dict:
@@ -23,8 +24,8 @@ def validate(job: dict, enriched: dict, rendered: dict) -> dict:
         errors.append("summary_too_thin")
     if len(content) < 2200:
         errors.append("article_too_thin")
-    if "-v10.png" not in image:
-        errors.append("poster_v10_required")
+    if REQUIRED_POSTER_VERSION not in image:
+        errors.append("poster_v11_required")
     if image and image not in content:
         errors.append("poster_not_embedded")
     if "jo-jobs.com" in content.lower():
