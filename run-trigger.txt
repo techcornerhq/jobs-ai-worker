@@ -1,3 +1,3 @@
-bulk-v12-migration: 2026-09-04T20:48+03:00
-candidate_index: 6
+bulk-v12-migration: 2026-09-04T20:50+03:00
+candidate_index: 7
 register_state: false
