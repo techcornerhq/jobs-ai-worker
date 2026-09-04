@@ -36,7 +36,7 @@ SYSTEM_RULES = f"""
 15) general_guidance منخفض الأولوية: استخدم بحد أقصى نقطة واحدة في كل قسم فقط إذا بقيت مساحة، وإلا اترك القوائم فارغة. لا تكتب {MISSING} داخل قوائم الإرشادات.
 16) faq منخفض الأولوية ويمكن تركه فارغاً؛ النظام سيولد أسئلة حقائق تلقائياً عند الحاجة. إن كتبته فبحد أقصى سؤالين قصيرين.
 17) safety_note جملة واحدة قصيرة فقط.
-18) labels بحد أقصى 5، وschema_supported_fields يحتوي فقط حقولاً مدعومة فعلاً.
+18) labels بحد أقصى 5. لا تعتمد على النموذج لتقرير حقول Schema؛ النظام سيحددها حتمياً من البيانات المتاحة.
 19) اختصر الإجابة لتبقى ضمن حد 950 output tokens؛ لا تهدر التوكنز على تكرار المعلومات.
 20) أخرج JSON فقط بدون Markdown أو شرح خارجي.
 21) استخدم العربية الفصحى المبسطة المناسبة للأردن.
@@ -91,6 +91,26 @@ def retry_delay(response: requests.Response, attempt: int) -> float:
     return min(65.0, 20.0 * (attempt + 1))
 
 
+def deterministic_schema_fields(job: dict, result: dict) -> list[str]:
+    """Choose JobPosting fields from actual populated values, never AI preference."""
+    official = result.get("official_details") or {}
+    fields: list[str] = []
+    job_title = str(official.get("job_title") or "").strip()
+    if job_title and job_title != MISSING:
+        fields.append("title")
+    employer = str(official.get("employer") or "").strip()
+    if employer and employer != MISSING:
+        fields.append("hiringOrganization")
+    if job.get("date_posted") or job.get("feed_published"):
+        fields.append("datePosted")
+    if job.get("valid_through"):
+        fields.append("validThrough")
+    location = str(official.get("location") or job.get("location_text") or "").strip()
+    if location and location != MISSING:
+        fields.append("jobLocation")
+    return fields
+
+
 def run_qwen(job: dict) -> dict:
     if not GROQ_API_KEY: raise RuntimeError("Missing GROQ_API_KEY secret")
     payload = {
@@ -112,6 +132,7 @@ def run_qwen(job: dict) -> dict:
     assert r is not None and r.ok
     data = r.json()
     result = extract_json(data["choices"][0]["message"]["content"])
+    result["schema_supported_fields"] = deterministic_schema_fields(job, result)
     usage = data.get("usage") or {}
     result["ai_provider"] = "groq_free_plan"; result["ai_model"] = GROQ_MODEL
     result["paid_api_used"] = False; result["paid_fallback_used"] = False
