@@ -89,7 +89,7 @@ jobs:
               assert item['ai']['paid_api_used'] is False
               assert item['ai']['paid_fallback_used'] is False
               assert item['quality_gate']['passed'] is True
-              assert '-v10.png' in (item['canonical'].get('featured_image_url') or '')
+              assert '-v11.png' in (item['canonical'].get('featured_image_url') or '')
               content = item['publication_package'].get('content') or ''
               assert 'jo-jobs.com' not in content
               assert 'job-related-box' in content
