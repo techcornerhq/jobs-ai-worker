@@ -47,8 +47,8 @@ def load_source() -> dict:
 def fetch_feed(url: str) -> bytes:
     response = requests.get(
         url,
-        headers={"User-Agent": "JordanJobsDiscoveryBot/2.0 (+https://jobsinjordan2026.blogspot.com/)"},
-        timeout=45,
+        headers={"User-Agent": "JordanJobsDiscoveryBot/2.1 (+https://jobsinjordan2026.blogspot.com/)"},
+        timeout=(8, 12),
     )
     response.raise_for_status()
     return response.content
