@@ -26,12 +26,13 @@ concurrency:
 jobs:
   process-one:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 35
     env:
-      QWEN_MODEL_PATH: "${{ github.workspace }}/models/Qwen3-8B-Q4_K_M.gguf"
-      QWEN_CTX: "8192"
-      QWEN_MAX_TOKENS: "1600"
-      QWEN_TEMP: "0.20"
+      QWEN_MODEL_PATH: "${{ github.workspace }}/models/Qwen3-4B-Q4_K_M.gguf"
+      QWEN_CTX: "4096"
+      QWEN_MAX_TOKENS: "850"
+      QWEN_TEMP: "0.15"
+      QWEN_THREADS: "4"
 
     steps:
       - name: Checkout
@@ -47,11 +48,11 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Build llama.cpp CPU CLI
+      - name: Build llama.cpp CPU CLI only
         run: |
           git clone --depth 1 https://github.com/ggml-org/llama.cpp.git /tmp/llama.cpp
           cmake -S /tmp/llama.cpp -B /tmp/llama.cpp/build -DGGML_NATIVE=OFF -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release
-          cmake --build /tmp/llama.cpp/build --config Release -j 4
+          cmake --build /tmp/llama.cpp/build --config Release --target llama-cli -j 4
           echo "/tmp/llama.cpp/build/bin" >> "$GITHUB_PATH"
 
       - name: Verify llama.cpp
@@ -61,22 +62,22 @@ jobs:
         uses: actions/cache@v4
         with:
           path: models
-          key: qwen3-8b-q4km-v1
+          key: qwen3-4b-q4km-v1
 
-      - name: Download Qwen3-8B GGUF if missing
+      - name: Download Qwen3-4B GGUF if missing
         run: |
           python - <<'PY'
           from pathlib import Path
           from huggingface_hub import hf_hub_download
 
-          target = Path("models/Qwen3-8B-Q4_K_M.gguf")
+          target = Path("models/Qwen3-4B-Q4_K_M.gguf")
           target.parent.mkdir(parents=True, exist_ok=True)
-          if target.exists() and target.stat().st_size > 4_500_000_000:
-              print("Qwen model restored from cache")
+          if target.exists() and target.stat().st_size > 2_300_000_000:
+              print("Qwen3-4B model restored from cache")
           else:
               p = hf_hub_download(
-                  repo_id="Qwen/Qwen3-8B-GGUF",
-                  filename="Qwen3-8B-Q4_K_M.gguf",
+                  repo_id="Qwen/Qwen3-4B-GGUF",
+                  filename="Qwen3-4B-Q4_K_M.gguf",
                   local_dir="models",
               )
               print("Downloaded", p)
@@ -85,7 +86,7 @@ jobs:
       - name: Refresh public discovery feed
         run: python -u worker/source_engine.py
 
-      - name: Run local Qwen worker
+      - name: Run optimized local Qwen worker
         shell: bash
         run: |
           INDEX="${{ github.event.inputs.candidate_index || '0' }}"
@@ -106,6 +107,7 @@ jobs:
           assert d["ai"]["provider"] == "local_qwen_llama_cpp"
           assert d["policy"]["paid_ai_allowed"] is False
           print("ZERO-PAID-AI CHECK: PASS")
+          print("Model:", d["ai"].get("model"))
           print("Title:", d["publication_package"].get("title"))
           print("Dedupe:", d["dedupe"]["action"])
           print("Publication action:", d["publication_package"]["action"])
