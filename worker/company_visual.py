@@ -7,7 +7,13 @@ import requests
 from bs4 import BeautifulSoup
 from PIL import Image
 
-UA = 'Mozilla/5.0 (compatible; JordanJobsImageBot/4.0; +https://jobsinjordan2026.blogspot.com/)'
+UA = 'Mozilla/5.0 (compatible; JordanJobsImageBot/4.1; +https://jobsinjordan2026.blogspot.com/)'
+
+PREFERRED_IMAGES = {
+    'زين': [
+        'https://d30ezutk4plts9.cloudfront.net/media/original_images/ZainJordan_HQ.jpg',
+    ],
+}
 
 OFFICIAL_PAGES = {
     'زين': [
@@ -36,12 +42,11 @@ def pages_for(job: dict) -> list[str]:
 
 def image_candidates(page: str, employer: str = '') -> list[tuple[int, str]]:
     try:
-        r = requests.get(page, timeout=18, headers={'User-Agent': UA})
+        r = requests.get(page, timeout=(5, 7), headers={'User-Agent': UA})
         r.raise_for_status()
         soup = BeautifulSoup(r.text, 'html.parser')
     except Exception:
         return []
-
     out: list[tuple[int, str]] = []
     for selector, attr in [
         ("meta[property='og:image']", 'content'),
@@ -51,9 +56,8 @@ def image_candidates(page: str, employer: str = '') -> list[tuple[int, str]]:
         el = soup.select_one(selector)
         if el and el.get(attr):
             out.append((40, urljoin(page, el.get(attr))))
-
     emp = employer.lower()
-    for img in soup.find_all('img', src=True)[:180]:
+    for img in soup.find_all('img', src=True)[:100]:
         src = urljoin(page, img.get('src'))
         low = src.lower()
         alt = ' '.join([str(img.get('alt') or ''), str(img.get('title') or '')]).lower()
@@ -65,32 +69,44 @@ def image_candidates(page: str, employer: str = '') -> list[tuple[int, str]]:
                 score += 200
             elif 'jordan' in alt and 'zain' in (alt + low):
                 score += 120
-            elif 'zain' in alt or 'zain' in low:
-                score += 35
         if 'العميد' in employer and ('alameed' in alt or 'coffee' in alt or 'alameed' in low):
             score += 80
         if 'المناصير' in employer and ('manaseer' in alt or 'manaseer' in low):
             score += 80
         out.append((score, src))
-
     best: dict[str, int] = {}
     for score, url in out:
         best[url] = max(score, best.get(url, -1))
     return sorted(((s, u) for u, s in best.items()), reverse=True)
 
 
+def _download_image(url: str, referer: str | None = None) -> Image.Image | None:
+    try:
+        headers = {'User-Agent': UA}
+        if referer:
+            headers['Referer'] = referer
+        r = requests.get(url, timeout=(5, 8), headers=headers)
+        r.raise_for_status()
+        im = Image.open(io.BytesIO(r.content)).convert('RGB')
+        ratio = im.width / max(im.height, 1)
+        if im.width < 650 or im.height < 380 or ratio > 3.8 or ratio < 0.42:
+            return None
+        return im
+    except Exception:
+        return None
+
+
 def fetch_official_photo(job: dict) -> Image.Image | None:
     employer = str(job.get('employer_name') or '')
+    for key, urls in PREFERRED_IMAGES.items():
+        if key in employer:
+            for url in urls:
+                im = _download_image(url, 'https://www.zain.com/en/media-center')
+                if im is not None:
+                    return im
     for page in pages_for(job):
-        for _score, url in image_candidates(page, employer)[:70]:
-            try:
-                r = requests.get(url, timeout=18, headers={'User-Agent': UA, 'Referer': page})
-                r.raise_for_status()
-                im = Image.open(io.BytesIO(r.content)).convert('RGB')
-                ratio = im.width / max(im.height, 1)
-                if im.width < 650 or im.height < 380 or ratio > 3.8 or ratio < 0.42:
-                    continue
+        for _score, url in image_candidates(page, employer)[:12]:
+            im = _download_image(url, page)
+            if im is not None:
                 return im
-            except Exception:
-                continue
     return None
