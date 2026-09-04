@@ -1,0 +1,107 @@
+name: Production Job Worker
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Maximum candidates to process in this run"
+        required: true
+        default: "5"
+      max_per_day:
+        description: "Daily processing cap"
+        required: true
+        default: "40"
+  schedule:
+    - cron: "17 */2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: production-job-worker
+  cancel-in-progress: false
+
+jobs:
+  process-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: "qwen/qwen3.8-27b"
+      QWEN_MAX_TOKENS: "950"
+      QWEN_TEMP: "0.20"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Arabic fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Verify Groq secret exists
+        run: |
+          test -n "$GROQ_API_KEY" || (echo "GROQ_API_KEY secret is missing" && exit 1)
+
+      - name: Refresh enabled discovery sources
+        run: |
+          if python -u worker/source_engine.py; then
+            echo "Discovery refresh succeeded"
+          else
+            echo "Discovery refresh unavailable; using checked-in snapshot"
+            test -s data/discovery/jo-jobs.json
+          fi
+
+      - name: Process production batch
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BATCH="${{ github.event.inputs.batch_size }}"
+            CAP="${{ github.event.inputs.max_per_day }}"
+          else
+            BATCH="5"
+            CAP="40"
+          fi
+          python -u worker/run_batch.py --batch-size "$BATCH" --max-per-day "$CAP" --output data/results/auto-batch.json
+
+      - name: Validate production batch
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path('data/results/auto-batch.json').read_text(encoding='utf-8'))
+          assert d['daily_cap'] <= 40
+          for item in d.get('items', []):
+              assert item['ai']['paid_api_used'] is False
+              assert item['ai']['paid_fallback_used'] is False
+              assert item['quality_gate']['passed'] is True
+              assert '-v10.png' in (item['canonical'].get('featured_image_url') or '')
+              assert 'jo-jobs.com' not in (item['publication_package'].get('content') or '')
+          print('Production batch validation: PASS')
+          print('Publishable:', d.get('publishable_count'))
+          PY
+
+      - name: Save production batch and state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovery/jo-jobs.json data/results/auto-batch.json data/state/auto_cursor.json data/images/*.png 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No production changes to commit"
+            exit 0
+          fi
+          git commit -m "Production job worker batch"
+          git pull --rebase origin main
+          git push
