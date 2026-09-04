@@ -20,9 +20,9 @@ SOCIAL_HOSTS = {
     "telegram.me", "t.me", "pinterest.com", "reddit.com",
 }
 SOCIAL_SHARE_PATH_HINTS = (
-    "/intent/", "/share", "/sharer", "/sharing/", "/tweet", "/dialog/share",
+    "/intent/", "/share", "/sharer", "/sharing/", "/tweet", "/dialog/share", "/send/",
 )
-SHARE_QUERY_KEYS = {"text", "url", "u", "share", "quote"}
+SHARE_QUERY_KEYS = {"text", "url", "u", "share", "quote", "type", "app_absent"}
 OFFICIAL_HINTS = (
     "careers", "career", "jobs", "job", "vacancy", "vacancies", "recruitment",
     "linkedin.com/jobs", "akhtaboot", "bayt.com", "for9a.com", "apply"
@@ -35,10 +35,14 @@ APPLICATION_HINTS = (
 
 def host(url: str | None) -> str:
     try:
-        h = urlsplit(url or "").netloc.lower()
+        h = urlsplit(url or "").netloc.lower().split(":", 1)[0]
         return h[4:] if h.startswith("www.") else h
     except Exception:
         return ""
+
+
+def host_matches(h: str, domains: set[str]) -> bool:
+    return any(h == d or h.endswith("." + d) for d in domains)
 
 
 def is_social_share_url(url: str) -> bool:
@@ -47,13 +51,16 @@ def is_social_share_url(url: str) -> bool:
         h = host(url)
         path = p.path.lower()
         query_keys = {k.lower() for k in parse_qs(p.query).keys()}
-        if h in SOCIAL_HOSTS and any(x in path for x in SOCIAL_SHARE_PATH_HINTS):
+        is_social = host_matches(h, SOCIAL_HOSTS)
+        if is_social and any(x in path for x in SOCIAL_SHARE_PATH_HINTS):
             return True
-        if h in {"x.com", "twitter.com"} and path.startswith("/intent/"):
+        if host_matches(h, {"x.com", "twitter.com"}) and path.startswith("/intent/"):
             return True
-        if h in {"facebook.com", "fb.com"} and ("sharer" in path or "dialog/share" in path):
+        if host_matches(h, {"facebook.com", "fb.com"}) and ("sharer" in path or "dialog/share" in path):
             return True
-        if h in SOCIAL_HOSTS and len(query_keys & SHARE_QUERY_KEYS) >= 2:
+        if host_matches(h, {"whatsapp.com", "wa.me"}) and ("/send" in path or "text" in query_keys):
+            return True
+        if is_social and len(query_keys & SHARE_QUERY_KEYS) >= 2:
             return True
     except Exception:
         return True
@@ -74,7 +81,7 @@ def is_candidate_source_url(url: str, base_url: str) -> bool:
 def get(url: str) -> requests.Response:
     r = requests.get(
         url,
-        headers={"User-Agent": "JordanJobsVerifier/2.1 (+https://jobsinjordan2026.blogspot.com/)"},
+        headers={"User-Agent": "JordanJobsVerifier/2.2 (+https://jobsinjordan2026.blogspot.com/)"},
         timeout=45,
         allow_redirects=True,
     )
@@ -108,7 +115,7 @@ def external_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
             score += 2
         if any(x in low for x in APPLICATION_HINTS):
             score += 3
-        if h in SOCIAL_HOSTS:
+        if host_matches(h, SOCIAL_HOSTS):
             score -= 3
         out.append({"url": href, "host": h, "text": text, "score": score})
     return sorted(out, key=lambda x: x["score"], reverse=True)
