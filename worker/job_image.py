@@ -5,15 +5,17 @@ from pathlib import Path
 
 import arabic_reshaper
 from bidi.algorithm import get_display
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, features
 
 IMAGE_DIR = Path("data/images")
 RAW_BASE = "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images"
 WIDTH = 1200
 HEIGHT = 630
+IMAGE_VERSION = "v2"
+HAS_RAQM = bool(features.check_feature("raqm"))
 
 
-def ar(text: str) -> str:
+def fallback_visual(text: str) -> str:
     text = str(text or "").strip()
     if not text:
         return ""
@@ -34,14 +36,33 @@ def font(size: int, bold: bool = False):
     return ImageFont.load_default()
 
 
+def text_kwargs() -> dict:
+    if HAS_RAQM:
+        return {"direction": "rtl", "language": "ar"}
+    return {}
+
+
+def prepared(text: str) -> str:
+    text = str(text or "").strip()
+    return text if HAS_RAQM else fallback_visual(text)
+
+
+def measure(draw: ImageDraw.ImageDraw, text: str, fnt) -> int:
+    bbox = draw.textbbox((0, 0), prepared(text), font=fnt, **text_kwargs())
+    return bbox[2] - bbox[0]
+
+
+def draw_ar(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill, anchor: str = "ra") -> None:
+    draw.text(xy, prepared(text), font=fnt, fill=fill, anchor=anchor, **text_kwargs())
+
+
 def wrap(draw: ImageDraw.ImageDraw, text: str, fnt, max_width: int, max_lines: int = 3) -> list[str]:
     words = str(text or "").split()
     lines: list[str] = []
     current: list[str] = []
     for word in words:
         test = " ".join(current + [word])
-        bbox = draw.textbbox((0, 0), ar(test), font=fnt)
-        if bbox[2] - bbox[0] <= max_width or not current:
+        if measure(draw, test, fnt) <= max_width or not current:
             current.append(word)
         else:
             lines.append(" ".join(current))
@@ -59,12 +80,12 @@ def wrap(draw: ImageDraw.ImageDraw, text: str, fnt, max_width: int, max_lines: i
 def generate(job: dict, title: str) -> tuple[str, str]:
     campaign_id = re.sub(r"[^a-zA-Z0-9_-]", "", str(job.get("campaign_id") or "job"))
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-    path = IMAGE_DIR / f"{campaign_id}.png"
+    # Versioned filename prevents browsers/CDNs from showing an older broken RTL image.
+    path = IMAGE_DIR / f"{campaign_id}-{IMAGE_VERSION}.png"
 
     img = Image.new("RGB", (WIDTH, HEIGHT), (247, 250, 252))
     draw = ImageDraw.Draw(img)
 
-    # Header band and simple brand mark.
     draw.rounded_rectangle((60, 48, 1140, 582), radius=34, fill=(255, 255, 255), outline=(219, 228, 236), width=3)
     draw.rounded_rectangle((60, 48, 1140, 145), radius=34, fill=(15, 118, 110))
     draw.rectangle((60, 105, 1140, 145), fill=(15, 118, 110))
@@ -75,23 +96,23 @@ def generate(job: dict, title: str) -> tuple[str, str]:
     body_font = font(29, bold=False)
     small_font = font(22, bold=False)
 
-    draw.text((1090, 78), ar("وظائف الأردن"), font=brand_font, fill=(255, 255, 255), anchor="ra")
-    draw.text((110, 82), ar("فرصة عمل جديدة"), font=kicker_font, fill=(255, 255, 255), anchor="la")
+    draw_ar(draw, (1090, 78), "وظائف الأردن", brand_font, (255, 255, 255), anchor="ra")
+    draw_ar(draw, (110, 82), "فرصة عمل جديدة", kicker_font, (255, 255, 255), anchor="la")
 
     employer = str(job.get("employer_name") or "جهة توظيف في الأردن").strip()
     location = str(job.get("location_text") or "الأردن").strip()
 
-    draw.text((1080, 190), ar(employer), font=body_font, fill=(15, 118, 110), anchor="ra")
+    draw_ar(draw, (1080, 190), employer, body_font, (15, 118, 110), anchor="ra")
 
     y = 245
     for line in wrap(draw, title, title_font, 920, max_lines=3):
-        draw.text((1080, y), ar(line), font=title_font, fill=(23, 32, 51), anchor="ra")
+        draw_ar(draw, (1080, y), line, title_font, (23, 32, 51), anchor="ra")
         y += 67
 
     draw.rounded_rectangle((760, 490, 1080, 545), radius=18, fill=(239, 246, 255))
-    draw.text((1055, 517), ar(location), font=small_font, fill=(30, 64, 175), anchor="ra")
+    draw_ar(draw, (1055, 517), location, small_font, (30, 64, 175), anchor="ra")
 
-    draw.text((100, 548), ar("تفاصيل التقديم داخل الإعلان"), font=small_font, fill=(102, 112, 133), anchor="la")
+    draw_ar(draw, (100, 548), "تفاصيل التقديم داخل الإعلان", small_font, (102, 112, 133), anchor="la")
 
     img.save(path, format="PNG", optimize=True)
     return str(path), f"{RAW_BASE}/{path.name}"
