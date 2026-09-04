@@ -7,32 +7,30 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-MODEL_PATH = os.getenv("QWEN_MODEL_PATH", "models/Qwen3-8B-Q4_K_M.gguf").strip()
+MODEL_PATH = os.getenv("QWEN_MODEL_PATH", "models/Qwen3-4B-Q4_K_M.gguf").strip()
 LLAMA_CLI = os.getenv("LLAMA_CLI", "llama-cli")
-MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "1600"))
-CTX = int(os.getenv("QWEN_CTX", "8192"))
-TEMP = os.getenv("QWEN_TEMP", "0.20")
+MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "850"))
+CTX = int(os.getenv("QWEN_CTX", "4096"))
+TEMP = os.getenv("QWEN_TEMP", "0.15")
+THREADS = os.getenv("QWEN_THREADS", "4")
 
 MISSING = "غير مذكور في الإعلان"
 
 SYSTEM_RULES = f"""
-أنت محرر وظائف عربي دقيق لموقع وظائف الأردن. المطلوب تحويل بيانات الإعلان الخام إلى JSON منظم ومفيد وقابل للنشر.
+أنت محرر وظائف عربي دقيق لموقع وظائف الأردن. حوّل بيانات الإعلان إلى JSON مختصر ومفيد.
 
-قواعد إلزامية لا يجوز مخالفتها:
-1) لا تختلق أي حقيقة رسمية: اسم الشركة، الراتب، الموقع، الموعد النهائي، المؤهل، الخبرة، عدد الشواغر، ساعات العمل، المزايا أو طريقة التقديم.
-2) إذا لم تجد معلومة مدعومة بالنص الرسمي/الأصلي فاكتب حرفياً: {MISSING}
-3) المصدر التجميعي discovery source ليس مصدراً رسمياً بحد ذاته. إذا كتب "راتب متوقع" أو "تقديري" فلا تحوله إلى راتب رسمي إلا إذا أكده original_text أو مصدر أصلي واضح.
-4) يجوز كتابة نصائح عامة مفيدة للمتقدم، لكن ضعها فقط داخل general_guidance، ولا تصفها أبداً كمتطلبات الشركة.
-5) لا تنسخ فقرات المصدر حرفياً. أعد تنظيم الحقائق بصياغة عربية طبيعية ومختصرة مع قيمة تحريرية حقيقية.
-6) إذا كانت المعلومات قليلة لا ترفض الوظيفة؛ أنشئ صفحة مفيدة من الحقائق المتاحة + المعلومات الناقصة + إرشادات عامة واضحة.
-7) لا تقل إن الوظيفة "مضمونة" أو "مؤكدة". اذكر حدود التحقق عند الحاجة.
-8) schema_supported_fields يجب أن يحتوي فقط أسماء الحقول التي توجد لها حقيقة مدعومة، مثل title, hiringOrganization, jobLocation, datePosted, validThrough.
-9) labels بحد أقصى 5، قصيرة وملائمة للوظيفة (مثل عمان، مبيعات، دوام كامل، بدون خبرة، حكومي).
-10) seo_title طبيعي وغير مضلل ولا يذكر راتباً غير رسمي.
-11) meta_description من 120 إلى 160 حرفاً تقريباً، مفيدة وغير محشوة بالكلمات المفتاحية.
-12) الناتج JSON فقط: يبدأ بـ {{ وينتهي بـ }}. ممنوع Markdown أو أي شرح خارج JSON.
-13) استخدم العربية الفصحى المبسطة المناسبة للأردن.
-14) إذا وجدت تعارضاً بين discovery_text و original_text ففضّل original_text واذكر التعارض في verification_notes.
+قواعد إلزامية:
+1) ممنوع اختلاق أي حقيقة رسمية: الشركة، الراتب، الموقع، الموعد، المؤهل، الخبرة، عدد الشواغر أو طريقة التقديم.
+2) إذا لم تجد المعلومة مدعومة بالنص فاكتب: {MISSING}
+3) أي راتب مكتوب كـ"متوقع" أو "تقديري" في مصدر تجميعي ليس راتباً رسمياً.
+4) النصائح العامة توضع فقط داخل general_guidance ولا تُنسب للشركة.
+5) لا تنسخ فقرات المصدر حرفياً؛ أعد تنظيم الحقائق بإيجاز.
+6) لا ترفض الوظيفة بسبب نقص المعلومات.
+7) seo_title طبيعي وغير مضلل، وmeta_description موجز.
+8) labels بحد أقصى 5.
+9) schema_supported_fields يحتوي فقط حقولاً مدعومة فعلاً.
+10) أخرج JSON فقط، بدون Markdown أو شرح خارجي.
+11) استخدم العربية الفصحى المبسطة المناسبة للأردن.
 /no_think
 """.strip()
 
@@ -66,14 +64,34 @@ OUTPUT_SHAPE = {
 }
 
 
+def compact_source_text(value: str | None, limit: int) -> str | None:
+    if not value:
+        return None
+    value = re.sub(r"\n{3,}", "\n\n", value).strip()
+    return value[:limit]
+
+
 def prompt_for(job: dict) -> str:
-    compact_job = dict(job)
-    # Keep enough source text for understanding while avoiding needless context bloat.
-    for key in ("discovery_text", "original_text"):
-        if compact_job.get(key):
-            compact_job[key] = compact_job[key][:18000]
+    # Deliberately send only fields that can materially change the editorial result.
+    # This keeps CPU prompt-evaluation time low on free GitHub runners.
+    compact_job = {
+        "title": job.get("title"),
+        "page_title": job.get("page_title"),
+        "source_name": job.get("source_name"),
+        "source_discovery_url": job.get("source_discovery_url"),
+        "source_original_url": job.get("source_original_url"),
+        "source_original_fetch_ok": job.get("source_original_fetch_ok"),
+        "application_email": job.get("application_email"),
+        "application_phone": job.get("application_phone"),
+        "application_url": job.get("application_url"),
+        "dates_found": job.get("dates_found", [])[:8],
+        "feed_published": job.get("feed_published"),
+        "country": job.get("country", "Jordan"),
+        "original_text": compact_source_text(job.get("original_text"), 5000),
+        "discovery_text": compact_source_text(job.get("discovery_text"), 3500),
+    }
     payload = {"job": compact_job, "required_output_shape": OUTPUT_SHAPE}
-    return SYSTEM_RULES + "\n\nINPUT_JSON:\n" + json.dumps(payload, ensure_ascii=False)
+    return SYSTEM_RULES + "\n\nINPUT_JSON:\n" + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 
 def extract_json(text: str) -> dict:
@@ -109,9 +127,12 @@ def run_qwen(job: dict) -> dict:
             "-c", str(CTX),
             "-n", str(MAX_TOKENS),
             "--temp", str(TEMP),
+            "-t", str(THREADS),
+            "-tb", str(THREADS),
+            "--no-warmup",
             "--no-display-prompt",
         ]
-        proc = subprocess.run(cmd, text=True, capture_output=True, timeout=3600)
+        proc = subprocess.run(cmd, text=True, capture_output=True, timeout=1200)
         if proc.returncode != 0:
             raise RuntimeError(f"llama-cli failed ({proc.returncode}): {proc.stderr[-4000:]}")
         result = extract_json(proc.stdout)
