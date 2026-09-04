@@ -1,7 +1,7 @@
 {
   "worker_version": 12,
-  "started_at": "2026-09-04T17:43:13.877393+00:00",
-  "completed_at": "2026-09-04T17:43:17.640046+00:00",
+  "started_at": "2026-09-04T17:47:44.786622+00:00",
+  "completed_at": "2026-09-04T17:47:47.853987+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -24,44 +24,44 @@
     "deterministic_jobposting_schema_required": true
   },
   "candidate": {
-    "candidate_id": "98ba775ddf8f74015ec05e24",
+    "candidate_id": "339aa29413dd0898865d2adc",
     "source_id": "jo-jobs",
     "source_name": "وظيفتك عنا",
     "source_tier": 3,
     "source_role": "discovery_only",
-    "title": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
-    "discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
+    "title": "لجنة خدمات تفتح باب التوظيف لوظيفة حارس حديقة و ملاعب – راتب متوقع يصل إلى 450 دينار",
+    "discovery_url": "https://www.jo-jobs.com/archives/6761",
+    "feed_published": "Wed, 02 Sep 2026 17:51:56 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T17:43:13.693365+00:00",
+    "last_seen_at": "2026-09-04T17:47:44.546759+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
-    "source_original_fetch_ok": true,
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6761",
+    "source_original_url": null,
+    "source_original_fetch_ok": false,
     "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T17:43:14.498698+00:00"
+    "verified_at": "2026-09-04T17:47:45.303395+00:00"
   },
   "canonical": {
-    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+    "campaign_id": "9ccdcf39798dc4b12c7f615b",
     "repost_of": null,
-    "job_title": null,
-    "employer_name": "بن العميد",
-    "location_text": "عمان – الأردن",
-    "application_method": "رابط التقديم الإلكتروني",
-    "application_url": "https://careers.alameedcoffee.com/jobs.php",
+    "job_title": "حارس حديقة وملعب",
+    "employer_name": "لجنة خدمات مخيم الزرقاء",
+    "location_text": "مخيم الزرقاء (يشترط سكن المنطقة)",
+    "application_method": "تقديم الطلب مباشرة في مكتب لجنة خدمات مخيم الزرقاء",
+    "application_url": null,
     "application_email": null,
     "application_phone": null,
-    "date_posted": "2026-09-03T01:51:07+00:00",
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+    "date_posted": "2026-09-02T17:51:56+00:00",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6761",
+    "source_original_url": null,
     "country": "Jordan",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v12.png",
-    "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v12.png"
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9ccdcf39798dc4b12c7f615b-v12.png",
+    "featured_image_path": "data/images/9ccdcf39798dc4b12c7f615b-v12.png"
   },
   "ai": {
     "provider": "groq_free_plan",
@@ -69,82 +69,96 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 3105,
-      "completion_tokens": 783,
-      "total_tokens": 3888
+      "prompt_tokens": 3118,
+      "completion_tokens": 950,
+      "total_tokens": 4068
     },
-    "seo_title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "meta_description": "تعلن بن العميد عن شواغر متعددة في عمان تشمل إدارية وتقنية وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+    "seo_title": "لجنة خدمات مخيم الزرقاء: وظيفة حارس حديقة وملعب – راتب متوقع 300-450 دينار",
+    "meta_description": "لجنة خدمات مخيم الزرقاء تعلن عن وظيفة حارس حديقة وملعب. التقديم حضوري حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار. تعرف على الشروط وطريقة التقديم.",
     "official_details": {
-      "employer": "بن العميد",
-      "job_title": "غير مذكور في الإعلان",
-      "location": "عمان – الأردن",
+      "employer": "لجنة خدمات مخيم الزرقاء",
+      "job_title": "حارس حديقة وملعب",
+      "location": "مخيم الزرقاء (يشترط سكن المنطقة)",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
       "experience": "غير مذكور في الإعلان",
-      "qualification": "غير مذكور في الإعلان",
-      "application_method": "رابط التقديم الإلكتروني",
-      "deadline": "غير مذكور في الإعلان"
+      "qualification": "إجادة القراءة والكتابة",
+      "application_method": "تقديم الطلب مباشرة في مكتب لجنة خدمات مخيم الزرقاء",
+      "deadline": "7 سبتمبر 2026"
     },
     "missing_official_information": [
-      "المسميات الوظيفية المحددة لكل شاغر",
-      "المؤهلات العلمية المطلوبة",
-      "نوع عقد العمل (دوام كامل/جزئي)",
-      "تاريخ انتهاء التقديم",
-      "تفاصيل الراتب الرسمي",
-      "المهام الوظيفية التفصيلية"
+      "الراتب الرسمي",
+      "عدد الشواغر",
+      "ساعات الدوام وأيام العمل",
+      "المزايا الإضافية (تأمين، مواصلات)",
+      "تفاصيل المهام الوظيفية الدقيقة"
     ],
-    "verification_notes": [
-      "الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رقماً رسمياً من الشركة."
-    ],
+    "verification_notes": null,
     "labels": [
-      "وظائف عمان",
-      "وظائف تقنية"
+      "وظائف الزرقاء",
+      "وظائف إدارية",
+      "وظائف حكومية"
     ]
   },
   "quality_gate": {
     "passed": true,
     "errors": [],
-    "warnings": [
-      "jobposting_schema_not_emitted"
-    ],
+    "warnings": [],
     "metrics": {
-      "title_chars": 59,
-      "summary_chars": 509,
-      "content_chars": 6339,
-      "labels": 2
+      "title_chars": 74,
+      "summary_chars": 463,
+      "content_chars": 7967,
+      "labels": 3
     }
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+    "campaign_id": "9ccdcf39798dc4b12c7f615b",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات",
+    "title": "لجنة خدمات مخيم الزرقاء: وظيفة حارس حديقة وملعب – راتب متوقع 300-450 دينار",
+    "social_title": "فرصة عمل في مخيم الزرقاء: حارس حديقة وملعب (راتب متوقع حتى 450 دينار)",
     "labels": [
-      "وظائف عمان",
-      "وظائف تقنية"
+      "وظائف الزرقاء",
+      "وظائف إدارية",
+      "وظائف حكومية"
     ],
-    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v12.png' alt='بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة بن العميد عن توفر مجموعة من الوظائف الشاغرة في عمان، الأردن، موزعة على مجالات متنوعة تشمل الإدارة، التسويق، التقنية، المراقبة، والمستودعات. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الشاغر. يذكر الإعلان أن الراتب متوقع بين 300 و600 دينار، وهو تقدير وليس رقماً رسمياً مضموناً. تشمل الفرص مسميات مثل مدير فرع، أخصائي تطوير تطبيقات، وموظف مراقبة كاميرات. التقديم متاح حالياً عبر الموقع الإلكتروني الرسمي للشركة، مما يجعلها فرصة مناسبة للباحثين عن عمل في قطاع الأغذية والمشروبات أو التقنية.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في إدارة الفروع أو خدمة العملاء</li><li>المحترفون في تطوير تطبيقات الموبايل وضمان الجودة</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع كبير في التخصصات من التشغيلية إلى التقنية</li><li>فرصة للانضمام إلى علامة تجارية معروفة محلياً</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتتوافق مع المسمى المستهدف</li><li>التأكد من صحة بيانات التواصل في الطلب</li><li>مراجعة المتطلبات التقنية أو الإدارية لكل وظيفة</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>رابط التقديم الإلكتروني</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسميات الوظيفية المحددة لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع عقد العمل (دوام كامل/جزئي)</li><li>تاريخ انتهاء التقديم</li><li>تفاصيل الراتب الرسمي</li><li>المهام الوظيفية التفصيلية</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط التقديم الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد دائماً من تقديم طلبك عبر الموقع الرسمي للشركة فقط.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T17:43:14.498698+00:00.</p>\n  <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رقماً رسمياً من الشركة.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>",
-    "schema": {},
-    "meta_description": "تعلن بن العميد عن شواغر متعددة في عمان تشمل إدارية وتقنية وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v12.png",
+    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9ccdcf39798dc4b12c7f615b-v12.png' alt='لجنة خدمات مخيم الزرقاء: وظيفة حارس حديقة وملعب – راتب متوقع 300-450 دينار' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت لجنة خدمات مخيم الزرقاء عن توفر وظيفة حارس حديقة وملعب. يشترط أن يكون المتقدم من سكان المنطقة، لا يتجاوز عمره 45 عامًا، لائقًا صحيًا، ويجيد القراءة والكتابة. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 300 و450 دينارًا شهريًا. يتم التقديم بالحضور المباشر إلى مكتب اللجنة خلال الفترة من 31 أغسطس إلى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية عند الاختيار النهائي.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>لجنة خدمات مخيم الزرقاء</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>حارس حديقة وملعب</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>مخيم الزرقاء (يشترط سكن المنطقة)</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>إجادة القراءة والكتابة</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>7 سبتمبر 2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>الأفراد المقيمون في مخيم الزرقاء الذين يبحثون عن عمل ميداني لا يتطلب شهادة جامعية</li><li>الشباب دون سن 45 عامًا الذين يتمتعون باللياقة البدنية والقدرة على تحمل العمل الميداني</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>الوظيفة لا تشترط مؤهلًا علميًا عاليًا أو خبرة سابقة محددة، مما يفتح الباب أمام فئات أوسع</li><li>طريقة التقديم بسيطة ومباشرة عبر الحضور الشخصي دون الحاجة لمنصات إلكترونية معقدة</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحضير صورة واضحة عن بطاقة الهوية الشخصية أو هوية أبناء غزة</li><li>التأكد من أن مكان السكن يقع ضمن نطاق المنطقة المشمولة بالإعلان</li><li>الحضور الشخصي إلى مكتب اللجنة قبل انتهاء الموعد النهائي في 7 سبتمبر 2026</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>أن يكون المتقدم من سكان المنطقة</li><li>ألا يتجاوز العمر 45 عامًا</li><li>إجادة القراءة والكتابة</li><li>اللياقة الصحية</li><li>ألا يكون محكومًا بجناية أو جنحة مخلة بالشرف أو الأمانة أو الأخلاق أو الآداب العامة</li><li>ألا يكون متقاعدًا عسكريًا أو مدنيًا</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>تقديم الطلب مباشرة في مكتب لجنة خدمات مخيم الزرقاء</p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الراتب الرسمي</li><li>عدد الشواغر</li><li>ساعات الدوام وأيام العمل</li><li>المزايا الإضافية (تأمين، مواصلات)</li><li>تفاصيل المهام الوظيفية الدقيقة</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>القدرة على الملاحظة والانتباه أثناء فترة العمل الميداني</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>تقديم الطلب مباشرة في مكتب لجنة خدمات مخيم الزرقاء</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: مخيم الزرقاء (يشترط سكن المنطقة). آخر موعد: 7 سبتمبر 2026.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B2%D8%B1%D9%82%D8%A7%D8%A1'>وظائف الزرقاء</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9'>وظائف إدارية</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9'>وظائف حكومية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T17:47:45.303395+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"حارس حديقة وملعب\", \"description\": \"أعلنت لجنة خدمات مخيم الزرقاء عن توفر وظيفة حارس حديقة وملعب. يشترط أن يكون المتقدم من سكان المنطقة، لا يتجاوز عمره 45 عامًا، لائقًا صحيًا، ويجيد القراءة والكتابة. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 300 و450 دينارًا شهريًا. يتم التقديم بالحضور المباشر إلى مكتب اللجنة خلال الفترة من 31 أغسطس إلى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية عند الاختيار النهائي.\", \"datePosted\": \"2026-09-02T17:51:56+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"لجنة خدمات مخيم الزرقاء\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"مخيم الزرقاء (يشترط سكن المنطقة)\"}}}</script>",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "JobPosting",
+      "title": "حارس حديقة وملعب",
+      "description": "أعلنت لجنة خدمات مخيم الزرقاء عن توفر وظيفة حارس حديقة وملعب. يشترط أن يكون المتقدم من سكان المنطقة، لا يتجاوز عمره 45 عامًا، لائقًا صحيًا، ويجيد القراءة والكتابة. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 300 و450 دينارًا شهريًا. يتم التقديم بالحضور المباشر إلى مكتب اللجنة خلال الفترة من 31 أغسطس إلى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية عند الاختيار النهائي.",
+      "datePosted": "2026-09-02T17:51:56+00:00",
+      "hiringOrganization": {
+        "@type": "Organization",
+        "name": "لجنة خدمات مخيم الزرقاء"
+      },
+      "jobLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "JO",
+          "addressRegion": null,
+          "addressLocality": "مخيم الزرقاء (يشترط سكن المنطقة)"
+        }
+      }
+    },
+    "meta_description": "لجنة خدمات مخيم الزرقاء تعلن عن وظيفة حارس حديقة وملعب. التقديم حضوري حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار. تعرف على الشروط وطريقة التقديم.",
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9ccdcf39798dc4b12c7f615b-v12.png",
     "quality_gate": {
       "passed": true,
       "errors": [],
-      "warnings": [
-        "jobposting_schema_not_emitted"
-      ],
+      "warnings": [],
       "metrics": {
-        "title_chars": 59,
-        "summary_chars": 509,
-        "content_chars": 6339,
-        "labels": 2
+        "title_chars": 74,
+        "summary_chars": 463,
+        "content_chars": 7967,
+        "labels": 3
       }
     }
   }
