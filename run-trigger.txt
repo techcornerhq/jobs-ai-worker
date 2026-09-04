@@ -1,3 +1,3 @@
-poster-v12-final-test: 2026-09-04T20:42+03:00
-candidate_index: 1
+poster-v12-final-test: 2026-09-04T20:45+03:00
+candidate_index: 2
 register_state: false
