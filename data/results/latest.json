@@ -1,7 +1,7 @@
 {
   "worker_version": 10,
-  "started_at": "2026-09-04T15:23:15.063688+00:00",
-  "completed_at": "2026-09-04T15:23:18.957246+00:00",
+  "started_at": "2026-09-04T15:25:44.822005+00:00",
+  "completed_at": "2026-09-04T15:25:50.294574+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -16,44 +16,44 @@
     "poster_remote_image_fallback_required": true
   },
   "candidate": {
-    "candidate_id": "98ba775ddf8f74015ec05e24",
+    "candidate_id": "9f3b3be5c5fbcfd793a917c8",
     "source_id": "jo-jobs",
     "source_name": "وظيفتك عنا",
     "source_tier": 3,
     "source_role": "discovery_only",
-    "title": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
-    "discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
+    "title": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
+    "discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T15:23:14.845198+00:00",
+    "last_seen_at": "2026-09-04T15:25:44.626760+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
     "source_original_fetch_ok": true,
     "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T15:23:16.389337+00:00"
+    "verified_at": "2026-09-04T15:25:46.034850+00:00"
   },
   "canonical": {
-    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+    "campaign_id": "0bd4869c85167cd009bc384b",
     "repost_of": null,
-    "job_title": null,
-    "employer_name": "بن العميد",
-    "location_text": "عمان – الأردن",
-    "application_method": "رابط إلكتروني",
-    "application_url": "https://careers.alameedcoffee.com/jobs.php",
+    "job_title": "مطور تكامل أنظمة",
+    "employer_name": "زين الأردن",
+    "location_text": "الأردن - عمّان",
+    "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+    "application_url": "https://careers.zain.com/vacancy/175993",
     "application_email": null,
     "application_phone": null,
-    "date_posted": "2026-09-03T01:51:07+00:00",
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
-    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+    "date_posted": "2026-09-03T23:31:21+00:00",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
     "country": "Jordan",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png",
-    "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v10.png"
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/0bd4869c85167cd009bc384b-v10.png",
+    "featured_image_path": "data/images/0bd4869c85167cd009bc384b-v10.png"
   },
   "ai": {
     "provider": "groq_free_plan",
@@ -61,56 +61,45 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 3097,
-      "completion_tokens": 933,
-      "total_tokens": 4030
+      "prompt_tokens": 3838,
+      "completion_tokens": 950,
+      "total_tokens": 4788
     },
-    "seo_title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة، التقنية، والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+    "seo_title": "زين الأردن: وظيفة مطور تكامل أنظمة في عمّان – راتب متوقع حتى 800 دينار",
+    "meta_description": "وظيفة Integration Developer في زين الأردن عمّان. راتب متوقع حتى 800 دينار. التقديم عبر بوابة Zain Careers قبل 8 أكتوبر 2026.",
     "official_details": {
-      "employer": "بن العميد",
-      "job_title": "غير مذكور في الإعلان",
-      "location": "عمان – الأردن",
+      "employer": "زين الأردن",
+      "job_title": "مطور تكامل أنظمة",
+      "location": "الأردن - عمّان",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
-      "experience": "غير مذكور في الإعلان",
-      "qualification": "غير مذكور في الإعلان",
-      "application_method": "رابط إلكتروني",
-      "deadline": "غير مذكور في الإعلان"
+      "experience": "سنة واحدة على الأقل",
+      "qualification": "بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله",
+      "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+      "deadline": "08-Oct-2026"
     },
     "missing_official_information": [
-      "المسمى الوظيفي المحدد لكل شاغر",
-      "المؤهلات العلمية المطلوبة",
-      "نوع عقد العمل (دوام كامل/جزئي)",
-      "الراتب الرسمي المضمون",
-      "موعد إغلاق باب التقديم",
-      "تفاصيل المهام الوظيفية الدقيقة"
+      "الراتب الرسمي",
+      "نوع العقد (دوام كامل/جزئي)",
+      "تفاصيل المزايا الإضافية"
     ],
-    "verification_notes": [
-      "الراتب المذكور (300-600 دينار) هو تقدير من موقع التجميع (وظيفتك عنا) وليس مذكوراً رسمياً في النص الأصلي للموقع الرسمي لبن العميد."
-    ]
+    "verification_notes": null
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+    "campaign_id": "0bd4869c85167cd009bc384b",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات (راتب متوقع 300-600 د)",
-    "labels": [
-      "عمان",
-      "بن العميد",
-      "وظائف متنوعة",
-      "قطاع الأغذية",
-      "تقديم إلكتروني"
-    ],
-    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png' alt='بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة بن العميد عن توفر مجموعة واسعة من الوظائف الشاغرة في عمان، الأردن، موزعة على قطاعات إدارية وتشغيلية وتقنية. تشمل الشواغر مناصب مثل مدير فرع، أخصائي تطوير تطبيقات، مراقب جودة، وموظف مشتريات، بالإضافة إلى وظائف خدمة عملاء وتشغيلية أخرى. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الدور. يذكر الإعلان أن الراتب متوقع بين 300 و600 دينار أردني، مع التأكيد على أن هذا الرقم تقديري وغير مذكور رسمياً في المصدر الأصلي. يمكن للباحثين عن عمل التقديم مباشرة عبر بوابة التوظيف الإلكترونية للشركة، مما يجعل الفرصة مناسبة لمن يبحثون عن تنوع في الفرص الوظيفية ضمن قطاع الأغذية والمشروبات.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في إدارة الفروع أو العمليات التشغيلية في قطاع الأغذية والمشروبات.</li><li>المختصون في التقنية (تطوير تطبيقات، QA) أو التسويق الرقمي الراغبين بالعمل في شركة محلية معروفة.</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع كبير في التخصصات المطلوبة من التقنية إلى التشغيل والإدارة في إعلان واحد.</li><li>فرصة للانضمام إلى علامة تجارية محلية رائدة في قطاع المقاهي والأغذية.</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد الشاغر المناسب لخبرتك من القائمة المتاحة في الموقع الرسمي.</li><li>تحديث السيرة الذاتية لتبرز المهارات المرتبطة بالشاغر المحدد (إداري، تقني، أو تشغيلي).</li><li>التأكد من صحة بيانات التواصل في نموذج التقديم الإلكتروني.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>رابط إلكتروني</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع عقد العمل (دوام كامل/جزئي)</li><li>الراتب الرسمي المضمون</li><li>موعد إغلاق باب التقديم</li><li>تفاصيل المهام الوظيفية الدقيقة</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>مهارات خدمة العملاء وإدارة الوقت</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط إلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد من تقديم طلبك عبر الموقع الرسمي للشركة فقط لتجنب أي عمليات احتيال.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:23:16.389337+00:00.</p>\n  <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من موقع التجميع (وظيفتك عنا) وليس مذكوراً رسمياً في النص الأصلي للموقع الرسمي لبن العميد.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
+    "title": "زين الأردن: وظيفة مطور تكامل أنظمة في عمّان – راتب متوقع حتى 800 دينار",
+    "social_title": "وظيفة تطوير تكامل في زين الأردن عمّان – راتب متوقع حتى 800 دينار",
+    "labels": [],
+    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/0bd4869c85167cd009bc384b-v10.png' alt='زين الأردن: وظيفة مطور تكامل أنظمة في عمّان – راتب متوقع حتى 800 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تعلن شركة زين الأردن عن شغور وظيفي لمسمى Integration Developer Team Member في عمّان. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، مع خبرة لا تقل عن سنة واحدة. تشمل المهام تطوير خدمات وتطبيقات وأنظمة دعم الأعمال، وإدارة التكاملات مع أنظمة CRM وERP، وتطوير واجهات برمجة التطبيقات (APIs) باستخدام تقنيات مثل .NET وOracle SQL. الراتب غير محدد رسمياً في الإعلان الأصلي، لكن المصادر التجميعية تشير إلى راتب متوقع يصل إلى 800 دينار أردني. آخر موعد للتقديم هو 8 أكتوبر 2026 عبر الموقع الرسمي.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>زين الأردن</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>مطور تكامل أنظمة</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>الأردن - عمّان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>سنة واحدة على الأقل</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>08-Oct-2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>مطورو البرمجيات الذين يمتلكون خبرة في بناء التكاملات بين الأنظمة المختلفة</li><li>حاصلو شهادات علوم الحاسوب أو الهندسة مع خبرة عملية في تقنيات .NET وقواعد البيانات</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>فرصة للعمل في شركة اتصالات رائدة في المنطقة مع بيئة تقنية متطورة</li><li>تعدد التقنيات المستخدمة مما يوفر فرصة لتوسيع المهارات التقنية</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لإبراز مشاريع التكاملات وواجهات API</li><li>التأكد من توفر صورة شخصية وجواز سفر أو هوية سارية</li><li>مراجعة صفحة الشاغر الرسمية للتأكد من استيفاء جميع المتطلبات التقنية</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو مجال ذي صلة</li><li>خبرة عملية لا تقل عن سنة واحدة في مجال ذي صلة</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>تطوير خدمات وتطبيقات وحلول بناءً على متطلبات الأعمال والمبيعات</li><li>إدارة التكاملات مع أنظمة CRM وERP وأنظمة الفوترة والتزويد</li><li>تطوير وإدارة واجهات برمجة التطبيقات (REST وSOAP APIs) والتكاملات مع الأطراف الثالثة</li><li>مراقبة أداء الخوادم والتطبيقات وضمان عملها بسلاسة</li><li>تطوير وإدارة قواعد البيانات باستخدام Oracle SQL وSQL Server</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إلكترونيًا عبر بوابة Zain Careers</p><p><a class='job-apply-btn' href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الراتب الرسمي</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل المزايا الإضافية</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>الخبرة في تقنيات Microservices وKafka</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونيًا عبر بوابة Zain Careers</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن - عمّان. آخر موعد: 08-Oct-2026.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:25:46.034850+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
     "schema": {},
-    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة، التقنية، والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png"
+    "meta_description": "وظيفة Integration Developer في زين الأردن عمّان. راتب متوقع حتى 800 دينار. التقديم عبر بوابة Zain Careers قبل 8 أكتوبر 2026.",
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/0bd4869c85167cd009bc384b-v10.png"
   }
 }
