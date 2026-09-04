@@ -1,7 +1,7 @@
 {
   "worker_version": 12,
-  "started_at": "2026-09-04T17:51:38.965658+00:00",
-  "completed_at": "2026-09-04T17:51:43.206357+00:00",
+  "started_at": "2026-09-04T19:27:35.664834+00:00",
+  "completed_at": "2026-09-04T19:27:41.869433+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -24,44 +24,44 @@
     "deterministic_jobposting_schema_required": true
   },
   "candidate": {
-    "candidate_id": "138d95737e1f8d50cf6f40d2",
+    "candidate_id": "9f3b3be5c5fbcfd793a917c8",
     "source_id": "jo-jobs",
     "source_name": "وظيفتك عنا",
     "source_tier": 3,
     "source_role": "discovery_only",
-    "title": "مياهنا تعلن 35 شاغرًا في 4 محافظات – رواتب متوقعة تصل إلى 450 دينار والتقديم مستمر",
-    "discovery_url": "https://www.jo-jobs.com/archives/6755",
-    "feed_published": "Wed, 02 Sep 2026 15:22:50 +0000",
+    "title": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
+    "discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T17:51:38.719229+00:00",
+    "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6755",
-    "source_original_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
     "source_original_fetch_ok": true,
     "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T17:51:40.463548+00:00"
+    "verified_at": "2026-09-04T19:27:37.628982+00:00"
   },
   "canonical": {
-    "campaign_id": "478a827219ebd94fc2eae3f6",
+    "campaign_id": "bc4208238b88073195b63e81",
     "repost_of": null,
-    "job_title": "عامل",
-    "employer_name": "شركة مياه الأردن – مياهنا",
-    "location_text": "العاصمة، البلقاء، الزرقاء، مادبا",
-    "application_method": "إلكترونيًا عبر نظام الاستقطاب في القطاع العام",
-    "application_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+    "job_title": "مطور تكامل أنظمة",
+    "employer_name": "شركة زين الأردن",
+    "location_text": "الأردن - عمّان",
+    "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+    "application_url": "https://careers.zain.com/vacancy/175993",
     "application_email": null,
     "application_phone": null,
-    "date_posted": "2026-09-02T15:22:50+00:00",
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6755",
-    "source_original_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+    "date_posted": "2026-09-03T23:31:21+00:00",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
     "country": "Jordan",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/478a827219ebd94fc2eae3f6-v12.png",
-    "featured_image_path": "data/images/478a827219ebd94fc2eae3f6-v12.png"
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bc4208238b88073195b63e81-v12.png",
+    "featured_image_path": "data/images/bc4208238b88073195b63e81-v12.png"
   },
   "ai": {
     "provider": "groq_free_plan",
@@ -69,33 +69,32 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 3678,
+      "prompt_tokens": 3846,
       "completion_tokens": 950,
-      "total_tokens": 4628
+      "total_tokens": 4796
     },
-    "seo_title": "شركة مياهنا: 35 شاغرًا عامل في 4 محافظات – راتب متوقع 300-450 دينار",
-    "meta_description": "تعلن شركة مياهنا عن 35 شاغرًا للذكور بمؤهل ثانوية عامة فما دون. التقديم إلكتروني حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
+    "seo_title": "زين الأردن: وظيفة مطور تكامل أنظمة في عمّان – راتب متوقع حتى 800 دينار",
+    "meta_description": "تعلن زين الأردن عن وظيفة Integration Developer في عمّان. راتب متوقع 350-800 دينار. التقديم عبر بوابة Zain Careers قبل 8 أكتوبر 2026.",
     "official_details": {
-      "employer": "شركة مياه الأردن – مياهنا",
-      "job_title": "عامل",
-      "location": "العاصمة، البلقاء، الزرقاء، مادبا",
+      "employer": "شركة زين الأردن",
+      "job_title": "مطور تكامل أنظمة",
+      "location": "الأردن - عمّان",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
-      "experience": "0 سنوات",
-      "qualification": "ثانوية عامة فما دون",
-      "application_method": "إلكترونيًا عبر نظام الاستقطاب في القطاع العام",
-      "deadline": "07/09/2026"
+      "experience": "سنة واحدة على الأقل",
+      "qualification": "بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله",
+      "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+      "deadline": "08-Oct-2026"
     },
     "missing_official_information": [
       "الراتب الرسمي",
-      "نوع العقد (دوام كامل/جزئي/مؤقت)",
-      "مواعيد العمل الرسمية",
-      "تفاصيل البدلات أو المكافآت"
+      "نوع العقد (دوام كامل/جزئي)",
+      "تفاصيل المزايا الإضافية"
     ],
     "verification_notes": null,
     "labels": [
-      "وظائف الزرقاء",
-      "وظائف هندسة"
+      "وظائف عمان",
+      "وظائف تقنية"
     ]
   },
   "quality_gate": {
@@ -103,37 +102,37 @@
     "errors": [],
     "warnings": [],
     "metrics": {
-      "title_chars": 67,
-      "summary_chars": 507,
-      "content_chars": 7966,
+      "title_chars": 70,
+      "summary_chars": 499,
+      "content_chars": 15757,
       "labels": 2
     }
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "478a827219ebd94fc2eae3f6",
+    "campaign_id": "bc4208238b88073195b63e81",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "شركة مياهنا: 35 شاغرًا عامل في 4 محافظات – راتب متوقع 300-450 دينار",
-    "social_title": "فرصة عمل في مياهنا: 35 وظيفة عامل في العاصمة والبلقاء والزرقاء ومادبا",
+    "title": "زين الأردن: وظيفة مطور تكامل أنظمة في عمّان – راتب متوقع حتى 800 دينار",
+    "social_title": "وظيفة تطوير تكامل في زين الأردن عمّان | راتب متوقع 350-800 دينار",
     "labels": [
-      "وظائف الزرقاء",
-      "وظائف هندسة"
+      "وظائف عمان",
+      "وظائف تقنية"
     ],
-    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/478a827219ebd94fc2eae3f6-v12.png' alt='شركة مياهنا: 35 شاغرًا عامل في 4 محافظات – راتب متوقع 300-450 دينار' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغرًا لمسمى «عامل» مخصصة للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم إلكترونيًا عبر نظام الاستقطاب في القطاع العام من 30 أغسطس ويستمر حتى 7 سبتمبر 2026. يُذكر أن الراتب غير محدد رسميًا في الإعلان، لكن التقديرات تشير إلى نطاق 300-450 دينارًا شهريًا.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة مياه الأردن – مياهنا</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>عامل</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>العاصمة، البلقاء، الزرقاء، مادبا</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>0 سنوات</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>ثانوية عامة فما دون</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>07/09/2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>خريجو الثانوية العامة أو ما دونها في المحافظات المذكورة</li><li>الذكور القادرون على أداء الأعمال البدنية والميدانية</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>عدد كبير من الشواغر (35) موزعة على عدة محافظات</li><li>عدم اشتراط الخبرة الفنية مما يفتح الباب لحديثي التخرج</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>التأكد من أن المؤهل الدراسي مطابق للشرط (ثانوية عامة فما دون)</li><li>التحقق من الإقامة في إحدى المحافظات الأربع المستهدفة</li><li>تجهيز الوثائق الرسمية المطلوبة للرفع الإلكتروني</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>الجنس: ذكر</li><li>المؤهل: ثانوية عامة فما دون</li><li>الخبرة الفنية: 0 سنوات</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>المساعدة في صيانة وإصلاح شبكات المياه والصرف الصحي وتسليك الخطوط</li><li>تنفيذ أعمال الحفر اليدوي أو بالمعدات لإظهار مواقع الشبكات</li><li>تنظيف قنوات ومناهل تصريف الصرف الصحي وإزالة الرواسب</li><li>تحميل ونقل المواد والمعدات الثقيلة اللازمة للتشغيل والصيانة</li><li>المساعدة في تشغيل محطات المعالجة وتجهيز المواد الكيميائية</li><li>تنظيف مرافق المحطات والمشاركة في برامج التنظيف الدورية</li><li>تنفيذ أعمال تفريغ المياه العادمة ومتابعة محابس التفريغ</li><li>ترتيب المستودعات والمناولة وفق الإجراءات المعتمدة</li><li>الاستجابة للحالات الطارئة والعمل خارج الدوام عند الحاجة</li><li>الالتزام بتعليمات السلامة والصحة المهنية</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إلكترونيًا عبر نظام الاستقطاب في القطاع العام</p><p><a class='job-apply-btn' href='https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الراتب الرسمي</li><li>نوع العقد (دوام كامل/جزئي/مؤقت)</li><li>مواعيد العمل الرسمية</li><li>تفاصيل البدلات أو المكافآت</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونيًا عبر نظام الاستقطاب في القطاع العام</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: العاصمة، البلقاء، الزرقاء، مادبا. آخر موعد: 07/09/2026.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B2%D8%B1%D9%82%D8%A7%D8%A1'>وظائف الزرقاء</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T17:51:40.463548+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"عامل\", \"description\": \"أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغرًا لمسمى «عامل» مخصصة للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم إلكترونيًا عبر نظام الاستقطاب في القطاع العام من 30 أغسطس ويستمر حتى 7 سبتمبر 2026. يُذكر أن الراتب غير محدد رسميًا في الإعلان، لكن التقديرات تشير إلى نطاق 300-450 دينارًا شهريًا.\", \"datePosted\": \"2026-09-02T15:22:50+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة مياه الأردن – مياهنا\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"العاصمة، البلقاء، الزرقاء، مادبا\"}}}</script>",
+    "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>مطور تكامل أنظمة</h1>\n    <p class='job-employer'>شركة زين الأردن</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>الأردن - عمّان</span><span class='job-top-chip'><b>آخر موعد</b>08-Oct-2026</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bc4208238b88073195b63e81-v12.png' alt='مطور تكامل أنظمة لدى شركة زين الأردن' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>تعلن شركة زين الأردن عن شغور وظيفي لمسمى Integration Developer Team Member في قسم العمليات التقنية بعمّان. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، مع سنة واحدة على الأقل من الخبرة ذات الصلة. تشمل المهام تطوير خدمات التطبيقات والأنظمة، وإدارة التكاملات مع أنظمة CRM وERP، ومراقبة أداء الخوادم، وتحسين البنية التحتية للتكاملات. الراتب غير محدد رسمياً في الإعلان، لكن التقديرات تشير إلى نطاق 350-800 دينار شهرياً. آخر موعد للتقديم هو 8 أكتوبر 2026 عبر الموقع الرسمي.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>شركة زين الأردن</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>الأردن - عمّان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>سنة واحدة على الأقل</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>08-Oct-2026</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>مطور تكامل أنظمة</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>مطورو البرمجيات المبتدئون الذين يمتلكون سنة خبرة في تطوير الواجهات البرمجية</li><li>خريجو علوم الحاسوب الراغبون في العمل في قطاع الاتصالات</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>فرصة للعمل في شركة اتصالات رائدة في المنطقة</li><li>تطوير مهارات تقنية حديثة مثل Microservices وKafka</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تحديث السيرة الذاتية لإبراز مهارات .Net وSQL وAPIs</li><li>تجهيز صورة شخصية حديثة وشهادة التخرج</li><li>التأكد من مطابقة المؤهل والخبرة للمتطلبات الرسمية</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>درجة بكالوريوس في علوم الحاسوب، هندسة الحاسوب، أو مجال ذي صلة</li><li>خبرة عملية لا تقل عن سنة واحدة في مجال ذي صلة</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <ul class='job-list'><li>تطوير الخدمات والتطبيقات والحلول بناءً على متطلبات الأعمال والمبيعات</li><li>إدارة التكاملات مع أنظمة CRM وERP وأنظمة الفوترة والتزويد</li><li>مراقبة أداء الخوادم والتطبيقات وضمان عملها بسلاسة</li><li>تطوير وإدارة خدمات الويب وواجهات API باستخدام تقنيات .Net وOracle وKafka</li><li>تحليل وتحسين استراتيجيات التكامل الحالية وتبني معماريات الميكروسيرفس</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إلكترونيًا عبر بوابة Zain Careers</p><a class='job-apply-btn' href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>التقديم على الوظيفة</a>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>الراتب الرسمي</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل المزايا الإضافية</li></ul>\n  </section>\n\n  \n  <section class='job-guidance-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <h3>مهارات قد تساعدك</h3><ul class='job-list'><li>معرفة عميقة بواجهات REST وSOAP APIs</li></ul>\n  </section>\n\n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونيًا عبر بوابة Zain Careers</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن - عمّان. آخر موعد: 08-Oct-2026.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:27:37.628982+00:00.</p>\n    <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مطور تكامل أنظمة\", \"description\": \"تعلن شركة زين الأردن عن شغور وظيفي لمسمى Integration Developer Team Member في قسم العمليات التقنية بعمّان. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، مع سنة واحدة على الأقل من الخبرة ذات الصلة. تشمل المهام تطوير خدمات التطبيقات والأنظمة، وإدارة التكاملات مع أنظمة CRM وERP، ومراقبة أداء الخوادم، وتحسين البنية التحتية للتكاملات. الراتب غير محدد رسمياً في الإعلان، لكن التقديرات تشير إلى نطاق 350-800 دينار شهرياً. آخر موعد للتقديم هو 8 أكتوبر 2026 عبر الموقع الرسمي.\", \"datePosted\": \"2026-09-03T23:31:21+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة زين الأردن\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"الأردن - عمّان\"}}}</script>",
     "schema": {
       "@context": "https://schema.org",
       "@type": "JobPosting",
-      "title": "عامل",
-      "description": "أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغرًا لمسمى «عامل» مخصصة للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم إلكترونيًا عبر نظام الاستقطاب في القطاع العام من 30 أغسطس ويستمر حتى 7 سبتمبر 2026. يُذكر أن الراتب غير محدد رسميًا في الإعلان، لكن التقديرات تشير إلى نطاق 300-450 دينارًا شهريًا.",
-      "datePosted": "2026-09-02T15:22:50+00:00",
+      "title": "مطور تكامل أنظمة",
+      "description": "تعلن شركة زين الأردن عن شغور وظيفي لمسمى Integration Developer Team Member في قسم العمليات التقنية بعمّان. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، مع سنة واحدة على الأقل من الخبرة ذات الصلة. تشمل المهام تطوير خدمات التطبيقات والأنظمة، وإدارة التكاملات مع أنظمة CRM وERP، ومراقبة أداء الخوادم، وتحسين البنية التحتية للتكاملات. الراتب غير محدد رسمياً في الإعلان، لكن التقديرات تشير إلى نطاق 350-800 دينار شهرياً. آخر موعد للتقديم هو 8 أكتوبر 2026 عبر الموقع الرسمي.",
+      "datePosted": "2026-09-03T23:31:21+00:00",
       "hiringOrganization": {
         "@type": "Organization",
-        "name": "شركة مياه الأردن – مياهنا"
+        "name": "شركة زين الأردن"
       },
       "jobLocation": {
         "@type": "Place",
@@ -141,20 +140,20 @@
           "@type": "PostalAddress",
           "addressCountry": "JO",
           "addressRegion": null,
-          "addressLocality": "العاصمة، البلقاء، الزرقاء، مادبا"
+          "addressLocality": "الأردن - عمّان"
         }
       }
     },
-    "meta_description": "تعلن شركة مياهنا عن 35 شاغرًا للذكور بمؤهل ثانوية عامة فما دون. التقديم إلكتروني حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/478a827219ebd94fc2eae3f6-v12.png",
+    "meta_description": "تعلن زين الأردن عن وظيفة Integration Developer في عمّان. راتب متوقع 350-800 دينار. التقديم عبر بوابة Zain Careers قبل 8 أكتوبر 2026.",
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bc4208238b88073195b63e81-v12.png",
     "quality_gate": {
       "passed": true,
       "errors": [],
       "warnings": [],
       "metrics": {
-        "title_chars": 67,
-        "summary_chars": 507,
-        "content_chars": 7966,
+        "title_chars": 70,
+        "summary_chars": 499,
+        "content_chars": 15757,
         "labels": 2
       }
     }
