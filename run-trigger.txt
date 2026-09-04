@@ -1,3 +1,3 @@
-v9-manaseer-final: 2026-09-04T17:58+03:00
-candidate_index: 0
+v10-zain-test: 2026-09-04T18:05+03:00
+candidate_index: 1
 register_state: false
