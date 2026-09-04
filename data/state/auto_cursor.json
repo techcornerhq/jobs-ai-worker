@@ -1,13 +1,17 @@
 {
   "date": "2026-09-04",
-  "processed_today": 6,
+  "processed_today": 10,
   "seen_candidate_ids": [
-    "40c5310359f4c3e5af36",
     "b2822986c4f8e23fda91",
-    "c03d32c6d291083f6037",
     "205e7c2d8c136b4a6af9",
+    "40c5310359f4c3e5af36",
+    "c03d32c6d291083f6037",
+    "e491a2d3f5244df8487e",
+    "940816c94607baaf5460",
     "5c3c2ebe9cbfe6a49f1e",
+    "9564f94d3541fe0074e8",
+    "b4b475d54e6383520cfb",
     "13fa956904292b97b59e"
   ],
-  "updated_at": "2026-09-04T15:57:58.408591+00:00"
+  "updated_at": "2026-09-04T16:27:44.457593+00:00"
 }
