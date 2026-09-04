@@ -1,3 +1,3 @@
-first-qwen-dry-run: 2026-09-04
+optimized-qwen3-4b-dry-run: 2026-09-04
 candidate_index: 0
 register_state: false
