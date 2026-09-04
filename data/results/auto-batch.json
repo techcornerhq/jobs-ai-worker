@@ -1,40 +1,19 @@
 {
   "batch_version": 1,
-  "generated_at": "2026-09-04T15:51:49.400424+00:00",
+  "generated_at": "2026-09-04T15:57:58.408901+00:00",
   "source": "current_enabled_discovery_sources",
   "daily_cap": 40,
-  "processed_today": 1,
+  "processed_today": 6,
   "selected_count": 5,
-  "result_count": 1,
-  "publishable_count": 1,
-  "failure_count": 4,
-  "failures": [
-    {
-      "index": 1,
-      "candidate": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
-      "error": "Groq API failed HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m1nqrxswezdv775brq1eb3mc` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 892, Requested 499. Please try again in 23.46s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-    },
-    {
-      "index": 2,
-      "candidate": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
-      "error": "Groq API failed HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m1nqrxswezdv775brq1eb3mc` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 879, Requested 950. Please try again in 49.739999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-    },
-    {
-      "index": 3,
-      "candidate": "مطلوب موظفين من كافة التخصصات لدى الأونروا في الأردن برواتب من 500 إلى 2500 دينار",
-      "error": "Groq API failed HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m1nqrxswezdv775brq1eb3mc` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 869, Requested 950. Please try again in 49.14s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-    },
-    {
-      "index": 4,
-      "candidate": "وظائف شركة البوتاس 2026 – لإكثر من تخصص لعام 2026",
-      "error": "Groq API failed HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m1nqrxswezdv775brq1eb3mc` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Used 857, Requested 499. Please try again in 21.36s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n"
-    }
-  ],
+  "result_count": 5,
+  "publishable_count": 5,
+  "failure_count": 0,
+  "failures": [],
   "items": [
     {
       "worker_version": 11,
-      "started_at": "2026-09-04T15:51:42.987770+00:00",
-      "completed_at": "2026-09-04T15:51:46.263356+00:00",
+      "started_at": "2026-09-04T15:54:17.813422+00:00",
+      "completed_at": "2026-09-04T15:54:22.924101+00:00",
       "policy": {
         "paid_ai_allowed": false,
         "paid_fallback_allowed": false,
@@ -53,44 +32,44 @@
         "deterministic_jobposting_schema_required": true
       },
       "candidate": {
-        "candidate_id": "42e8b25779a7ea639f9b9cbb",
+        "candidate_id": "9f3b3be5c5fbcfd793a917c8",
         "source_id": "jo-jobs",
         "source_name": "وظيفتك عنا",
         "source_tier": 3,
         "source_role": "discovery_only",
-        "title": "مجموعة المناصير تفتح باب التوظيف في عدة تخصصات – رواتب متوقعة تصل إلى 850 دينار",
-        "discovery_url": "https://www.jo-jobs.com/archives/6775",
-        "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
+        "title": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
         "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-        "last_seen_at": "2026-09-04T15:51:42.757412+00:00",
+        "last_seen_at": "2026-09-04T15:54:17.584388+00:00",
         "status": "discovered",
         "requires_original_source_resolution": true,
         "copy_article_text": false
       },
       "source_resolution": {
-        "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-        "source_original_url": null,
-        "source_original_fetch_ok": false,
-        "application_email": "jobs@mgc-machinery.com",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "source_original_url": "https://careers.zain.com/vacancy/175993",
+        "source_original_fetch_ok": true,
+        "application_email": null,
         "application_phone": null,
-        "verified_at": "2026-09-04T15:51:43.221616+00:00"
+        "verified_at": "2026-09-04T15:54:19.088705+00:00"
       },
       "canonical": {
-        "campaign_id": "9a02644c24b35545ed37e041",
+        "campaign_id": "c3ed31a673668b1b2023f03e",
         "repost_of": null,
-        "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)",
-        "employer_name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-        "location_text": null,
-        "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
-        "application_url": null,
-        "application_email": "jobs@mgc-machinery.com",
+        "job_title": "مطور تكامل أنظمة",
+        "employer_name": "زين الأردن (Zain Jordan)",
+        "location_text": "الأردن - عمّان",
+        "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+        "application_url": "https://careers.zain.com/vacancy/175993",
+        "application_email": null,
         "application_phone": null,
-        "date_posted": "2026-09-03T23:58:53+00:00",
-        "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-        "source_original_url": null,
+        "date_posted": "2026-09-03T23:31:21+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "source_original_url": "https://careers.zain.com/vacancy/175993",
         "country": "Jordan",
-        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9a02644c24b35545ed37e041-v10.png",
-        "featured_image_path": "data/images/9a02644c24b35545ed37e041-v10.png"
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c3ed31a673668b1b2023f03e-v10.png",
+        "featured_image_path": "data/images/c3ed31a673668b1b2023f03e-v10.png"
       },
       "ai": {
         "provider": "groq_free_plan",
@@ -98,35 +77,641 @@
         "paid_api_used": false,
         "paid_fallback_used": false,
         "usage": {
-          "prompt_tokens": 2972,
+          "prompt_tokens": 3838,
           "completion_tokens": 950,
-          "total_tokens": 3922
+          "total_tokens": 4788
         },
-        "seo_title": "مجموعة المناصير: 6 فرص فنية وهندسية – راتب متوقع حتى 850 دينار",
-        "meta_description": "فرص عمل في شركة العاديات السريعة (مجموعة المناصير) لـ 6 تخصصات فنية وهندسية. راتب متوقع 350-850 دينار. قدم عبر البريد الإلكتروني.",
+        "seo_title": "زين الأردن: مهندس تكامل برمجيات (مطور تكامل أنظمة) في عمّان – خبرة سنة",
+        "meta_description": "تعلن زين الأردن عن وظيفة Integration Developer في عمّان. تتطلب بكالوريوس علوم حاسب وخبرة سنة. التقديم عبر الموقع الرسمي حتى 8 أكتوبر 2026.",
         "official_details": {
-          "employer": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-          "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)",
-          "location": "غير مذكور في الإعلان",
+          "employer": "زين الأردن (Zain Jordan)",
+          "job_title": "مطور تكامل أنظمة",
+          "location": "الأردن - عمّان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "سنة واحدة على الأقل",
+          "qualification": "بكالوريوس في علوم الحاسب، هندسة الحاسب أو مجال ذي صلة",
+          "application_method": "إلكترونيًا عبر بوابة Zain Careers",
+          "deadline": "08-Oct-2026"
+        },
+        "missing_official_information": [
+          "الراتب أو نطاق الراتب",
+          "نوع العقد (دوام كامل/جزئي/مؤقت)",
+          "تفاصيل المزايا الوظيفية",
+          "الجدول الزمني الدقيق للمقابلات"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 70,
+          "summary_chars": 572,
+          "content_chars": 8261,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "c3ed31a673668b1b2023f03e",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "زين الأردن: مهندس تكامل برمجيات (مطور تكامل أنظمة) في عمّان – خبرة سنة",
+        "social_title": "وظيفة تقنية في زين الأردن: تطوير الأنظمة والتكاملات – التقديم مفتوح الآن",
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c3ed31a673668b1b2023f03e-v10.png' alt='زين الأردن: مهندس تكامل برمجيات (مطور تكامل أنظمة) في عمّان – خبرة سنة' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تبحث شركة زين الأردن عن مهندس تكامل برمجيات (Integration Developer) للانضمام إلى فريق العمليات التقنية في عمّان. تشمل المهام تطوير خدمات وتطبيقات لدعم أنظمة الأعمال ورعاية العملاء، مع التركيز على التكامل مع أنظمة CRM وERP وقواعد البيانات. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسب أو الهندسة وخبرة عملية لا تقل عن سنة. يجب تقديم الطلب عبر بوابة Zain Careers الرسمية قبل الموعد النهائي المحدد في 8 أكتوبر 2026. لا يذكر الإعلان راتباً رسمياً، لكن المصادر التجميعية تشير إلى رواتب متوقعة تتراوح بين 350 و1800 دينار حسب المستوى، وهي أرقام تقديرية غير مؤكدة من المصدر الأصلي.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>زين الأردن (Zain Jordan)</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>مطور تكامل أنظمة</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>الأردن - عمّان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>سنة واحدة على الأقل</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>بكالوريوس في علوم الحاسب، هندسة الحاسب أو مجال ذي صلة</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>08-Oct-2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>حاصلون على بكالوريوس في علوم الحاسب أو الهندسة بخبرة سنة واحدة في تطوير البرمجيات أو التكاملات</li><li>مطورون مهتمون بتقنيات .NET، قواعد البيانات، وواجهات برمجة التطبيقات (APIs) في بيئة اتصالات</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>العمل في شركة اتصالات رائدة في المنطقة مع فرصة للتأثير على البنية التحتية التقنية</li><li>تنوع التقنيات المستخدمة يشمل .NET، Oracle، Kafka، وRedis مما يوفر خبرة تقنية واسعة</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتبرز مشاريع التكامل والتطوير البرمجي السابقة</li><li>إحضار صورة شخصية وجواز السفر أو الهوية الوطنية حسب متطلبات البوابة</li><li>التأكد من رفع شهادة التعليم العالي المطلوبة في ملف التقديم</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>حيازة درجة بكالوريوس في علوم الحاسب، هندسة الحاسب أو أي مجال ذي صلة</li><li>خبرة عملية لا تقل عن سنة واحدة في مجال ذي صلة</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>تطوير الخدمات والتطبيقات والحلول بناءً على متطلبات الأعمال والمبيعات لأنظمة دعم الأعمال ورعاية العملاء</li><li>اختبار وتكامل الأنظمة مع CRM ومنصات المؤسسات الأخرى، والمساهمة في تحسينها</li><li>تطوير وإدارة خدمات الويب الداخلية والخارجية بما في ذلك REST وSOAP APIs والتكاملات مع أطراف ثالثة</li><li>المساعدة في ترميز وتنفيذ وصيانة أنظمة إدارة قواعد البيانات العلائقية (RDBMS) باستخدام Oracle SQL وSQL Server</li><li>مراقبة أداء الخوادم والتطبيقات وضمان عملها بسلاسة، وتحليل المنتجات المنفذة وتقارير مجالات التطوير</li><li>إدارة وصيانة نقاط اتصال العملاء مثل بوابة زين، USSD، CRM، IVR، وتطبيقات زين</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إلكترونيًا عبر بوابة Zain Careers</p><p><a class='job-apply-btn' href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الراتب أو نطاق الراتب</li><li>نوع العقد (دوام كامل/جزئي/مؤقت)</li><li>تفاصيل المزايا الوظيفية</li><li>الجدول الزمني الدقيق للمقابلات</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونيًا عبر بوابة Zain Careers</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن - عمّان. آخر موعد: 08-Oct-2026.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:54:19.088705+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مطور تكامل أنظمة\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"زين الأردن (Zain Jordan)\"}, \"description\": \"تبحث شركة زين الأردن عن مهندس تكامل برمجيات (Integration Developer) للانضمام إلى فريق العمليات التقنية في عمّان. تشمل المهام تطوير خدمات وتطبيقات لدعم أنظمة الأعمال ورعاية العملاء، مع التركيز على التكامل مع أنظمة CRM وERP وقواعد البيانات. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسب أو الهندسة وخبرة عملية لا تقل عن سنة. يجب تقديم الطلب عبر بوابة Zain Careers الرسمية قبل الموعد النهائي المحدد في 8 أكتوبر 2026. لا يذكر الإعلان راتباً رسمياً، لكن المصادر التجميعية تشير إلى رواتب متوقعة تتراوح بين 350 و1800 دينار حسب المستوى، وهي أرقام تقديرية غير مؤكدة من المصدر الأصلي.\", \"datePosted\": \"2026-09-03T23:31:21+00:00\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"الأردن - عمّان\"}}, \"directApply\": true}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "مطور تكامل أنظمة",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "زين الأردن (Zain Jordan)"
+          },
+          "description": "تبحث شركة زين الأردن عن مهندس تكامل برمجيات (Integration Developer) للانضمام إلى فريق العمليات التقنية في عمّان. تشمل المهام تطوير خدمات وتطبيقات لدعم أنظمة الأعمال ورعاية العملاء، مع التركيز على التكامل مع أنظمة CRM وERP وقواعد البيانات. تتطلب الوظيفة درجة بكالوريوس في علوم الحاسب أو الهندسة وخبرة عملية لا تقل عن سنة. يجب تقديم الطلب عبر بوابة Zain Careers الرسمية قبل الموعد النهائي المحدد في 8 أكتوبر 2026. لا يذكر الإعلان راتباً رسمياً، لكن المصادر التجميعية تشير إلى رواتب متوقعة تتراوح بين 350 و1800 دينار حسب المستوى، وهي أرقام تقديرية غير مؤكدة من المصدر الأصلي.",
+          "datePosted": "2026-09-03T23:31:21+00:00",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "الأردن - عمّان"
+            }
+          },
+          "directApply": true
+        },
+        "meta_description": "تعلن زين الأردن عن وظيفة Integration Developer في عمّان. تتطلب بكالوريوس علوم حاسب وخبرة سنة. التقديم عبر الموقع الرسمي حتى 8 أكتوبر 2026.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c3ed31a673668b1b2023f03e-v10.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 70,
+            "summary_chars": 572,
+            "content_chars": 8261,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 11,
+      "started_at": "2026-09-04T15:54:22.924164+00:00",
+      "completed_at": "2026-09-04T15:55:15.161649+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v10",
+        "poster_text_collision_guard": true,
+        "poster_remote_image_fallback_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "98ba775ddf8f74015ec05e24",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T15:54:17.584388+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T15:54:23.759334+00:00"
+      },
+      "canonical": {
+        "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+        "repost_of": null,
+        "job_title": null,
+        "employer_name": "بن العميد",
+        "location_text": "عمان – الأردن",
+        "application_method": "رابط التقديم الإلكتروني",
+        "application_url": "https://careers.alameedcoffee.com/jobs.php",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T01:51:07+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png",
+        "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v10.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3097,
+          "completion_tokens": 873,
+          "total_tokens": 3970
+        },
+        "seo_title": "بن العميد: وظائف متنوعة في عمان (إدارية، تقنية، تشغيلية) | راتب متوقع 300-600 دينار",
+        "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل إدارية وتقنية وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+        "official_details": {
+          "employer": "بن العميد",
+          "job_title": "غير مذكور في الإعلان",
+          "location": "عمان – الأردن",
           "salary": "غير مذكور في الإعلان",
           "employment_type": "غير مذكور في الإعلان",
           "experience": "غير مذكور في الإعلان",
           "qualification": "غير مذكور في الإعلان",
-          "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+          "application_method": "رابط التقديم الإلكتروني",
           "deadline": "غير مذكور في الإعلان"
         },
         "missing_official_information": [
-          "عدد الشواغر لكل تخصص",
-          "مكان العمل الدقيق",
-          "سنوات الخبرة المطلوبة للتخصصات الفنية",
-          "الراتب الرسمي المعلن",
-          "الموعد النهائي للتقديم",
-          "نوع العقد (دوام كامل/جزئي)"
+          "المسمى الوظيفي المحدد لكل شاغر",
+          "المؤهلات العلمية المطلوبة",
+          "نوع العقد (دوام كامل/جزئي)",
+          "الراتب الرسمي المضمون",
+          "موعد إغلاق باب التقديم",
+          "تفاصيل المهام الوظيفية الدقيقة"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رقماً رسمياً من الشركة.",
+          "النص الأصلي للموقع الرسمي لا يحتوي على تفاصيل الشواغر، بل هو صفحة رئيسية لبوابة الوظائف."
+        ],
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "jobposting_schema_not_emitted"
+        ],
+        "metrics": {
+          "title_chars": 83,
+          "summary_chars": 425,
+          "content_chars": 6519,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "بن العميد: وظائف متنوعة في عمان (إدارية، تقنية، تشغيلية) | راتب متوقع 300-600 دينار",
+        "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات | راتب متوقع 300-600 دينار",
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png' alt='بن العميد: وظائف متنوعة في عمان (إدارية، تقنية، تشغيلية) | راتب متوقع 300-600 دينار' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة بن العميد عن توفر مجموعة من الوظائف الشاغرة في عمان، الأردن. تشمل الفرص مجالات متنوعة مثل الإدارة (مدير فرع، نائب مدير)، التقنية (تطوير تطبيقات، QA)، التشغيل (مراقبة كاميرات، مستودعات)، وخدمة العملاء. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب المسمى الوظيفي. يذكر الإعلان أن الراتب متوقع بين 300 و600 دينار، وهو تقدير غير رسمي يعتمد على الخبرة والمقابلة. يمكن التقديم مباشرة عبر بوابة الوظائف الرسمية للشركة.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في قطاع الأغذية والمشروبات أو إدارة الفروع</li><li>المختصون في التقنية (تطوير تطبيقات، ضمان جودة) أو العمليات التشغيلية</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع كبير في التخصصات من الوظائف التشغيلية البسيطة إلى التقنية المتقدمة</li><li>فرصة للانضمام إلى علامة تجارية معروفة محلياً في قطاع المقاهي</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد المسمى الوظيفي المناسب لخبرتك قبل التقديم</li><li>تحديث السيرة الذاتية لتبرز الخبرة ذات الصلة بالمجال (إداري/تقني/تشغيلي)</li><li>التأكد من صحة بيانات التواصل في نموذج التقديم الإلكتروني</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>رابط التقديم الإلكتروني</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع العقد (دوام كامل/جزئي)</li><li>الراتب الرسمي المضمون</li><li>موعد إغلاق باب التقديم</li><li>تفاصيل المهام الوظيفية الدقيقة</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط التقديم الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد دائماً من تقديم طلبك عبر الموقع الرسمي للشركة فقط وتجنب إرسال أي مبالغ مالية.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:54:23.759334+00:00.</p>\n  <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رقماً رسمياً من الشركة.</li><li>النص الأصلي للموقع الرسمي لا يحتوي على تفاصيل الشواغر، بل هو صفحة رئيسية لبوابة الوظائف.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>",
+        "schema": {},
+        "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل إدارية وتقنية وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [
+            "jobposting_schema_not_emitted"
+          ],
+          "metrics": {
+            "title_chars": 83,
+            "summary_chars": 425,
+            "content_chars": 6519,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 11,
+      "started_at": "2026-09-04T15:55:15.161720+00:00",
+      "completed_at": "2026-09-04T15:56:11.148042+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v10",
+        "poster_text_collision_guard": true,
+        "poster_remote_image_fallback_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "8b88b9627f4d746b344b8db7",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "مطلوب موظفين من كافة التخصصات لدى الأونروا في الأردن برواتب من 500 إلى 2500 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6769",
+        "feed_published": "Thu, 03 Sep 2026 01:45:49 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T15:54:17.584388+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6769",
+        "source_original_url": "https://inspira.un.org/psp/PUNA1J/EMPLOYEE/HRMS/c/UN_CUSTOMIZATIONS.UN_JOB_DETAIL.GBL?Action=A&UNAction=Apply&JobOpeningId=279504&languageCd=ENG&",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T15:55:15.530175+00:00"
+      },
+      "canonical": {
+        "campaign_id": "e2946bb96e3b61cd72063e97",
+        "repost_of": null,
+        "job_title": null,
+        "employer_name": "الأونروا (UNRWA)",
+        "location_text": "عمّان، إدلب، دمشق، بيروت، غزة، الضفة الغربية",
+        "application_method": "منصة Inspira الإلكترونية",
+        "application_url": "https://inspira.un.org/psp/PUNA1J/EMPLOYEE/HRMS/c/UN_CUSTOMIZATIONS.UN_JOB_DETAIL.GBL?Action=A&UNAction=Apply&JobOpeningId=279504&languageCd=ENG",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T01:45:49+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6769",
+        "source_original_url": "https://inspira.un.org/psp/PUNA1J/EMPLOYEE/HRMS/c/UN_CUSTOMIZATIONS.UN_JOB_DETAIL.GBL?Action=A&UNAction=Apply&JobOpeningId=279504&languageCd=ENG&",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/e2946bb96e3b61cd72063e97-v10.png",
+        "featured_image_path": "data/images/e2946bb96e3b61cd72063e97-v10.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3443,
+          "completion_tokens": 911,
+          "total_tokens": 4354
+        },
+        "seo_title": "الأونروا: 15 شاغراً في الأردن وسوريا ولبنان وغزة والضفة الغربية (راتب متوقع 500-2500 دينار)",
+        "meta_description": "تعلن الأونروا عن 15 وظيفة شاغرة في الأردن وسوريا ولبنان وغزة والضفة الغربية. راتب متوقع 500-2500 دينار. التقديم عبر منصة Inspira.",
+        "official_details": {
+          "employer": "الأونروا (UNRWA)",
+          "job_title": "غير مذكور في الإعلان",
+          "location": "عمّان، إدلب، دمشق، بيروت، غزة، الضفة الغربية",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "غير مذكور في الإعلان",
+          "qualification": "غير مذكور في الإعلان",
+          "application_method": "منصة Inspira الإلكترونية",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "المسمى الوظيفي المحدد لكل شاغر",
+          "المؤهلات العلمية المطلوبة",
+          "سنوات الخبرة المطلوبة",
+          "نوع العقد (دوام كامل/جزئي)",
+          "تاريخ إغلاق باب التقديم",
+          "الراتب الرسمي المضمون"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (500-2500 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الأونروا",
+          "نص المصدر الأصلي (Inspira) لا يحتوي على تفاصيل الوظائف بل هو صفحة تسجيل دخول"
+        ],
+        "labels": [
+          "وظائف عمان",
+          "وظائف هندسة"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "jobposting_schema_not_emitted"
+        ],
+        "metrics": {
+          "title_chars": 91,
+          "summary_chars": 527,
+          "content_chars": 6901,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "e2946bb96e3b61cd72063e97",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "الأونروا: 15 شاغراً في الأردن وسوريا ولبنان وغزة والضفة الغربية (راتب متوقع 500-2500 دينار)",
+        "social_title": "وظائف الأونروا 2026: فرص في 5 دول برواتب متوقعة حتى 2500 دينار",
+        "labels": [
+          "وظائف عمان",
+          "وظائف هندسة"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/e2946bb96e3b61cd72063e97-v10.png' alt='الأونروا: 15 شاغراً في الأردن وسوريا ولبنان وغزة والضفة الغربية (راتب متوقع 500-2500 دينار)' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تعلن وكالة الأمم المتحدة لإغاثة وتشغيل لاجئي فلسطين (الأونروا) عن توفر 15 شاغراً وظيفياً لعام 2026 في عدة مجالات تشمل الإدارة، الموارد البشرية، الهندسة، القانون، المالية، الصحة، التعليم، وتكنولوجيا المعلومات. تشمل مواقع العمل عمّان، إدلب، دمشق، بيروت، غزة، والضفة الغربية. الراتب المتوقع يتراوح بين 500 و2500 دينار أردني، وهو تقدير غير رسمي يعتمد على الخبرة والمؤهل وطبيعة الدوام. يمكن التقديم عبر منصة Inspira الإلكترونية باستخدام الرقم الوظيفي المحدد لكل شاغر. هذه فرصة مناسبة للباحثين عن عمل لدى المنظمات الدولية في المنطقة.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>الأونروا (UNRWA)</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمّان، إدلب، دمشق، بيروت، غزة، الضفة الغربية</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>خريجو تخصصات الإدارة، القانون، الهندسة، والصحة</li><li>المحاسبون والمختصون في الموارد البشرية والتخطيط التعليمي</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تعدد التخصصات المتاحة في مجالات إدارية وتقنية وصحية</li><li>فرص عمل في خمس دول مختلفة ضمن منظمة دولية مرموقة</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>إنشاء حساب في منصة Inspira قبل التقديم</li><li>تحديد الرقم الوظيفي الصحيح لكل شاغر</li><li>تحضير سيرة ذاتية محدثة باللغة الإنجليزية</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>منصة Inspira الإلكترونية</p><p><a class='job-apply-btn' href='https://inspira.un.org/psp/PUNA1J/EMPLOYEE/HRMS/c/UN_CUSTOMIZATIONS.UN_JOB_DETAIL.GBL?Action=A&amp;UNAction=Apply&amp;JobOpeningId=279504&amp;languageCd=ENG' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>سنوات الخبرة المطلوبة</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تاريخ إغلاق باب التقديم</li><li>الراتب الرسمي المضمون</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>المهارات الإدارية واللغوية</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>منصة Inspira الإلكترونية</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمّان، إدلب، دمشق، بيروت، غزة، الضفة الغربية. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد من صحة رابط التقديم الرسمي عبر موقع الأونروا لتجنب الاحتيال.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:55:15.530175+00:00.</p>\n  <ul><li>الراتب المذكور (500-2500 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الأونروا</li><li>نص المصدر الأصلي (Inspira) لا يحتوي على تفاصيل الوظائف بل هو صفحة تسجيل دخول</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>",
+        "schema": {},
+        "meta_description": "تعلن الأونروا عن 15 وظيفة شاغرة في الأردن وسوريا ولبنان وغزة والضفة الغربية. راتب متوقع 500-2500 دينار. التقديم عبر منصة Inspira.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/e2946bb96e3b61cd72063e97-v10.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [
+            "jobposting_schema_not_emitted"
+          ],
+          "metrics": {
+            "title_chars": 91,
+            "summary_chars": 527,
+            "content_chars": 6901,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 11,
+      "started_at": "2026-09-04T15:56:11.148097+00:00",
+      "completed_at": "2026-09-04T15:57:05.680830+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v10",
+        "poster_text_collision_guard": true,
+        "poster_remote_image_fallback_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "f5acb9343310f6b9fa1ed8e7",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "وظائف شركة البوتاس 2026 – لإكثر من تخصص لعام 2026",
+        "discovery_url": "https://www.jo-jobs.com/archives/6767",
+        "feed_published": "Thu, 03 Sep 2026 01:41:41 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T15:54:17.584388+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6767",
+        "source_original_url": "https://careers.arabpotash.com/ar/jordan/jobs/maintenance-manager-at-apc-aqaba-site-5479973/",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T15:56:12.030593+00:00"
+      },
+      "canonical": {
+        "campaign_id": "788b0f858b39080e47b203ae",
+        "repost_of": null,
+        "job_title": "مدير صيانة (Maintenance Manager)",
+        "employer_name": "شركة البوتاس العربية (Arab Potash Company)",
+        "location_text": "موقع العقبة، الأردن",
+        "application_method": "التقديم عبر الموقع الرسمي (careers.arabpotash.com)",
+        "application_url": "https://careers.arabpotash.com/ar/jordan/jobs/maintenance-manager-at-apc-aqaba-site-5479973/",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T01:41:41+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6767",
+        "source_original_url": "https://careers.arabpotash.com/ar/jordan/jobs/maintenance-manager-at-apc-aqaba-site-5479973/",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/788b0f858b39080e47b203ae-v10.png",
+        "featured_image_path": "data/images/788b0f858b39080e47b203ae-v10.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3746,
+          "completion_tokens": 950,
+          "total_tokens": 4696
+        },
+        "seo_title": "شركة البوتاس العربية: مهندس صيانة (إدارة) في العقبة - خبرة 15 سنة",
+        "meta_description": "تقدم الآن لوظيفة مدير صيانة في شركة البوتاس العربية بموقع العقبة. تتطلب بكالوريوس هندسة ميكانيكية وخبرة 15 سنة. التقديم عبر الموقع الرسمي حتى 12/09/2026.",
+        "official_details": {
+          "employer": "شركة البوتاس العربية (Arab Potash Company)",
+          "job_title": "مدير صيانة (Maintenance Manager)",
+          "location": "موقع العقبة، الأردن",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "دوام كامل",
+          "experience": "15 سنة على الأقل",
+          "qualification": "بكالوريوس في الهندسة الميكانيكية",
+          "application_method": "التقديم عبر الموقع الرسمي (careers.arabpotash.com)",
+          "deadline": "12/09/2026"
+        },
+        "missing_official_information": null,
+        "verification_notes": null,
+        "labels": [
+          "وظائف العقبة",
+          "وظائف هندسة"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 65,
+          "summary_chars": 590,
+          "content_chars": 7337,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "788b0f858b39080e47b203ae",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "شركة البوتاس العربية: مهندس صيانة (إدارة) في العقبة - خبرة 15 سنة",
+        "social_title": "فرصة قيادية في شركة البوتاس: مدير صيانة في موقع العقبة",
+        "labels": [
+          "وظائف العقبة",
+          "وظائف هندسة"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/788b0f858b39080e47b203ae-v10.png' alt='شركة البوتاس العربية: مهندس صيانة (إدارة) في العقبة - خبرة 15 سنة' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تعلن شركة البوتاس العربية (APC) عن توفر وظيفة مدير صيانة (Maintenance Manager) في موقع العقبة. تهدف الوظيفة إلى قيادة أعمال الصيانة الميكانيكية والكهربائية والأتمتة، مع ضمان جاهزية المعدات والمعايير الأمنية. يشترط الحصول على درجة البكالوريوس في الهندسة الميكانيكية، بالإضافة إلى خبرة عملية لا تقل عن 15 عاماً، ويفضل أن تكون في قطاع التعدين أو الصناعات الثقيلة. كما يتطلب المنصب مهارات قيادية قوية وقدرة على إدارة الميزانيات والفرق. يجب على المتقدمين تقديم طلباتهم عبر المنصة الرسمية للشركة قبل الموعد النهائي المحدد في 12 سبتمبر 2026. لا يوجد ذكر لراتب رسمي في الإعلان، والوظيفة بدوام كامل.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة البوتاس العربية (Arab Potash Company)</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>مدير صيانة (Maintenance Manager)</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>موقع العقبة، الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>دوام كامل</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>15 سنة على الأقل</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>بكالوريوس في الهندسة الميكانيكية</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>12/09/2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>راجع التخصصات المطلوبة وقارنها بخبرتك أو مؤهلك قبل التقديم.</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>راجع تفاصيل الإعلان وطريقة التقديم لتحديد مدى مناسبتها لك.</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>جهز سيرة ذاتية محدثة وتأكد من بيانات التواصل قبل الإرسال.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>التقديم عبر الموقع الرسمي (careers.arabpotash.com)</p><p><a class='job-apply-btn' href='https://careers.arabpotash.com/ar/jordan/jobs/maintenance-manager-at-apc-aqaba-site-5479973/' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>لا توجد معلومات ناقصة رئيسية مسجلة.</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>التقديم عبر الموقع الرسمي (careers.arabpotash.com)</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: موقع العقبة، الأردن. آخر موعد: 12/09/2026.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A8%D8%A9'>وظائف العقبة</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:56:12.030593+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مدير صيانة (Maintenance Manager)\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة البوتاس العربية (Arab Potash Company)\"}, \"description\": \"تعلن شركة البوتاس العربية (APC) عن توفر وظيفة مدير صيانة (Maintenance Manager) في موقع العقبة. تهدف الوظيفة إلى قيادة أعمال الصيانة الميكانيكية والكهربائية والأتمتة، مع ضمان جاهزية المعدات والمعايير الأمنية. يشترط الحصول على درجة البكالوريوس في الهندسة الميكانيكية، بالإضافة إلى خبرة عملية لا تقل عن 15 عاماً، ويفضل أن تكون في قطاع التعدين أو الصناعات الثقيلة. كما يتطلب المنصب مهارات قيادية قوية وقدرة على إدارة الميزانيات والفرق. يجب على المتقدمين تقديم طلباتهم عبر المنصة الرسمية للشركة قبل الموعد النهائي المحدد في 12 سبتمبر 2026. لا يوجد ذكر لراتب رسمي في الإعلان، والوظيفة بدوام كامل.\", \"datePosted\": \"2026-09-03T01:41:41+00:00\", \"employmentType\": \"دوام كامل\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"موقع العقبة، الأردن\"}}, \"directApply\": true}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "مدير صيانة (Maintenance Manager)",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة البوتاس العربية (Arab Potash Company)"
+          },
+          "description": "تعلن شركة البوتاس العربية (APC) عن توفر وظيفة مدير صيانة (Maintenance Manager) في موقع العقبة. تهدف الوظيفة إلى قيادة أعمال الصيانة الميكانيكية والكهربائية والأتمتة، مع ضمان جاهزية المعدات والمعايير الأمنية. يشترط الحصول على درجة البكالوريوس في الهندسة الميكانيكية، بالإضافة إلى خبرة عملية لا تقل عن 15 عاماً، ويفضل أن تكون في قطاع التعدين أو الصناعات الثقيلة. كما يتطلب المنصب مهارات قيادية قوية وقدرة على إدارة الميزانيات والفرق. يجب على المتقدمين تقديم طلباتهم عبر المنصة الرسمية للشركة قبل الموعد النهائي المحدد في 12 سبتمبر 2026. لا يوجد ذكر لراتب رسمي في الإعلان، والوظيفة بدوام كامل.",
+          "datePosted": "2026-09-03T01:41:41+00:00",
+          "employmentType": "دوام كامل",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "موقع العقبة، الأردن"
+            }
+          },
+          "directApply": true
+        },
+        "meta_description": "تقدم الآن لوظيفة مدير صيانة في شركة البوتاس العربية بموقع العقبة. تتطلب بكالوريوس هندسة ميكانيكية وخبرة 15 سنة. التقديم عبر الموقع الرسمي حتى 12/09/2026.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/788b0f858b39080e47b203ae-v10.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 65,
+            "summary_chars": 590,
+            "content_chars": 7337,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 11,
+      "started_at": "2026-09-04T15:57:05.680902+00:00",
+      "completed_at": "2026-09-04T15:57:58.408540+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v10",
+        "poster_text_collision_guard": true,
+        "poster_remote_image_fallback_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "dd770e587a02e49c809103f7",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "وظائف اورانج الأردن 2026 مطلوب موظفين لدى شركة أورنج لحملة التوجيهي والدبلوم",
+        "discovery_url": "https://www.jo-jobs.com/archives/6763",
+        "feed_published": "Thu, 03 Sep 2026 01:37:19 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T15:54:17.584388+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6763",
+        "source_original_url": "https://jobs.orange.jo/",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T15:57:08.743362+00:00"
+      },
+      "canonical": {
+        "campaign_id": "69aba24f49d98e274e3af355",
+        "repost_of": null,
+        "job_title": "مندوب مبيعات ميداني (لخدمات الفايبر المنزلي)",
+        "employer_name": "شركة أورنج الأردن (Orange Jordan)",
+        "location_text": "الأردن (عمل ميداني)",
+        "application_method": "عبر الموقع الرسمي https://jobs.orange.jo/",
+        "application_url": "https://jobs.orange.jo/",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T01:37:19+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6763",
+        "source_original_url": "https://jobs.orange.jo/",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/69aba24f49d98e274e3af355-v10.png",
+        "featured_image_path": "data/images/69aba24f49d98e274e3af355-v10.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3616,
+          "completion_tokens": 950,
+          "total_tokens": 4566
+        },
+        "seo_title": "وظائف أورنج الأردن 2026: مندوب مبيعات ميداني لحملة التوجيهي والدبلوم",
+        "meta_description": "تعلن أورنج الأردن عن شواغر لمندوبي مبيعات ميدانيين لخدمات الفايبر. التقديم متاح عبر الموقع الرسمي لحملة التوجيهي فأعلى. تفاصيل التقديم والشروط.",
+        "official_details": {
+          "employer": "شركة أورنج الأردن (Orange Jordan)",
+          "job_title": "مندوب مبيعات ميداني (لخدمات الفايبر المنزلي)",
+          "location": "الأردن (عمل ميداني)",
+          "salary": "غير مذكور في الإعلان (نظام يعتمد على تحقيق الأهداف)",
+          "employment_type": "عقد عمل (Contract)",
+          "experience": "0 سنوات (لا يشترط خبرة سابقة)",
+          "qualification": "توجيهي، دبلوم، أو بكالوريوس",
+          "application_method": "عبر الموقع الرسمي https://jobs.orange.jo/",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "الموقع الجغرافي الدقيق لمقر العمل أو مناطق التوزيع الميداني.",
+          "الراتب الأساسي أو نطاق الرواتب المحدد.",
+          "موعد إغلاق باب التقديم أو بدء المقابلات.",
+          "عدد الشواغر المتاحة لهذه الوظيفة تحديداً."
         ],
         "verification_notes": null,
         "labels": [
           "وظائف الأردن",
-          "وظائف هندسة",
+          "وظائف مبيعات",
           "حديثو التخرج"
         ]
       },
@@ -135,50 +720,60 @@
         "errors": [],
         "warnings": [],
         "metrics": {
-          "title_chars": 62,
-          "summary_chars": 644,
-          "content_chars": 8139,
+          "title_chars": 68,
+          "summary_chars": 634,
+          "content_chars": 8580,
           "labels": 3
         }
       },
       "dedupe": {
         "action": "publish_new_campaign",
-        "campaign_id": "9a02644c24b35545ed37e041",
+        "campaign_id": "69aba24f49d98e274e3af355",
         "matched_campaign_id": null,
         "score": 0.0,
         "reason": "no strong existing campaign match"
       },
       "publication_package": {
         "action": "publish_new_post",
-        "title": "مجموعة المناصير: 6 فرص فنية وهندسية – راتب متوقع حتى 850 دينار",
-        "social_title": "وظائف مجموعة المناصير: صيانة مركبات وهندسة ميكانيك – رواتب متوقعة حتى 850 دينار",
+        "title": "وظائف أورنج الأردن 2026: مندوب مبيعات ميداني لحملة التوجيهي والدبلوم",
+        "social_title": "انضم لأورنج الأردن: وظيفة مندوب مبيعات ميداني بدون خبرة سابقة",
         "labels": [
           "وظائف الأردن",
-          "وظائف هندسة",
+          "وظائف مبيعات",
           "حديثو التخرج"
         ],
-        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9a02644c24b35545ed37e041-v10.png' alt='مجموعة المناصير: 6 فرص فنية وهندسية – راتب متوقع حتى 850 دينار' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص ستة مجالات: حدادة، ميكانيك، كهرباء، دهان، بودي للمركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية. لم تحدد الشركة عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة رسمياً. تشير التقديرات السوقية إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، اعتماداً على المجال الفني ومستوى الخبرة. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ذكر اسم الشاغر في عنوان الرسالة. هذه الفرصة مناسبة للمهنيين الفنيين والمهندسين الجدد الراغبين في الانضمام إلى قطاع صيانة الآليات.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>المهندسون الميكانيكيون حديثو التخرج الباحثون عن أول وظيفة</li><li>الفنيون ذوو الخبرة في صيانة المركبات والآليات الثقيلة</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تعدد التخصصات الفنية المتاحة في إعلان واحد</li><li>وجود فرصة صريحة لحديثي التخرج في الهندسة الميكانيكية</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد اسم الشاغر الدقيق قبل كتابة عنوان البريد</li><li>تجهيز سيرة ذاتية تبرز المهارات الفنية الخاصة بالتخصص</li><li>التأكد من صحة البريد الإلكتروني jobs@mgc-machinery.com</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>إرسال السيرة الذاتية إلى البريد الإلكتروني jobs@mgc-machinery.com</li><li>ذكر اسم الشاغر المطلوب في عنوان الرسالة</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p><strong>البريد الإلكتروني:</strong> <a href='mailto:jobs@mgc-machinery.com'>jobs@mgc-machinery.com</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>عدد الشواغر لكل تخصص</li><li>مكان العمل الدقيق</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>الراتب الرسمي المعلن</li><li>الموعد النهائي للتقديم</li><li>نوع العقد (دوام كامل/جزئي)</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>المعرفة بأدوات الصيانة والسلامة المهنية</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني. البريد الإلكتروني المخصص للتقديم: jobs@mgc-machinery.com.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: غير مذكور في الإعلان. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search/label/%D8%AD%D8%AF%D9%8A%D8%AB%D9%88%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC'>حديثو التخرج</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:51:43.221616+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير\"}, \"description\": \"أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص ستة مجالات: حدادة، ميكانيك، كهرباء، دهان، بودي للمركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية. لم تحدد الشركة عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة رسمياً. تشير التقديرات السوقية إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، اعتماداً على المجال الفني ومستوى الخبرة. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ذكر اسم الشاغر في عنوان الرسالة. هذه الفرصة مناسبة للمهنيين الفنيين والمهندسين الجدد الراغبين في الانضمام إلى قطاع صيانة الآليات.\", \"datePosted\": \"2026-09-03T23:58:53+00:00\"}</script>",
+        "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/69aba24f49d98e274e3af355-v10.png' alt='وظائف أورنج الأردن 2026: مندوب مبيعات ميداني لحملة التوجيهي والدبلوم' loading='eager' fetchpriority='high'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تبحث شركة أورنج الأردن عن موظفين جدد لشغل وظيفة مندوب مبيعات ميداني متخصص في خدمات الفايبر المنزلي. تفتح هذه الفرصة أبوابها لحملة شهادات الثانوية العامة (التوجيهي)، الدبلوم، والبكالوريوس، دون اشتراط خبرة سابقة، مما يجعلها مناسبة لحديثي التخرج. تعتمد الوظيفة على العمل الميداني المباشر مع العملاء في المنازل للترويج وبيع الخدمات. يوفر العرض نظاماً مالياً مجزياً يعتمد على تحقيق الأهداف البيعية، بالإضافة إلى بيئة عمل احترافية وفرص للتطوير المهني. يتم التقديم حصرياً عبر منصة التوظيف الرسمية للشركة، حيث يجب إنشاء حساب وإرفاق السيرة الذاتية. ننصح بالتحقق من تفاصيل الراتب أثناء المقابلة الشخصية، حيث لم يحدد الإعلان رقماً رسمياً ثابتاً.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة أورنج الأردن (Orange Jordan)</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>مندوب مبيعات ميداني (لخدمات الفايبر المنزلي)</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>الأردن (عمل ميداني)</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>عقد عمل (Contract)</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان (نظام يعتمد على تحقيق الأهداف)</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>0 سنوات (لا يشترط خبرة سابقة)</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>توجيهي، دبلوم، أو بكالوريوس</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>حاملو شهادة التوجيهي أو الدبلوم الباحثون عن وظيفة أولى دون اشتراط خبرة.</li><li>الأشخاص الذين يتمتعون بمهارات تواصل عالية ويحبون العمل الميداني والتفاعل المباشر مع الناس.</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>إتاحة الفرصة لحديثي التخرج (توجيهي) للانضمام إلى كبرى شركات الاتصالات في الأردن.</li><li>نظام تحفيزي مرن يعتمد على الأداء البيعي مما قد يرفع الدخل مع زيادة المبيعات.</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتبرز أي مهارات سابقة في البيع أو خدمة العملاء.</li><li>إنشاء حساب جديد على منصة أورنج للتوظيف أو تسجيل الدخول للحساب الحالي.</li><li>التأكد من إدخال البيانات الشخصية بدقة قبل الضغط على زر التقديم.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>حصول المتقدم على شهادة الثانوية العامة (التوجيهي) كحد أدنى، أو دبلوم، أو بكالوريوس.</li><li>إتقان اللغة العربية ومهارات تواصل وإقناع ممتازة.</li><li>القدرة على العمل المستقل والدافعية الذاتية العالية لتحقيق الأهداف.</li><li>توفر خبرة سابقة في المبيعات المباشرة يُعد ميزة إضافية غير إلزامية.</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>تنفيذ أنشطة ميدانية للترويج وبيع خدمات الفايبر للعملاء في المنازل.</li><li>توضيح ميزات الخدمة وأسعار الباقات وإجراءات التثبيت للعملاء.</li><li>إتمام عمليات البيع والتغلب على اعتراضات العملاء.</li><li>تحقيق الأهداف البيعية الشهرية وتوثيق التفاعلات اليومية.</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>عبر الموقع الرسمي https://jobs.orange.jo/</p><p><a class='job-apply-btn' href='https://jobs.orange.jo/' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الموقع الجغرافي الدقيق لمقر العمل أو مناطق التوزيع الميداني.</li><li>الراتب الأساسي أو نطاق الرواتب المحدد.</li><li>موعد إغلاق باب التقديم أو بدء المقابلات.</li><li>عدد الشواغر المتاحة لهذه الوظيفة تحديداً.</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>عبر الموقع الرسمي https://jobs.orange.jo/</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>غير مذكور في الإعلان (نظام يعتمد على تحقيق الأهداف)</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن (عمل ميداني). آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  \n  <div class='job-related-box'>\n    <h2>وظائف مشابهة قد تهمك</h2>\n    <p>تصفح فرصاً أحدث ضمن نفس المدينة أو المجال بدل الاعتماد على إعلان واحد فقط.</p>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA'>وظائف مبيعات</a><a class='job-related-chip' href='/search/label/%D8%AD%D8%AF%D9%8A%D8%AB%D9%88%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC'>حديثو التخرج</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </div>\n\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:57:08.743362+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-related-box{border-right:4px solid #0f766e;background:#f7fffd}\n.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}\n.job-related-chip{display:inline-block;padding:7px 11px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:#0f766e!important;text-decoration:none;font-weight:700;font-size:13px}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box,.job-related-box{padding:15px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مندوب مبيعات ميداني (لخدمات الفايبر المنزلي)\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة أورنج الأردن (Orange Jordan)\"}, \"description\": \"تبحث شركة أورنج الأردن عن موظفين جدد لشغل وظيفة مندوب مبيعات ميداني متخصص في خدمات الفايبر المنزلي. تفتح هذه الفرصة أبوابها لحملة شهادات الثانوية العامة (التوجيهي)، الدبلوم، والبكالوريوس، دون اشتراط خبرة سابقة، مما يجعلها مناسبة لحديثي التخرج. تعتمد الوظيفة على العمل الميداني المباشر مع العملاء في المنازل للترويج وبيع الخدمات. يوفر العرض نظاماً مالياً مجزياً يعتمد على تحقيق الأهداف البيعية، بالإضافة إلى بيئة عمل احترافية وفرص للتطوير المهني. يتم التقديم حصرياً عبر منصة التوظيف الرسمية للشركة، حيث يجب إنشاء حساب وإرفاق السيرة الذاتية. ننصح بالتحقق من تفاصيل الراتب أثناء المقابلة الشخصية، حيث لم يحدد الإعلان رقماً رسمياً ثابتاً.\", \"datePosted\": \"2026-09-03T01:37:19+00:00\", \"employmentType\": \"عقد عمل (Contract)\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"الأردن (عمل ميداني)\"}}, \"directApply\": true}</script>",
         "schema": {
           "@context": "https://schema.org",
           "@type": "JobPosting",
-          "title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)",
+          "title": "مندوب مبيعات ميداني (لخدمات الفايبر المنزلي)",
           "hiringOrganization": {
             "@type": "Organization",
-            "name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير"
+            "name": "شركة أورنج الأردن (Orange Jordan)"
           },
-          "description": "أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص ستة مجالات: حدادة، ميكانيك، كهرباء، دهان، بودي للمركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية. لم تحدد الشركة عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة رسمياً. تشير التقديرات السوقية إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، اعتماداً على المجال الفني ومستوى الخبرة. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ذكر اسم الشاغر في عنوان الرسالة. هذه الفرصة مناسبة للمهنيين الفنيين والمهندسين الجدد الراغبين في الانضمام إلى قطاع صيانة الآليات.",
-          "datePosted": "2026-09-03T23:58:53+00:00"
+          "description": "تبحث شركة أورنج الأردن عن موظفين جدد لشغل وظيفة مندوب مبيعات ميداني متخصص في خدمات الفايبر المنزلي. تفتح هذه الفرصة أبوابها لحملة شهادات الثانوية العامة (التوجيهي)، الدبلوم، والبكالوريوس، دون اشتراط خبرة سابقة، مما يجعلها مناسبة لحديثي التخرج. تعتمد الوظيفة على العمل الميداني المباشر مع العملاء في المنازل للترويج وبيع الخدمات. يوفر العرض نظاماً مالياً مجزياً يعتمد على تحقيق الأهداف البيعية، بالإضافة إلى بيئة عمل احترافية وفرص للتطوير المهني. يتم التقديم حصرياً عبر منصة التوظيف الرسمية للشركة، حيث يجب إنشاء حساب وإرفاق السيرة الذاتية. ننصح بالتحقق من تفاصيل الراتب أثناء المقابلة الشخصية، حيث لم يحدد الإعلان رقماً رسمياً ثابتاً.",
+          "datePosted": "2026-09-03T01:37:19+00:00",
+          "employmentType": "عقد عمل (Contract)",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "الأردن (عمل ميداني)"
+            }
+          },
+          "directApply": true
         },
-        "meta_description": "فرص عمل في شركة العاديات السريعة (مجموعة المناصير) لـ 6 تخصصات فنية وهندسية. راتب متوقع 350-850 دينار. قدم عبر البريد الإلكتروني.",
-        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9a02644c24b35545ed37e041-v10.png",
+        "meta_description": "تعلن أورنج الأردن عن شواغر لمندوبي مبيعات ميدانيين لخدمات الفايبر. التقديم متاح عبر الموقع الرسمي لحملة التوجيهي فأعلى. تفاصيل التقديم والشروط.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/69aba24f49d98e274e3af355-v10.png",
         "quality_gate": {
           "passed": true,
           "errors": [],
           "warnings": [],
           "metrics": {
-            "title_chars": 62,
-            "summary_chars": 644,
-            "content_chars": 8139,
+            "title_chars": 68,
+            "summary_chars": 634,
+            "content_chars": 8580,
             "labels": 3
           }
         }

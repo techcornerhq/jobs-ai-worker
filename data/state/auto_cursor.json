@@ -1,8 +1,13 @@
 {
   "date": "2026-09-04",
-  "processed_today": 1,
+  "processed_today": 6,
   "seen_candidate_ids": [
-    "5c3c2ebe9cbfe6a49f1e"
+    "40c5310359f4c3e5af36",
+    "b2822986c4f8e23fda91",
+    "c03d32c6d291083f6037",
+    "205e7c2d8c136b4a6af9",
+    "5c3c2ebe9cbfe6a49f1e",
+    "13fa956904292b97b59e"
   ],
-  "updated_at": "2026-09-04T15:51:49.400126+00:00"
+  "updated_at": "2026-09-04T15:57:58.408591+00:00"
 }
