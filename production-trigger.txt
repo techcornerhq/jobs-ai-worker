@@ -1,3 +1,3 @@
-production retry test: 2026-09-04T18:56+03:00
+production schema retest: 2026-09-04T20:07+03:00
 batch_size: 5
 max_per_day: 40
