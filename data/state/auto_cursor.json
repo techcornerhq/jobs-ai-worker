@@ -1,17 +1,18 @@
 {
   "date": "2026-09-04",
-  "processed_today": 10,
+  "processed_today": 11,
   "seen_candidate_ids": [
-    "40c5310359f4c3e5af36",
-    "b4b475d54e6383520cfb",
-    "e491a2d3f5244df8487e",
-    "b2822986c4f8e23fda91",
-    "c03d32c6d291083f6037",
-    "205e7c2d8c136b4a6af9",
     "940816c94607baaf5460",
-    "5c3c2ebe9cbfe6a49f1e",
+    "9564f94d3541fe0074e8",
     "13fa956904292b97b59e",
-    "9564f94d3541fe0074e8"
+    "205e7c2d8c136b4a6af9",
+    "c03d32c6d291083f6037",
+    "b4b475d54e6383520cfb",
+    "5c3c2ebe9cbfe6a49f1e",
+    "9e27a125aabdfd4a103c",
+    "40c5310359f4c3e5af36",
+    "b2822986c4f8e23fda91",
+    "e491a2d3f5244df8487e"
   ],
-  "updated_at": "2026-09-04T20:23:23.054618+00:00"
+  "updated_at": "2026-09-04T22:22:31.473440+00:00"
 }

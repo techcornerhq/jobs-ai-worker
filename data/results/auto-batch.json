@@ -1,13 +1,162 @@
 {
   "batch_version": 1,
-  "generated_at": "2026-09-04T20:23:23.054808+00:00",
+  "generated_at": "2026-09-04T22:22:31.477930+00:00",
   "source": "current_enabled_discovery_sources",
   "daily_cap": 40,
-  "processed_today": 10,
-  "selected_count": 0,
-  "result_count": 0,
-  "publishable_count": 0,
+  "processed_today": 11,
+  "selected_count": 1,
+  "result_count": 1,
+  "publishable_count": 1,
   "failure_count": 0,
   "failures": [],
-  "items": []
+  "items": [
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T22:22:27.088223+00:00",
+      "completed_at": "2026-09-04T22:22:31.473385+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "739255450ba816c3d5efc6c2",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "شركة متخصصة في التعليم والنشر تعلن فتح باب العمل الحر في 3 تخصصات – التقديم متاح الآن",
+        "discovery_url": "https://www.jo-jobs.com/archives/6777",
+        "feed_published": "Fri, 04 Sep 2026 21:49:03 +0000",
+        "first_discovered_at": "2026-09-04T22:22:26.935702+00:00",
+        "last_seen_at": "2026-09-04T22:22:26.935702+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6777",
+        "source_original_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
+        "source_original_fetch_ok": false,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T22:22:28.752437+00:00"
+      },
+      "canonical": {
+        "campaign_id": "c76f9a2f7ffda8ae8515dc10",
+        "repost_of": null,
+        "job_title": "مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)",
+        "employer_name": null,
+        "location_text": null,
+        "application_method": "نموذج إلكتروني",
+        "application_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-04T21:49:03+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6777",
+        "source_original_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png",
+        "featured_image_path": "data/images/c76f9a2f7ffda8ae8515dc10-v12.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2794,
+          "completion_tokens": 950,
+          "total_tokens": 3744
+        },
+        "seo_title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
+        "meta_description": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم). التقديم متاح الآن عبر نموذج إلكتروني.",
+        "official_details": {
+          "employer": "غير مذكور في الإعلان",
+          "job_title": "مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)",
+          "location": "غير مذكور في الإعلان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "عمل مستقل (Freelance)",
+          "experience": "خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي",
+          "qualification": "إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز",
+          "application_method": "نموذج إلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "اسم الشركة المعلنة",
+          "قيمة الأجر أو نطاق الراتب",
+          "مكان العمل أو طبيعة العمل عن بُعد",
+          "الموعد النهائي للتقديم",
+          "عدد الشواغر المتاحة"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف الأردن",
+          "وظائف تعليم"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "jobposting_schema_not_emitted"
+        ],
+        "metrics": {
+          "title_chars": 71,
+          "summary_chars": 632,
+          "content_chars": 10363,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "c76f9a2f7ffda8ae8515dc10",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
+        "social_title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
+        "labels": [
+          "وظائف الأردن",
+          "وظائف تعليم"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)</h1>\n    <p class='job-employer'>غير مذكور في الإعلان</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الدوام</b>عمل مستقل (Freelance)</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png' alt='مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون) لدى غير مذكور في الإعلان' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت شركة متخصصة في التعليم والنشر عن استقبال طلبات مستقلين (Freelancers) للعمل في تطوير وتأليف وتحرير المحتوى التعليمي المدرسي باللغة الإنجليزية. تشمل الفرص ثلاثة تخصصات رئيسية: اللغة الإنجليزية، الرياضيات، والعلوم، موجهة للمراحل الدراسية من رياض الأطفال (K) حتى الصف السادس (Grade 6). تتطلب الفرصة إجادة ممتازة للغة الإنجليزية وخبرة فعلية سابقة في تأليف أو تحرير الكتب المدرسية أو تطوير الموارد التعليمية. يمكن للمتقدمين اختيار التخصص الذي يتوافق مع خبرتهم دون الحاجة لامتلاك خبرة في جميع المجالات. الأجر ومكان العمل غير محددين في الإعلان، ويتم التقديم حصرياً عبر نموذج إلكتروني مع إرفاق السيرة الذاتية ونماذج من الأعمال السابقة.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>عمل مستقل (Freelance)</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز</li><li>خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي</li><li>أن تكون الخبرة السابقة مرتبطة بالتخصص والمجال الذي يتم التقديم إليه</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>تطوير ومراجعة المحتوى التعليمي (تحرير)</li><li>تأليف وكتابة وتطوير محتوى الكتب المدرسية</li><li>تطوير وإعداد الموارد التعليمية المساندة (أدلة المعلمين، أوراق العمل، التقييمات، بنوك الأسئلة، مفاتيح الإجابات، الأنشطة، المواد المساندة)</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>نموذج إلكتروني</p><a class='job-apply-btn' href='https://forms.gle/qWyBUSN9d4Y6gCUd7' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>اسم الشركة المعلنة</li><li>قيمة الأجر أو نطاق الراتب</li><li>مكان العمل أو طبيعة العمل عن بُعد</li><li>الموعد النهائي للتقديم</li><li>عدد الشواغر المتاحة</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>نموذج إلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85'>وظائف تعليم</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T22:22:28.752437+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>",
+        "schema": {},
+        "meta_description": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم). التقديم متاح الآن عبر نموذج إلكتروني.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [
+            "jobposting_schema_not_emitted"
+          ],
+          "metrics": {
+            "title_chars": 71,
+            "summary_chars": 632,
+            "content_chars": 10363,
+            "labels": 2
+          }
+        }
+      }
+    }
+  ]
 }
