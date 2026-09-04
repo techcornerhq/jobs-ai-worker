@@ -1,7 +1,7 @@
 {
   "worker_version": 3,
-  "started_at": "2026-09-04T09:32:25.737404+00:00",
-  "completed_at": "2026-09-04T09:32:28.793398+00:00",
+  "started_at": "2026-09-04T10:25:17.554067+00:00",
+  "completed_at": "2026-09-04T10:25:21.809210+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -22,7 +22,7 @@
     "discovery_url": "https://www.jo-jobs.com/archives/6771",
     "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T09:32:25.492186+00:00",
+    "last_seen_at": "2026-09-04T10:25:17.376533+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
@@ -33,7 +33,7 @@
     "source_original_fetch_ok": true,
     "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T09:32:26.371770+00:00"
+    "verified_at": "2026-09-04T10:25:19.415786+00:00"
   },
   "canonical": {
     "campaign_id": "f6ae7c2ddfe25e3289dca87f",
@@ -41,7 +41,7 @@
     "job_title": null,
     "employer_name": "بن العميد",
     "location_text": "عمان – الأردن",
-    "application_method": "رابط التقديم الإلكتروني",
+    "application_method": null,
     "application_url": "https://careers.alameedcoffee.com/jobs.php",
     "application_email": null,
     "application_phone": null,
@@ -49,8 +49,8 @@
     "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
     "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
     "country": "Jordan",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v2.png",
-    "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v2.png"
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v3.png",
+    "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v3.png"
   },
   "ai": {
     "provider": "groq_free_plan",
@@ -58,12 +58,12 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 3095,
-      "completion_tokens": 807,
-      "total_tokens": 3902
+      "prompt_tokens": 3097,
+      "completion_tokens": 905,
+      "total_tokens": 4002
     },
-    "seo_title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة والتقنية والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+    "seo_title": "بن العميد: وظائف متنوعة في عمان (إدارية وتقنية) | راتب متوقع 300-600 دينار",
+    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل إدارية، تقنية، وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
     "official_details": {
       "employer": "بن العميد",
       "job_title": "غير مذكور في الإعلان",
@@ -72,18 +72,19 @@
       "employment_type": "غير مذكور في الإعلان",
       "experience": "غير مذكور في الإعلان",
       "qualification": "غير مذكور في الإعلان",
-      "application_method": "رابط التقديم الإلكتروني",
+      "application_method": "غير مذكور في الإعلان",
       "deadline": "غير مذكور في الإعلان"
     },
     "missing_official_information": [
-      "المسميات الوظيفية المحددة لكل شاغر",
+      "المسمى الوظيفي المحدد لكل شاغر",
       "المؤهلات العلمية المطلوبة",
+      "نوع عقد العمل (دوام كامل/جزئي)",
       "الراتب الرسمي المضمون",
       "موعد إغلاق باب التقديم",
-      "نوع العقد (دوام كامل/جزئي)"
+      "تفاصيل المهام الوظيفية الدقيقة"
     ],
     "verification_notes": [
-      "الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الشركة."
+      "نص المصدر الأصلي (original_text) لا يحتوي على تفاصيل الوظائف أو الرواتب، بينما يحتوي نص الاكتشاف (discovery_text) على تفاصيل مفصلة. تم اعتماد تفاصيل الاكتشاف مع الإشارة إلى أن الراتب تقديري وغير رسمي."
     ]
   },
   "dedupe": {
@@ -95,17 +96,18 @@
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
-    "social_title": "فرص عمل في بن العميد عمان: وظائف إدارية وتقنية برواتب متوقعة حتى 600 دينار",
+    "title": "بن العميد: وظائف متنوعة في عمان (إدارية وتقنية) | راتب متوقع 300-600 دينار",
+    "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات | راتب متوقع 300-600 دينار",
     "labels": [
       "وظائف عمان",
       "بن العميد",
       "وظائف متنوعة",
-      "قطاع الأغذية"
+      "قطاع الأغذية",
+      "وظائف تقنية"
     ],
-    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v2.png' alt='بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة بن العميد عن توفر مجموعة من الوظائف الشاغرة في عمان، الأردن، موزعة على عدة قطاعات تشمل الإدارة، التقنية، التسويق، التشغيل، وخدمة العملاء. تشمل الشواغر مسميات مثل مدير فرع، أخصائي تطوير تطبيقات، مراقب جودة، وموظف مشتريات. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الوظيفة. يذكر الإعلان أن الراتب متوقع بين 300 و600 دينار، مع التأكيد على أن هذا الرقم تقديري وغير مذكور رسمياً في المصدر الأصلي. يمكن للباحثين عن عمل التقديم مباشرة عبر بوابة التوظيف الإلكترونية للشركة، مما يوفر فرصة جيدة لمن يبحثون عن عمل في قطاع الأغذية والمشروبات أو المجالات الداعمة له.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في إدارة الفروع أو العمليات التشغيلية</li><li>المختصون في تطوير تطبيقات الموبايل وضمان الجودة</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع المجالات من التقنية إلى التشغيل والإدارة</li><li>فرصة للانضمام إلى علامة تجارية معروفة محلياً</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتتوافق مع المسمى المستهدف</li><li>التأكد من صحة بيانات التواصل في الطلب</li><li>الاطلاع على تفاصيل كل وظيفة قبل التقديم</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>رابط التقديم الإلكتروني</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسميات الوظيفية المحددة لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>الراتب الرسمي المضمون</li><li>موعد إغلاق باب التقديم</li><li>نوع العقد (دوام كامل/جزئي)</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط التقديم الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد من صحة رابط التقديم الرسمي قبل إدخال أي بيانات شخصية.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T09:32:26.371770+00:00.</p>\n  <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الشركة.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
+    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v3.png' alt='بن العميد: وظائف متنوعة في عمان (إدارية وتقنية) | راتب متوقع 300-600 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تعلن شركة بن العميد عن توفر مجموعة من الوظائف الشاغرة في عمان، الأردن، تتنوع بين الأدوار الإدارية، التشغيلية، التقنية، وخدمة العملاء. تشمل الشواغر المذكورة في الإعلان: موظف مراقبة كاميرات، نائب مدير فرع، مدير فرع، أخصائي تسويق، أخصائي تطوير تطبيقات موبايل، أخصائي ضمان جودة برمجيات، موظف مشتريات، مشرف مستودعات، مراقب جودة ميداني، بالإضافة إلى سائقين، خدمة عملاء، كول سنتر، أمين صندوق، وباريستا. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الوظيفة. يُذكر أن الراتب المتوقع يتراوح بين 300 و600 دينار، وهو تقدير غير رسمي لم يذكره المصدر الأصلي صراحةً. يمكن التقديم عبر الرابط الإلكتروني المخصص للوظائف على الموقع الرسمي للشركة.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في قطاع الأغذية والمشروبات أو إدارة الفروع</li><li>المحترفون في التقنية (تطوير تطبيقات، QA) أو التسويق</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع كبير في التخصصات (إدارية، تقنية، تشغيلية)</li><li>فرصة للانضمام إلى علامة تجارية معروفة محلياً</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتتوافق مع كل وظيفة تتقدم لها</li><li>التأكد من صحة بيانات التواصل في الطلب</li><li>الاطلاع على وصف كل شاغر قبل الإرسال</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>غير مذكور في الإعلان</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع عقد العمل (دوام كامل/جزئي)</li><li>الراتب الرسمي المضمون</li><li>موعد إغلاق باب التقديم</li><li>تفاصيل المهام الوظيفية الدقيقة</li></ul>\n\n  \n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد دائماً من صحة رابط التقديم الرسمي قبل إدخال بياناتك الشخصية.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T10:25:19.415786+00:00.</p>\n  <ul><li>نص المصدر الأصلي (original_text) لا يحتوي على تفاصيل الوظائف أو الرواتب، بينما يحتوي نص الاكتشاف (discovery_text) على تفاصيل مفصلة. تم اعتماد تفاصيل الاكتشاف مع الإشارة إلى أن الراتب تقديري وغير رسمي.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
     "schema": {},
-    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة والتقنية والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v2.png"
+    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل إدارية، تقنية، وتشغيلية. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v3.png"
   }
 }
