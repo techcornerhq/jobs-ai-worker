@@ -9,7 +9,7 @@ import requests
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "").strip()
 GROQ_MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b").strip()
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "1250"))
+MAX_TOKENS = int(os.getenv("QWEN_MAX_TOKENS", "950"))
 TEMP = float(os.getenv("QWEN_TEMP", "0.20"))
 MISSING = "غير مذكور في الإعلان"
 
@@ -28,10 +28,11 @@ SYSTEM_RULES = f"""
 9) social_title يمكن أن يكون أكثر جذباً قليلاً من seo_title لكنه يخضع لنفس قواعد الدقة.
 10) meta_description يوضح أهم سبب للنقر وطريقة التقديم إن كانت مثبتة.
 11) reader_value يجب أن يقدم قيمة عملية غير موجودة كنسخ مباشر من الإعلان: لمن قد تناسب الفرصة، قائمة تحقق قبل التقديم، وما الذي يميز الفرصة. اجعلها إرشادات عامة لا شروطاً رسمية.
-12) faq من 3 إلى 5 أسئلة مفيدة. كل جواب يجب أن يعتمد على الحقائق المتاحة، وإذا كانت المعلومة غير مذكورة فقل ذلك بوضوح. لا تخترع إجابات.
-13) labels بحد أقصى 5، وschema_supported_fields يحتوي فقط حقولاً مدعومة فعلاً.
-14) أخرج JSON فقط بدون Markdown أو شرح خارجي.
-15) استخدم العربية الفصحى المبسطة المناسبة للأردن.
+12) faq من 3 إلى 4 أسئلة مفيدة قصيرة. كل جواب يعتمد على الحقائق المتاحة، وإذا كانت المعلومة غير مذكورة فقل ذلك بوضوح.
+13) اختصر القوائم إلى أهم 2-4 نقاط حتى تبقى النتيجة ضمن حد الخطة المجانية.
+14) labels بحد أقصى 5، وschema_supported_fields يحتوي فقط حقولاً مدعومة فعلاً.
+15) أخرج JSON فقط بدون Markdown أو شرح خارجي.
+16) استخدم العربية الفصحى المبسطة المناسبة للأردن.
 """.strip()
 
 OUTPUT_SHAPE = {
@@ -63,9 +64,7 @@ OUTPUT_SHAPE = {
         "cv_tips": [],
         "before_applying": [],
     },
-    "faq": [
-        {"question": "", "answer": ""}
-    ],
+    "faq": [{"question": "", "answer": ""}],
     "safety_note": "",
     "verification_notes": [],
     "labels": [],
@@ -132,10 +131,7 @@ def run_qwen(job: dict) -> dict:
     }
     r = requests.post(
         GROQ_URL,
-        headers={
-            "Authorization": f"Bearer {GROQ_API_KEY}",
-            "Content-Type": "application/json",
-        },
+        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
         json=payload,
         timeout=120,
     )
