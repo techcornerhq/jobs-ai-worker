@@ -12,10 +12,19 @@ def esc(value) -> str:
     return html.escape(str(value or MISSING), quote=True)
 
 
-def li(items) -> str:
-    items = [x for x in (items or []) if str(x).strip()]
+def clean_items(items) -> list[str]:
+    out = []
+    for x in items or []:
+        value = str(x or "").strip()
+        if value and value != MISSING:
+            out.append(value)
+    return out
+
+
+def li(items, fallback: str | None = None) -> str:
+    items = clean_items(items)
     if not items:
-        return f"<li>{MISSING}</li>"
+        return f"<li>{esc(fallback or MISSING)}</li>"
     return "".join(f"<li>{esc(x)}</li>" for x in items)
 
 
@@ -36,6 +45,24 @@ def faq_html(items) -> str:
     return "".join(out)
 
 
+def deterministic_faq(job: dict, official: dict) -> list[dict]:
+    method = official.get("application_method") or MISSING
+    salary = official.get("salary") or MISSING
+    location = official.get("location") or MISSING
+    deadline = official.get("deadline") or MISSING
+    email = str(job.get("application_email") or "").strip()
+
+    apply_answer = method
+    if email:
+        apply_answer = f"{method}. البريد الإلكتروني المخصص للتقديم: {email}."
+
+    return [
+        {"question": "كيف يمكن التقديم على هذه الفرصة؟", "answer": apply_answer},
+        {"question": "هل الراتب مذكور في الإعلان؟", "answer": salary if salary != MISSING else "لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا."},
+        {"question": "أين مكان العمل وما آخر موعد للتقديم؟", "answer": f"مكان العمل: {location}. آخر موعد: {deadline}."},
+    ]
+
+
 def render(job: dict, enriched: dict) -> dict:
     official = enriched.get("official_details") or {}
     guidance = enriched.get("general_guidance") or {}
@@ -50,13 +77,44 @@ def render(job: dict, enriched: dict) -> dict:
     if job.get("repost_of"):
         repost_note = "<div class='job-note'><strong>إعادة نشر:</strong> ظهرت هذه الفرصة من جديد بعد حملة سابقة، لذلك عوملت كإعادة نشر حديثة وليست نسخة مكررة من نفس اليوم.</div>"
 
-    verification_notes = enriched.get("verification_notes") or []
+    verification_notes = clean_items(enriched.get("verification_notes"))
     verification_html = f"<ul>{li(verification_notes)}</ul>" if verification_notes else "<p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>"
-    faqs = faq_html(enriched.get("faq"))
+
+    faq_items = enriched.get("faq") or deterministic_faq(job, official)
+    faqs = faq_html(faq_items)
 
     source_link = ""
     if source_url:
         source_link = f"<p><a href='{esc(source_url)}' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>"
+
+    application_bits = [f"<p>{esc(official.get('application_method'))}</p>"]
+    if job.get("application_email"):
+        email = esc(job.get("application_email"))
+        application_bits.append(f"<p><strong>البريد الإلكتروني:</strong> <a href='mailto:{email}'>{email}</a></p>")
+    if job.get("application_phone"):
+        application_bits.append(f"<p><strong>الهاتف:</strong> {esc(job.get('application_phone'))}</p>")
+    if job.get("application_url"):
+        application_bits.append(f"<p><a class='job-apply-btn' href='{esc(job.get('application_url'))}' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a></p>")
+    application_html = "".join(application_bits)
+
+    requirements = clean_items(enriched.get("official_requirements"))
+    duties = clean_items(enriched.get("official_duties"))
+    requirements_html = f"<ul>{li(requirements)}</ul>" if requirements else "<p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>"
+    duties_html = f"<ul>{li(duties)}</ul>" if duties else "<p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>"
+
+    guidance_sections = []
+    skills = clean_items(guidance.get("skills_that_may_help"))
+    cv_tips = clean_items(guidance.get("cv_tips"))
+    before = clean_items(guidance.get("before_applying"))
+    if skills:
+        guidance_sections.append(f"<h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul>{li(skills)}</ul>")
+    if cv_tips:
+        guidance_sections.append(f"<h3>نصيحة للسيرة الذاتية</h3><ul>{li(cv_tips)}</ul>")
+    if before:
+        guidance_sections.append(f"<h3>قبل إرسال الطلب</h3><ul>{li(before)}</ul>")
+    guidance_html = ""
+    if guidance_sections:
+        guidance_html = f"<div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>{GUIDANCE_LABEL}</strong></p>{''.join(guidance_sections)}</div>"
 
     content = f"""
 <article class='jordan-job-article'>
@@ -82,37 +140,28 @@ def render(job: dict, enriched: dict) -> dict:
   <div class='job-value-box'>
     <h2>هل هذه الفرصة مناسبة لك؟</h2>
     <p><strong>{GUIDANCE_LABEL}</strong></p>
-    <ul>{li(reader_value.get('who_might_fit'))}</ul>
+    <ul>{li(reader_value.get('who_might_fit'), 'راجع التخصصات المطلوبة وقارنها بخبرتك أو مؤهلك قبل التقديم.')}</ul>
 
     <h3>ما الذي يميز هذه الفرصة؟</h3>
-    <ul>{li(reader_value.get('what_makes_this_opportunity_notable'))}</ul>
+    <ul>{li(reader_value.get('what_makes_this_opportunity_notable'), 'راجع تفاصيل الإعلان وطريقة التقديم لتحديد مدى مناسبتها لك.')}</ul>
 
     <h3>قائمة تحقق سريعة قبل التقديم</h3>
-    <ul>{li(reader_value.get('application_checklist'))}</ul>
+    <ul>{li(reader_value.get('application_checklist'), 'جهز سيرة ذاتية محدثة وتأكد من بيانات التواصل قبل الإرسال.')}</ul>
   </div>
 
   <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>
-  <ul>{li(enriched.get('official_requirements'))}</ul>
+  {requirements_html}
 
   <h2>المهام والمسؤوليات المذكورة</h2>
-  <ul>{li(enriched.get('official_duties'))}</ul>
+  {duties_html}
 
   <h2>طريقة التقديم</h2>
-  <p>{esc(official.get('application_method'))}</p>
+  {application_html}
 
   <h2>معلومات لم يذكرها الإعلان بوضوح</h2>
-  <ul>{li(enriched.get('missing_official_information'))}</ul>
+  <ul>{li(enriched.get('missing_official_information'), 'لا توجد معلومات ناقصة رئيسية مسجلة.')}</ul>
 
-  <div class='job-guidance-box'>
-    <h2>نصائح تساعدك قبل التقديم</h2>
-    <p><strong>{GUIDANCE_LABEL}</strong></p>
-    <h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3>
-    <ul>{li(guidance.get('skills_that_may_help'))}</ul>
-    <h3>نصائح للسيرة الذاتية</h3>
-    <ul>{li(guidance.get('cv_tips'))}</ul>
-    <h3>قبل إرسال الطلب</h3>
-    <ul>{li(guidance.get('before_applying'))}</ul>
-  </div>
+  {guidance_html}
 
   {f"<h2>أسئلة شائعة عن هذه الفرصة</h2>{faqs}" if faqs else ""}
 
@@ -142,6 +191,7 @@ def render(job: dict, enriched: dict) -> dict:
 .job-faq{{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}}
 .job-faq summary{{font-weight:800;cursor:pointer;color:#172033}}
 .job-faq p{{margin:8px 0 0}}
+.job-apply-btn{{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}}
 @media(max-width:640px){{.job-facts-grid{{grid-template-columns:1fr}}}}
 </style>
 """.strip()
@@ -160,7 +210,7 @@ def render(job: dict, enriched: dict) -> dict:
     employer = official.get("employer")
     if "hiringOrganization" in supported and employer not in (None, "", MISSING):
         schema["hiringOrganization"] = {"@type": "Organization", "name": employer}
-    if "jobLocation" in supported and (job.get("country") or job.get("city") or job.get("governorate") or job.get("location_text")):
+    if "jobLocation" in supported and (job.get("city") or job.get("governorate") or job.get("location_text")):
         schema["jobLocation"] = {
             "@type": "Place",
             "address": {
