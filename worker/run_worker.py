@@ -9,7 +9,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 from job_dedupe import classify, register
-from job_image_v10 import generate as generate_job_image
+from job_image_v12 import generate as generate_job_image
 from quality_gate import enforce as enforce_quality
 from qwen_enricher import run_qwen
 from render_job import render
@@ -149,7 +149,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
         register(canonical, dedupe)
 
     return {
-        "worker_version": 11,
+        "worker_version": 12,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
@@ -161,9 +161,13 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "genuine_employer_reposts_allowed": True,
             "competitor_discovery_links_publicly_exposed": False,
             "branded_featured_image_required": True,
-            "poster_version_required": "v10",
+            "poster_version_required": "v12",
             "poster_text_collision_guard": True,
-            "poster_remote_image_fallback_required": True,
+            "poster_dynamic_vertical_layout_required": True,
+            "poster_strict_unicode_sanitizer_required": True,
+            "poster_curated_company_photo_only": True,
+            "poster_sector_fallback_required": True,
+            "poster_distinct_info_icons_required": True,
             "quality_gate_required": True,
             "deterministic_taxonomy_required": True,
             "internal_links_required": True,
