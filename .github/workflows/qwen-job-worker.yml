@@ -62,7 +62,14 @@ jobs:
           echo "Groq key detected"
 
       - name: Refresh public discovery feed
-        run: python -u worker/source_engine.py
+        shell: bash
+        run: |
+          if python -u worker/source_engine.py; then
+            echo "Discovery refresh succeeded"
+          else
+            echo "Discovery refresh unavailable; using checked-in discovery snapshot"
+            test -s data/discovery/jo-jobs.json
+          fi
 
       - name: Run Groq Qwen worker
         shell: bash
