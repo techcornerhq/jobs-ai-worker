@@ -1,0 +1,21 @@
+{
+  "tiers": {
+    "1": "official",
+    "2": "original_job_platform",
+    "3": "discovery_aggregator",
+    "4": "public_social_or_direct_ad"
+  },
+  "sources": [
+    {
+      "id": "jo-jobs",
+      "name": "وظيفتك عنا",
+      "tier": 3,
+      "discovery_url": "https://www.jo-jobs.com/",
+      "feed_url": "https://www.jo-jobs.com/feed/",
+      "role": "discovery_only",
+      "resolve_original_source": true,
+      "copy_article_text": false,
+      "notes": "Discovery only. Never treat estimated salaries or rewritten aggregator claims as official facts unless confirmed by the original source."
+    }
+  ]
+}
