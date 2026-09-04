@@ -1,0 +1,126 @@
+name: Qwen Job Worker
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate_index:
+        description: "Candidate index from current discovery feed"
+        required: true
+        default: "0"
+      register_state:
+        description: "Persist campaign state after successful processing"
+        required: true
+        type: boolean
+        default: false
+  push:
+    paths:
+      - "run-trigger.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qwen-job-worker
+  cancel-in-progress: false
+
+jobs:
+  process-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      QWEN_MODEL_PATH: "${{ github.workspace }}/models/Qwen3-8B-Q4_K_M.gguf"
+      QWEN_CTX: "8192"
+      QWEN_MAX_TOKENS: "1600"
+      QWEN_TEMP: "0.20"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build llama.cpp CPU CLI
+        run: |
+          git clone --depth 1 https://github.com/ggml-org/llama.cpp.git /tmp/llama.cpp
+          cmake -S /tmp/llama.cpp -B /tmp/llama.cpp/build -DGGML_NATIVE=OFF -DLLAMA_CURL=OFF -DCMAKE_BUILD_TYPE=Release
+          cmake --build /tmp/llama.cpp/build --config Release -j 4
+          echo "/tmp/llama.cpp/build/bin" >> "$GITHUB_PATH"
+
+      - name: Verify llama.cpp
+        run: llama-cli --version
+
+      - name: Cache Qwen model
+        uses: actions/cache@v4
+        with:
+          path: models
+          key: qwen3-8b-q4km-v1
+
+      - name: Download Qwen3-8B GGUF if missing
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from huggingface_hub import hf_hub_download
+
+          target = Path("models/Qwen3-8B-Q4_K_M.gguf")
+          target.parent.mkdir(parents=True, exist_ok=True)
+          if target.exists() and target.stat().st_size > 4_500_000_000:
+              print("Qwen model restored from cache")
+          else:
+              p = hf_hub_download(
+                  repo_id="Qwen/Qwen3-8B-GGUF",
+                  filename="Qwen3-8B-Q4_K_M.gguf",
+                  local_dir="models",
+              )
+              print("Downloaded", p)
+          PY
+
+      - name: Refresh public discovery feed
+        run: python -u worker/source_engine.py
+
+      - name: Run local Qwen worker
+        shell: bash
+        run: |
+          INDEX="${{ github.event.inputs.candidate_index || '0' }}"
+          ARGS=(--index "$INDEX" --output data/results/latest.json)
+          REGISTER="${{ github.event.inputs.register_state || 'false' }}"
+          if [ "$REGISTER" != "true" ]; then
+            ARGS+=(--no-register)
+          fi
+          python -u worker/run_worker.py "${ARGS[@]}"
+
+      - name: Zero-paid-AI verification
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("data/results/latest.json").read_text(encoding="utf-8"))
+          assert d["ai"]["paid_api_used"] is False
+          assert d["ai"]["provider"] == "local_qwen_llama_cpp"
+          assert d["policy"]["paid_ai_allowed"] is False
+          print("ZERO-PAID-AI CHECK: PASS")
+          print("Title:", d["publication_package"].get("title"))
+          print("Dedupe:", d["dedupe"]["action"])
+          print("Publication action:", d["publication_package"]["action"])
+          PY
+
+      - name: Save public worker result
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovery/jo-jobs.json data/results/latest.json data/state/job_campaigns.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No result changes to commit"
+            exit 0
+          fi
+          git commit -m "Save Qwen worker result"
+          git pull --rebase origin main
+          git push
