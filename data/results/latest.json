@@ -1,7 +1,7 @@
 {
   "worker_version": 2,
-  "started_at": "2026-09-04T08:26:44.600179+00:00",
-  "completed_at": "2026-09-04T08:26:47.850581+00:00",
+  "started_at": "2026-09-04T08:28:54.953340+00:00",
+  "completed_at": "2026-09-04T08:28:57.602987+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -20,32 +20,32 @@
     "discovery_url": "https://www.jo-jobs.com/archives/6775",
     "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T08:26:44.420589+00:00",
+    "last_seen_at": "2026-09-04T08:28:54.784048+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
     "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": "https://www.facebook.com/jo.career",
-    "source_original_fetch_ok": true,
+    "source_original_url": null,
+    "source_original_fetch_ok": false,
     "application_email": "jobs@mgc-machinery.com",
     "application_phone": null,
-    "verified_at": "2026-09-04T08:26:45.618061+00:00"
+    "verified_at": "2026-09-04T08:28:55.163119+00:00"
   },
   "canonical": {
-    "campaign_id": "41c24db0ada5fa1e68b20809",
+    "campaign_id": "c0b3f2bc60b091d8364eeb45",
     "repost_of": null,
-    "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)",
+    "job_title": "فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك (حديث تخرج)",
     "employer_name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
     "location_text": null,
-    "application_method": "إرسال السيرة الذاتية إلى البريد الإلكتروني jobs@mgc-machinery.com مع ذكر اسم الشاغر في عنوان الرسالة",
-    "application_url": "https://www.facebook.com/jo.career",
+    "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني مع ذكر اسم الشاغر في عنوان الرسالة",
+    "application_url": null,
     "application_email": "jobs@mgc-machinery.com",
     "application_phone": null,
     "date_posted": "2026-09-03T23:58:53+00:00",
     "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": "https://www.facebook.com/jo.career",
+    "source_original_url": null,
     "country": "Jordan"
   },
   "ai": {
@@ -54,47 +54,46 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 2389,
+      "prompt_tokens": 2363,
       "completion_tokens": 950,
-      "total_tokens": 3339
+      "total_tokens": 3313
     },
-    "seo_title": "وظائف صيانة مركبات وآليات في مجموعة المناصير (شركة العاديات السريعة)",
-    "meta_description": "فرص عمل في شركة العاديات السريعة لتجارة الآليات (مجموعة المناصير) في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، البودي، وهندسة ميكانيك لحديثي التخرج. التقديم عبر البريد الإلكتروني.",
+    "seo_title": "وظائف صيانة مركبات وآليات في مجموعة المناصير – الأردن",
+    "meta_description": "فرص عمل في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، البودي، والهندسة الميكانيكية لحديثي التخرج لدى شركة العاديات السريعة (مجموعة المناصير).",
     "official_details": {
       "employer": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-      "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)",
+      "job_title": "فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك (حديث تخرج)",
       "location": "غير مذكور في الإعلان",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
       "experience": "غير مذكور في الإعلان (مع وجود فرصة لحديثي التخرج في الهندسة الميكانيكية)",
-      "qualification": "غير مذكور في الإعلان (باستثناء تخصص الهندسة الميكانيكية لحديثي التخرج)",
-      "application_method": "إرسال السيرة الذاتية إلى البريد الإلكتروني jobs@mgc-machinery.com مع ذكر اسم الشاغر في عنوان الرسالة",
+      "qualification": "غير مذكور في الإعلان (مع وجود فرصة لحديثي التخرج في الهندسة الميكانيكية)",
+      "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني مع ذكر اسم الشاغر في عنوان الرسالة",
       "deadline": "غير مذكور في الإعلان"
     },
     "missing_official_information": [
-      "عدد الشواغر لكل تخصص",
-      "مكان العمل الدقيق",
-      "الراتب الرسمي أو نطاقه",
+      "عدد الشواغر",
+      "مكان العمل",
       "سنوات الخبرة المطلوبة للتخصصات الفنية",
-      "المؤهلات الأكاديمية التفصيلية للتخصصات الفنية",
-      "موعد آخر للتقديم",
-      "نوع العقد (دوام كامل/جزئي)"
+      "الراتب الرسمي",
+      "الموعد النهائي للتقديم",
+      "شروط أكاديمية إضافية لحديثي التخرج (مثل المعدل أو سنة التخرج)"
     ],
     "verification_notes": null
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "41c24db0ada5fa1e68b20809",
+    "campaign_id": "c0b3f2bc60b091d8364eeb45",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "وظائف صيانة مركبات وآليات في مجموعة المناصير (شركة العاديات السريعة)",
+    "title": "وظائف صيانة مركبات وآليات في مجموعة المناصير – الأردن",
     "labels": [],
-    "content": "<article class='jordan-job-article'>\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص تخصصات فنية مثل حدادة وميكانيك وكهرباء ودهان وبودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم يحدد الإعلان الرسمي عدد الشواغر أو مكان العمل أو الراتب أو الخبرة المطلوبة بدقة، بل حصر المعلومات في التخصصات وطريقة التقديم.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي، هندسة ميكانيك)</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان (مع وجود فرصة لحديثي التخرج في الهندسة الميكانيكية)</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان (باستثناء تخصص الهندسة الميكانيكية لحديثي التخرج)</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>إرسال السيرة الذاتية عبر البريد الإلكتروني المحدد</li><li>ذكر اسم الشاغر المطلوب في عنوان رسالة البريد الإلكتروني</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>العمل ضمن فريق الصيانة في مجالات الحدادة والميكانيك والكهرباء والدهان والبودي للمركبات والآليات</li><li>العمل في مجال الهندسة الميكانيكية (لحديثي التخرج)</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إرسال السيرة الذاتية إلى البريد الإلكتروني jobs@mgc-machinery.com مع ذكر اسم الشاغر في عنوان الرسالة</p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>عدد الشواغر لكل تخصص</li><li>مكان العمل الدقيق</li><li>الراتب الرسمي أو نطاقه</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>المؤهلات الأكاديمية التفصيلية للتخصصات الفنية</li><li>موعد آخر للتقديم</li><li>نوع العقد (دوام كامل/جزئي)</li></ul>\n\n  <div class='job-guidance-box'>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3>\n    <ul><li>مهارات فنية في صيانة المركبات والآليات</li><li>القدرة على العمل ضمن فريق</li><li>الالتزام بإجراءات السلامة المهنية</li></ul>\n    <h3>نصائح للسيرة الذاتية</h3>\n    <ul><li>تأكيد ذكر اسم الشاغر بوضوح في عنوان البريد الإلكتروني</li><li>إبراز الخبرات الفنية السابقة إن وجدت</li><li>إبراز شهادات الهندسة الميكانيكية لحديثي التخرج</li></ul>\n    <h3>قبل إرسال الطلب</h3>\n    <ul><li>التأكد من مطابقة التخصص الفني المطلوب</li><li>مراجعة السيرة الذاتية للتأكد من دقة البيانات</li></ul>\n  </div>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>المصدر والتحقق</h2>\n  <p>تم العثور على الفرصة عبر <strong>وظيفتك عنا</strong>، وآخر تحقق مسجل لدينا: 2026-09-04T08:26:45.618061+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>\n  <p><a href='https://www.facebook.com/jo.career' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-intro-card,.job-note,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
+    "content": "<article class='jordan-job-article'>\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة العاديات السريعة لتجارة الآليات (مجموعة المناصير) عن توفر فرص عمل ضمن فريق الصيانة في عدة تخصصات فنية تشمل: حدادة المركبات والآليات، ميكانيك المركبات والآليات، كهرباء المركبات والآليات، دهان المركبات والآليات، بودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم يحدد الإعلان الرسمي عدد الشواغر، أو مكان العمل، أو سنوات الخبرة المطلوبة، أو الراتب الرسمي. يتم التقديم عبر إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ذكر اسم الشاغر في عنوان الرسالة.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك (حديث تخرج)</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان (مع وجود فرصة لحديثي التخرج في الهندسة الميكانيكية)</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان (مع وجود فرصة لحديثي التخرج في الهندسة الميكانيكية)</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>إرسال السيرة الذاتية إلى البريد الإلكتروني jobs@mgc-machinery.com</li><li>ذكر اسم الشاغر المطلوب في عنوان الرسالة</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>العمل ضمن فريق الصيانة في مجالات الحدادة، الميكانيك، الكهرباء، الدهان، والبودي للمركبات والآليات</li><li>العمل في مجال الهندسة الميكانيكية (لحديثي التخرج)</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إرسال السيرة الذاتية عبر البريد الإلكتروني مع ذكر اسم الشاغر في عنوان الرسالة</p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>عدد الشواغر</li><li>مكان العمل</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>الراتب الرسمي</li><li>الموعد النهائي للتقديم</li><li>شروط أكاديمية إضافية لحديثي التخرج (مثل المعدل أو سنة التخرج)</li></ul>\n\n  <div class='job-guidance-box'>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3>\n    <ul><li>مهارات فنية في صيانة المركبات والآليات</li><li>القدرة على العمل ضمن فريق</li><li>الالتزام بإجراءات الصحة والسلامة المهنية</li></ul>\n    <h3>نصائح للسيرة الذاتية</h3>\n    <ul><li>تأكيد ذكر اسم الشاغر بوضوح في عنوان البريد الإلكتروني</li><li>إبراز الخبرات الفنية السابقة إن وجدت</li></ul>\n    <h3>قبل إرسال الطلب</h3>\n    <ul><li>التأكد من مطابقة التخصص الفني المطلوب</li><li>مراجعة الشركة لمعرفة متطلبات الخبرة أو الشهادات إن لم تكن واضحة</li></ul>\n  </div>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>المصدر والتحقق</h2>\n  <p>تم العثور على الفرصة عبر <strong>وظيفتك عنا</strong>، وآخر تحقق مسجل لدينا: 2026-09-04T08:28:55.163119+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>\n  <p><a href='https://www.jo-jobs.com/archives/6775' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-intro-card,.job-note,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
     "schema": {},
-    "meta_description": "فرص عمل في شركة العاديات السريعة لتجارة الآليات (مجموعة المناصير) في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، البودي، وهندسة ميكانيك لحديثي التخرج. التقديم عبر البريد الإلكتروني."
+    "meta_description": "فرص عمل في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، البودي، والهندسة الميكانيكية لحديثي التخرج لدى شركة العاديات السريعة (مجموعة المناصير)."
   }
 }
