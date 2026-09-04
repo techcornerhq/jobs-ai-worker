@@ -9,7 +9,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 from job_dedupe import classify, register
-from job_image_v9 import generate as generate_job_image
+from job_image_v10 import generate as generate_job_image
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
@@ -141,7 +141,7 @@ def main() -> None:
         register(canonical, dedupe)
 
     result = {
-        "worker_version": 7,
+        "worker_version": 10,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
@@ -153,6 +153,9 @@ def main() -> None:
             "genuine_employer_reposts_allowed": True,
             "competitor_discovery_links_publicly_exposed": False,
             "branded_featured_image_required": True,
+            "poster_version_required": "v10",
+            "poster_text_collision_guard": True,
+            "poster_remote_image_fallback_required": True,
         },
         "candidate": candidate,
         "source_resolution": {
