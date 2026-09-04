@@ -1,7 +1,7 @@
 {
   "worker_version": 10,
-  "started_at": "2026-09-04T15:21:39.500467+00:00",
-  "completed_at": "2026-09-04T15:21:42.999145+00:00",
+  "started_at": "2026-09-04T15:23:15.063688+00:00",
+  "completed_at": "2026-09-04T15:23:18.957246+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -16,44 +16,44 @@
     "poster_remote_image_fallback_required": true
   },
   "candidate": {
-    "candidate_id": "42e8b25779a7ea639f9b9cbb",
+    "candidate_id": "98ba775ddf8f74015ec05e24",
     "source_id": "jo-jobs",
     "source_name": "وظيفتك عنا",
     "source_tier": 3,
     "source_role": "discovery_only",
-    "title": "مجموعة المناصير تفتح باب التوظيف في عدة تخصصات – رواتب متوقعة تصل إلى 850 دينار",
-    "discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
+    "title": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
+    "discovery_url": "https://www.jo-jobs.com/archives/6771",
+    "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T15:21:39.296850+00:00",
+    "last_seen_at": "2026-09-04T15:23:14.845198+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": null,
-    "source_original_fetch_ok": false,
-    "application_email": "jobs@mgc-machinery.com",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+    "source_original_fetch_ok": true,
+    "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T15:21:40.617929+00:00"
+    "verified_at": "2026-09-04T15:23:16.389337+00:00"
   },
   "canonical": {
-    "campaign_id": "61172042384f943e423a211f",
+    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
     "repost_of": null,
-    "job_title": "موظفو صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك",
-    "employer_name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-    "location_text": null,
-    "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
-    "application_url": null,
-    "application_email": "jobs@mgc-machinery.com",
+    "job_title": null,
+    "employer_name": "بن العميد",
+    "location_text": "عمان – الأردن",
+    "application_method": "رابط إلكتروني",
+    "application_url": "https://careers.alameedcoffee.com/jobs.php",
+    "application_email": null,
     "application_phone": null,
-    "date_posted": "2026-09-03T23:58:53+00:00",
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": null,
+    "date_posted": "2026-09-03T01:51:07+00:00",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+    "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
     "country": "Jordan",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/61172042384f943e423a211f-v10.png",
-    "featured_image_path": "data/images/61172042384f943e423a211f-v10.png"
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png",
+    "featured_image_path": "data/images/f6ae7c2ddfe25e3289dca87f-v10.png"
   },
   "ai": {
     "provider": "groq_free_plan",
@@ -61,48 +61,56 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 2972,
-      "completion_tokens": 950,
-      "total_tokens": 3922
+      "prompt_tokens": 3097,
+      "completion_tokens": 933,
+      "total_tokens": 4030
     },
-    "seo_title": "مجموعة المناصير: وظائف صيانة مركبات وآليات وفرصة لحديثي التخرج – راتب متوقع حتى 850 دينار",
-    "meta_description": "تعلن مجموعة المناصير عن شواغر في صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وفرصة لحديثي التخرج في الهندسة الميكانيكية. راتب متوقع 350-850 دينار. قدم عبر البريد الإلكتروني.",
+    "seo_title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
+    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة، التقنية، والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
     "official_details": {
-      "employer": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-      "job_title": "موظفو صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك",
-      "location": "غير مذكور في الإعلان",
+      "employer": "بن العميد",
+      "job_title": "غير مذكور في الإعلان",
+      "location": "عمان – الأردن",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
       "experience": "غير مذكور في الإعلان",
       "qualification": "غير مذكور في الإعلان",
-      "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+      "application_method": "رابط إلكتروني",
       "deadline": "غير مذكور في الإعلان"
     },
     "missing_official_information": [
-      "عدد الشواغر لكل تخصص",
-      "مكان العمل",
-      "سنوات الخبرة المطلوبة للتخصصات الفنية",
-      "الراتب الرسمي",
-      "الموعد النهائي للتقديم",
-      "شروط أكاديمية إضافية لحديثي التخرج"
+      "المسمى الوظيفي المحدد لكل شاغر",
+      "المؤهلات العلمية المطلوبة",
+      "نوع عقد العمل (دوام كامل/جزئي)",
+      "الراتب الرسمي المضمون",
+      "موعد إغلاق باب التقديم",
+      "تفاصيل المهام الوظيفية الدقيقة"
     ],
-    "verification_notes": null
+    "verification_notes": [
+      "الراتب المذكور (300-600 دينار) هو تقدير من موقع التجميع (وظيفتك عنا) وليس مذكوراً رسمياً في النص الأصلي للموقع الرسمي لبن العميد."
+    ]
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "61172042384f943e423a211f",
+    "campaign_id": "f6ae7c2ddfe25e3289dca87f",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "مجموعة المناصير: وظائف صيانة مركبات وآليات وفرصة لحديثي التخرج – راتب متوقع حتى 850 دينار",
-    "social_title": "انضم لفريق صيانة مجموعة المناصير: 6 تخصصات فنية وفرصة لحديثي التخرج – رواتب متوقعة حتى 850 دينار",
-    "labels": [],
-    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/61172042384f943e423a211f-v10.png' alt='مجموعة المناصير: وظائف صيانة مركبات وآليات وفرصة لحديثي التخرج – راتب متوقع حتى 850 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص تخصصات فنية متنوعة مثل حدادة وميكانيك وكهرباء ودهان وبودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم تحدد الشركة في الإعلان الرسمي عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة لكل تخصص، كما لم تعلن عن راتب رسمي. تشير التقديرات السوقية العامة إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، وذلك بناءً على طبيعة المجال الفني ومستوى الخبرة. يتم التقديم من خلال إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص، مع ضرورة ذكر اسم الشاغر في عنوان الرسالة. ننصح المهتمين بمراجعة تفاصيل كل تخصص بدقة قبل التقديم.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>موظفو صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>الفنيون العاملون في صيانة المركبات والآليات في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، أو البودي.</li><li>حاصلو شهادة البكالوريوس في الهندسة الميكانيكية من حديثي التخرج الباحثين عن فرصة أولى في سوق العمل.</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع التخصصات الفنية المطلوبة (6 مجالات) مما يوسع دائرة الفرص.</li><li>توفر فرصة صريحة لحديثي التخرج في الهندسة الميكانيكية دون اشتراط خبرة سابقة.</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد التخصص الدقيق الذي تتقدم له (مثلاً: ميكانيك مركبات).</li><li>كتابة اسم الشاغر بوضوح في عنوان البريد الإلكتروني.</li><li>إرفاق سيرة ذاتية محدثة تبرز المهارات الفنية ذات الصلة.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>العمل ضمن فريق الصيانة للمركبات والآليات</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p><strong>البريد الإلكتروني:</strong> <a href='mailto:jobs@mgc-machinery.com'>jobs@mgc-machinery.com</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>عدد الشواغر لكل تخصص</li><li>مكان العمل</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>الراتب الرسمي</li><li>الموعد النهائي للتقديم</li><li>شروط أكاديمية إضافية لحديثي التخرج</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>المعرفة الأساسية بأدوات الصيانة والسلامة المهنية</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني. البريد الإلكتروني المخصص للتقديم: jobs@mgc-machinery.com.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: غير مذكور في الإعلان. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:21:40.617929+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
+    "title": "بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار",
+    "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات (راتب متوقع 300-600 د)",
+    "labels": [
+      "عمان",
+      "بن العميد",
+      "وظائف متنوعة",
+      "قطاع الأغذية",
+      "تقديم إلكتروني"
+    ],
+    "content": "<article class='jordan-job-article'>\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png' alt='بن العميد: وظائف متنوعة في عمان برواتب متوقعة 300-600 دينار' loading='eager'/></figure>\n\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة بن العميد عن توفر مجموعة واسعة من الوظائف الشاغرة في عمان، الأردن، موزعة على قطاعات إدارية وتشغيلية وتقنية. تشمل الشواغر مناصب مثل مدير فرع، أخصائي تطوير تطبيقات، مراقب جودة، وموظف مشتريات، بالإضافة إلى وظائف خدمة عملاء وتشغيلية أخرى. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الدور. يذكر الإعلان أن الراتب متوقع بين 300 و600 دينار أردني، مع التأكيد على أن هذا الرقم تقديري وغير مذكور رسمياً في المصدر الأصلي. يمكن للباحثين عن عمل التقديم مباشرة عبر بوابة التوظيف الإلكترونية للشركة، مما يجعل الفرصة مناسبة لمن يبحثون عن تنوع في الفرص الوظيفية ضمن قطاع الأغذية والمشروبات.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>بن العميد</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>عمان – الأردن</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>أصحاب الخبرة في إدارة الفروع أو العمليات التشغيلية في قطاع الأغذية والمشروبات.</li><li>المختصون في التقنية (تطوير تطبيقات، QA) أو التسويق الرقمي الراغبين بالعمل في شركة محلية معروفة.</li></ul>\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تنوع كبير في التخصصات المطلوبة من التقنية إلى التشغيل والإدارة في إعلان واحد.</li><li>فرصة للانضمام إلى علامة تجارية محلية رائدة في قطاع المقاهي والأغذية.</li></ul>\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد الشاغر المناسب لخبرتك من القائمة المتاحة في الموقع الرسمي.</li><li>تحديث السيرة الذاتية لتبرز المهارات المرتبطة بالشاغر المحدد (إداري، تقني، أو تشغيلي).</li><li>التأكد من صحة بيانات التواصل في نموذج التقديم الإلكتروني.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n\n  <h2>طريقة التقديم</h2>\n  <p>رابط إلكتروني</p><p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع عقد العمل (دوام كامل/جزئي)</li><li>الراتب الرسمي المضمون</li><li>موعد إغلاق باب التقديم</li><li>تفاصيل المهام الوظيفية الدقيقة</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>مهارات خدمة العملاء وإدارة الوقت</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط إلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تأكد من تقديم طلبك عبر الموقع الرسمي للشركة فقط لتجنب أي عمليات احتيال.</p>\n  </div>\n\n  <h2>التحقق من الإعلان</h2>\n  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T15:23:16.389337+00:00.</p>\n  <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من موقع التجميع (وظيفتك عنا) وليس مذكوراً رسمياً في النص الأصلي للموقع الرسمي لبن العميد.</li></ul>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-featured-image{margin:0 0 20px}\n.job-featured-image img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
     "schema": {},
-    "meta_description": "تعلن مجموعة المناصير عن شواغر في صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وفرصة لحديثي التخرج في الهندسة الميكانيكية. راتب متوقع 350-850 دينار. قدم عبر البريد الإلكتروني.",
-    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/61172042384f943e423a211f-v10.png"
+    "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة، التقنية، والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+    "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v10.png"
   }
 }
