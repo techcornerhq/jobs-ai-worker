@@ -13,6 +13,9 @@ on:
         default: "40"
   schedule:
     - cron: "17 */2 * * *"
+  push:
+    paths:
+      - "production-trigger.txt"
 
 permissions:
   contents: write
@@ -87,7 +90,10 @@ jobs:
               assert item['ai']['paid_fallback_used'] is False
               assert item['quality_gate']['passed'] is True
               assert '-v10.png' in (item['canonical'].get('featured_image_url') or '')
-              assert 'jo-jobs.com' not in (item['publication_package'].get('content') or '')
+              content = item['publication_package'].get('content') or ''
+              assert 'jo-jobs.com' not in content
+              assert 'job-related-box' in content
+              assert 'application/ld+json' in content
           print('Production batch validation: PASS')
           print('Publishable:', d.get('publishable_count'))
           PY
