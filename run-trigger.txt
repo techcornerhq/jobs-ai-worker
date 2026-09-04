@@ -1,3 +1,3 @@
-corrected-v7-zain: 2026-09-04T16:54+03:00
-candidate_index: 1
+corrected-v7-manaseer: 2026-09-04T16:56+03:00
+candidate_index: 0
 register_state: false
