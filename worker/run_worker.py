@@ -9,7 +9,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 from job_dedupe import classify, register
-from job_image_v8 import generate as generate_job_image
+from job_image_v9 import generate as generate_job_image
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
@@ -141,7 +141,7 @@ def main() -> None:
         register(canonical, dedupe)
 
     result = {
-        "worker_version": 6,
+        "worker_version": 7,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
