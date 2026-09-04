@@ -23,9 +23,23 @@ def detail(label: str, value) -> str:
     return f"<div class='job-fact'><strong>{esc(label)}</strong><span>{esc(value or MISSING)}</span></div>"
 
 
+def faq_html(items) -> str:
+    out = []
+    for item in items or []:
+        if not isinstance(item, dict):
+            continue
+        q = str(item.get("question") or "").strip()
+        a = str(item.get("answer") or "").strip()
+        if not q or not a:
+            continue
+        out.append(f"<details class='job-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>")
+    return "".join(out)
+
+
 def render(job: dict, enriched: dict) -> dict:
     official = enriched.get("official_details") or {}
     guidance = enriched.get("general_guidance") or {}
+    reader_value = enriched.get("reader_value") or {}
     labels = [str(x).strip() for x in enriched.get("labels", []) if str(x).strip()][:5]
     title = enriched.get("seo_title") or job.get("job_title") or job.get("title") or "فرصة عمل جديدة"
     source_url = job.get("source_original_url") or job.get("source_discovery_url")
@@ -38,6 +52,11 @@ def render(job: dict, enriched: dict) -> dict:
 
     verification_notes = enriched.get("verification_notes") or []
     verification_html = f"<ul>{li(verification_notes)}</ul>" if verification_notes else "<p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>"
+    faqs = faq_html(enriched.get("faq"))
+
+    source_link = ""
+    if source_url:
+        source_link = f"<p><a href='{esc(source_url)}' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>"
 
     content = f"""
 <article class='jordan-job-article'>
@@ -58,6 +77,18 @@ def render(job: dict, enriched: dict) -> dict:
     {detail('الخبرة', official.get('experience'))}
     {detail('المؤهل', official.get('qualification'))}
     {detail('آخر موعد', official.get('deadline'))}
+  </div>
+
+  <div class='job-value-box'>
+    <h2>هل هذه الفرصة مناسبة لك؟</h2>
+    <p><strong>{GUIDANCE_LABEL}</strong></p>
+    <ul>{li(reader_value.get('who_might_fit'))}</ul>
+
+    <h3>ما الذي يميز هذه الفرصة؟</h3>
+    <ul>{li(reader_value.get('what_makes_this_opportunity_notable'))}</ul>
+
+    <h3>قائمة تحقق سريعة قبل التقديم</h3>
+    <ul>{li(reader_value.get('application_checklist'))}</ul>
   </div>
 
   <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>
@@ -83,6 +114,8 @@ def render(job: dict, enriched: dict) -> dict:
     <ul>{li(guidance.get('before_applying'))}</ul>
   </div>
 
+  {f"<h2>أسئلة شائعة عن هذه الفرصة</h2>{faqs}" if faqs else ""}
+
   <div class='job-safety-box'>
     <h2>تنبيه مهم للباحثين عن عمل</h2>
     <p>{esc(enriched.get('safety_note') or 'تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.')}</p>
@@ -91,20 +124,24 @@ def render(job: dict, enriched: dict) -> dict:
   <h2>المصدر والتحقق</h2>
   <p>تم العثور على الفرصة عبر <strong>{esc(source_name)}</strong>، وآخر تحقق مسجل لدينا: {esc(verified_at)}.</p>
   {verification_html}
-  <p><a href='{esc(source_url)}' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>
+  {source_link}
 </article>
 
 <style>
 .jordan-job-article{{line-height:2}}
-.job-intro-card,.job-note,.job-guidance-box,.job-safety-box{{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}}
+.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}}
 .job-kicker{{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}}
 .job-facts-grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}}
 .job-fact{{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}}
 .job-fact strong,.job-fact span{{display:block}}
 .job-fact strong{{font-size:12px;color:#667085;margin-bottom:4px}}
 .job-fact span{{font-weight:700;color:#172033}}
+.job-value-box{{border-right:4px solid #2563eb;background:#f8fbff}}
 .job-guidance-box{{border-right:4px solid #0f766e}}
 .job-safety-box{{border-right:4px solid #f59e0b;background:#fffaf0}}
+.job-faq{{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}}
+.job-faq summary{{font-weight:800;cursor:pointer;color:#172033}}
+.job-faq p{{margin:8px 0 0}}
 @media(max-width:640px){{.job-facts-grid{{grid-template-columns:1fr}}}}
 </style>
 """.strip()
@@ -134,7 +171,6 @@ def render(job: dict, enriched: dict) -> dict:
             },
         }
 
-    # Do not emit JobPosting structured data unless a supported title exists.
     if "title" not in schema:
         schema = {}
     else:
@@ -142,6 +178,7 @@ def render(job: dict, enriched: dict) -> dict:
 
     return {
         "title": title,
+        "social_title": enriched.get("social_title") or title,
         "labels": labels,
         "content": content,
         "schema": schema,
