@@ -6,7 +6,7 @@
     "role": "discovery_only",
     "feed_url": "https://www.jo-jobs.com/feed/"
   },
-  "generated_at": "2026-09-04T13:18:04.147345+00:00",
+  "generated_at": "2026-09-04T13:34:25.903983+00:00",
   "count": 10,
   "new_since_previous_run": 0,
   "policy": {
@@ -26,7 +26,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6775",
       "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -41,7 +41,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6773",
       "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -56,7 +56,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6771",
       "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -71,7 +71,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6769",
       "feed_published": "Thu, 03 Sep 2026 01:45:49 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -86,7 +86,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6767",
       "feed_published": "Thu, 03 Sep 2026 01:41:41 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -101,7 +101,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6763",
       "feed_published": "Thu, 03 Sep 2026 01:37:19 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -116,7 +116,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6761",
       "feed_published": "Wed, 02 Sep 2026 17:51:56 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -131,7 +131,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6759",
       "feed_published": "Wed, 02 Sep 2026 17:47:09 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -146,7 +146,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6757",
       "feed_published": "Wed, 02 Sep 2026 16:32:08 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
@@ -161,7 +161,7 @@
       "discovery_url": "https://www.jo-jobs.com/archives/6755",
       "feed_published": "Wed, 02 Sep 2026 15:22:50 +0000",
       "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-      "last_seen_at": "2026-09-04T13:18:04.147345+00:00",
+      "last_seen_at": "2026-09-04T13:34:25.903983+00:00",
       "status": "discovered",
       "requires_original_source_resolution": true,
       "copy_article_text": false
