@@ -4,7 +4,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import parse_qs, urljoin, urlsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -14,9 +14,22 @@ PHONE_RE = re.compile(r"(?:\+?962|00962|0)?\s?7[789]\s?\d{3}\s?\d{4}")
 DATE_RE = re.compile(r"\b(?:20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}|\d{1,2}[-/.]\d{1,2}[-/.]20\d{2})\b")
 
 KNOWN_DISCOVERY_HOSTS = {"jo-jobs.com"}
+SOCIAL_HOSTS = {
+    "x.com", "twitter.com", "facebook.com", "fb.com", "linkedin.com",
+    "instagram.com", "tiktok.com", "youtube.com", "whatsapp.com", "wa.me",
+    "telegram.me", "t.me", "pinterest.com", "reddit.com",
+}
+SOCIAL_SHARE_PATH_HINTS = (
+    "/intent/", "/share", "/sharer", "/sharing/", "/tweet", "/dialog/share",
+)
+SHARE_QUERY_KEYS = {"text", "url", "u", "share", "quote"}
 OFFICIAL_HINTS = (
     "careers", "career", "jobs", "job", "vacancy", "vacancies", "recruitment",
     "linkedin.com/jobs", "akhtaboot", "bayt.com", "for9a.com", "apply"
+)
+APPLICATION_HINTS = (
+    "apply", "application", "قدم", "تقديم", "التقديم", "سجل", "register",
+    "careers", "career", "vacancy", "job"
 )
 
 
@@ -28,10 +41,40 @@ def host(url: str | None) -> str:
         return ""
 
 
+def is_social_share_url(url: str) -> bool:
+    try:
+        p = urlsplit(url)
+        h = host(url)
+        path = p.path.lower()
+        query_keys = {k.lower() for k in parse_qs(p.query).keys()}
+        if h in SOCIAL_HOSTS and any(x in path for x in SOCIAL_SHARE_PATH_HINTS):
+            return True
+        if h in {"x.com", "twitter.com"} and path.startswith("/intent/"):
+            return True
+        if h in {"facebook.com", "fb.com"} and ("sharer" in path or "dialog/share" in path):
+            return True
+        if h in SOCIAL_HOSTS and len(query_keys & SHARE_QUERY_KEYS) >= 2:
+            return True
+    except Exception:
+        return True
+    return False
+
+
+def is_candidate_source_url(url: str, base_url: str) -> bool:
+    h = host(url)
+    if not url.startswith(("http://", "https://")) or not h:
+        return False
+    if h == host(base_url):
+        return False
+    if is_social_share_url(url):
+        return False
+    return True
+
+
 def get(url: str) -> requests.Response:
     r = requests.get(
         url,
-        headers={"User-Agent": "JordanJobsVerifier/2.0 (+https://jobsinjordan2026.blogspot.com/)"},
+        headers={"User-Agent": "JordanJobsVerifier/2.1 (+https://jobsinjordan2026.blogspot.com/)"},
         timeout=45,
         allow_redirects=True,
     )
@@ -48,15 +91,14 @@ def clean_text(soup: BeautifulSoup) -> str:
 
 
 def external_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
-    base_host = host(base_url)
     out = []
     seen = set()
     for a in soup.find_all("a", href=True):
         href = urljoin(base_url, a.get("href", "").strip())
-        h = host(href)
-        if not href.startswith(("http://", "https://")) or not h or h == base_host or href in seen:
+        if href in seen or not is_candidate_source_url(href, base_url):
             continue
         seen.add(href)
+        h = host(href)
         text = re.sub(r"\s+", " ", a.get_text(" ", strip=True))[:240]
         low = (href + " " + text).lower()
         score = 0
@@ -64,12 +106,19 @@ def external_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
             score += 4
         if h not in KNOWN_DISCOVERY_HOSTS:
             score += 2
-        if any(x in low for x in ("apply", "تقديم", "قدم", "التوظيف", "وظائف", "careers")):
+        if any(x in low for x in APPLICATION_HINTS):
             score += 3
-        if any(x in low for x in ("facebook.com", "instagram.com", "tiktok.com", "youtube.com")):
-            score -= 2
+        if h in SOCIAL_HOSTS:
+            score -= 3
         out.append({"url": href, "host": h, "text": text, "score": score})
     return sorted(out, key=lambda x: x["score"], reverse=True)
+
+
+def looks_like_application_url(item: dict | None) -> bool:
+    if not item:
+        return False
+    low = (item.get("url", "") + " " + item.get("text", "")).lower()
+    return any(x in low for x in APPLICATION_HINTS) and not is_social_share_url(item.get("url", ""))
 
 
 def resolve(candidate: dict) -> dict:
@@ -85,6 +134,7 @@ def resolve(candidate: dict) -> dict:
 
     best = links[0] if links and links[0]["score"] >= 4 else None
     original_url = best["url"] if best else None
+    application_url = best["url"] if looks_like_application_url(best) else None
     original_text = None
     original_fetch_ok = False
     original_host = None
@@ -92,16 +142,23 @@ def resolve(candidate: dict) -> dict:
     if original_url:
         try:
             orr = get(original_url)
-            original_url = orr.url
-            original_host = host(original_url)
-            original_text = clean_text(BeautifulSoup(orr.text, "html.parser"))[:30000]
-            original_fetch_ok = True
-            combined = discovery_text + "\n" + original_text
-            emails = sorted(set(emails + EMAIL_RE.findall(combined)))
-            phones = sorted(set(phones + [re.sub(r"\s+", "", x) for x in PHONE_RE.findall(combined)]))
-            dates = sorted(set(dates + DATE_RE.findall(combined)))
+            redirected = orr.url
+            if is_social_share_url(redirected):
+                original_url = None
+                application_url = None
+            else:
+                original_url = redirected
+                original_host = host(original_url)
+                original_text = clean_text(BeautifulSoup(orr.text, "html.parser"))[:30000]
+                original_fetch_ok = True
+                combined = discovery_text + "\n" + original_text
+                emails = sorted(set(emails + EMAIL_RE.findall(combined)))
+                phones = sorted(set(phones + [re.sub(r"\s+", "", x) for x in PHONE_RE.findall(combined)]))
+                dates = sorted(set(dates + DATE_RE.findall(combined)))
+                if application_url and host(application_url) != original_host:
+                    application_url = None
         except Exception:
-            pass
+            original_fetch_ok = False
 
     page_title = soup.title.get_text(" ", strip=True) if soup.title else candidate.get("title")
     return {
@@ -115,7 +172,7 @@ def resolve(candidate: dict) -> dict:
         "original_text": original_text,
         "application_email": emails[0] if emails else None,
         "application_phone": phones[0] if phones else None,
-        "application_url": original_url,
+        "application_url": application_url,
         "dates_found": dates[:12],
         "external_links": links[:20],
         "verified_at": datetime.now(timezone.utc).isoformat(),
@@ -125,6 +182,7 @@ def resolve(candidate: dict) -> dict:
         "fact_policy": {
             "discovery_aggregator_is_not_official": True,
             "estimated_salary_is_not_official_without_original_confirmation": True,
+            "social_share_links_are_never_original_or_application_urls": True,
         },
     }
 
