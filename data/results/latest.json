@@ -1,7 +1,7 @@
 {
   "worker_version": 2,
-  "started_at": "2026-09-04T09:00:43.882115+00:00",
-  "completed_at": "2026-09-04T09:00:46.480331+00:00",
+  "started_at": "2026-09-04T09:07:51.447919+00:00",
+  "completed_at": "2026-09-04T09:07:56.008074+00:00",
   "policy": {
     "paid_ai_allowed": false,
     "paid_fallback_allowed": false,
@@ -11,41 +11,41 @@
     "genuine_employer_reposts_allowed": true
   },
   "candidate": {
-    "candidate_id": "42e8b25779a7ea639f9b9cbb",
+    "candidate_id": "9f3b3be5c5fbcfd793a917c8",
     "source_id": "jo-jobs",
     "source_name": "وظيفتك عنا",
     "source_tier": 3,
     "source_role": "discovery_only",
-    "title": "مجموعة المناصير تفتح باب التوظيف في عدة تخصصات – رواتب متوقعة تصل إلى 850 دينار",
-    "discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
+    "title": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
+    "discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
     "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
-    "last_seen_at": "2026-09-04T09:00:43.669719+00:00",
+    "last_seen_at": "2026-09-04T09:07:51.238552+00:00",
     "status": "discovered",
     "requires_original_source_resolution": true,
     "copy_article_text": false
   },
   "source_resolution": {
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": null,
-    "source_original_fetch_ok": false,
-    "application_email": "jobs@mgc-machinery.com",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
+    "source_original_fetch_ok": true,
+    "application_email": null,
     "application_phone": null,
-    "verified_at": "2026-09-04T09:00:44.120962+00:00"
+    "verified_at": "2026-09-04T09:07:53.483051+00:00"
   },
   "canonical": {
-    "campaign_id": "510ab173cc6c4a04b0164f40",
+    "campaign_id": "5a125a192d1fd6ac2252fa8d",
     "repost_of": null,
-    "job_title": "فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك حديث التخرج",
-    "employer_name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-    "location_text": null,
-    "application_method": "إرسال السيرة الذاتية إلى البريد الإلكتروني مع ذكر اسم الشاغر في العنوان",
-    "application_url": null,
-    "application_email": "jobs@mgc-machinery.com",
+    "job_title": "Integration Developer Team Member",
+    "employer_name": "شركة زين الأردن",
+    "location_text": "الأردن - عمّان",
+    "application_method": "إلكترونياً عبر بوابة Zain Careers",
+    "application_url": "https://careers.zain.com/vacancy/175993",
+    "application_email": null,
     "application_phone": null,
-    "date_posted": "2026-09-03T23:58:53+00:00",
-    "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
-    "source_original_url": null,
+    "date_posted": "2026-09-03T23:31:21+00:00",
+    "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+    "source_original_url": "https://careers.zain.com/vacancy/175993",
     "country": "Jordan"
   },
   "ai": {
@@ -54,47 +54,45 @@
     "paid_api_used": false,
     "paid_fallback_used": false,
     "usage": {
-      "prompt_tokens": 2766,
+      "prompt_tokens": 3626,
       "completion_tokens": 950,
-      "total_tokens": 3716
+      "total_tokens": 4576
     },
-    "seo_title": "مجموعة المناصير: فرص عمل في الصيانة الفنية ووظيفة لحديثي التخرج في الهندسة الميكانيكية",
-    "meta_description": "تعلن مجموعة المناصير عن شواغر في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، والبودي، بالإضافة إلى فرصة لحديثي التخرج في الهندسة الميكانيكية. التقديم عبر البريد الإلكتروني.",
+    "seo_title": "زين الأردن: مطلوب Integration Developer في عمّان – خبرة سنة وبكالوريوس علوم حاسوب",
+    "meta_description": "شركة زين الأردن تعلن عن وظيفة Integration Developer في عمّان. تتطلب بكالوريوس وخبرة سنة. التقديم عبر موقع زين الرسمي حتى 8 أكتوبر 2026.",
     "official_details": {
-      "employer": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
-      "job_title": "فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك حديث التخرج",
-      "location": "غير مذكور في الإعلان",
+      "employer": "شركة زين الأردن",
+      "job_title": "Integration Developer Team Member",
+      "location": "الأردن - عمّان",
       "salary": "غير مذكور في الإعلان",
       "employment_type": "غير مذكور في الإعلان",
-      "experience": "غير مذكور في الإعلان (فرصة لحديثي التخرج في الهندسة الميكانيكية)",
-      "qualification": "غير مذكور في الإعلان (فرصة لحديثي التخرج في الهندسة الميكانيكية)",
-      "application_method": "إرسال السيرة الذاتية إلى البريد الإلكتروني مع ذكر اسم الشاغر في العنوان",
-      "deadline": "غير مذكور في الإعلان"
+      "experience": "سنة واحدة على الأقل",
+      "qualification": "بكالوريوس في علوم الحاسوب، هندسة الحاسوب أو مجال ذي صلة",
+      "application_method": "إلكترونياً عبر بوابة Zain Careers",
+      "deadline": "08-Oct-2026"
     },
     "missing_official_information": [
-      "مكان العمل",
-      "الراتب الرسمي",
-      "عدد الشواغر",
-      "سنوات الخبرة المطلوبة للتخصصات الفنية",
-      "المؤهلات الأكاديمية الدقيقة للتخصصات الفنية",
-      "آخر موعد للتقديم"
+      "الراتب أو نطاق الرواتب",
+      "نوع عقد العمل (دوام كامل/جزئي/مؤقت)",
+      "تفاصيل المزايا الوظيفية",
+      "عدد الشواغر المتاحة لهذا المسمى تحديداً"
     ],
     "verification_notes": null
   },
   "dedupe": {
     "action": "publish_new_campaign",
-    "campaign_id": "510ab173cc6c4a04b0164f40",
+    "campaign_id": "5a125a192d1fd6ac2252fa8d",
     "matched_campaign_id": null,
     "score": 0.0,
     "reason": "no strong existing campaign match"
   },
   "publication_package": {
     "action": "publish_new_post",
-    "title": "مجموعة المناصير: فرص عمل في الصيانة الفنية ووظيفة لحديثي التخرج في الهندسة الميكانيكية",
-    "social_title": "وظائف جديدة في مجموعة المناصير: صيانة مركبات وآليات وفرصة لحديثي التخرج",
+    "title": "زين الأردن: مطلوب Integration Developer في عمّان – خبرة سنة وبكالوريوس علوم حاسوب",
+    "social_title": "وظيفة تقنية في زين الأردن: تطوير التكاملات والأنظمة – التقديم مفتوح حتى 8 أكتوبر",
     "labels": [],
-    "content": "<article class='jordan-job-article'>\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>أعلنت شركة العاديات السريعة لتجارة الآليات، التابعة لمجموعة المناصير، عن توفر فرص عمل ضمن فريق الصيانة. تشمل الفرص تخصصات فنية متنوعة مثل حدادة المركبات والآليات، ميكانيكها، كهربائها، دهانها، وأعمال البودي. كما خصصت الشركة فرصة عمل موجهة لحديثي التخرج في تخصص الهندسة الميكانيكية، دون اشتراط خبرة سابقة لهذه الفئة. لم يحدد الإعلان الرسمي عدد الشواغر، أو مكان العمل، أو الراتب، أو سنوات الخبرة المطلوبة للتخصصات الفنية. يتم التقديم من خلال إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص، مع ضرورة ذكر اسم الشاغر في عنوان الرسالة. ننصح المهتمين بالتحقق من التفاصيل الإضافية مباشرة مع الشركة عند الحاجة.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>فني صيانة مركبات وآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) ومهندس ميكانيك حديث التخرج</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>غير مذكور في الإعلان (فرصة لحديثي التخرج في الهندسة الميكانيكية)</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>غير مذكور في الإعلان (فرصة لحديثي التخرج في الهندسة الميكانيكية)</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>الفنيون العاملون في مجال صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي).</li><li>حاصلو شهادة البكالوريوس في الهندسة الميكانيكية من حديثي التخرج.</li></ul>\n\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>تعدد التخصصات الفنية المطلوبة في إعلان واحد، مما يوسع نطاق الفرص.</li><li>تخصيص فرصة صريحة لحديثي التخرج في الهندسة الميكانيكية دون اشتراط خبرة.</li></ul>\n\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديد التخصص الدقيق الذي تتقدم له (حدادة، ميكانيك، هندسة ميكانيك، إلخ).</li><li>كتابة اسم الشاغر بوضوح في عنوان البريد الإلكتروني.</li><li>إرفاق سيرة ذاتية محدثة تبرز المهارات الفنية أو الأكاديمية ذات الصلة.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>العمل ضمن فريق الصيانة في مجالات الحدادة، الميكانيك، الكهرباء، الدهان، والبودي للمركبات والآليات</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إرسال السيرة الذاتية إلى البريد الإلكتروني مع ذكر اسم الشاغر في العنوان</p><p><strong>البريد الإلكتروني:</strong> <a href='mailto:jobs@mgc-machinery.com'>jobs@mgc-machinery.com</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>مكان العمل</li><li>الراتب الرسمي</li><li>عدد الشواغر</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>المؤهلات الأكاديمية الدقيقة للتخصصات الفنية</li><li>آخر موعد للتقديم</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>المعرفة بالأدوات والمعدات الفنية الخاصة بكل تخصص</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إرسال السيرة الذاتية إلى البريد الإلكتروني مع ذكر اسم الشاغر في العنوان. البريد الإلكتروني المخصص للتقديم: jobs@mgc-machinery.com.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: غير مذكور في الإعلان. آخر موعد: غير مذكور في الإعلان.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>المصدر والتحقق</h2>\n  <p>تم العثور على الفرصة عبر <strong>وظيفتك عنا</strong>، وآخر تحقق مسجل لدينا: 2026-09-04T09:00:44.120962+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>\n  <p><a href='https://www.jo-jobs.com/archives/6775' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
+    "content": "<article class='jordan-job-article'>\n  <div class='job-intro-card'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <p>تعلن شركة زين الأردن عن شغور وظيفي لعضو فريق تطوير التكامل (Integration Developer) في قسم العمليات التقنية بعمّان. تهدف الوظيفة إلى تطوير خدمات وتطبيقات وأنظمة دعم الأعمال ورعاية العملاء، مع ضمان استقرارها وأدائها اليومي. تشمل المهام الرئيسية تطوير واجهات برمجة التطبيقات (APIs)، وإدارة قواعد البيانات، ومراقبة أداء الخوادم، وتحسين استراتيجيات التكامل الحالية. يشترط الحصول على درجة البكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو مجال ذي صلة، بالإضافة إلى خبرة عملية لا تقل عن سنة واحدة. يمكن التقديم إلكترونياً عبر بوابة التوظيف الرسمية لزين، مع ضرورة إرفاق السيرة الذاتية وصورة شخصية وشهادة التعليم. آخر موعد للتقديم هو 8 أكتوبر 2026.</p>\n  </div>\n\n  \n\n  <h2>ملخص الوظيفة</h2>\n  <div class='job-facts-grid'>\n    <div class='job-fact'><strong>جهة التوظيف</strong><span>شركة زين الأردن</span></div>\n    <div class='job-fact'><strong>المسمى الوظيفي</strong><span>Integration Developer Team Member</span></div>\n    <div class='job-fact'><strong>الموقع</strong><span>الأردن - عمّان</span></div>\n    <div class='job-fact'><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div>\n    <div class='job-fact'><strong>الخبرة</strong><span>سنة واحدة على الأقل</span></div>\n    <div class='job-fact'><strong>المؤهل</strong><span>بكالوريوس في علوم الحاسوب، هندسة الحاسوب أو مجال ذي صلة</span></div>\n    <div class='job-fact'><strong>آخر موعد</strong><span>08-Oct-2026</span></div>\n  </div>\n\n  <div class='job-value-box'>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p>\n    <ul><li>المطورون الذين يمتلكون خبرة عملية في بناء التكاملات بين الأنظمة المختلفة.</li><li>خريجو علوم الحاسوب أو الهندسة الذين لديهم معرفة قوية بلغة C# و.NET Framework.</li></ul>\n\n    <h3>ما الذي يميز هذه الفرصة؟</h3>\n    <ul><li>العمل في شركة رائدة في قطاع الاتصالات بالمنطقة مع بيئة تقنية متنوعة.</li><li>فرصة لتطوير المهارات في معماريات الميكروسيرفس والتكاملات الحديثة.</li></ul>\n\n    <h3>قائمة تحقق سريعة قبل التقديم</h3>\n    <ul><li>تحديث السيرة الذاتية لتبرز مشاريع التكاملات وواجهات API التي عملت عليها.</li><li>إعداد صورة شخصية حديثة وشهادة التخرج حسب متطلبات التقديم.</li><li>التأكد من إتقان أدوات مثل Kafka وRedis وOracle SQL المذكورة في الوصف الوظيفي.</li></ul>\n  </div>\n\n  <h2>الشروط والمتطلبات المذكورة في الإعلان</h2>\n  <ul><li>حاصل على درجة البكالوريوس في علوم الحاسوب، هندسة الحاسوب أو أي مجال ذي صلة.</li><li>خبرة عملية لا تقل عن سنة واحدة في مجال ذي صلة.</li></ul>\n\n  <h2>المهام والمسؤوليات المذكورة</h2>\n  <ul><li>تطوير الخدمات والتطبيقات والحلول بناءً على متطلبات الأعمال والمبيعات لأنظمة دعم الأعمال ورعاية العملاء.</li><li>تطوير وإدارة خدمات الويب وواجهات API (REST وSOAP) والتكاملات مع الأطراف الثالثة.</li><li>المساعدة في ترميز وتنفيذ وصيانة أنظمة إدارة قواعد البيانات العلائقية (Oracle SQL وSQL Server).</li><li>مراقبة أداء الخوادم والتطبيقات وضمان عملها بسلاسة يومياً، وتحليل المنتجات المنفذة لتحسين الأداء والاستقرار.</li><li>إدارة وصيانة نقاط اتصال العملاء مثل بوابة زين، USSD، CRM، IVR، وتطبيقات زين.</li></ul>\n\n  <h2>طريقة التقديم</h2>\n  <p>إلكترونياً عبر بوابة Zain Careers</p><p><a class='job-apply-btn' href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a></p>\n\n  <h2>معلومات لم يذكرها الإعلان بوضوح</h2>\n  <ul><li>الراتب أو نطاق الرواتب</li><li>نوع عقد العمل (دوام كامل/جزئي/مؤقت)</li><li>تفاصيل المزايا الوظيفية</li><li>عدد الشواغر المتاحة لهذا المسمى تحديداً</li></ul>\n\n  <div class='job-guidance-box'><h2>نصائح تساعدك قبل التقديم</h2><p><strong>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</strong></p><h3>مهارات قد تكون مفيدة لهذا النوع من الوظائف</h3><ul><li>الخبرة في تقنيات Message Queuing وEvent-driven integration.</li></ul></div>\n\n  <h2>أسئلة شائعة عن هذه الفرصة</h2><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونياً عبر بوابة Zain Careers</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن - عمّان. آخر موعد: 08-Oct-2026.</p></details>\n\n  <div class='job-safety-box'>\n    <h2>تنبيه مهم للباحثين عن عمل</h2>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </div>\n\n  <h2>المصدر والتحقق</h2>\n  <p>تم العثور على الفرصة عبر <strong>وظيفتك عنا</strong>، وآخر تحقق مسجل لدينا: 2026-09-04T09:07:53.483051+00:00.</p>\n  <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>\n  <p><a href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>\n</article>\n\n<style>\n.jordan-job-article{line-height:2}\n.job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}\n.job-kicker{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}\n.job-facts-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}\n.job-fact{padding:13px 14px;border:1px solid #e5eaf0;border-radius:12px;background:#fff}\n.job-fact strong,.job-fact span{display:block}\n.job-fact strong{font-size:12px;color:#667085;margin-bottom:4px}\n.job-fact span{font-weight:700;color:#172033}\n.job-value-box{border-right:4px solid #2563eb;background:#f8fbff}\n.job-guidance-box{border-right:4px solid #0f766e}\n.job-safety-box{border-right:4px solid #f59e0b;background:#fffaf0}\n.job-faq{padding:12px 14px;border:1px solid #e5eaf0;border-radius:12px;margin:10px 0;background:#fff}\n.job-faq summary{font-weight:800;cursor:pointer;color:#172033}\n.job-faq p{margin:8px 0 0}\n.job-apply-btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#0f766e;color:#fff!important;text-decoration:none;font-weight:800}\n@media(max-width:640px){.job-facts-grid{grid-template-columns:1fr}}\n</style>",
     "schema": {},
-    "meta_description": "تعلن مجموعة المناصير عن شواغر في تخصصات الحدادة، الميكانيك، الكهرباء، الدهان، والبودي، بالإضافة إلى فرصة لحديثي التخرج في الهندسة الميكانيكية. التقديم عبر البريد الإلكتروني."
+    "meta_description": "شركة زين الأردن تعلن عن وظيفة Integration Developer في عمّان. تتطلب بكالوريوس وخبرة سنة. التقديم عبر موقع زين الرسمي حتى 8 أكتوبر 2026."
   }
 }
