@@ -45,6 +45,25 @@ def host_matches(h: str, domains: set[str]) -> bool:
     return any(h == d or h.endswith("." + d) for d in domains)
 
 
+def is_social_url(url: str) -> bool:
+    return host_matches(host(url), SOCIAL_HOSTS)
+
+
+def is_allowed_social_job_url(url: str) -> bool:
+    """Allow only explicit LinkedIn job-detail URLs; reject generic social profiles/pages."""
+    try:
+        p = urlsplit(url)
+        h = host(url)
+        path = p.path.lower()
+        if host_matches(h, {"linkedin.com"}) and (
+            path.startswith("/jobs/view/") or path.startswith("/jobs/collections/")
+        ):
+            return True
+    except Exception:
+        pass
+    return False
+
+
 def is_social_share_url(url: str) -> bool:
     try:
         p = urlsplit(url)
@@ -75,13 +94,15 @@ def is_candidate_source_url(url: str, base_url: str) -> bool:
         return False
     if is_social_share_url(url):
         return False
+    if is_social_url(url) and not is_allowed_social_job_url(url):
+        return False
     return True
 
 
 def get(url: str) -> requests.Response:
     r = requests.get(
         url,
-        headers={"User-Agent": "JordanJobsVerifier/2.2 (+https://jobsinjordan2026.blogspot.com/)"},
+        headers={"User-Agent": "JordanJobsVerifier/2.3 (+https://jobsinjordan2026.blogspot.com/)"},
         timeout=45,
         allow_redirects=True,
     )
@@ -115,8 +136,6 @@ def external_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
             score += 2
         if any(x in low for x in APPLICATION_HINTS):
             score += 3
-        if host_matches(h, SOCIAL_HOSTS):
-            score -= 3
         out.append({"url": href, "host": h, "text": text, "score": score})
     return sorted(out, key=lambda x: x["score"], reverse=True)
 
@@ -124,8 +143,11 @@ def external_links(soup: BeautifulSoup, base_url: str) -> list[dict]:
 def looks_like_application_url(item: dict | None) -> bool:
     if not item:
         return False
-    low = (item.get("url", "") + " " + item.get("text", "")).lower()
-    return any(x in low for x in APPLICATION_HINTS) and not is_social_share_url(item.get("url", ""))
+    url = item.get("url", "")
+    if is_social_url(url) and not is_allowed_social_job_url(url):
+        return False
+    low = (url + " " + item.get("text", "")).lower()
+    return any(x in low for x in APPLICATION_HINTS) and not is_social_share_url(url)
 
 
 def resolve(candidate: dict) -> dict:
@@ -150,7 +172,7 @@ def resolve(candidate: dict) -> dict:
         try:
             orr = get(original_url)
             redirected = orr.url
-            if is_social_share_url(redirected):
+            if is_social_share_url(redirected) or (is_social_url(redirected) and not is_allowed_social_job_url(redirected)):
                 original_url = None
                 application_url = None
             else:
@@ -190,6 +212,7 @@ def resolve(candidate: dict) -> dict:
             "discovery_aggregator_is_not_official": True,
             "estimated_salary_is_not_official_without_original_confirmation": True,
             "social_share_links_are_never_original_or_application_urls": True,
+            "social_profiles_are_never_original_or_application_urls": True,
         },
     }
 
