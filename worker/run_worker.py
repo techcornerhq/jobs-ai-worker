@@ -10,9 +10,11 @@ from pathlib import Path
 
 from job_dedupe import classify, register
 from job_image_v10 import generate as generate_job_image
+from quality_gate import enforce as enforce_quality
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
+from taxonomy import classify_labels
 
 MISSING = "غير مذكور في الإعلان"
 DISCOVERY_PATH = Path("data/discovery/jo-jobs.json")
@@ -63,6 +65,12 @@ def merge_ai_facts(job: dict, enriched: dict) -> dict:
         out["location_text"] = official["location"]
     if usable(official.get("application_method")):
         out["application_method"] = official["application_method"]
+    elif out.get("application_url"):
+        out["application_method"] = "رابط التقديم الإلكتروني"
+        official["application_method"] = "رابط التقديم الإلكتروني"
+    elif out.get("application_email"):
+        out["application_method"] = "التقديم عبر البريد الإلكتروني"
+        official["application_method"] = "التقديم عبر البريد الإلكتروني"
     out["date_posted"] = feed_date_to_iso(out.get("feed_published"))
     out["field_confidence"] = {
         "official_facts": "source_or_ai_extracted_under_no-invention-policy",
@@ -94,15 +102,9 @@ def normalize_editorial_display(enriched: dict) -> None:
         official["job_title"] = arabic_display_title(official["job_title"])
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--index", type=int, default=0)
-    parser.add_argument("--output", default="data/results/latest.json")
-    parser.add_argument("--no-register", action="store_true", help="Do not persist campaign state (useful for tests)")
-    args = parser.parse_args()
-
+def process_candidate(index: int, register_state: bool = False) -> dict:
     started = now_iso()
-    candidate = load_candidate(args.index)
+    candidate = load_candidate(index)
     resolved = resolve(candidate)
     enriched = run_qwen(resolved)
     normalize_editorial_display(enriched)
@@ -115,12 +117,14 @@ def main() -> None:
         raise RuntimeError("ZERO-PAID-AI guard failed: unexpected AI provider")
 
     canonical = merge_ai_facts(resolved, enriched)
+    enriched["labels"] = classify_labels(canonical, enriched)
     dedupe = classify(canonical)
     canonical["campaign_id"] = dedupe.campaign_id
     canonical["repost_of"] = dedupe.matched_campaign_id if dedupe.action == "publish_genuine_repost" else None
 
     image_path = None
     image_url = None
+    quality = {"passed": True, "errors": [], "warnings": [], "metrics": {}}
     if dedupe.action == "merge_same_campaign":
         package = {
             "action": "do_not_republish",
@@ -132,16 +136,18 @@ def main() -> None:
         image_path, image_url = generate_job_image(canonical, image_title)
         canonical["featured_image_url"] = image_url
         rendered = render(canonical, enriched)
+        quality = enforce_quality(canonical, enriched, rendered)
         package = {
             "action": "publish_new_post" if dedupe.action == "publish_new_campaign" else "publish_genuine_repost",
             **rendered,
+            "quality_gate": quality,
         }
 
-    if not args.no_register:
+    if register_state:
         register(canonical, dedupe)
 
-    result = {
-        "worker_version": 10,
+    return {
+        "worker_version": 11,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
@@ -156,6 +162,9 @@ def main() -> None:
             "poster_version_required": "v10",
             "poster_text_collision_guard": True,
             "poster_remote_image_fallback_required": True,
+            "quality_gate_required": True,
+            "deterministic_taxonomy_required": True,
+            "internal_links_required": True,
         },
         "candidate": candidate,
         "source_resolution": {
@@ -194,22 +203,36 @@ def main() -> None:
             "official_details": enriched.get("official_details"),
             "missing_official_information": enriched.get("missing_official_information"),
             "verification_notes": enriched.get("verification_notes"),
+            "labels": enriched.get("labels"),
         },
+        "quality_gate": quality,
         "dedupe": asdict(dedupe),
         "publication_package": package,
     }
 
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--index", type=int, default=0)
+    parser.add_argument("--output", default="data/results/latest.json")
+    parser.add_argument("--no-register", action="store_true", help="Do not persist campaign state (useful for tests)")
+    args = parser.parse_args()
+
+    result = process_candidate(args.index, register_state=not args.no_register)
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+    candidate = result.get("candidate") or {}
+    package = result.get("publication_package") or {}
     print(json.dumps({
         "ok": True,
         "candidate": candidate.get("title"),
         "ai": result["ai"]["provider"],
         "model": result["ai"]["model"],
-        "dedupe": dedupe.action,
-        "publication_action": package["action"],
-        "featured_image": image_url,
+        "dedupe": result["dedupe"]["action"],
+        "publication_action": package.get("action"),
+        "quality_gate": result.get("quality_gate"),
+        "featured_image": result.get("canonical", {}).get("featured_image_url"),
         "output": str(out),
     }, ensure_ascii=False, indent=2))
 
