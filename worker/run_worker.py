@@ -2,13 +2,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from dataclasses import asdict
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 from job_dedupe import classify, register
-from job_image_v7 import generate as generate_job_image
+from job_image_v8 import generate as generate_job_image
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
@@ -70,6 +71,29 @@ def merge_ai_facts(job: dict, enriched: dict) -> dict:
     return out
 
 
+def arabic_display_title(value: str) -> str:
+    s = str(value or "").strip()
+    replacements = [
+        (r"Integration\s+Developer(?:\s+Team\s+Member)?", "مطور تكامل أنظمة"),
+        (r"Integration\s+Developer", "مطور تكامل أنظمة"),
+        (r"Team\s+Member", ""),
+        (r"Software\s+Engineer", "مهندس برمجيات"),
+    ]
+    for pattern, repl in replacements:
+        s = re.sub(pattern, repl, s, flags=re.I)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def normalize_editorial_display(enriched: dict) -> None:
+    for key in ("seo_title", "social_title"):
+        if enriched.get(key):
+            enriched[key] = arabic_display_title(enriched[key])
+    official = enriched.get("official_details") or {}
+    if official.get("job_title"):
+        official["job_title"] = arabic_display_title(official["job_title"])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--index", type=int, default=0)
@@ -81,6 +105,7 @@ def main() -> None:
     candidate = load_candidate(args.index)
     resolved = resolve(candidate)
     enriched = run_qwen(resolved)
+    normalize_editorial_display(enriched)
 
     if enriched.get("paid_api_used") is not False:
         raise RuntimeError("ZERO-PAID-AI guard failed: paid API usage detected")
@@ -116,7 +141,7 @@ def main() -> None:
         register(canonical, dedupe)
 
     result = {
-        "worker_version": 5,
+        "worker_version": 6,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
