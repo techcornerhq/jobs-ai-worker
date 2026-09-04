@@ -1,0 +1,14 @@
+{
+  "status": "waiting_for_user_selected_sources",
+  "enabled_now": [
+    {
+      "id": "jo-jobs",
+      "role": "discovery_only",
+      "public_link_exposure": false,
+      "copy_article_text": false,
+      "must_resolve_original_source": true
+    }
+  ],
+  "future_rule": "Do not add new discovery sources until Ahmad selects or approves them. When approved, add sources behind the same resolver, verification, dedupe, quality-gate and no-competitor-link policies.",
+  "next_source_expansion_task": "Add user-selected official/company/government/organization sources and keep the source registry modular."
+}
