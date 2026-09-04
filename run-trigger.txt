@@ -1,3 +1,3 @@
-branded-image-source-privacy-test: 2026-09-04
+salary-estimate-policy-validation: 2026-09-04
 candidate_index: 2
 register_state: false
