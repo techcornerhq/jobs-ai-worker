@@ -30,7 +30,7 @@ jobs:
     env:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       GROQ_MODEL: "qwen/qwen3.8-27b"
-      QWEN_MAX_TOKENS: "950"
+      QWEN_MAX_TOKENS: "1250"
       QWEN_TEMP: "0.20"
 
     steps:
