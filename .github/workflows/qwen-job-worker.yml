@@ -89,10 +89,14 @@ jobs:
           assert d["ai"]["provider"] == "groq_free_plan"
           assert d["policy"]["paid_ai_allowed"] is False
           assert d["policy"]["paid_fallback_allowed"] is False
+          if d["publication_package"]["action"] != "do_not_republish":
+              assert d["publication_package"].get("featured_image_url")
+              assert d["policy"]["competitor_discovery_links_publicly_exposed"] is False
           print("ZERO-PAID-AI CHECK: PASS")
           print("Model:", d["ai"].get("model"))
           print("Usage:", d["ai"].get("usage"))
           print("Title:", d["publication_package"].get("title"))
+          print("Featured image:", d["publication_package"].get("featured_image_url"))
           print("Dedupe:", d["dedupe"]["action"])
           print("Publication action:", d["publication_package"]["action"])
           PY
@@ -102,7 +106,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/discovery/jo-jobs.json data/results/latest.json data/state/job_campaigns.json 2>/dev/null || true
+          git add data/discovery/jo-jobs.json data/results/latest.json data/state/job_campaigns.json data/images/*.png 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No result changes to commit"
             exit 0
