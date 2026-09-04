@@ -39,9 +39,8 @@ def faq_html(items) -> str:
             continue
         q = str(item.get("question") or "").strip()
         a = str(item.get("answer") or "").strip()
-        if not q or not a:
-            continue
-        out.append(f"<details class='job-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>")
+        if q and a:
+            out.append(f"<details class='job-faq'><summary>{esc(q)}</summary><p>{esc(a)}</p></details>")
     return "".join(out)
 
 
@@ -51,11 +50,9 @@ def deterministic_faq(job: dict, official: dict) -> list[dict]:
     location = official.get("location") or MISSING
     deadline = official.get("deadline") or MISSING
     email = str(job.get("application_email") or "").strip()
-
     apply_answer = method
     if email:
         apply_answer = f"{method}. البريد الإلكتروني المخصص للتقديم: {email}."
-
     return [
         {"question": "كيف يمكن التقديم على هذه الفرصة؟", "answer": apply_answer},
         {"question": "هل الراتب مذكور في الإعلان؟", "answer": salary if salary != MISSING else "لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا."},
@@ -69,23 +66,22 @@ def render(job: dict, enriched: dict) -> dict:
     reader_value = enriched.get("reader_value") or {}
     labels = [str(x).strip() for x in enriched.get("labels", []) if str(x).strip()][:5]
     title = enriched.get("seo_title") or job.get("job_title") or job.get("title") or "فرصة عمل جديدة"
-    source_url = job.get("source_original_url") or job.get("source_discovery_url")
-    source_name = job.get("source_name") or "المصدر"
     verified_at = job.get("verified_at") or job.get("date_discovered") or MISSING
+    featured_image_url = str(job.get("featured_image_url") or "").strip()
+
+    image_html = ""
+    if featured_image_url:
+        image_html = f"<figure class='job-featured-image'><img src='{esc(featured_image_url)}' alt='{esc(title)}' loading='eager'/></figure>"
 
     repost_note = ""
     if job.get("repost_of"):
         repost_note = "<div class='job-note'><strong>إعادة نشر:</strong> ظهرت هذه الفرصة من جديد بعد حملة سابقة، لذلك عوملت كإعادة نشر حديثة وليست نسخة مكررة من نفس اليوم.</div>"
 
     verification_notes = clean_items(enriched.get("verification_notes"))
-    verification_html = f"<ul>{li(verification_notes)}</ul>" if verification_notes else "<p>تم تنظيم المعلومات المتاحة مع فصل الحقائق الرسمية عن الإرشادات العامة.</p>"
+    verification_html = f"<ul>{li(verification_notes)}</ul>" if verification_notes else "<p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>"
 
     faq_items = enriched.get("faq") or deterministic_faq(job, official)
     faqs = faq_html(faq_items)
-
-    source_link = ""
-    if source_url:
-        source_link = f"<p><a href='{esc(source_url)}' rel='nofollow noopener' target='_blank'>عرض مصدر الإعلان</a></p>"
 
     application_bits = [f"<p>{esc(official.get('application_method'))}</p>"]
     if job.get("application_email"):
@@ -94,7 +90,7 @@ def render(job: dict, enriched: dict) -> dict:
     if job.get("application_phone"):
         application_bits.append(f"<p><strong>الهاتف:</strong> {esc(job.get('application_phone'))}</p>")
     if job.get("application_url"):
-        application_bits.append(f"<p><a class='job-apply-btn' href='{esc(job.get('application_url'))}' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a></p>")
+        application_bits.append(f"<p><a class='job-apply-btn' href='{esc(job.get('application_url'))}' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم الرسمية</a></p>")
     application_html = "".join(application_bits)
 
     requirements = clean_items(enriched.get("official_requirements"))
@@ -118,6 +114,8 @@ def render(job: dict, enriched: dict) -> dict:
 
     content = f"""
 <article class='jordan-job-article'>
+  {image_html}
+
   <div class='job-intro-card'>
     <p class='job-kicker'>فرصة عمل في الأردن</p>
     <p>{esc(enriched.get('summary') or 'تفاصيل الوظيفة مرتبة بشكل واضح مع فصل المعلومات الرسمية عن النصائح العامة.')}</p>
@@ -141,10 +139,8 @@ def render(job: dict, enriched: dict) -> dict:
     <h2>هل هذه الفرصة مناسبة لك؟</h2>
     <p><strong>{GUIDANCE_LABEL}</strong></p>
     <ul>{li(reader_value.get('who_might_fit'), 'راجع التخصصات المطلوبة وقارنها بخبرتك أو مؤهلك قبل التقديم.')}</ul>
-
     <h3>ما الذي يميز هذه الفرصة؟</h3>
     <ul>{li(reader_value.get('what_makes_this_opportunity_notable'), 'راجع تفاصيل الإعلان وطريقة التقديم لتحديد مدى مناسبتها لك.')}</ul>
-
     <h3>قائمة تحقق سريعة قبل التقديم</h3>
     <ul>{li(reader_value.get('application_checklist'), 'جهز سيرة ذاتية محدثة وتأكد من بيانات التواصل قبل الإرسال.')}</ul>
   </div>
@@ -170,14 +166,15 @@ def render(job: dict, enriched: dict) -> dict:
     <p>{esc(enriched.get('safety_note') or 'تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.')}</p>
   </div>
 
-  <h2>المصدر والتحقق</h2>
-  <p>تم العثور على الفرصة عبر <strong>{esc(source_name)}</strong>، وآخر تحقق مسجل لدينا: {esc(verified_at)}.</p>
+  <h2>التحقق من الإعلان</h2>
+  <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: {esc(verified_at)}.</p>
   {verification_html}
-  {source_link}
 </article>
 
 <style>
 .jordan-job-article{{line-height:2}}
+.job-featured-image{{margin:0 0 20px}}
+.job-featured-image img{{display:block;width:100%;height:auto;border-radius:18px;border:1px solid #e5eaf0}}
 .job-intro-card,.job-note,.job-value-box,.job-guidance-box,.job-safety-box{{padding:18px;border:1px solid #e5eaf0;border-radius:16px;margin:18px 0;background:#f8fafc}}
 .job-kicker{{font-size:12px;font-weight:800;color:#0f766e;margin:0 0 4px}}
 .job-facts-grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}}
@@ -233,6 +230,7 @@ def render(job: dict, enriched: dict) -> dict:
         "content": content,
         "schema": schema,
         "meta_description": enriched.get("meta_description"),
+        "featured_image_url": featured_image_url or None,
     }
 
 
