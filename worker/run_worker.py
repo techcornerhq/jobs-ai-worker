@@ -14,6 +14,7 @@ from quality_gate import enforce as enforce_quality
 from qwen_enricher import run_qwen
 from render_job import render
 from resolve_source import resolve
+from schema_builder import ensure as ensure_schema
 from taxonomy import classify_labels
 
 MISSING = "غير مذكور في الإعلان"
@@ -136,6 +137,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
         image_path, image_url = generate_job_image(canonical, image_title)
         canonical["featured_image_url"] = image_url
         rendered = render(canonical, enriched)
+        rendered = ensure_schema(rendered, canonical, enriched)
         quality = enforce_quality(canonical, enriched, rendered)
         package = {
             "action": "publish_new_post" if dedupe.action == "publish_new_campaign" else "publish_genuine_repost",
@@ -165,6 +167,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "quality_gate_required": True,
             "deterministic_taxonomy_required": True,
             "internal_links_required": True,
+            "deterministic_jobposting_schema_required": True,
         },
         "candidate": candidate,
         "source_resolution": {
