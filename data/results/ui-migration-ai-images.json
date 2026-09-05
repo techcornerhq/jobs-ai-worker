@@ -1,6 +1,6 @@
 {
   "source": "data/results/ui-migration.json",
-  "generated_at": "2026-09-05T11:37:44.746602+00:00",
+  "generated_at": "2026-09-05T11:47:44.589075+00:00",
   "count": 7,
   "failure_count": 0,
   "failures": [],
@@ -163,7 +163,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:33:16.111669+00:00",
+        "generated_at": "2026-09-05T11:47:32.583122+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/86a23f426c3191df9c128c64-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-98b1a5bcb09036-ai-v1.png",
         "path": "data/images/job-98b1a5bcb09036-ai-v1.png",
@@ -333,7 +333,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:34:00.388589+00:00",
+        "generated_at": "2026-09-05T11:47:34.510837+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bc4208238b88073195b63e81-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-3a0d6e72dbc730-ai-v1.png",
         "path": "data/images/job-3a0d6e72dbc730-ai-v1.png",
@@ -492,7 +492,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:34:45.771767+00:00",
+        "generated_at": "2026-09-05T11:47:36.631791+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-aaa438af73c542-ai-v1.png",
         "path": "data/images/job-aaa438af73c542-ai-v1.png",
@@ -666,7 +666,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:35:30.615404+00:00",
+        "generated_at": "2026-09-05T11:47:39.081651+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9ccdcf39798dc4b12c7f615b-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-af2b630eb0e171-ai-v1.png",
         "path": "data/images/job-af2b630eb0e171-ai-v1.png",
@@ -837,7 +837,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:36:15.142178+00:00",
+        "generated_at": "2026-09-05T11:47:41.056577+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/30a715497278e371dbd2d01b-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0b4bb9bc01813f-ai-v1.png",
         "path": "data/images/job-0b4bb9bc01813f-ai-v1.png",
@@ -1009,7 +1009,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:36:59.896979+00:00",
+        "generated_at": "2026-09-05T11:47:42.937716+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/39c3accab2d5583550220e6b-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-05107471df125f-ai-v1.png",
         "path": "data/images/job-05107471df125f-ai-v1.png",
@@ -1180,7 +1180,7 @@
       },
       "image_migration": {
         "version": "ai-v1",
-        "generated_at": "2026-09-05T11:37:44.746553+00:00",
+        "generated_at": "2026-09-05T11:47:44.589032+00:00",
         "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/478a827219ebd94fc2eae3f6-v12.png",
         "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e1ecca3c57bda1-ai-v1.png",
         "path": "data/images/job-e1ecca3c57bda1-ai-v1.png",
