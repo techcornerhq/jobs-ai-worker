@@ -1,0 +1,1191 @@
+{
+  "source": "data/results/ui-migration.json",
+  "generated_at": "2026-09-05T11:37:44.746602+00:00",
+  "count": 7,
+  "failure_count": 0,
+  "failures": [],
+  "items": [
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:35:12.920614+00:00",
+      "completed_at": "2026-09-04T19:35:16.014415+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "42e8b25779a7ea639f9b9cbb",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "مجموعة المناصير تفتح باب التوظيف في عدة تخصصات – رواتب متوقعة تصل إلى 850 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6775",
+        "feed_published": "Thu, 03 Sep 2026 23:58:53 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "jobs@mgc-machinery.com",
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:35:13.263475+00:00"
+      },
+      "canonical": {
+        "campaign_id": "86a23f426c3191df9c128c64",
+        "repost_of": null,
+        "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك",
+        "employer_name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
+        "location_text": null,
+        "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+        "application_url": null,
+        "application_email": "jobs@mgc-machinery.com",
+        "application_phone": null,
+        "date_posted": "2026-09-03T23:58:53+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6775",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-98b1a5bcb09036-ai-v1.png",
+        "featured_image_path": "data/images/job-98b1a5bcb09036-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2980,
+          "completion_tokens": 950,
+          "total_tokens": 3930
+        },
+        "seo_title": "مجموعة المناصير: وظائف صيانة مركبات وآليات وفرصة لحديثي التخرج",
+        "meta_description": "تعلن مجموعة المناصير عن شواغر في صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وفرصة لحديثي التخرج في الهندسة الميكانيكية. رواتب متوقعة تصل إلى 850 دينار. قدم عبر البريد الإلكتروني.",
+        "official_details": {
+          "employer": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير",
+          "job_title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك",
+          "location": "غير مذكور في الإعلان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "غير مذكور في الإعلان",
+          "qualification": "غير مذكور في الإعلان",
+          "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "عدد الشواغر لكل تخصص",
+          "مكان العمل الدقيق",
+          "سنوات الخبرة المطلوبة للتخصصات الفنية",
+          "الراتب الرسمي أو نطاقه المعلن",
+          "الموعد النهائي للتقديم",
+          "نوع العقد (دوام كامل/جزئي)"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف الأردن",
+          "وظائف هندسة",
+          "حديثو التخرج"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 62,
+          "summary_chars": 709,
+          "content_chars": 16414,
+          "labels": 3
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "86a23f426c3191df9c128c64",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "مجموعة المناصير: وظائف صيانة مركبات وآليات وفرصة لحديثي التخرج",
+        "social_title": "وظائف جديدة في مجموعة المناصير: صيانة مركبات وفرصة لحديثي التخرج",
+        "labels": [
+          "وظائف الأردن",
+          "وظائف هندسة",
+          "حديثو التخرج"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك</h1>\n    <p class='job-employer'>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</p>\n    <div class='job-top-chips'></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-98b1a5bcb09036-ai-v1.png' alt='فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك لدى شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>أعلنت شركة العاديات السريعة لتجارة الآليات التابعة لمجموعة المناصير عن توفر فرص عمل ضمن فريق الصيانة. تشمل الشواغر تخصصات فنية متنوعة مثل حدادة وميكانيك وكهرباء ودهان وبودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم تحدد الشركة في الإعلان الرسمي عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة لكل تخصص، كما لم تعلن عن راتب رسمي ثابت. تشير التقديرات السوقية العامة إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، وذلك بناءً على المجال الفني ومستوى الخبرة. يتم التقديم من خلال إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ضرورة ذكر اسم الشاغر في عنوان الرسالة. ننصح المهتمين بالتحقق من التفاصيل الإضافية مباشرة مع الشركة عند التواصل.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>الفنيون العاملون في صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي)</li><li>حاملو شهادة البكالوريوس في الهندسة الميكانيكية من حديثي التخرج</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>تعدد التخصصات الفنية المطلوبة مما يوسع دائرة الفرص</li><li>توفر فرصة صريحة لحديثي التخرج في الهندسة الميكانيكية دون اشتراط خبرة سابقة</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تحديث السيرة الذاتية لتبرز المهارات الفنية والخبرات العملية ذات الصلة</li><li>تجهيز نسخة من الشهادات المهنية أو الأكاديمية إن وجدت</li><li>تأكيد كتابة اسم الشاغر المطلوب بوضوح في عنوان البريد الإلكتروني</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>الانضمام إلى فريق الصيانة في المجالات الفنية المحددة</li><li>فرصة مخصصة لحديثي التخرج في الهندسة الميكانيكية</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <ul class='job-list'><li>أعمال الصيانة والإصلاح للمركبات والآليات</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:jobs@mgc-machinery.com'>jobs@mgc-machinery.com</a></p>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>عدد الشواغر لكل تخصص</li><li>مكان العمل الدقيق</li><li>سنوات الخبرة المطلوبة للتخصصات الفنية</li><li>الراتب الرسمي أو نطاقه المعلن</li><li>الموعد النهائي للتقديم</li><li>نوع العقد (دوام كامل/جزئي)</li></ul>\n  </section>\n\n  \n  <section class='job-guidance-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <h3>مهارات قد تساعدك</h3><ul class='job-list'><li>المعرفة بالأدوات والمعدات الفنية الخاصة بكل تخصص</li></ul>\n  </section>\n\n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني. البريد الإلكتروني المخصص للتقديم: jobs@mgc-machinery.com.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: غير مذكور في الإعلان. آخر موعد: غير مذكور في الإعلان.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search/label/%D8%AD%D8%AF%D9%8A%D8%AB%D9%88%20%D8%A7%D9%84%D8%AA%D8%AE%D8%B1%D8%AC'>حديثو التخرج</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:35:13.263475+00:00.</p>\n    <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك\", \"description\": \"أعلنت شركة العاديات السريعة لتجارة الآليات التابعة لمجموعة المناصير عن توفر فرص عمل ضمن فريق الصيانة. تشمل الشواغر تخصصات فنية متنوعة مثل حدادة وميكانيك وكهرباء ودهان وبودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم تحدد الشركة في الإعلان الرسمي عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة لكل تخصص، كما لم تعلن عن راتب رسمي ثابت. تشير التقديرات السوقية العامة إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، وذلك بناءً على المجال الفني ومستوى الخبرة. يتم التقديم من خلال إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ضرورة ذكر اسم الشاغر في عنوان الرسالة. ننصح المهتمين بالتحقق من التفاصيل الإضافية مباشرة مع الشركة عند التواصل.\", \"datePosted\": \"2026-09-03T23:58:53+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير\"}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "فريق الصيانة (حدادة، ميكانيك، كهرباء، دهان، بودي) وحديثو تخرج هندسة ميكانيك",
+          "description": "أعلنت شركة العاديات السريعة لتجارة الآليات التابعة لمجموعة المناصير عن توفر فرص عمل ضمن فريق الصيانة. تشمل الشواغر تخصصات فنية متنوعة مثل حدادة وميكانيك وكهرباء ودهان وبودي المركبات والآليات، بالإضافة إلى فرصة مخصصة لحديثي التخرج في تخصص الهندسة الميكانيكية. لم تحدد الشركة في الإعلان الرسمي عدد الشواغر أو مكان العمل أو سنوات الخبرة المطلوبة لكل تخصص، كما لم تعلن عن راتب رسمي ثابت. تشير التقديرات السوقية العامة إلى أن الرواتب المتوقعة تتراوح بين 350 و850 ديناراً أردنياً شهرياً، وذلك بناءً على المجال الفني ومستوى الخبرة. يتم التقديم من خلال إرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع ضرورة ذكر اسم الشاغر في عنوان الرسالة. ننصح المهتمين بالتحقق من التفاصيل الإضافية مباشرة مع الشركة عند التواصل.",
+          "datePosted": "2026-09-03T23:58:53+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة العاديات السريعة لتجارة الآليات – مجموعة المناصير"
+          }
+        },
+        "meta_description": "تعلن مجموعة المناصير عن شواغر في صيانة المركبات والآليات (حدادة، ميكانيك، كهرباء، دهان، بودي) وفرصة لحديثي التخرج في الهندسة الميكانيكية. رواتب متوقعة تصل إلى 850 دينار. قدم عبر البريد الإلكتروني.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-98b1a5bcb09036-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 62,
+            "summary_chars": 709,
+            "content_chars": 16414,
+            "labels": 3
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:33:16.111669+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/86a23f426c3191df9c128c64-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-98b1a5bcb09036-ai-v1.png",
+        "path": "data/images/job-98b1a5bcb09036-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:36:24.014660+00:00",
+      "completed_at": "2026-09-04T19:36:29.123479+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "9f3b3be5c5fbcfd793a917c8",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "زين الأردن تفتح باب التوظيف والتدريب لـ15 فرصة – رواتب متوقعة تصل إلى 800 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "feed_published": "Thu, 03 Sep 2026 23:31:21 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "source_original_url": "https://careers.zain.com/vacancy/175993",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:36:25.191679+00:00"
+      },
+      "canonical": {
+        "campaign_id": "bc4208238b88073195b63e81",
+        "repost_of": null,
+        "job_title": "مطور تكامل أنظمة",
+        "employer_name": "شركة زين الأردن",
+        "location_text": "الأردن - عمّان",
+        "application_method": "إلكترونيًا عبر موقع زين Careers",
+        "application_url": "https://careers.zain.com/vacancy/175993",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T23:31:21+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6773",
+        "source_original_url": "https://careers.zain.com/vacancy/175993",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-3a0d6e72dbc730-ai-v1.png",
+        "featured_image_path": "data/images/job-3a0d6e72dbc730-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3846,
+          "completion_tokens": 950,
+          "total_tokens": 4796
+        },
+        "seo_title": "زين الأردن: مطلوب مطور تكامل أنظمة بخبرة سنة في عمّان",
+        "meta_description": "شركة زين الأردن تعلن عن شاغر Integration Developer في عمّان. يتطلب بكالوريوس وخبرة سنة. التقديم عبر موقع زين الرسمي.",
+        "official_details": {
+          "employer": "شركة زين الأردن",
+          "job_title": "مطور تكامل أنظمة",
+          "location": "الأردن - عمّان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "سنة واحدة على الأقل",
+          "qualification": "بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله",
+          "application_method": "إلكترونيًا عبر موقع زين Careers",
+          "deadline": "08-Oct-2026"
+        },
+        "missing_official_information": [
+          "الراتب أو نطاق الرواتب",
+          "نوع العقد (دوام كامل/جزئي/مؤقت)",
+          "تفاصيل ساعات العمل",
+          "المزايا الإضافية"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 53,
+          "summary_chars": 746,
+          "content_chars": 16456,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "bc4208238b88073195b63e81",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "زين الأردن: مطلوب مطور تكامل أنظمة بخبرة سنة في عمّان",
+        "social_title": "وظيفة مطور تكامل أنظمة في زين الأردن – التقديم مفتوح الآن",
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>مطور تكامل أنظمة</h1>\n    <p class='job-employer'>شركة زين الأردن</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>الأردن - عمّان</span><span class='job-top-chip'><b>آخر موعد</b>08-Oct-2026</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-3a0d6e72dbc730-ai-v1.png' alt='مطور تكامل أنظمة لدى شركة زين الأردن' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>تعلن شركة زين الأردن عن توفر فرصة عمل لشغل منصب Integration Developer Team Member ضمن قطاع العمليات التقنية في عمّان. تهدف الوظيفة إلى تطوير خدمات وحلول الأنظمة الداعمة للأعمال وتطبيقات خدمة العملاء، مع التركيز على تكامل الأنظمة مثل CRM وERP وأنظمة الفوترة. يتطلب الشاغر درجة البكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، بالإضافة إلى سنة واحدة على الأقل من الخبرة العملية ذات الصلة. تشمل المهام الرئيسية تطوير واجهات برمجة التطبيقات (APIs) باستخدام تقنيات مثل .NET وOracle SQL، وإدارة قواعد البيانات، ومراقبة أداء الخوادم لضمان استقرار الأنظمة. كما يتطلب الدور العمل على تحسين استراتيجيات التكامل الحالية وتوثيق العمليات التقنية. يمكن للراغبين بالتقديم إرسال السيرة الذاتية وشهادة التعليم وصورة شخصية عبر بوابة التوظيف الرسمية لزين.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>شركة زين الأردن</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>الأردن - عمّان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>سنة واحدة على الأقل</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>بكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>08-Oct-2026</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>مطور تكامل أنظمة</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>مطورو البرمجيات الذين يمتلكون خبرة في بناء واجهات API وتكامل الأنظمة.</li><li>خريجو علوم الحاسوب أو الهندسة الذين لديهم معرفة بقواعد البيانات وتقنيات .NET.</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>فرصة للعمل في شركة اتصالات رائدة في المنطقة مع بيئة تقنية متنوعة.</li><li>تركيز الوظيفة على تقنيات حديثة مثل Microservices وKafka مما يعزز الخبرة التقنية.</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تحديث السيرة الذاتية لتبرز مشاريع التكامل (Integration) السابقة.</li><li>التأكد من توثيق الخبرة مع تقنيات مثل Oracle SQL وREST/SOAP APIs.</li><li>إعداد صورة شخصية حديثة وشهادة التعليم حسب متطلبات التقديم.</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>حاصل على درجة البكالوريوس في علوم الحاسوب، هندسة الحاسوب، أو مجال ذي صلة.</li><li>خبرة عملية لا تقل عن سنة واحدة في مجال ذي صلة.</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <ul class='job-list'><li>تطوير الخدمات والتطبيقات والحلول بناءً على متطلبات الأعمال والمبيعات لأنظمة دعم الأعمال وخدمة العملاء.</li><li>تطوير برامج التكامل لأنظمة الفوترة، التزويد، CRM، ERP، والتطبيقات المحمولة.</li><li>المساعدة في ترميز وصيانة أنظمة إدارة قواعد البيانات العلائقية باستخدام Oracle SQL وSQL Server.</li><li>تطوير وإدارة خدمات زين باستخدام تقنيات مثل Microsoft .Net Framework وOracle PL/SQL وKafka.</li><li>مراقبة أداء الخوادم والتطبيقات وتحليل المنتجات المنفذة لتحسين الأداء والاستقرار.</li><li>إدارة وصيانة نقاط اتصال العملاء مثل بوابة زين، USSD، وCRM.</li><li>تحليل وتحسين تكاملات الأنظمة الحالية واستراتيجيات الترحيل بما في ذلك تحديث الخدمات القديمة.</li><li>اختبار الأنظمة واستكشاف الأخطاء وإصلاحها، مع الحفاظ على توثيق تقني دقيق وممارسات CI/CD.</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إلكترونيًا عبر موقع زين Careers</p><a class='job-apply-btn' href='https://careers.zain.com/vacancy/175993' rel='nofollow noopener' target='_blank'>التقديم على الوظيفة</a>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>الراتب أو نطاق الرواتب</li><li>نوع العقد (دوام كامل/جزئي/مؤقت)</li><li>تفاصيل ساعات العمل</li><li>المزايا الإضافية</li></ul>\n  </section>\n\n  \n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكترونيًا عبر موقع زين Careers</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: الأردن - عمّان. آخر موعد: 08-Oct-2026.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:36:25.191679+00:00.</p>\n    <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مطور تكامل أنظمة\", \"description\": \"تعلن شركة زين الأردن عن توفر فرصة عمل لشغل منصب Integration Developer Team Member ضمن قطاع العمليات التقنية في عمّان. تهدف الوظيفة إلى تطوير خدمات وحلول الأنظمة الداعمة للأعمال وتطبيقات خدمة العملاء، مع التركيز على تكامل الأنظمة مثل CRM وERP وأنظمة الفوترة. يتطلب الشاغر درجة البكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، بالإضافة إلى سنة واحدة على الأقل من الخبرة العملية ذات الصلة. تشمل المهام الرئيسية تطوير واجهات برمجة التطبيقات (APIs) باستخدام تقنيات مثل .NET وOracle SQL، وإدارة قواعد البيانات، ومراقبة أداء الخوادم لضمان استقرار الأنظمة. كما يتطلب الدور العمل على تحسين استراتيجيات التكامل الحالية وتوثيق العمليات التقنية. يمكن للراغبين بالتقديم إرسال السيرة الذاتية وشهادة التعليم وصورة شخصية عبر بوابة التوظيف الرسمية لزين.\", \"datePosted\": \"2026-09-03T23:31:21+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة زين الأردن\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"الأردن - عمّان\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "مطور تكامل أنظمة",
+          "description": "تعلن شركة زين الأردن عن توفر فرصة عمل لشغل منصب Integration Developer Team Member ضمن قطاع العمليات التقنية في عمّان. تهدف الوظيفة إلى تطوير خدمات وحلول الأنظمة الداعمة للأعمال وتطبيقات خدمة العملاء، مع التركيز على تكامل الأنظمة مثل CRM وERP وأنظمة الفوترة. يتطلب الشاغر درجة البكالوريوس في علوم الحاسوب أو هندسة الحاسوب أو ما يعادله، بالإضافة إلى سنة واحدة على الأقل من الخبرة العملية ذات الصلة. تشمل المهام الرئيسية تطوير واجهات برمجة التطبيقات (APIs) باستخدام تقنيات مثل .NET وOracle SQL، وإدارة قواعد البيانات، ومراقبة أداء الخوادم لضمان استقرار الأنظمة. كما يتطلب الدور العمل على تحسين استراتيجيات التكامل الحالية وتوثيق العمليات التقنية. يمكن للراغبين بالتقديم إرسال السيرة الذاتية وشهادة التعليم وصورة شخصية عبر بوابة التوظيف الرسمية لزين.",
+          "datePosted": "2026-09-03T23:31:21+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة زين الأردن"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressRegion": null,
+              "addressLocality": "الأردن - عمّان"
+            }
+          }
+        },
+        "meta_description": "شركة زين الأردن تعلن عن شاغر Integration Developer في عمّان. يتطلب بكالوريوس وخبرة سنة. التقديم عبر موقع زين الرسمي.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-3a0d6e72dbc730-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 53,
+            "summary_chars": 746,
+            "content_chars": 16456,
+            "labels": 2
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:34:00.388589+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bc4208238b88073195b63e81-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-3a0d6e72dbc730-ai-v1.png",
+        "path": "data/images/job-3a0d6e72dbc730-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:37:37.123740+00:00",
+      "completed_at": "2026-09-04T19:37:41.271269+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "98ba775ddf8f74015ec05e24",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "بن العميد تطلب موظفين في عمان برواتب متوقعة من 300 إلى 600 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "feed_published": "Thu, 03 Sep 2026 01:51:07 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:37:37.995102+00:00"
+      },
+      "canonical": {
+        "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+        "repost_of": null,
+        "job_title": null,
+        "employer_name": "بن العميد",
+        "location_text": "عمان – الأردن",
+        "application_method": "رابط التقديم الإلكتروني",
+        "application_url": "https://careers.alameedcoffee.com/jobs.php",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-03T01:51:07+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6771",
+        "source_original_url": "https://careers.alameedcoffee.com/jobs.php",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-aaa438af73c542-ai-v1.png",
+        "featured_image_path": "data/images/job-aaa438af73c542-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3105,
+          "completion_tokens": 786,
+          "total_tokens": 3891
+        },
+        "seo_title": "بن العميد: وظائف متنوعة في عمان (إدارية، تقنية، تشغيلية) براتب متوقع 300-600 دينار",
+        "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة والتقنية والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+        "official_details": {
+          "employer": "بن العميد",
+          "job_title": "غير مذكور في الإعلان",
+          "location": "عمان – الأردن",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "غير مذكور في الإعلان",
+          "qualification": "غير مذكور في الإعلان",
+          "application_method": "رابط التقديم الإلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "المسمى الوظيفي المحدد لكل شاغر",
+          "المؤهلات العلمية المطلوبة",
+          "نوع العقد (دوام كامل/جزئي)",
+          "الراتب الرسمي",
+          "موعد إغلاق باب التقديم",
+          "تفاصيل طريقة التقديم الدقيقة"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الشركة."
+        ],
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "jobposting_schema_not_emitted"
+        ],
+        "metrics": {
+          "title_chars": 82,
+          "summary_chars": 473,
+          "content_chars": 13995,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "f6ae7c2ddfe25e3289dca87f",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "بن العميد: وظائف متنوعة في عمان (إدارية، تقنية، تشغيلية) براتب متوقع 300-600 دينار",
+        "social_title": "فرص عمل في بن العميد عمان: من مراقبة كاميرات إلى تطوير تطبيقات، راتب متوقع 300-600 دينار",
+        "labels": [
+          "وظائف عمان",
+          "وظائف تقنية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>غير مذكور في الإعلان</h1>\n    <p class='job-employer'>بن العميد</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>عمان – الأردن</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-aaa438af73c542-ai-v1.png' alt='غير مذكور في الإعلان لدى بن العميد' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>تعلن شركة بن العميد عن توفر مجموعة من الوظائف الشاغرة في عمان، الأردن، تغطي مجالات متنوعة تشمل الإدارة، التسويق، تطوير التطبيقات، ضمان الجودة، المشتريات، المستودعات، وخدمة العملاء. تتراوح الخبرة المطلوبة بين سنتين وخمس سنوات حسب طبيعة الشاغر. يُذكر أن الراتب المتوقع يتراوح بين 300 و600 دينار، وهو تقدير غير رسمي ولم يُذكر في الإعلان الأصلي. يمكن التقديم عبر الموقع الإلكتروني الرسمي للشركة. هذه الفرصة مناسبة للباحثين عن عمل في قطاع الأغذية والمشروبات أو التقنية والإدارة.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>بن العميد</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>عمان – الأردن</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>غير مذكور في الإعلان</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>أصحاب الخبرة في قطاع الأغذية والمشروبات أو إدارة الفروع</li><li>المختصون في التقنية (تطوير تطبيقات، QA) أو التسويق</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>تنوع الوظائف بين الإدارية والتقنية والتشغيلية</li><li>فرصة للعمل في شركة معروفة في قطاع المقاهي</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تحديث السيرة الذاتية لتتوافق مع طبيعة الشاغر المستهدف</li><li>التأكد من صحة بيانات التواصل في الطلب</li><li>الاطلاع على تفاصيل كل وظيفة قبل التقديم</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <p>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</p>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>رابط التقديم الإلكتروني</p><a class='job-apply-btn' href='https://careers.alameedcoffee.com/jobs.php' rel='nofollow noopener' target='_blank'>التقديم على الوظيفة</a>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>المسمى الوظيفي المحدد لكل شاغر</li><li>المؤهلات العلمية المطلوبة</li><li>نوع العقد (دوام كامل/جزئي)</li><li>الراتب الرسمي</li><li>موعد إغلاق باب التقديم</li><li>تفاصيل طريقة التقديم الدقيقة</li></ul>\n  </section>\n\n  \n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>رابط التقديم الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: عمان – الأردن. آخر موعد: غير مذكور في الإعلان.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تأكد من صحة رابط التقديم قبل إدخال بياناتك الشخصية.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:37:37.995102+00:00.</p>\n    <ul><li>الراتب المذكور (300-600 دينار) هو تقدير من المصدر التجميعي وليس رسمياً من الشركة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>",
+        "schema": {},
+        "meta_description": "تعلن شركة بن العميد عن شواغر متعددة في عمان تشمل الإدارة والتقنية والتشغيل. راتب متوقع 300-600 دينار. التقديم عبر الموقع الرسمي.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-aaa438af73c542-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [
+            "jobposting_schema_not_emitted"
+          ],
+          "metrics": {
+            "title_chars": 82,
+            "summary_chars": 473,
+            "content_chars": 13995,
+            "labels": 2
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:34:45.771767+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/f6ae7c2ddfe25e3289dca87f-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-aaa438af73c542-ai-v1.png",
+        "path": "data/images/job-aaa438af73c542-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:38:49.271502+00:00",
+      "completed_at": "2026-09-04T19:38:52.236850+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "339aa29413dd0898865d2adc",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "لجنة خدمات تفتح باب التوظيف لوظيفة حارس حديقة و ملاعب – راتب متوقع يصل إلى 450 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6761",
+        "feed_published": "Wed, 02 Sep 2026 17:51:56 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6761",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:38:49.579324+00:00"
+      },
+      "canonical": {
+        "campaign_id": "9ccdcf39798dc4b12c7f615b",
+        "repost_of": null,
+        "job_title": "حارس حديقة وملعب",
+        "employer_name": "لجنة خدمات مخيم الزرقاء",
+        "location_text": "مخيم الزرقاء (يشترط سكن المنطقة)",
+        "application_method": "الحضور المباشر إلى مكتب لجنة خدمات مخيم الزرقاء",
+        "application_url": null,
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-02T17:51:56+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6761",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-af2b630eb0e171-ai-v1.png",
+        "featured_image_path": "data/images/job-af2b630eb0e171-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3118,
+          "completion_tokens": 940,
+          "total_tokens": 4058
+        },
+        "seo_title": "لجنة خدمات مخيم الزرقاء: وظيفة حارس حديقة وملعب – راتب متوقع 300-450 دينار",
+        "meta_description": "لجنة خدمات مخيم الزرقاء تعلن عن وظيفة حارس حديقة وملعب. التقديم مباشر حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
+        "official_details": {
+          "employer": "لجنة خدمات مخيم الزرقاء",
+          "job_title": "حارس حديقة وملعب",
+          "location": "مخيم الزرقاء (يشترط سكن المنطقة)",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "غير مذكور في الإعلان",
+          "qualification": "إجادة القراءة والكتابة",
+          "application_method": "الحضور المباشر إلى مكتب لجنة خدمات مخيم الزرقاء",
+          "deadline": "7 سبتمبر 2026"
+        },
+        "missing_official_information": [
+          "قيمة الراتب الرسمية",
+          "عدد الشواغر",
+          "ساعات الدوام وأيام العمل",
+          "المزايا الإضافية (تأمين، مواصلات)"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (300-450 دينار) هو تقدير تقريبي من المصدر التجميعي وليس رقمًا رسميًا من جهة التوظيف."
+        ],
+        "labels": [
+          "وظائف الزرقاء",
+          "وظائف إدارية",
+          "وظائف حكومية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 74,
+          "summary_chars": 541,
+          "content_chars": 15740,
+          "labels": 3
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "9ccdcf39798dc4b12c7f615b",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "لجنة خدمات مخيم الزرقاء: وظيفة حارس حديقة وملعب – راتب متوقع 300-450 دينار",
+        "social_title": "فرصة عمل في مخيم الزرقاء: حارس حديقة وملعب براتب متوقع حتى 450 دينار",
+        "labels": [
+          "وظائف الزرقاء",
+          "وظائف إدارية",
+          "وظائف حكومية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>حارس حديقة وملعب</h1>\n    <p class='job-employer'>لجنة خدمات مخيم الزرقاء</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>مخيم الزرقاء (يشترط سكن المنطقة)</span><span class='job-top-chip'><b>آخر موعد</b>7 سبتمبر 2026</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-af2b630eb0e171-ai-v1.png' alt='حارس حديقة وملعب لدى لجنة خدمات مخيم الزرقاء' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>تعلن لجنة خدمات مخيم الزرقاء عن توفر شاغر وظيفي لمسمى حارس حديقة وملعب. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، ولا يتجاوز عمره 45 عامًا، مع إجادة القراءة والكتابة واللياقة الصحية. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة، مما يجعل الفرصة مناسبة لمن يبحث عن عمل ميداني بسيط. يُقدَّر الراتب شهريًا بين 300 و450 دينارًا أردنيًا، وهو تقدير تقريبي وليس رسميًا. يتم التقديم بالحضور الشخصي إلى مكتب اللجنة خلال الفترة من 31 أغسطس حتى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية لاحقًا عند الاختيار.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>لجنة خدمات مخيم الزرقاء</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>مخيم الزرقاء (يشترط سكن المنطقة)</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>إجادة القراءة والكتابة</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>7 سبتمبر 2026</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>حارس حديقة وملعب</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>الأفراد المقيمون في مخيم الزرقاء أو محيطه المباشر</li><li>الباحثون عن عمل ميداني لا يتطلب شهادة جامعية</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>عدم اشتراط مؤهل علمي أو خبرة سابقة</li><li>طريقة التقديم المباشرة والبسيطة دون وسطاء</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تجهيز صورة واضحة عن بطاقة الهوية أو هوية أبناء غزة</li><li>التأكد من عدم تجاوز العمر 45 عامًا</li><li>الحضور الشخصي للمكتب قبل 7 سبتمبر 2026</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>ألا يتجاوز العمر 45 عامًا</li><li>إجادة القراءة والكتابة</li><li>اللياقة الصحية</li><li>ألا يكون محكومًا بجناية أو جنحة مخلة بالشرف أو الأمانة</li><li>ألا يكون متقاعدًا عسكريًا أو مدنيًا</li><li>أن يكون من سكان المنطقة</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>الحضور المباشر إلى مكتب لجنة خدمات مخيم الزرقاء</p>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>قيمة الراتب الرسمية</li><li>عدد الشواغر</li><li>ساعات الدوام وأيام العمل</li><li>المزايا الإضافية (تأمين، مواصلات)</li></ul>\n  </section>\n\n  \n  <section class='job-guidance-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <h3>مهارات قد تساعدك</h3><ul class='job-list'><li>الانتباه واليقظة أثناء فترة العمل</li></ul>\n  </section>\n\n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>الحضور المباشر إلى مكتب لجنة خدمات مخيم الزرقاء</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: مخيم الزرقاء (يشترط سكن المنطقة). آخر موعد: 7 سبتمبر 2026.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B2%D8%B1%D9%82%D8%A7%D8%A1'>وظائف الزرقاء</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%D8%A9'>وظائف إدارية</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AD%D9%83%D9%88%D9%85%D9%8A%D8%A9'>وظائف حكومية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تأكد من صحة المعلومات عبر التواصل المباشر مع مكتب اللجنة قبل التقديم.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:38:49.579324+00:00.</p>\n    <ul><li>الراتب المذكور (300-450 دينار) هو تقدير تقريبي من المصدر التجميعي وليس رقمًا رسميًا من جهة التوظيف.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"حارس حديقة وملعب\", \"description\": \"تعلن لجنة خدمات مخيم الزرقاء عن توفر شاغر وظيفي لمسمى حارس حديقة وملعب. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، ولا يتجاوز عمره 45 عامًا، مع إجادة القراءة والكتابة واللياقة الصحية. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة، مما يجعل الفرصة مناسبة لمن يبحث عن عمل ميداني بسيط. يُقدَّر الراتب شهريًا بين 300 و450 دينارًا أردنيًا، وهو تقدير تقريبي وليس رسميًا. يتم التقديم بالحضور الشخصي إلى مكتب اللجنة خلال الفترة من 31 أغسطس حتى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية لاحقًا عند الاختيار.\", \"datePosted\": \"2026-09-02T17:51:56+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"لجنة خدمات مخيم الزرقاء\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"مخيم الزرقاء (يشترط سكن المنطقة)\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "حارس حديقة وملعب",
+          "description": "تعلن لجنة خدمات مخيم الزرقاء عن توفر شاغر وظيفي لمسمى حارس حديقة وملعب. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، ولا يتجاوز عمره 45 عامًا، مع إجادة القراءة والكتابة واللياقة الصحية. لم يحدد الإعلان مؤهلًا علميًا أو خبرة سابقة، مما يجعل الفرصة مناسبة لمن يبحث عن عمل ميداني بسيط. يُقدَّر الراتب شهريًا بين 300 و450 دينارًا أردنيًا، وهو تقدير تقريبي وليس رسميًا. يتم التقديم بالحضور الشخصي إلى مكتب اللجنة خلال الفترة من 31 أغسطس حتى 7 سبتمبر 2026. يتطلب الطلب صورة عن الهوية الشخصية، بينما تُطلب شهادة عدم المحكومية لاحقًا عند الاختيار.",
+          "datePosted": "2026-09-02T17:51:56+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "لجنة خدمات مخيم الزرقاء"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressRegion": null,
+              "addressLocality": "مخيم الزرقاء (يشترط سكن المنطقة)"
+            }
+          }
+        },
+        "meta_description": "لجنة خدمات مخيم الزرقاء تعلن عن وظيفة حارس حديقة وملعب. التقديم مباشر حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-af2b630eb0e171-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 74,
+            "summary_chars": 541,
+            "content_chars": 15740,
+            "labels": 3
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:35:30.615404+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/9ccdcf39798dc4b12c7f615b-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-af2b630eb0e171-ai-v1.png",
+        "path": "data/images/job-af2b630eb0e171-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:40:00.237127+00:00",
+      "completed_at": "2026-09-04T19:40:03.225921+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "5858c8751a59bed3993d939a",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "مياه اليرموك تفتح باب التوظيف لمشغلين ماكينات – راتب متوقع يصل إلى 650 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6759",
+        "feed_published": "Wed, 02 Sep 2026 17:47:09 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6759",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "HR.Recruitment@yw.com.jo",
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:40:00.621177+00:00"
+      },
+      "canonical": {
+        "campaign_id": "30a715497278e371dbd2d01b",
+        "repost_of": null,
+        "job_title": "مشغل",
+        "employer_name": "شركة مياه اليرموك",
+        "location_text": "المغير / إربد",
+        "application_method": "إرسال طلب التوظيف والوثائق عبر البريد الإلكتروني",
+        "application_url": null,
+        "application_email": "HR.Recruitment@yw.com.jo",
+        "application_phone": null,
+        "date_posted": "2026-09-02T17:47:09+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6759",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0b4bb9bc01813f-ai-v1.png",
+        "featured_image_path": "data/images/job-0b4bb9bc01813f-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3075,
+          "completion_tokens": 950,
+          "total_tokens": 4025
+        },
+        "seo_title": "مياه اليرموك: وظيفة مشغل ماكينات في إربد – راتب متوقع 450-650 دينار",
+        "meta_description": "شركة مياه اليرموك تعلن عن شاغر مشغل ماكينات في إربد. راتب متوقع 450-650 دينار. التقديم عبر البريد الإلكتروني حتى 8 سبتمبر 2026.",
+        "official_details": {
+          "employer": "شركة مياه اليرموك",
+          "job_title": "مشغل",
+          "location": "المغير / إربد",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "سنتان في مجال الاختصاص",
+          "qualification": "ثانوية عامة صناعية أو مؤهل/دبلوم مهني مناسب",
+          "application_method": "إرسال طلب التوظيف والوثائق عبر البريد الإلكتروني",
+          "deadline": "8 سبتمبر 2026 الساعة 4:00 مساءً"
+        },
+        "missing_official_information": [
+          "الراتب الرسمي المعلن",
+          "نوع عقد العمل (دوام كامل/جزئي)",
+          "عدد الشواغر المتاحة",
+          "تفاصيل البدلات أو المكافآت",
+          "موعد المقابلات الشخصية"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف إربد",
+          "فرص عمل"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 67,
+          "summary_chars": 560,
+          "content_chars": 15722,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "30a715497278e371dbd2d01b",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "مياه اليرموك: وظيفة مشغل ماكينات في إربد – راتب متوقع 450-650 دينار",
+        "social_title": "فرصة عمل في مياه اليرموك: مشغل ماكينات بإربد (راتب متوقع حتى 650 دينار)",
+        "labels": [
+          "وظائف إربد",
+          "فرص عمل"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>مشغل</h1>\n    <p class='job-employer'>شركة مياه اليرموك</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>المغير / إربد</span><span class='job-top-chip'><b>آخر موعد</b>8 سبتمبر 2026 الساعة 4:00 مساءً</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0b4bb9bc01813f-ai-v1.png' alt='مشغل لدى شركة مياه اليرموك' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>أعلنت شركة مياه اليرموك عن حاجتها لتعيين مشغل ماكينات في منطقة المغير بإربد، مع منح الأولوية للمتقدمين من نفس المنطقة. يشترط الإعلان الحصول على مؤهل ثانوية عامة صناعية أو دبلوم مهني مناسب، بالإضافة إلى خبرة عملية لا تقل عن سنتين في مجال الاختصاص، وألا يتجاوز عمر المتقدم 40 عاماً. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 450 و650 ديناراً أردنياً شهرياً. يبدأ استقبال الطلبات من 2 سبتمبر ويستمر حتى 8 سبتمبر 2026 الساعة 4:00 مساءً. يتم التقديم حصرياً عبر البريد الإلكتروني بإرسال طلب التوظيف والوثائق المطلوبة مجمعة في ملف PDF واحد.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>شركة مياه اليرموك</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>المغير / إربد</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>سنتان في مجال الاختصاص</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>ثانوية عامة صناعية أو مؤهل/دبلوم مهني مناسب</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>8 سبتمبر 2026 الساعة 4:00 مساءً</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>مشغل</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>حاصلون على مؤهلات مهنية في الصيانة أو التشغيل الميكانيكي</li><li>مقيمون في منطقة المغير أو إربد بحثاً عن استقرار وظيفي</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>أولوية واضحة للمتقدمين من منطقة المغير</li><li>شركة خدمات أساسية (مياه) توفر استقراراً نسبياً في القطاع الخاص</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تجميع جميع الوثائق (بطاقة، مؤهلات، شهادات خبرة) في ملف PDF واحد</li><li>التأكد من تصديق شهادات الخبرة قبل الإرسال</li><li>إدراج رقم هاتف صحيح للتواصل في طلب التوظيف</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>خبرة عملية لمدة سنتين في مجال الاختصاص</li><li>ألا يتجاوز عمر المتقدم 40 سنة</li><li>حيازة مؤهل ثانوية عامة صناعية أو دبلوم مهني مناسب</li><li>إرفاق شهادات خبرة مصدقة حسب الأصول</li><li>إرفاق صورة عن وجهي البطاقة الشخصية سارية المفعول</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <ul class='job-list'><li>تنفيذ ومتابعة أعمال تشغيل ومراقبة المعدات والأنظمة التشغيلية</li><li>التأكد من كفاءة المعدات واستمرارية عملها وفق الإجراءات المعتمدة</li><li>مراقبة القراءات والمؤشرات التشغيلية</li><li>إجراء الفحوصات الدورية للمعدات والمنشآت</li><li>اكتشاف الأعطال والمشكلات التشغيلية والإبلاغ عنها</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إرسال طلب التوظيف والوثائق عبر البريد الإلكتروني</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:HR.Recruitment@yw.com.jo'>HR.Recruitment@yw.com.jo</a></p>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>الراتب الرسمي المعلن</li><li>نوع عقد العمل (دوام كامل/جزئي)</li><li>عدد الشواغر المتاحة</li><li>تفاصيل البدلات أو المكافآت</li><li>موعد المقابلات الشخصية</li></ul>\n  </section>\n\n  \n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إرسال طلب التوظيف والوثائق عبر البريد الإلكتروني. البريد الإلكتروني المخصص للتقديم: HR.Recruitment@yw.com.jo.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: المغير / إربد. آخر موعد: 8 سبتمبر 2026 الساعة 4:00 مساءً.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A5%D8%B1%D8%A8%D8%AF'>وظائف إربد</a><a class='job-related-chip' href='/search/label/%D9%81%D8%B1%D8%B5%20%D8%B9%D9%85%D9%84'>فرص عمل</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:40:00.621177+00:00.</p>\n    <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"مشغل\", \"description\": \"أعلنت شركة مياه اليرموك عن حاجتها لتعيين مشغل ماكينات في منطقة المغير بإربد، مع منح الأولوية للمتقدمين من نفس المنطقة. يشترط الإعلان الحصول على مؤهل ثانوية عامة صناعية أو دبلوم مهني مناسب، بالإضافة إلى خبرة عملية لا تقل عن سنتين في مجال الاختصاص، وألا يتجاوز عمر المتقدم 40 عاماً. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 450 و650 ديناراً أردنياً شهرياً. يبدأ استقبال الطلبات من 2 سبتمبر ويستمر حتى 8 سبتمبر 2026 الساعة 4:00 مساءً. يتم التقديم حصرياً عبر البريد الإلكتروني بإرسال طلب التوظيف والوثائق المطلوبة مجمعة في ملف PDF واحد.\", \"datePosted\": \"2026-09-02T17:47:09+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة مياه اليرموك\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"المغير / إربد\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "مشغل",
+          "description": "أعلنت شركة مياه اليرموك عن حاجتها لتعيين مشغل ماكينات في منطقة المغير بإربد، مع منح الأولوية للمتقدمين من نفس المنطقة. يشترط الإعلان الحصول على مؤهل ثانوية عامة صناعية أو دبلوم مهني مناسب، بالإضافة إلى خبرة عملية لا تقل عن سنتين في مجال الاختصاص، وألا يتجاوز عمر المتقدم 40 عاماً. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 450 و650 ديناراً أردنياً شهرياً. يبدأ استقبال الطلبات من 2 سبتمبر ويستمر حتى 8 سبتمبر 2026 الساعة 4:00 مساءً. يتم التقديم حصرياً عبر البريد الإلكتروني بإرسال طلب التوظيف والوثائق المطلوبة مجمعة في ملف PDF واحد.",
+          "datePosted": "2026-09-02T17:47:09+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة مياه اليرموك"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressRegion": null,
+              "addressLocality": "المغير / إربد"
+            }
+          }
+        },
+        "meta_description": "شركة مياه اليرموك تعلن عن شاغر مشغل ماكينات في إربد. راتب متوقع 450-650 دينار. التقديم عبر البريد الإلكتروني حتى 8 سبتمبر 2026.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0b4bb9bc01813f-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 67,
+            "summary_chars": 560,
+            "content_chars": 15722,
+            "labels": 2
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:36:15.142178+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/30a715497278e371dbd2d01b-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0b4bb9bc01813f-ai-v1.png",
+        "path": "data/images/job-0b4bb9bc01813f-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:41:11.226196+00:00",
+      "completed_at": "2026-09-04T19:41:14.096589+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "fa9cc9ca7f26927326699474",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "جمعية المركز الإسلامي الخيرية تفتح باب التوظيف – راتب متوقع يصل إلى 400 دينار والتقديم خلال أسبوع",
+        "discovery_url": "https://www.jo-jobs.com/archives/6757",
+        "feed_published": "Wed, 02 Sep 2026 16:32:08 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6757",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "jobs@islamicc.org",
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:41:11.594635+00:00"
+      },
+      "canonical": {
+        "campaign_id": "39c3accab2d5583550220e6b",
+        "repost_of": null,
+        "job_title": "علاقات عامة",
+        "employer_name": "جمعية المركز الإسلامي الخيرية",
+        "location_text": "مركز النعيمة للخدمات المجتمعية / محافظة إربد",
+        "application_method": "عبر البريد الإلكتروني أو الحضور الشخصي",
+        "application_url": null,
+        "application_email": "jobs@islamicc.org",
+        "application_phone": null,
+        "date_posted": "2026-09-02T16:32:08+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6757",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-05107471df125f-ai-v1.png",
+        "featured_image_path": "data/images/job-05107471df125f-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2911,
+          "completion_tokens": 930,
+          "total_tokens": 3841
+        },
+        "seo_title": "جمعية المركز الإسلامي الخيرية: وظيفة علاقات عامة في إربد (راتب متوقع 500-800 دينار)",
+        "meta_description": "تعلن جمعية المركز الإسلامي الخيرية عن شغور وظيفة علاقات عامة في مركز النعيمة بإربد. راتب متوقع 500-800 دينار. التقديم عبر البريد أو الحضور الشخصي.",
+        "official_details": {
+          "employer": "جمعية المركز الإسلامي الخيرية",
+          "job_title": "علاقات عامة",
+          "location": "مركز النعيمة للخدمات المجتمعية / محافظة إربد",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "4 سنوات على الأقل",
+          "qualification": "غير مذكور في الإعلان",
+          "application_method": "عبر البريد الإلكتروني أو الحضور الشخصي",
+          "deadline": "خلال أسبوع من تاريخ الإعلان"
+        },
+        "missing_official_information": [
+          "المؤهل العلمي المطلوب",
+          "نوع العقد (دوام كامل/جزئي)",
+          "تفاصيل المهام الوظيفية الدقيقة",
+          "الراتب الرسمي المعلن"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (500-800 دينار) هو تقدير تقديري من المصدر وليس راتبًا رسميًا معلنًا من الجهة."
+        ],
+        "labels": [
+          "وظائف إربد",
+          "وظائف مبيعات"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 83,
+          "summary_chars": 528,
+          "content_chars": 15886,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "39c3accab2d5583550220e6b",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "جمعية المركز الإسلامي الخيرية: وظيفة علاقات عامة في إربد (راتب متوقع 500-800 دينار)",
+        "social_title": "فرصة عمل في إربد: علاقات عامة بجمعية المركز الإسلامي الخيرية (راتب متوقع 500-800 دينار)",
+        "labels": [
+          "وظائف إربد",
+          "وظائف مبيعات"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>علاقات عامة</h1>\n    <p class='job-employer'>جمعية المركز الإسلامي الخيرية</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>مركز النعيمة للخدمات المجتمعية / محافظة إربد</span><span class='job-top-chip'><b>آخر موعد</b>خلال أسبوع من تاريخ الإعلان</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-05107471df125f-ai-v1.png' alt='علاقات عامة لدى جمعية المركز الإسلامي الخيرية' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>أعلنت جمعية المركز الإسلامي الخيرية عن توفر فرصة عمل في مركز النعيمة للخدمات المجتمعية بمحافظة إربد. المسمى الوظيفي هو &quot;علاقات عامة&quot;، وتتطلب الخبرة 4 سنوات على الأقل في العلاقات العامة أو التسويق. يشترط أن يكون المتقدم أردني الجنسية ومن سكان إربد، وألا يتجاوز عمره 45 عامًا، مع حيازة رخصة قيادة سارية. لم يحدد الإعلان مؤهلًا علميًا معينًا، لكنه يطلب إرفاق الشهادات. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 500 و800 دينار أردني شهريًا. يمكن التقديم عبر البريد الإلكتروني أو الحضور الشخصي خلال أسبوع من تاريخ الإعلان.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>جمعية المركز الإسلامي الخيرية</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>مركز النعيمة للخدمات المجتمعية / محافظة إربد</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>4 سنوات على الأقل</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>خلال أسبوع من تاريخ الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>علاقات عامة</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>أصحاب الخبرة في التسويق أو العلاقات العامة المقيمون في إربد</li><li>المهنيون الذين يمتلكون رخصة قيادة ومهارات تواصل ميدانية قوية</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>العمل في مؤسسة خيرية معروفة في الأردن</li><li>المرونة في التقديم (إلكتروني أو شخصي) والوضوح في الشروط</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>تحضير السيرة الذاتية وشهادات الخبرة العلمية والعملية</li><li>تجهيز رخصة القيادة وشهادة عدم المحكومية</li><li>التأكد من مطابقة شروط العمر والإقامة في إربد</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>خبرة لا تقل عن 4 سنوات في العلاقات العامة أو التسويق أو مجالات مشابهة</li><li>أردني الجنسية</li><li>من سكان محافظة إربد</li><li>ألا يزيد العمر عن 45 عامًا</li><li>رخصة قيادة سارية المفعول</li><li>شهادة عدم محكومية</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <p>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</p>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>عبر البريد الإلكتروني أو الحضور الشخصي</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:jobs@islamicc.org'>jobs@islamicc.org</a></p>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>المؤهل العلمي المطلوب</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل المهام الوظيفية الدقيقة</li><li>الراتب الرسمي المعلن</li></ul>\n  </section>\n\n  \n  <section class='job-guidance-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <h3>مهارات قد تساعدك</h3><ul class='job-list'><li>مهارات التواصل والإقناع وإدارة وسائل التواصل الاجتماعي</li></ul>\n  </section>\n\n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>عبر البريد الإلكتروني أو الحضور الشخصي. البريد الإلكتروني المخصص للتقديم: jobs@islamicc.org.</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: مركز النعيمة للخدمات المجتمعية / محافظة إربد. آخر موعد: خلال أسبوع من تاريخ الإعلان.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A5%D8%B1%D8%A8%D8%AF'>وظائف إربد</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA'>وظائف مبيعات</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تأكد من صحة البريد الإلكتروني والموقع قبل إرسال أي بيانات شخصية.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:41:11.594635+00:00.</p>\n    <ul><li>الراتب المذكور (500-800 دينار) هو تقدير تقديري من المصدر وليس راتبًا رسميًا معلنًا من الجهة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"علاقات عامة\", \"description\": \"أعلنت جمعية المركز الإسلامي الخيرية عن توفر فرصة عمل في مركز النعيمة للخدمات المجتمعية بمحافظة إربد. المسمى الوظيفي هو \\\"علاقات عامة\\\"، وتتطلب الخبرة 4 سنوات على الأقل في العلاقات العامة أو التسويق. يشترط أن يكون المتقدم أردني الجنسية ومن سكان إربد، وألا يتجاوز عمره 45 عامًا، مع حيازة رخصة قيادة سارية. لم يحدد الإعلان مؤهلًا علميًا معينًا، لكنه يطلب إرفاق الشهادات. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 500 و800 دينار أردني شهريًا. يمكن التقديم عبر البريد الإلكتروني أو الحضور الشخصي خلال أسبوع من تاريخ الإعلان.\", \"datePosted\": \"2026-09-02T16:32:08+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"جمعية المركز الإسلامي الخيرية\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"مركز النعيمة للخدمات المجتمعية / محافظة إربد\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "علاقات عامة",
+          "description": "أعلنت جمعية المركز الإسلامي الخيرية عن توفر فرصة عمل في مركز النعيمة للخدمات المجتمعية بمحافظة إربد. المسمى الوظيفي هو \"علاقات عامة\"، وتتطلب الخبرة 4 سنوات على الأقل في العلاقات العامة أو التسويق. يشترط أن يكون المتقدم أردني الجنسية ومن سكان إربد، وألا يتجاوز عمره 45 عامًا، مع حيازة رخصة قيادة سارية. لم يحدد الإعلان مؤهلًا علميًا معينًا، لكنه يطلب إرفاق الشهادات. الراتب غير معلن رسميًا، لكن التقدير العام يتراوح بين 500 و800 دينار أردني شهريًا. يمكن التقديم عبر البريد الإلكتروني أو الحضور الشخصي خلال أسبوع من تاريخ الإعلان.",
+          "datePosted": "2026-09-02T16:32:08+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "جمعية المركز الإسلامي الخيرية"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressRegion": null,
+              "addressLocality": "مركز النعيمة للخدمات المجتمعية / محافظة إربد"
+            }
+          }
+        },
+        "meta_description": "تعلن جمعية المركز الإسلامي الخيرية عن شغور وظيفة علاقات عامة في مركز النعيمة بإربد. راتب متوقع 500-800 دينار. التقديم عبر البريد أو الحضور الشخصي.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-05107471df125f-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 83,
+            "summary_chars": 528,
+            "content_chars": 15886,
+            "labels": 2
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:36:59.896979+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/39c3accab2d5583550220e6b-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-05107471df125f-ai-v1.png",
+        "path": "data/images/job-05107471df125f-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-04T19:42:22.096846+00:00",
+      "completed_at": "2026-09-04T19:42:26.087561+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "138d95737e1f8d50cf6f40d2",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "مياهنا تعلن 35 شاغرًا في 4 محافظات – رواتب متوقعة تصل إلى 450 دينار والتقديم مستمر",
+        "discovery_url": "https://www.jo-jobs.com/archives/6755",
+        "feed_published": "Wed, 02 Sep 2026 15:22:50 +0000",
+        "first_discovered_at": "2026-09-04T08:19:40.420040+00:00",
+        "last_seen_at": "2026-09-04T19:27:35.296834+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6755",
+        "source_original_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-04T19:42:23.493703+00:00"
+      },
+      "canonical": {
+        "campaign_id": "478a827219ebd94fc2eae3f6",
+        "repost_of": null,
+        "job_title": "عامل",
+        "employer_name": "شركة مياه الأردن – مياهنا",
+        "location_text": "العاصمة، البلقاء، الزرقاء، مادبا",
+        "application_method": "إلكتروني عبر نظام الاستقطاب في القطاع العام",
+        "application_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-02T15:22:50+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6755",
+        "source_original_url": "https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e1ecca3c57bda1-ai-v1.png",
+        "featured_image_path": "data/images/job-e1ecca3c57bda1-ai-v1.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3678,
+          "completion_tokens": 950,
+          "total_tokens": 4628
+        },
+        "seo_title": "شركة مياهنا: 35 شاغراً للذكور في 4 محافظات – راتب متوقع 300-450 دينار",
+        "meta_description": "تعلن شركة مياهنا عن 35 شاغراً للذكور بمؤهل ثانوية عامة فما دون. التقديم إلكتروني حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
+        "official_details": {
+          "employer": "شركة مياه الأردن – مياهنا",
+          "job_title": "عامل",
+          "location": "العاصمة، البلقاء، الزرقاء، مادبا",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "0 سنوات",
+          "qualification": "ثانوية عامة فما دون",
+          "application_method": "إلكتروني عبر نظام الاستقطاب في القطاع العام",
+          "deadline": "07/09/2026"
+        },
+        "missing_official_information": [
+          "الراتب الرسمي",
+          "نوع العقد (دوام كامل/جزئي)",
+          "تفاصيل البدلات أو المكافآت",
+          "شروط الإقامة الدقيقة لكل محافظة",
+          "آلية الاختبار أو المقابلة الشخصية"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف الزرقاء",
+          "وظائف هندسة"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 69,
+          "summary_chars": 488,
+          "content_chars": 16013,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "478a827219ebd94fc2eae3f6",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "شركة مياهنا: 35 شاغراً للذكور في 4 محافظات – راتب متوقع 300-450 دينار",
+        "social_title": "فرص عمل ميدانية في مياهنا: 35 وظيفة في العاصمة والبلقاء والزرقاء ومادبا",
+        "labels": [
+          "وظائف الزرقاء",
+          "وظائف هندسة"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>عامل</h1>\n    <p class='job-employer'>شركة مياه الأردن – مياهنا</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>العاصمة، البلقاء، الزرقاء، مادبا</span><span class='job-top-chip'><b>آخر موعد</b>07/09/2026</span></div>\n    <a class='job-primary-cta' href='#job-apply'>عرض طريقة التقديم</a>\n  </header>\n\n  <div class='job-overview-grid'>\n    <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e1ecca3c57bda1-ai-v1.png' alt='عامل لدى شركة مياه الأردن – مياهنا' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n    <div class='job-intro-card'>\n      <span class='job-overview-label'>نظرة سريعة</span>\n      <p>أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغراً لمسمى «عامل» مخصصاً للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم في 30 أغسطس 2026 وينتهي في 7 سبتمبر 2026 عبر نظام الاستقطاب في القطاع العام. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق 300-450 ديناراً شهرياً.</p>\n      <div class='job-verified-pill'>✓ معلومات منظمة ومراجعة قبل النشر</div>\n    </div>\n  </div>\n\n  \n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><span>▦</span><div><h2>ملخص الوظيفة</h2><p>أهم المعلومات التي تحتاجها قبل قراءة التفاصيل.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><span class='job-fact-icon'>◆</span><div><strong>جهة التوظيف</strong><span>شركة مياه الأردن – مياهنا</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>⌖</span><div><strong>الموقع</strong><span>العاصمة، البلقاء، الزرقاء، مادبا</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▣</span><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>$</span><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>★</span><div><strong>الخبرة</strong><span>0 سنوات</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>✓</span><div><strong>المؤهل</strong><span>ثانوية عامة فما دون</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>◷</span><div><strong>آخر موعد</strong><span>07/09/2026</span></div></div>\n      <div class='job-fact'><span class='job-fact-icon'>▤</span><div><strong>المسمى الوظيفي</strong><span>عامل</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-value-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>هل هذه الفرصة مناسبة لك؟</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <div class='job-value-columns'>\n      <div><h3>قد تناسبك إذا</h3><ul class='job-check-list'><li>خريجو الثانوية العامة أو ما دونها من الذكور القادرين على أداء الأعمال البدنية</li><li>المقيمون في محافظات العاصمة، البلقاء، الزرقاء، أو مادبا</li></ul></div>\n      <div><h3>ما الذي يميزها؟</h3><ul class='job-check-list'><li>عدد الشواغر كبير (35) مما يزيد فرص القبول</li><li>عدم اشتراط الخبرة الفنية يفتح الباب لحديثي التخرج</li></ul></div>\n    </div>\n    <div class='job-checklist'><h3>قائمة تحقق سريعة قبل التقديم</h3><ul class='job-check-list'><li>التأكد من أن المؤهل الدراسي مطابق تماماً لشرط الإعلان</li><li>التقديم عبر الرابط الرسمي فقط قبل انتهاء الموعد المحدد</li><li>قراءة شروط الإعلان داخل الصفحة الرسمية قبل رفع الطلب</li></ul></div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>✓</span><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>المعلومات الرسمية التي أمكن تأكيدها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>الجنس: ذكر</li><li>المؤهل: ثانوية عامة فما دون</li><li>الخبرة الفنية: 0 سنوات</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><span>▤</span><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام التي وردت في الإعلان عند توفرها.</p></div></div>\n    <ul class='job-list'><li>المساعدة في صيانة وإصلاح شبكات المياه والصرف الصحي</li><li>تنفيذ أعمال الحفر اليدوي أو بالمعدات</li><li>تنظيف قنوات الصرف الصحي وإزالة الرواسب</li><li>تحميل ونقل المواد والمعدات الثقيلة</li><li>المساعدة في تشغيل محطات المعالجة وتجهيز المواد الكيميائية</li><li>تنظيف مرافق المحطات والمعدات</li><li>تنفيذ أعمال تفريغ المياه العادمة</li><li>ترتيب المستودعات ومناولة المواد</li><li>الاستجابة للحالات الطارئة والعمل خارج الدوام عند الحاجة</li><li>الالتزام بتعليمات السلامة والصحة المهنية</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إلكتروني عبر نظام الاستقطاب في القطاع العام</p><a class='job-apply-btn' href='https://applyjobs.spac.gov.jo/JobDet.aspx?JobID=9753' rel='nofollow noopener' target='_blank'>التقديم على الوظيفة</a>\n  </section>\n\n  <section class='job-section job-missing'>\n    <div class='job-section-heading'><span>i</span><div><h2>معلومات لم يذكرها الإعلان بوضوح</h2><p>لا نملأ أي معلومات رسمية من عندنا.</p></div></div>\n    <ul class='job-list'><li>الراتب الرسمي</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل البدلات أو المكافآت</li><li>شروط الإقامة الدقيقة لكل محافظة</li><li>آلية الاختبار أو المقابلة الشخصية</li></ul>\n  </section>\n\n  \n  <section class='job-guidance-box job-panel'>\n    <span class='job-guidance-badge'>إرشادات للباحث عن عمل</span>\n    <h2>نصائح تساعدك قبل التقديم</h2>\n    <p class='job-muted'>معلومات إرشادية عامة وليست شرطاً معلناً من جهة التوظيف</p>\n    <h3>مهارات قد تساعدك</h3><ul class='job-list'><li>اللياقة البدنية والقدرة على العمل الميداني</li></ul>\n  </section>\n\n\n  <section class='job-section job-faq-section'><div class='job-section-heading'><span>?</span><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة على أهم الأسئلة.</p></div></div><details class='job-faq'><summary>كيف يمكن التقديم على هذه الفرصة؟</summary><p>إلكتروني عبر نظام الاستقطاب في القطاع العام</p></details><details class='job-faq'><summary>هل الراتب مذكور في الإعلان؟</summary><p>لا، الراتب الرسمي غير مذكور في الإعلان المتاح لدينا.</p></details><details class='job-faq'><summary>أين مكان العمل وما آخر موعد للتقديم؟</summary><p>مكان العمل: العاصمة، البلقاء، الزرقاء، مادبا. آخر موعد: 07/09/2026.</p></details></section>\n\n  \n  <section class='job-related-box job-panel'>\n    <div class='job-section-heading'><span>↗</span><div><h2>وظائف مشابهة قد تهمك</h2><p>اكتشف فرصاً أحدث ضمن نفس المدينة أو المجال.</p></div></div>\n    <div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B2%D8%B1%D9%82%D8%A7%D8%A1'>وظائف الزرقاء</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div>\n  </section>\n\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><span>!</span><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>حافظ على بياناتك وتأكد من جهة التوظيف.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T19:42:23.493703+00:00.</p>\n    <p>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن الإرشادات العامة.</p>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#172033;--j-muted:#667085;--j-border:#e4e7ec;--j-soft:#f7f9fc;line-height:1.9;color:#344054}\n.job-page-hero{padding:6px 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:24px}\n.job-kicker{font-size:13px;font-weight:800;color:var(--j-primary);margin:0 0 6px}\n.job-display-title{font-size:36px!important;line-height:1.3!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 6px!important;letter-spacing:0!important}\n.job-employer{font-size:17px;font-weight:700;color:#475467;margin:0 0 14px}\n.job-top-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}\n.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:36px;padding:0 11px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:13px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}\n.job-primary-cta{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:11px;background:#eaf7f5;color:var(--j-primary)!important;font-weight:900;text-decoration:none}\n.job-overview-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr);gap:18px;align-items:stretch;margin:0 0 26px}\n.job-featured-image{margin:0;min-width:0}.job-featured-image img{display:block;width:100%;height:100%;min-height:300px;object-fit:cover;border-radius:16px;border:1px solid var(--j-border)}\n.job-intro-card{padding:22px;border:1px solid var(--j-border);border-radius:16px;background:var(--j-soft);display:flex;flex-direction:column;justify-content:center}.job-intro-card p{font-size:16px;line-height:1.95;margin:7px 0 14px}.job-overview-label{font-size:13px;font-weight:800;color:var(--j-primary)}.job-verified-pill{display:inline-flex;align-items:center;align-self:flex-start;min-height:34px;padding:0 10px;border-radius:999px;background:#eaf7f5;color:var(--j-primary);font-size:12px;font-weight:800}\n.job-note{display:flex;gap:8px;align-items:center;padding:12px 14px;border-radius:12px;background:#fff8e8;border:1px solid #f4ddb0;margin:0 0 22px;font-size:13px}\n.job-section{margin:34px 0}.job-section-heading{display:flex;align-items:flex-start;gap:11px;margin-bottom:15px}.job-section-heading>span{flex:0 0 36px;width:36px;height:36px;display:grid;place-items:center;border-radius:10px;background:#eaf7f5;color:var(--j-primary);font-weight:900}.job-section-heading h2{font-size:25px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:3px 0 0}\n.job-facts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.job-fact{min-height:95px;padding:14px;border:1px solid var(--j-border);border-radius:13px;background:#fff;display:flex;align-items:flex-start;gap:10px}.job-fact-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:9px;background:var(--j-soft);color:var(--j-primary);font-weight:900}.job-fact strong,.job-fact div>span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact div>span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}\n.job-panel{padding:22px;border:1px solid var(--j-border);border-radius:16px;margin:28px 0;background:#fff}.job-guidance-badge,.job-apply-badge{display:inline-flex;min-height:30px;align-items:center;padding:0 9px;border-radius:999px;background:#eef8f6;color:var(--j-primary);font-size:12px;font-weight:900;margin-bottom:8px}.job-muted{font-size:13px;color:var(--j-muted)}\n.job-value-box{background:#f8fbff;border-color:#d9e6f6}.job-value-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.job-value-box h2,.job-guidance-box h2{font-size:24px!important;margin:0 0 6px!important}.job-value-box h3,.job-guidance-box h3{font-size:17px!important;margin:15px 0 7px!important}.job-checklist{margin-top:12px;padding-top:12px;border-top:1px solid #dce5ef}\n.job-list,.job-check-list{padding-right:22px;margin:10px 0}.job-list li,.job-check-list li{margin:8px 0;line-height:1.8}.job-check-list li::marker{color:var(--j-primary)}\n.job-apply-section{background:#f2fbf9;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-section h2{font-size:28px!important;color:var(--j-text)!important;margin:0 0 8px!important}.job-apply-method{font-size:16px;margin:0 0 14px}.job-contact-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0}.job-contact-row strong{color:var(--j-muted);font-size:13px}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;margin-top:8px;border-radius:12px;background:var(--j-primary);color:#fff!important;text-decoration:none;font-size:15px;font-weight:900}.job-apply-btn:hover{filter:brightness(.94)}\n.job-guidance-box{border-right:4px solid var(--j-primary);background:#fbfdfd}.job-safety-box{background:#fffaf0;border-color:#f4ddb0}.job-safety-box .job-section-heading>span{background:#fff0cf;color:#b76a00}.job-related-box{background:#f7fffd;border-color:#cce8e3}.job-related-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.job-related-chip{display:inline-flex;align-items:center;min-height:38px;padding:0 12px;border-radius:999px;border:1px solid #b9e2dc;background:#fff;color:var(--j-primary)!important;text-decoration:none;font-weight:800;font-size:13px}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:12px;margin:9px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:50px;display:flex;align-items:center;padding:12px 14px;font-size:15px;font-weight:800;cursor:pointer;color:var(--j-text);list-style:none}.job-faq summary::-webkit-details-marker{display:none}.job-faq p{padding:0 14px 14px;margin:0;color:#475467}\n.job-verification{margin:34px 0 8px;padding-top:20px;border-top:1px solid var(--j-border);color:var(--j-muted);font-size:13px}.job-verification h2{font-size:19px!important;color:#475467!important;margin:0 0 8px!important}.job-verification ul{padding-right:20px}\n@media(max-width:900px){.job-overview-grid{grid-template-columns:1fr}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.job-featured-image img{min-height:0;height:auto}}\n@media(max-width:640px){.job-page-hero{padding-top:0;margin-bottom:18px}.job-display-title{font-size:28px!important;line-height:1.4!important}.job-employer{font-size:15px}.job-top-chips{gap:6px}.job-top-chip{min-height:34px;font-size:12px;padding:0 9px}.job-primary-cta{width:100%;min-height:48px}.job-overview-grid{gap:12px;margin-bottom:22px}.job-intro-card{padding:16px}.job-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.job-fact{min-height:104px;padding:11px;gap:7px;flex-direction:column}.job-fact-icon{width:28px;height:28px;flex-basis:28px}.job-fact div>span{font-size:13px}.job-section{margin:28px 0}.job-section-heading h2{font-size:21px!important}.job-panel{padding:16px;margin:24px 0}.job-value-columns{grid-template-columns:1fr;gap:5px}.job-apply-section h2{font-size:24px!important}.job-related-links{gap:6px}.job-related-chip{font-size:12px;min-height:36px;padding:0 10px}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"عامل\", \"description\": \"أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغراً لمسمى «عامل» مخصصاً للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم في 30 أغسطس 2026 وينتهي في 7 سبتمبر 2026 عبر نظام الاستقطاب في القطاع العام. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق 300-450 ديناراً شهرياً.\", \"datePosted\": \"2026-09-02T15:22:50+00:00\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة مياه الأردن – مياهنا\"}, \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressRegion\": null, \"addressLocality\": \"العاصمة، البلقاء، الزرقاء، مادبا\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "عامل",
+          "description": "أعلنت شركة مياه الأردن – مياهنا عن توفر 35 شاغراً لمسمى «عامل» مخصصاً للذكور، موزعة على أربع محافظات هي: العاصمة (18)، البلقاء (8)، الزرقاء (7)، ومادبا (2). يشترط الإعلان الحصول على مؤهل الثانوية العامة فما دون، ولا يتطلب خبرة فنية سابقة. طبيعة العمل ميدانية وتشمل الصيانة، الحفر، المناولة، وأعمال التشغيل المساندة. يبدأ التقديم في 30 أغسطس 2026 وينتهي في 7 سبتمبر 2026 عبر نظام الاستقطاب في القطاع العام. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق 300-450 ديناراً شهرياً.",
+          "datePosted": "2026-09-02T15:22:50+00:00",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة مياه الأردن – مياهنا"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressRegion": null,
+              "addressLocality": "العاصمة، البلقاء، الزرقاء، مادبا"
+            }
+          }
+        },
+        "meta_description": "تعلن شركة مياهنا عن 35 شاغراً للذكور بمؤهل ثانوية عامة فما دون. التقديم إلكتروني حتى 7 سبتمبر 2026. راتب متوقع 300-450 دينار.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e1ecca3c57bda1-ai-v1.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 69,
+            "summary_chars": 488,
+            "content_chars": 16013,
+            "labels": 2
+          }
+        }
+      },
+      "image_migration": {
+        "version": "ai-v1",
+        "generated_at": "2026-09-05T11:37:44.746553+00:00",
+        "old_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/478a827219ebd94fc2eae3f6-v12.png",
+        "new_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e1ecca3c57bda1-ai-v1.png",
+        "path": "data/images/job-e1ecca3c57bda1-ai-v1.png",
+        "style": "dynamic_ai_scene_with_adaptive_short_text_overlay"
+      }
+    }
+  ]
+}
