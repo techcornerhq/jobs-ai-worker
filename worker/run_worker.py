@@ -19,7 +19,7 @@ from taxonomy import classify_labels
 
 MISSING = "غير مذكور في الإعلان"
 DISCOVERY_PATH = Path("data/discovery/jo-jobs.json")
-FINAL_IMAGE_MASTER_SHA256 = "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108"
+FINAL_IMAGE_MASTER_SHA256 = "93c65e5def577fe64ef5e64b345121b5f9436662ed7e4b0007df917da3493f20"
 
 
 def now_iso() -> str:
@@ -134,7 +134,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "existing_campaign_id": dedupe.campaign_id,
         }
     else:
-        # The final approved image system changes ONLY the clean vacancy title.
+        # Final approved مرصد الوظائف image: fixed branded master + vacancy title only.
         image_title = canonical.get("job_title") or enriched.get("social_title") or enriched.get("seo_title") or candidate.get("title")
         image_path, image_url = generate_job_image(canonical, image_title)
         canonical["featured_image_url"] = image_url
@@ -163,6 +163,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "genuine_employer_reposts_allowed": True,
             "competitor_discovery_links_publicly_exposed": False,
             "final_exact_master_image_required": True,
+            "image_brand": "مرصد الوظائف",
             "image_background_variation_allowed": False,
             "image_only_variable": "job_title",
             "image_ai_generation_allowed": False,
