@@ -1,0 +1,87 @@
+name: Test Creative Image V2
+
+on:
+  push:
+    branches: ["dynamic-ai-image-v2"]
+    paths:
+      - "worker/creative_image_v2.py"
+      - "worker/job_image_v12.py"
+      - ".github/workflows/test-creative-image-v2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: test-creative-image-v2
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      JOB_IMAGE_MODEL: "flux"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Arabic fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Render representative v2 previews
+        run: |
+          rm -rf data/v2-preview
+          mkdir -p data/v2-preview
+          PYTHONPATH=worker python -u - <<'PY'
+          import json
+          import shutil
+          from pathlib import Path
+          from PIL import Image
+          from creative_image_v2 import generate
+
+          samples = [
+              ({"employer_name":"مستشفى ابن الهيثم","job_title":"طبيب أخصائي أشعة تشخيصية","location_text":"عمّان","category_text":"medical radiology health"}, "طبيب أخصائي أشعة تشخيصية"),
+              ({"employer_name":"جامعة عمان العربية","job_title":"موظفة إدارية في مركز الاستشارات والتدريب","location_text":"عمّان","category_text":"university administration education"}, "موظفة إدارية في مركز الاستشارات والتدريب"),
+              ({"employer_name":"شركة منير سختيان التجارية","job_title":"منسق بضائع","location_text":"العقبة","category_text":"logistics inventory merchandise"}, "منسق بضائع"),
+              ({"employer_name":"Halawa Travel & Tourism","job_title":"موظف حجوزات وتذاكر طيران","location_text":"عمّان","category_text":"travel ticketing airline tourism"}, "موظف حجوزات وتذاكر طيران"),
+          ]
+          out=[]
+          for i,(job,title) in enumerate(samples,1):
+              path,url=generate(job,title)
+              src=Path(path)
+              with Image.open(src) as im:
+                  assert im.size==(1536,1024), im.size
+              assert src.stat().st_size > 80000, src.stat().st_size
+              dest=Path('data/v2-preview')/f'preview-{i}.png'
+              shutil.copy2(src,dest)
+              out.append({"index":i,"title":title,"employer":job["employer_name"],"path":str(dest),"source_path":path,"size":dest.stat().st_size})
+              print(f"PREVIEW {i}: {title} | {dest.stat().st_size} bytes")
+          Path('data/v2-preview/manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Commit previews for review
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v2-preview
+          if git diff --cached --quiet; then
+            echo "No preview changes"
+            exit 0
+          fi
+          git commit -m "Render creative image v2 previews"
+          git pull --rebase origin dynamic-ai-image-v2
+          git push origin HEAD:dynamic-ai-image-v2
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: creative-image-v2-previews
+          path: data/v2-preview
