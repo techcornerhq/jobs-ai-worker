@@ -1,19 +1,19 @@
 {
   "batch_version": 1,
-  "generated_at": "2026-09-04T22:22:31.477930+00:00",
+  "generated_at": "2026-09-05T00:36:35.752974+00:00",
   "source": "current_enabled_discovery_sources",
   "daily_cap": 40,
-  "processed_today": 11,
-  "selected_count": 1,
-  "result_count": 1,
-  "publishable_count": 1,
+  "processed_today": 5,
+  "selected_count": 5,
+  "result_count": 5,
+  "publishable_count": 5,
   "failure_count": 0,
   "failures": [],
   "items": [
     {
       "worker_version": 12,
-      "started_at": "2026-09-04T22:22:27.088223+00:00",
-      "completed_at": "2026-09-04T22:22:31.473385+00:00",
+      "started_at": "2026-09-05T00:33:08.689294+00:00",
+      "completed_at": "2026-09-05T00:33:11.747677+00:00",
       "policy": {
         "paid_ai_allowed": false,
         "paid_fallback_allowed": false,
@@ -36,44 +36,44 @@
         "deterministic_jobposting_schema_required": true
       },
       "candidate": {
-        "candidate_id": "739255450ba816c3d5efc6c2",
+        "candidate_id": "1636a0ee135f8e9f69f05d9a",
         "source_id": "jo-jobs",
         "source_name": "وظيفتك عنا",
         "source_tier": 3,
         "source_role": "discovery_only",
-        "title": "شركة متخصصة في التعليم والنشر تعلن فتح باب العمل الحر في 3 تخصصات – التقديم متاح الآن",
-        "discovery_url": "https://www.jo-jobs.com/archives/6777",
-        "feed_published": "Fri, 04 Sep 2026 21:49:03 +0000",
-        "first_discovered_at": "2026-09-04T22:22:26.935702+00:00",
-        "last_seen_at": "2026-09-04T22:22:26.935702+00:00",
+        "title": "الأونروا تعلن 8 فرص وظيفية جديدة في الأردن برواتب تصل 750 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6793",
+        "feed_published": "Fri, 04 Sep 2026 23:04:56 +0000",
+        "first_discovered_at": "2026-09-05T00:33:08.449642+00:00",
+        "last_seen_at": "2026-09-05T00:33:08.449642+00:00",
         "status": "discovered",
         "requires_original_source_resolution": true,
         "copy_article_text": false
       },
       "source_resolution": {
-        "source_discovery_url": "https://www.jo-jobs.com/archives/6777",
-        "source_original_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
-        "source_original_fetch_ok": false,
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6793",
+        "source_original_url": "https://lnkd.in/dNqcGQAG",
+        "source_original_fetch_ok": true,
         "application_email": null,
         "application_phone": null,
-        "verified_at": "2026-09-04T22:22:28.752437+00:00"
+        "verified_at": "2026-09-05T00:33:09.081847+00:00"
       },
       "canonical": {
-        "campaign_id": "c76f9a2f7ffda8ae8515dc10",
+        "campaign_id": "fddc3837e41993917e0caaba",
         "repost_of": null,
-        "job_title": "مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)",
-        "employer_name": null,
-        "location_text": null,
-        "application_method": "نموذج إلكتروني",
-        "application_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
+        "job_title": "محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي",
+        "employer_name": "وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)",
+        "location_text": "عمّان – الأردن",
+        "application_method": "عبر منصة وظائف الأمم المتحدة Inspira",
+        "application_url": "https://lnkd.in/dNqcGQAG",
         "application_email": null,
         "application_phone": null,
-        "date_posted": "2026-09-04T21:49:03+00:00",
-        "source_discovery_url": "https://www.jo-jobs.com/archives/6777",
-        "source_original_url": "https://forms.gle/qWyBUSN9d4Y6gCUd7",
+        "date_posted": "2026-09-04T23:04:56+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6793",
+        "source_original_url": "https://lnkd.in/dNqcGQAG",
         "country": "Jordan",
-        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png",
-        "featured_image_path": "data/images/c76f9a2f7ffda8ae8515dc10-v12.png"
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/fddc3837e41993917e0caaba-v12.png",
+        "featured_image_path": "data/images/fddc3837e41993917e0caaba-v12.png"
       },
       "ai": {
         "provider": "groq_free_plan",
@@ -81,78 +81,736 @@
         "paid_api_used": false,
         "paid_fallback_used": false,
         "usage": {
-          "prompt_tokens": 2794,
+          "prompt_tokens": 3129,
           "completion_tokens": 950,
-          "total_tokens": 3744
+          "total_tokens": 4079
         },
-        "seo_title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
-        "meta_description": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم). التقديم متاح الآن عبر نموذج إلكتروني.",
+        "seo_title": "الأونروا: 3 فرص وظيفية في عمّان (أمن، تدقيق، هندسة) عبر منصة Inspira",
+        "meta_description": "أعلنت الأونروا عن 3 فرص في عمّان (تحليل أمن، تدقيق، هندسة ميكانيكية). التقديم عبر منصة Inspira. راتب متوقع 750 دينار. التفاصيل الكاملة.",
         "official_details": {
-          "employer": "غير مذكور في الإعلان",
-          "job_title": "مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)",
-          "location": "غير مذكور في الإعلان",
+          "employer": "وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)",
+          "job_title": "محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي",
+          "location": "عمّان – الأردن",
           "salary": "غير مذكور في الإعلان",
-          "employment_type": "عمل مستقل (Freelance)",
-          "experience": "خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي",
-          "qualification": "إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز",
-          "application_method": "نموذج إلكتروني",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "غير مذكور في الإعلان",
+          "qualification": "غير مذكور في الإعلان",
+          "application_method": "عبر منصة وظائف الأمم المتحدة Inspira",
           "deadline": "غير مذكور في الإعلان"
         },
         "missing_official_information": [
-          "اسم الشركة المعلنة",
-          "قيمة الأجر أو نطاق الراتب",
-          "مكان العمل أو طبيعة العمل عن بُعد",
-          "الموعد النهائي للتقديم",
-          "عدد الشواغر المتاحة"
+          "المؤهلات العلمية الدقيقة لكل شاغر",
+          "سنوات الخبرة المطلوبة",
+          "الراتب الرسمي المعلن",
+          "المواعيد النهائية للتقديم لكل فرصة",
+          "نوع العقد (دوام كامل/جزئي/مؤقت)"
         ],
         "verification_notes": null,
         "labels": [
-          "وظائف الأردن",
-          "وظائف تعليم"
+          "وظائف عمان",
+          "وظائف هندسة"
         ]
       },
       "quality_gate": {
         "passed": true,
         "errors": [],
-        "warnings": [
-          "jobposting_schema_not_emitted"
-        ],
+        "warnings": [],
         "metrics": {
-          "title_chars": 71,
-          "summary_chars": 632,
-          "content_chars": 10363,
+          "title_chars": 68,
+          "summary_chars": 520,
+          "content_chars": 11027,
           "labels": 2
         }
       },
       "dedupe": {
         "action": "publish_new_campaign",
-        "campaign_id": "c76f9a2f7ffda8ae8515dc10",
+        "campaign_id": "fddc3837e41993917e0caaba",
         "matched_campaign_id": null,
         "score": 0.0,
         "reason": "no strong existing campaign match"
       },
       "publication_package": {
         "action": "publish_new_post",
-        "title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
-        "social_title": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم)",
+        "title": "الأونروا: 3 فرص وظيفية في عمّان (أمن، تدقيق، هندسة) عبر منصة Inspira",
+        "social_title": "وظائف الأونروا في الأردن: 3 شواغر في عمّان برواتب متوقعة تصل 750 دينار",
         "labels": [
-          "وظائف الأردن",
-          "وظائف تعليم"
+          "وظائف عمان",
+          "وظائف هندسة"
         ],
-        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)</h1>\n    <p class='job-employer'>غير مذكور في الإعلان</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الدوام</b>عمل مستقل (Freelance)</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png' alt='مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون) لدى غير مذكور في الإعلان' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت شركة متخصصة في التعليم والنشر عن استقبال طلبات مستقلين (Freelancers) للعمل في تطوير وتأليف وتحرير المحتوى التعليمي المدرسي باللغة الإنجليزية. تشمل الفرص ثلاثة تخصصات رئيسية: اللغة الإنجليزية، الرياضيات، والعلوم، موجهة للمراحل الدراسية من رياض الأطفال (K) حتى الصف السادس (Grade 6). تتطلب الفرصة إجادة ممتازة للغة الإنجليزية وخبرة فعلية سابقة في تأليف أو تحرير الكتب المدرسية أو تطوير الموارد التعليمية. يمكن للمتقدمين اختيار التخصص الذي يتوافق مع خبرتهم دون الحاجة لامتلاك خبرة في جميع المجالات. الأجر ومكان العمل غير محددين في الإعلان، ويتم التقديم حصرياً عبر نموذج إلكتروني مع إرفاق السيرة الذاتية ونماذج من الأعمال السابقة.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>عمل مستقل (Freelance)</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>مستقلون في تطوير المحتوى التعليمي (محررون، مؤلفون، مطورون)</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>إجادة اللغة الإنجليزية تحدثًا وكتابةً بمستوى ممتاز</li><li>خبرة سابقة فعلية في تأليف أو تطوير أو تحرير الكتب المدرسية أو المحتوى التعليمي</li><li>أن تكون الخبرة السابقة مرتبطة بالتخصص والمجال الذي يتم التقديم إليه</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>تطوير ومراجعة المحتوى التعليمي (تحرير)</li><li>تأليف وكتابة وتطوير محتوى الكتب المدرسية</li><li>تطوير وإعداد الموارد التعليمية المساندة (أدلة المعلمين، أوراق العمل، التقييمات، بنوك الأسئلة، مفاتيح الإجابات، الأنشطة، المواد المساندة)</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>نموذج إلكتروني</p><a class='job-apply-btn' href='https://forms.gle/qWyBUSN9d4Y6gCUd7' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>اسم الشركة المعلنة</li><li>قيمة الأجر أو نطاق الراتب</li><li>مكان العمل أو طبيعة العمل عن بُعد</li><li>الموعد النهائي للتقديم</li><li>عدد الشواغر المتاحة</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>نموذج إلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85'>وظائف تعليم</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-04T22:22:28.752437+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>",
-        "schema": {},
-        "meta_description": "فرص عمل حر في التعليم والنشر: 3 تخصصات تعليمية (إنجليزي، رياضيات، علوم). التقديم متاح الآن عبر نموذج إلكتروني.",
-        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/c76f9a2f7ffda8ae8515dc10-v12.png",
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي</h1>\n    <p class='job-employer'>وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>عمّان – الأردن</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/fddc3837e41993917e0caaba-v12.png' alt='محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي لدى وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا) عن 8 فرص وظيفية موزعة بين الأردن والضفة الغربية وسوريا، منها 3 فرص في عمّان تشمل: محلل معلومات أمنية، أخصائي تدقيق وتحقق، ومهندس تصميم ميكانيكي. لم تُذكر الرواتب الرسمية في القائمة التجميعية، لكن المصادر تشير إلى راتب متوقع يصل إلى 750 ديناراً. يختلف كل شاغر في متطلباته المؤهل والخبرة، لذا يجب الرجوع إلى منصة Inspira باستخدام رقم الشاغر المحدد للاطلاع على التفاصيل الدقيقة والمواعيد النهائية. التقديم متاح حالياً عبر المنصة الرسمية للأمم المتحدة.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>عمّان – الأردن</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>لم يذكر الإعلان شروطاً تفصيلية إضافية يمكن تأكيدها.</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>عبر منصة وظائف الأمم المتحدة Inspira</p><a class='job-apply-btn' href='https://lnkd.in/dNqcGQAG' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>المؤهلات العلمية الدقيقة لكل شاغر</li><li>سنوات الخبرة المطلوبة</li><li>الراتب الرسمي المعلن</li><li>المواعيد النهائية للتقديم لكل فرصة</li><li>نوع العقد (دوام كامل/جزئي/مؤقت)</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>عبر منصة وظائف الأمم المتحدة Inspira</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%87%D9%86%D8%AF%D8%B3%D8%A9'>وظائف هندسة</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-05T00:33:09.081847+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)\"}, \"description\": \"أعلنت وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا) عن 8 فرص وظيفية موزعة بين الأردن والضفة الغربية وسوريا، منها 3 فرص في عمّان تشمل: محلل معلومات أمنية، أخصائي تدقيق وتحقق، ومهندس تصميم ميكانيكي. لم تُذكر الرواتب الرسمية في القائمة التجميعية، لكن المصادر تشير إلى راتب متوقع يصل إلى 750 ديناراً. يختلف كل شاغر في متطلباته المؤهل والخبرة، لذا يجب الرجوع إلى منصة Inspira باستخدام رقم الشاغر المحدد للاطلاع على التفاصيل الدقيقة والمواعيد النهائية. التقديم متاح حالياً عبر المنصة الرسمية للأمم المتحدة.\", \"datePosted\": \"2026-09-04T23:04:56+00:00\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"عمّان – الأردن\"}}, \"directApply\": true}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "محلل معلومات أمنية، أخصائي تدقيق وتحقق، مهندس تصميم ميكانيكي",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا)"
+          },
+          "description": "أعلنت وكالة الأمم المتحدة لإغاثة وتشغيل اللاجئين الفلسطينيين (الأونروا) عن 8 فرص وظيفية موزعة بين الأردن والضفة الغربية وسوريا، منها 3 فرص في عمّان تشمل: محلل معلومات أمنية، أخصائي تدقيق وتحقق، ومهندس تصميم ميكانيكي. لم تُذكر الرواتب الرسمية في القائمة التجميعية، لكن المصادر تشير إلى راتب متوقع يصل إلى 750 ديناراً. يختلف كل شاغر في متطلباته المؤهل والخبرة، لذا يجب الرجوع إلى منصة Inspira باستخدام رقم الشاغر المحدد للاطلاع على التفاصيل الدقيقة والمواعيد النهائية. التقديم متاح حالياً عبر المنصة الرسمية للأمم المتحدة.",
+          "datePosted": "2026-09-04T23:04:56+00:00",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "عمّان – الأردن"
+            }
+          },
+          "directApply": true
+        },
+        "meta_description": "أعلنت الأونروا عن 3 فرص في عمّان (تحليل أمن، تدقيق، هندسة ميكانيكية). التقديم عبر منصة Inspira. راتب متوقع 750 دينار. التفاصيل الكاملة.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/fddc3837e41993917e0caaba-v12.png",
         "quality_gate": {
           "passed": true,
           "errors": [],
-          "warnings": [
-            "jobposting_schema_not_emitted"
-          ],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 68,
+            "summary_chars": 520,
+            "content_chars": 11027,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-05T00:33:11.747730+00:00",
+      "completed_at": "2026-09-05T00:34:07.780866+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "48633dccee782d08709a58bf",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "شركة سياحة وسفر تفتح باب التوظيف لـ3 فرص جديدة – رواتب متوقعة تصل إلى 600 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6791",
+        "feed_published": "Fri, 04 Sep 2026 23:03:46 +0000",
+        "first_discovered_at": "2026-09-05T00:33:08.449642+00:00",
+        "last_seen_at": "2026-09-05T00:33:08.449642+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6791",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "ceo@halawatravel.com",
+        "application_phone": null,
+        "verified_at": "2026-09-05T00:33:11.974628+00:00"
+      },
+      "canonical": {
+        "campaign_id": "87c3d27edc1bc26867a8ecea",
+        "repost_of": null,
+        "job_title": "Executive Secretary, HR Officer, Sales Agent – Airline Ticketing & Reservations",
+        "employer_name": "Halawa Travel & Tourism",
+        "location_text": null,
+        "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+        "application_url": null,
+        "application_email": "ceo@halawatravel.com",
+        "application_phone": null,
+        "date_posted": "2026-09-04T23:03:46+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6791",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/87c3d27edc1bc26867a8ecea-v12.png",
+        "featured_image_path": "data/images/87c3d27edc1bc26867a8ecea-v12.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2947,
+          "completion_tokens": 907,
+          "total_tokens": 3854
+        },
+        "seo_title": "Halawa Travel: 3 فرص عمل في الموارد البشرية والسكرتارية ومبيعات الطيران",
+        "meta_description": "Halawa Travel توظف في 3 مسميات: سكرتارية تنفيذية، موارد بشرية، ومبيعات طيران. راتب متوقع 450-900 دينار. التقديم عبر البريد الإلكتروني.",
+        "official_details": {
+          "employer": "Halawa Travel & Tourism",
+          "job_title": "Executive Secretary, HR Officer, Sales Agent – Airline Ticketing & Reservations",
+          "location": "غير مذكور في الإعلان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "من سنة إلى 3 سنوات حسب المسمى",
+          "qualification": "بكالوريوس في تخصصات ذات صلة",
+          "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "مكان العمل",
+          "الراتب الرسمي",
+          "تاريخ انتهاء التقديم",
+          "نوع العقد (دوام كامل/جزئي)"
+        ],
+        "verification_notes": [
+          "الراتب المذكور (450-900 دينار) هو تقدير من الموقع المصدر وليس راتباً رسمياً من الشركة."
+        ],
+        "labels": [
+          "وظائف الأردن",
+          "وظائف مبيعات"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 71,
+          "summary_chars": 424,
+          "content_chars": 10812,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "87c3d27edc1bc26867a8ecea",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "Halawa Travel: 3 فرص عمل في الموارد البشرية والسكرتارية ومبيعات الطيران",
+        "social_title": "وظائف Halawa Travel: 3 شواغر جديدة – راتب متوقع حتى 900 دينار",
+        "labels": [
+          "وظائف الأردن",
+          "وظائف مبيعات"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>Executive Secretary, HR Officer, Sales Agent – Airline Ticketing &amp; Reservations</h1>\n    <p class='job-employer'>Halawa Travel &amp; Tourism</p>\n    <div class='job-top-chips'></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/87c3d27edc1bc26867a8ecea-v12.png' alt='Executive Secretary, HR Officer, Sales Agent – Airline Ticketing &amp; Reservations لدى Halawa Travel &amp; Tourism' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت شركة Halawa Travel &amp; Tourism عن توظيف 3 موظفين في مسميات: السكرتارية التنفيذية، مسؤول الموارد البشرية، وموظف مبيعات وحجوزات الطيران. تتطلب الوظائف مؤهلات بكالوريوس وخبرات تتراوح بين سنة و3 سنوات حسب المسمى. يتراوح الراتب المتوقع بين 450 و900 دينار أردني شهرياً، وهو تقدير غير رسمي. لم يحدد الإعلان مكان العمل أو تاريخ انتهاء التقديم. يمكن للراغبين التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المحدد في الإعلان.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>Halawa Travel &amp; Tourism</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>من سنة إلى 3 سنوات حسب المسمى</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>بكالوريوس في تخصصات ذات صلة</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>Executive Secretary, HR Officer, Sales Agent – Airline Ticketing &amp; Reservations</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>بكالوريوس في إدارة الأعمال أو الموارد البشرية أو تخصص ذي صلة</li><li>خبرة عملية تتراوح بين سنة و3 سنوات حسب المسمى الوظيفي</li><li>إجادة اللغة الإنجليزية ومهارات الحاسوب (Microsoft Office)</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>إدارة الشؤون الإدارية للموظفين ومتابعة الحضور والإجازات</li><li>إدارة المواعيد والاجتماعات وإعداد التقارير والمراسلات الرسمية</li><li>مبيعات وحجوزات تذاكر الطيران باستخدام أنظمة Amadeus وGalileo وSabre</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:ceo@halawatravel.com'>ceo@halawatravel.com</a></p>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>مكان العمل</li><li>الراتب الرسمي</li><li>تاريخ انتهاء التقديم</li><li>نوع العقد (دوام كامل/جزئي)</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA'>وظائف مبيعات</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تأكد من صحة البريد الإلكتروني الرسمي قبل إرسال أي بيانات شخصية.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-05T00:33:11.974628+00:00.</p>\n    <ul class='job-list'><li>الراتب المذكور (450-900 دينار) هو تقدير من الموقع المصدر وليس راتباً رسمياً من الشركة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"Executive Secretary, HR Officer, Sales Agent – Airline Ticketing & Reservations\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"Halawa Travel & Tourism\"}, \"description\": \"أعلنت شركة Halawa Travel & Tourism عن توظيف 3 موظفين في مسميات: السكرتارية التنفيذية، مسؤول الموارد البشرية، وموظف مبيعات وحجوزات الطيران. تتطلب الوظائف مؤهلات بكالوريوس وخبرات تتراوح بين سنة و3 سنوات حسب المسمى. يتراوح الراتب المتوقع بين 450 و900 دينار أردني شهرياً، وهو تقدير غير رسمي. لم يحدد الإعلان مكان العمل أو تاريخ انتهاء التقديم. يمكن للراغبين التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المحدد في الإعلان.\", \"datePosted\": \"2026-09-04T23:03:46+00:00\"}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "Executive Secretary, HR Officer, Sales Agent – Airline Ticketing & Reservations",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Halawa Travel & Tourism"
+          },
+          "description": "أعلنت شركة Halawa Travel & Tourism عن توظيف 3 موظفين في مسميات: السكرتارية التنفيذية، مسؤول الموارد البشرية، وموظف مبيعات وحجوزات الطيران. تتطلب الوظائف مؤهلات بكالوريوس وخبرات تتراوح بين سنة و3 سنوات حسب المسمى. يتراوح الراتب المتوقع بين 450 و900 دينار أردني شهرياً، وهو تقدير غير رسمي. لم يحدد الإعلان مكان العمل أو تاريخ انتهاء التقديم. يمكن للراغبين التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المحدد في الإعلان.",
+          "datePosted": "2026-09-04T23:03:46+00:00"
+        },
+        "meta_description": "Halawa Travel توظف في 3 مسميات: سكرتارية تنفيذية، موارد بشرية، ومبيعات طيران. راتب متوقع 450-900 دينار. التقديم عبر البريد الإلكتروني.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/87c3d27edc1bc26867a8ecea-v12.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
           "metrics": {
             "title_chars": 71,
-            "summary_chars": 632,
-            "content_chars": 10363,
+            "summary_chars": 424,
+            "content_chars": 10812,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-05T00:34:07.780917+00:00",
+      "completed_at": "2026-09-05T00:34:36.089720+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "7a76abc4699a7ffca7f13a1f",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "صندوق حياة للتعليم يفتح باب التوظيف في عمّان – راتب متوقع يصل إلى 500 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6789",
+        "feed_published": "Fri, 04 Sep 2026 23:02:44 +0000",
+        "first_discovered_at": "2026-09-05T00:33:08.449642+00:00",
+        "last_seen_at": "2026-09-05T00:33:08.449642+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6789",
+        "source_original_url": "https://lnkd.in/dzyP6gyi",
+        "source_original_fetch_ok": true,
+        "application_email": null,
+        "application_phone": null,
+        "verified_at": "2026-09-05T00:34:08.217010+00:00"
+      },
+      "canonical": {
+        "campaign_id": "34b4507d1c4e7e3afb6c4865",
+        "repost_of": null,
+        "job_title": "باحث اجتماعي وعلاقات محسنين",
+        "employer_name": "جمعية صندوق حياة للتعليم الخيرية",
+        "location_text": "عمّان",
+        "application_method": "إلكترونيًا عبر الرابط المعلن",
+        "application_url": "https://lnkd.in/dzyP6gyi",
+        "application_email": null,
+        "application_phone": null,
+        "date_posted": "2026-09-04T23:02:44+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6789",
+        "source_original_url": "https://lnkd.in/dzyP6gyi",
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/34b4507d1c4e7e3afb6c4865-v12.png",
+        "featured_image_path": "data/images/34b4507d1c4e7e3afb6c4865-v12.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 3045,
+          "completion_tokens": 950,
+          "total_tokens": 3995
+        },
+        "seo_title": "صندوق حياة للتعليم: باحث اجتماعي وعلاقات محسنين في عمّان",
+        "meta_description": "تعلن جمعية صندوق حياة للتعليم عن توظيف باحث اجتماعي وعلاقات محسنين في عمّان. راتب متوقع 500-800 دينار. التقديم حتى 15 سبتمبر 2026.",
+        "official_details": {
+          "employer": "جمعية صندوق حياة للتعليم الخيرية",
+          "job_title": "باحث اجتماعي وعلاقات محسنين",
+          "location": "عمّان",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "3 سنوات على الأقل",
+          "qualification": "بكالوريوس في علم الاجتماع أو الخدمة الاجتماعية أو تخصص ذي علاقة",
+          "application_method": "إلكترونيًا عبر الرابط المعلن",
+          "deadline": "15/9/2026"
+        },
+        "missing_official_information": [
+          "قيمة الراتب الرسمية",
+          "نوع العقد (دوام كامل/جزئي)",
+          "تفاصيل بدل التنقل أو الوقود",
+          "عدد الشواغر المتاحة"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف عمان",
+          "وظائف تعليم"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 56,
+          "summary_chars": 527,
+          "content_chars": 11184,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "34b4507d1c4e7e3afb6c4865",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "صندوق حياة للتعليم: باحث اجتماعي وعلاقات محسنين في عمّان",
+        "social_title": "فرصة عمل في عمّان: باحث اجتماعي لدى صندوق حياة للتعليم",
+        "labels": [
+          "وظائف عمان",
+          "وظائف تعليم"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>باحث اجتماعي وعلاقات محسنين</h1>\n    <p class='job-employer'>جمعية صندوق حياة للتعليم الخيرية</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>عمّان</span><span class='job-top-chip'><b>آخر موعد</b>15/9/2026</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/34b4507d1c4e7e3afb6c4865-v12.png' alt='باحث اجتماعي وعلاقات محسنين لدى جمعية صندوق حياة للتعليم الخيرية' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>تعلن جمعية صندوق حياة للتعليم الخيرية عن توفر فرصة عمل بدوام كامل في عمّان لمسمى باحث اجتماعي وعلاقات محسنين. تتطلب الوظيفة مؤهلاً علمياً في علم الاجتماع أو الخدمة الاجتماعية، مع خبرة عملية لا تقل عن 3 سنوات في البحث الاجتماعي والعمل الخيري. تشمل المهام إجراء الدراسات والمقابلات الميدانية، فرز طلبات الطلبة، وتحصيل التبرعات. يشترط الإعلان امتلاك رخصة قيادة وسيارة خاصة، وهي مخصصة للذكور. الراتب غير معلن رسمياً، لكن التقديرات تشير إلى نطاق 500-800 دينار شهرياً. آخر موعد للتقديم هو 15 سبتمبر 2026 عبر الرابط الإلكتروني المعلن.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>جمعية صندوق حياة للتعليم الخيرية</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>عمّان</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>3 سنوات على الأقل</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>بكالوريوس في علم الاجتماع أو الخدمة الاجتماعية أو تخصص ذي علاقة</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>15/9/2026</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>باحث اجتماعي وعلاقات محسنين</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>مؤهل بكالوريوس في علم الاجتماع أو الخدمة الاجتماعية أو تخصص ذي علاقة</li><li>خبرة لا تقل عن 3 سنوات في البحث الاجتماعي والعمل مع المؤسسات الخيرية</li><li>رخصة قيادة سارية المفعول</li><li>سيارة خاصة</li><li>الجنس: ذكور فقط</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>فرز طلبات الطلبة الواردة إلى الجمعية</li><li>التحضير للمقابلات الشخصية وإجرائها</li><li>إجراء الدراسات الاجتماعية الميدانية والمكتبية</li><li>إصدار التوصيات المتعلقة بالدراسات الاجتماعية</li><li>تحصيل التبرعات بشكل منتظم</li><li>متابعة المعاملات والاحتياجات الخارجية للجمعية</li><li>التنسيق مع الجهات ذات العلاقة</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إلكترونيًا عبر الرابط المعلن</p><a class='job-apply-btn' href='https://lnkd.in/dzyP6gyi' rel='nofollow noopener' target='_blank'>الانتقال إلى صفحة التقديم</a>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>قيمة الراتب الرسمية</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل بدل التنقل أو الوقود</li><li>عدد الشواغر المتاحة</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>إلكترونيًا عبر الرابط المعلن</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>15/9/2026</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%B9%D9%85%D8%A7%D9%86'>وظائف عمان</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D8%B9%D9%84%D9%8A%D9%85'>وظائف تعليم</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-05T00:34:08.217010+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"باحث اجتماعي وعلاقات محسنين\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"جمعية صندوق حياة للتعليم الخيرية\"}, \"description\": \"تعلن جمعية صندوق حياة للتعليم الخيرية عن توفر فرصة عمل بدوام كامل في عمّان لمسمى باحث اجتماعي وعلاقات محسنين. تتطلب الوظيفة مؤهلاً علمياً في علم الاجتماع أو الخدمة الاجتماعية، مع خبرة عملية لا تقل عن 3 سنوات في البحث الاجتماعي والعمل الخيري. تشمل المهام إجراء الدراسات والمقابلات الميدانية، فرز طلبات الطلبة، وتحصيل التبرعات. يشترط الإعلان امتلاك رخصة قيادة وسيارة خاصة، وهي مخصصة للذكور. الراتب غير معلن رسمياً، لكن التقديرات تشير إلى نطاق 500-800 دينار شهرياً. آخر موعد للتقديم هو 15 سبتمبر 2026 عبر الرابط الإلكتروني المعلن.\", \"datePosted\": \"2026-09-04T23:02:44+00:00\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"عمّان\"}}, \"directApply\": true}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "باحث اجتماعي وعلاقات محسنين",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "جمعية صندوق حياة للتعليم الخيرية"
+          },
+          "description": "تعلن جمعية صندوق حياة للتعليم الخيرية عن توفر فرصة عمل بدوام كامل في عمّان لمسمى باحث اجتماعي وعلاقات محسنين. تتطلب الوظيفة مؤهلاً علمياً في علم الاجتماع أو الخدمة الاجتماعية، مع خبرة عملية لا تقل عن 3 سنوات في البحث الاجتماعي والعمل الخيري. تشمل المهام إجراء الدراسات والمقابلات الميدانية، فرز طلبات الطلبة، وتحصيل التبرعات. يشترط الإعلان امتلاك رخصة قيادة وسيارة خاصة، وهي مخصصة للذكور. الراتب غير معلن رسمياً، لكن التقديرات تشير إلى نطاق 500-800 دينار شهرياً. آخر موعد للتقديم هو 15 سبتمبر 2026 عبر الرابط الإلكتروني المعلن.",
+          "datePosted": "2026-09-04T23:02:44+00:00",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "عمّان"
+            }
+          },
+          "directApply": true
+        },
+        "meta_description": "تعلن جمعية صندوق حياة للتعليم عن توظيف باحث اجتماعي وعلاقات محسنين في عمّان. راتب متوقع 500-800 دينار. التقديم حتى 15 سبتمبر 2026.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/34b4507d1c4e7e3afb6c4865-v12.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 56,
+            "summary_chars": 527,
+            "content_chars": 11184,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-05T00:34:36.089772+00:00",
+      "completed_at": "2026-09-05T00:35:37.502442+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "d419fc5b83b6f380514d0269",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "شركة صناعية تفتح باب التوظيف – راتب متوقع يصل إلى 900 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6787",
+        "feed_published": "Fri, 04 Sep 2026 23:01:52 +0000",
+        "first_discovered_at": "2026-09-05T00:33:08.449642+00:00",
+        "last_seen_at": "2026-09-05T00:33:08.449642+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6787",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "HR.GULF.JO@gmail.com",
+        "application_phone": null,
+        "verified_at": "2026-09-05T00:34:36.813557+00:00"
+      },
+      "canonical": {
+        "campaign_id": "bb40e1862a8b304bccd5f2ed",
+        "repost_of": null,
+        "job_title": "أمين مستودع",
+        "employer_name": "شركة صناعية رائدة (اسم غير محدد)",
+        "location_text": "مدينة سحاب الصناعية",
+        "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+        "application_url": null,
+        "application_email": "HR.GULF.JO@gmail.com",
+        "application_phone": null,
+        "date_posted": "2026-09-04T23:01:52+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6787",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bb40e1862a8b304bccd5f2ed-v12.png",
+        "featured_image_path": "data/images/bb40e1862a8b304bccd5f2ed-v12.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2954,
+          "completion_tokens": 950,
+          "total_tokens": 3904
+        },
+        "seo_title": "شركة صناعية في سحاب: أمين مستودع بخبرة 5 سنوات – راتب متوقع حتى 900 دينار",
+        "meta_description": "شركة صناعية في سحاب توظف أمين مستودع بخبرة 5 سنوات وبكالوريوس. راتب متوقع 600-900 دينار. التقديم عبر البريد الإلكتروني.",
+        "official_details": {
+          "employer": "شركة صناعية رائدة (اسم غير محدد)",
+          "job_title": "أمين مستودع",
+          "location": "مدينة سحاب الصناعية",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "5 سنوات على الأقل في مجال المستودعات لدى شركات كبيرة",
+          "qualification": "بكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة",
+          "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "اسم الشركة الرسمي",
+          "الراتب الرسمي المعلن",
+          "نوع العقد (دوام كامل/جزئي)",
+          "آخر موعد للتقديم",
+          "تفاصيل الحوافز والمزايا الإضافية",
+          "ساعات وأيام الدوام"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف الأردن",
+          "وظائف تقنية"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 73,
+          "summary_chars": 648,
+          "content_chars": 11325,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "bb40e1862a8b304bccd5f2ed",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "شركة صناعية في سحاب: أمين مستودع بخبرة 5 سنوات – راتب متوقع حتى 900 دينار",
+        "social_title": "فرصة عمل أمين مستودع في سحاب الصناعية | راتب متوقع 600-900 دينار",
+        "labels": [
+          "وظائف الأردن",
+          "وظائف تقنية"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>أمين مستودع</h1>\n    <p class='job-employer'>شركة صناعية رائدة (اسم غير محدد)</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>مدينة سحاب الصناعية</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bb40e1862a8b304bccd5f2ed-v12.png' alt='أمين مستودع لدى شركة صناعية رائدة (اسم غير محدد)' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت شركة صناعية رائدة في مدينة سحاب الصناعية عن توفر شاغر لوظيفة أمين مستودع. يشترط الإعلان الحصول على درجة البكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة، مع خبرة عملية لا تقل عن 5 سنوات في مجال المستودعات لدى شركات كبيرة. تتطلب الوظيفة إتقان برامج Microsoft Office ومعرفة ممتازة بأنظمة ERP، بالإضافة إلى إجادة اللغة الإنجليزية كتابةً وتحدثاً. كما يُشترط امتلاك رخصة قيادة سارية المفعول، بينما تُعد معرفة تشغيل الرافعات الشوكية ميزة إضافية. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 600 و900 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع كتابة المسمى الوظيفي في خانة الموضوع.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>شركة صناعية رائدة (اسم غير محدد)</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>مدينة سحاب الصناعية</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>5 سنوات على الأقل في مجال المستودعات لدى شركات كبيرة</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>بكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>أمين مستودع</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>خبرة عملية لا تقل عن 5 سنوات في مجال المستودعات لدى شركات كبيرة</li><li>درجة البكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة من جامعة معتمدة</li><li>إتقان استخدام برامج Microsoft Office (Word, Excel, PowerPoint)</li><li>معرفة ممتازة بأنظمة ERP</li><li>إجادة اللغة الإنجليزية كتابةً وتحدثاً بمستوى جيد</li><li>امتلاك رخصة قيادة سارية المفعول</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>لم يذكر الإعلان مهاماً تفصيلية إضافية يمكن تأكيدها.</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:HR.GULF.JO@gmail.com'>HR.GULF.JO@gmail.com</a></p>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>اسم الشركة الرسمي</li><li>الراتب الرسمي المعلن</li><li>نوع العقد (دوام كامل/جزئي)</li><li>آخر موعد للتقديم</li><li>تفاصيل الحوافز والمزايا الإضافية</li><li>ساعات وأيام الدوام</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86'>وظائف الأردن</a><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%AA%D9%82%D9%86%D9%8A%D8%A9'>وظائف تقنية</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-05T00:34:36.813557+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"أمين مستودع\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة صناعية رائدة (اسم غير محدد)\"}, \"description\": \"أعلنت شركة صناعية رائدة في مدينة سحاب الصناعية عن توفر شاغر لوظيفة أمين مستودع. يشترط الإعلان الحصول على درجة البكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة، مع خبرة عملية لا تقل عن 5 سنوات في مجال المستودعات لدى شركات كبيرة. تتطلب الوظيفة إتقان برامج Microsoft Office ومعرفة ممتازة بأنظمة ERP، بالإضافة إلى إجادة اللغة الإنجليزية كتابةً وتحدثاً. كما يُشترط امتلاك رخصة قيادة سارية المفعول، بينما تُعد معرفة تشغيل الرافعات الشوكية ميزة إضافية. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 600 و900 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع كتابة المسمى الوظيفي في خانة الموضوع.\", \"datePosted\": \"2026-09-04T23:01:52+00:00\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"مدينة سحاب الصناعية\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "أمين مستودع",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة صناعية رائدة (اسم غير محدد)"
+          },
+          "description": "أعلنت شركة صناعية رائدة في مدينة سحاب الصناعية عن توفر شاغر لوظيفة أمين مستودع. يشترط الإعلان الحصول على درجة البكالوريوس في إدارة الأعمال أو تخصص إداري ذي صلة، مع خبرة عملية لا تقل عن 5 سنوات في مجال المستودعات لدى شركات كبيرة. تتطلب الوظيفة إتقان برامج Microsoft Office ومعرفة ممتازة بأنظمة ERP، بالإضافة إلى إجادة اللغة الإنجليزية كتابةً وتحدثاً. كما يُشترط امتلاك رخصة قيادة سارية المفعول، بينما تُعد معرفة تشغيل الرافعات الشوكية ميزة إضافية. لم تحدد الشركة راتباً رسمياً، لكن التقديرات تشير إلى نطاق يتراوح بين 600 و900 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المخصص مع كتابة المسمى الوظيفي في خانة الموضوع.",
+          "datePosted": "2026-09-04T23:01:52+00:00",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "مدينة سحاب الصناعية"
+            }
+          }
+        },
+        "meta_description": "شركة صناعية في سحاب توظف أمين مستودع بخبرة 5 سنوات وبكالوريوس. راتب متوقع 600-900 دينار. التقديم عبر البريد الإلكتروني.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/bb40e1862a8b304bccd5f2ed-v12.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 73,
+            "summary_chars": 648,
+            "content_chars": 11325,
+            "labels": 2
+          }
+        }
+      }
+    },
+    {
+      "worker_version": 12,
+      "started_at": "2026-09-05T00:35:37.502487+00:00",
+      "completed_at": "2026-09-05T00:36:35.752671+00:00",
+      "policy": {
+        "paid_ai_allowed": false,
+        "paid_fallback_allowed": false,
+        "missing_information_causes_rejection": false,
+        "invent_official_facts": false,
+        "cross_source_duplicates_create_new_posts": false,
+        "genuine_employer_reposts_allowed": true,
+        "competitor_discovery_links_publicly_exposed": false,
+        "branded_featured_image_required": true,
+        "poster_version_required": "v12",
+        "poster_text_collision_guard": true,
+        "poster_dynamic_vertical_layout_required": true,
+        "poster_strict_unicode_sanitizer_required": true,
+        "poster_curated_company_photo_only": true,
+        "poster_sector_fallback_required": true,
+        "poster_distinct_info_icons_required": true,
+        "quality_gate_required": true,
+        "deterministic_taxonomy_required": true,
+        "internal_links_required": true,
+        "deterministic_jobposting_schema_required": true
+      },
+      "candidate": {
+        "candidate_id": "0b0f708c951a36b76c01d7d8",
+        "source_id": "jo-jobs",
+        "source_name": "وظيفتك عنا",
+        "source_tier": 3,
+        "source_role": "discovery_only",
+        "title": "شركة منير سختيان التجارية تفتح باب التوظيف لمنسقين بضائع – راتب متوقع يصل إلى 600 دينار",
+        "discovery_url": "https://www.jo-jobs.com/archives/6785",
+        "feed_published": "Fri, 04 Sep 2026 23:01:09 +0000",
+        "first_discovered_at": "2026-09-05T00:33:08.449642+00:00",
+        "last_seen_at": "2026-09-05T00:33:08.449642+00:00",
+        "status": "discovered",
+        "requires_original_source_resolution": true,
+        "copy_article_text": false
+      },
+      "source_resolution": {
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6785",
+        "source_original_url": null,
+        "source_original_fetch_ok": false,
+        "application_email": "jobs@sukhtian.com.jo",
+        "application_phone": null,
+        "verified_at": "2026-09-05T00:35:38.526681+00:00"
+      },
+      "canonical": {
+        "campaign_id": "d705ec48389e93ffc2f3c120",
+        "repost_of": null,
+        "job_title": "منسق بضائع",
+        "employer_name": "شركة منير سختيان التجارية",
+        "location_text": "العقبة",
+        "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+        "application_url": null,
+        "application_email": "jobs@sukhtian.com.jo",
+        "application_phone": null,
+        "date_posted": "2026-09-04T23:01:09+00:00",
+        "source_discovery_url": "https://www.jo-jobs.com/archives/6785",
+        "source_original_url": null,
+        "country": "Jordan",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/d705ec48389e93ffc2f3c120-v12.png",
+        "featured_image_path": "data/images/d705ec48389e93ffc2f3c120-v12.png"
+      },
+      "ai": {
+        "provider": "groq_free_plan",
+        "model": "qwen/qwen3.8-27b",
+        "paid_api_used": false,
+        "paid_fallback_used": false,
+        "usage": {
+          "prompt_tokens": 2962,
+          "completion_tokens": 950,
+          "total_tokens": 3912
+        },
+        "seo_title": "شركة منير سختيان التجارية: منسق بضائع في العقبة – راتب متوقع 400-600 دينار",
+        "meta_description": "فرصة عمل لمنسق بضائع في العقبة لدى شركة منير سختيان التجارية. يتطلب الإعلان شهادة ثانوية وسيارة خاصة. راتب متوقع 400-600 دينار. قدّم عبر البريد الإلكتروني.",
+        "official_details": {
+          "employer": "شركة منير سختيان التجارية",
+          "job_title": "منسق بضائع",
+          "location": "العقبة",
+          "salary": "غير مذكور في الإعلان",
+          "employment_type": "غير مذكور في الإعلان",
+          "experience": "خبرة سابقة في تنسيق وترتيب البضائع",
+          "qualification": "شهادة الثانوية العامة كحد أدنى",
+          "application_method": "إرسال السيرة الذاتية عبر البريد الإلكتروني",
+          "deadline": "غير مذكور في الإعلان"
+        },
+        "missing_official_information": [
+          "الراتب الرسمي أو نطاقه المعلن",
+          "الموعد النهائي للتقديم",
+          "نوع العقد (دوام كامل/جزئي)",
+          "تفاصيل بدل المواصلات أو الوقود",
+          "ساعات وأيام الدوام",
+          "تفاصيل التأمينات الاجتماعية"
+        ],
+        "verification_notes": null,
+        "labels": [
+          "وظائف العقبة",
+          "فرص عمل"
+        ]
+      },
+      "quality_gate": {
+        "passed": true,
+        "errors": [],
+        "warnings": [],
+        "metrics": {
+          "title_chars": 74,
+          "summary_chars": 521,
+          "content_chars": 10980,
+          "labels": 2
+        }
+      },
+      "dedupe": {
+        "action": "publish_new_campaign",
+        "campaign_id": "d705ec48389e93ffc2f3c120",
+        "matched_campaign_id": null,
+        "score": 0.0,
+        "reason": "no strong existing campaign match"
+      },
+      "publication_package": {
+        "action": "publish_new_post",
+        "title": "شركة منير سختيان التجارية: منسق بضائع في العقبة – راتب متوقع 400-600 دينار",
+        "social_title": "وظيفة منسق بضائع في العقبة لشركة منير سختيان – راتب متوقع حتى 600 دينار",
+        "labels": [
+          "وظائف العقبة",
+          "فرص عمل"
+        ],
+        "content": "<article class='jordan-job-article'>\n  <header class='job-page-hero'>\n    <p class='job-kicker'>فرصة عمل في الأردن</p>\n    <h1 class='job-display-title'>منسق بضائع</h1>\n    <p class='job-employer'>شركة منير سختيان التجارية</p>\n    <div class='job-top-chips'><span class='job-top-chip'><b>الموقع</b>العقبة</span></div>\n    <a class='job-primary-cta' href='#job-apply'>طريقة التقديم</a>\n  </header>\n\n  <figure class='job-featured-image'><img src='https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/d705ec48389e93ffc2f3c120-v12.png' alt='منسق بضائع لدى شركة منير سختيان التجارية' loading='eager' fetchpriority='high' width='1536' height='1024'/></figure>\n\n  <section class='job-intro-card'>\n    <span class='job-overview-label'>ملخص سريع</span>\n    <p>أعلنت شركة منير سختيان التجارية عن توفر شاغر لمنسق بضائع في محافظة العقبة. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، وحاصلاً على شهادة الثانوية العامة كحد أدنى، مع خبرة سابقة في تنسيق وترتيب البضائع. من الشروط الجوهرية امتلاك سيارة خاصة مسجلة باسم المتقدم لتسهيل التنقل بين نقاط البيع. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق متوقع بين 400 و600 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المعلن مع ذكر اسم الشاغر في العنوان. لم يحدد الإعلان موعداً نهائياً للتقديم.</p>\n  </section>\n\n  <section class='job-section' id='job-summary'>\n    <div class='job-section-heading'><div><h2>ملخص الوظيفة</h2><p>أهم التفاصيل الرسمية في مكان واحد.</p></div></div>\n    <div class='job-facts-grid'>\n      <div class='job-fact'><div><strong>جهة التوظيف</strong><span>شركة منير سختيان التجارية</span></div></div>\n      <div class='job-fact'><div><strong>الموقع</strong><span>العقبة</span></div></div>\n      <div class='job-fact'><div><strong>نوع الدوام</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الراتب الرسمي</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>الخبرة</strong><span>خبرة سابقة في تنسيق وترتيب البضائع</span></div></div>\n      <div class='job-fact'><div><strong>المؤهل</strong><span>شهادة الثانوية العامة كحد أدنى</span></div></div>\n      <div class='job-fact'><div><strong>آخر موعد</strong><span>غير مذكور في الإعلان</span></div></div>\n      <div class='job-fact'><div><strong>المسمى الوظيفي</strong><span>منسق بضائع</span></div></div>\n    </div>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>الشروط والمتطلبات المذكورة في الإعلان</h2><p>فقط الشروط التي أمكن استخلاصها من الإعلان.</p></div></div>\n    <ul class='job-list'><li>أن يكون المتقدم من سكان منطقة العقبة</li><li>حصول المتقدم على شهادة الثانوية العامة كحد أدنى</li><li>امتلاك سيارة خاصة مسجلة باسم المتقدم</li><li>خبرة سابقة في تنسيق وترتيب البضائع</li><li>القدرة على التنقل بين نقاط البيع ومتابعة ترتيب البضائع</li><li>الالتزام والجدية وتحمل ضغط العمل</li></ul>\n  </section>\n\n  <section class='job-section'>\n    <div class='job-section-heading'><div><h2>المهام والمسؤوليات المذكورة</h2><p>المهام المعلنة عند توفرها.</p></div></div>\n    <ul class='job-list'><li>متابعة المنتجات والبضائع في نقاط البيع</li><li>التأكد من ترتيبها وتنسيقها بالصورة المطلوبة</li><li>التنقل بين نقاط البيع المختلفة</li></ul>\n  </section>\n\n  <section class='job-apply-section job-panel' id='job-apply'>\n    <span class='job-apply-badge'>التقديم</span>\n    <h2>طريقة التقديم</h2>\n    <p class='job-apply-method'>إرسال السيرة الذاتية عبر البريد الإلكتروني</p><p class='job-contact-row'><strong>البريد الإلكتروني</strong><a href='mailto:jobs@sukhtian.com.jo'>jobs@sukhtian.com.jo</a></p>\n  </section>\n\n  <details class='job-faq job-more-info'><summary>معلومات لم يذكرها الإعلان بوضوح</summary><div class='job-more-info-body'><ul class='job-list'><li>الراتب الرسمي أو نطاقه المعلن</li><li>الموعد النهائي للتقديم</li><li>نوع العقد (دوام كامل/جزئي)</li><li>تفاصيل بدل المواصلات أو الوقود</li><li>ساعات وأيام الدوام</li><li>تفاصيل التأمينات الاجتماعية</li></ul></div></details>\n\n  <section class='job-section job-faq-section'>\n    <div class='job-section-heading'><div><h2>أسئلة شائعة عن هذه الفرصة</h2><p>إجابات سريعة قبل التقديم.</p></div></div>\n    <details class='job-faq'><summary>كيف يمكن التقديم على هذه الوظيفة؟</summary><p>إرسال السيرة الذاتية عبر البريد الإلكتروني</p></details><details class='job-faq'><summary>هل الراتب مذكور رسميًا؟</summary><p>غير مذكور في الإعلان</p></details><details class='job-faq'><summary>ما آخر موعد للتقديم؟</summary><p>غير مذكور في الإعلان</p></details>\n  </section>\n\n  <section class='job-related-box job-panel'><div class='job-section-heading'><div><h2>وظائف مشابهة قد تهمك</h2><p>تصفح فرصاً أخرى ضمن نفس المدينة أو المجال.</p></div></div><div class='job-related-links'><a class='job-related-chip' href='/search/label/%D9%88%D8%B8%D8%A7%D8%A6%D9%81%20%D8%A7%D9%84%D8%B9%D9%82%D8%A8%D8%A9'>وظائف العقبة</a><a class='job-related-chip' href='/search/label/%D9%81%D8%B1%D8%B5%20%D8%B9%D9%85%D9%84'>فرص عمل</a><a class='job-related-chip' href='/search'>أحدث الوظائف</a></div></section>\n\n  <section class='job-safety-box job-panel'>\n    <div class='job-section-heading'><div><h2>تنبيه مهم للباحثين عن عمل</h2><p>احمِ بياناتك قبل إرسال أي مستندات.</p></div></div>\n    <p>تحقق من جهة التوظيف قبل مشاركة بيانات حساسة، ولا تدفع أي مبالغ مقابل الحصول على وظيفة.</p>\n  </section>\n\n  <section class='job-verification'>\n    <h2>التحقق من الإعلان</h2>\n    <p>تم رصد هذه الفرصة عبر مصدر وظائف خارجي، ثم تنظيم المعلومات والتحقق من وسيلة التقديم والمصدر الرسمي عندما يكون متاحاً. آخر تحقق مسجل: 2026-09-05T00:35:38.526681+00:00.</p>\n    <ul class='job-list'><li>تم تنظيم المعلومات المتاحة مع فصل الحقائق المؤكدة عن أي إرشادات عامة.</li></ul>\n  </section>\n</article>\n\n<style>\n.jordan-job-article{--j-primary:#0f766e;--j-text:#182230;--j-muted:#667085;--j-border:#e5e7eb;line-height:1.9;color:#344054}\n.job-page-hero{padding:0 0 22px;border-bottom:1px solid var(--j-border);margin-bottom:22px}.job-kicker{font-size:12px;font-weight:800;color:var(--j-primary);margin:0 0 5px}.job-display-title{font-size:34px!important;line-height:1.35!important;font-weight:900!important;color:var(--j-text)!important;margin:0 0 5px!important}.job-employer{font-size:16px;font-weight:700;color:#475467;margin:0 0 13px}.job-top-chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}.job-top-chip{display:inline-flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;font-size:12px;color:#475467}.job-top-chip b{color:var(--j-muted);font-weight:600}.job-primary-cta{display:inline-flex;min-height:44px;align-items:center;justify-content:center;padding:0 16px;border-radius:9px;background:var(--j-primary);color:#fff!important;font-weight:900}\n.job-featured-image{margin:0 0 16px}.job-featured-image img{display:block;width:100%;height:auto;border:1px solid var(--j-border);border-radius:12px}.job-intro-card{padding:18px;border:1px solid var(--j-border);border-radius:12px;background:#fff;margin-bottom:28px}.job-intro-card p{margin:5px 0 0;font-size:16px;line-height:1.9}.job-overview-label{font-size:12px;font-weight:800;color:var(--j-primary)}\n.job-section{margin:32px 0}.job-section-heading{margin-bottom:14px}.job-section-heading h2{font-size:23px!important;line-height:1.4!important;font-weight:900!important;color:var(--j-text)!important;margin:0!important}.job-section-heading p{font-size:13px;color:var(--j-muted);margin:4px 0 0}.job-facts-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.job-fact{padding:12px 13px;border:1px solid var(--j-border);border-radius:10px;background:#fff}.job-fact strong,.job-fact span{display:block}.job-fact strong{font-size:12px;color:var(--j-muted);margin-bottom:3px}.job-fact span{font-size:14px;font-weight:800;color:var(--j-text);line-height:1.6;overflow-wrap:anywhere}.job-list{padding-right:21px;margin:8px 0}.job-list li{margin:7px 0;line-height:1.85}\n.job-panel{padding:18px;border:1px solid var(--j-border);border-radius:12px;margin:28px 0;background:#fff}.job-apply-section{background:#f1faf8;border-color:#bfe2dc;scroll-margin-top:90px}.job-apply-badge{display:inline-flex;align-items:center;min-height:28px;padding:0 8px;border-radius:999px;background:#dff4ef;color:var(--j-primary);font-size:11px;font-weight:900}.job-apply-section h2{font-size:25px!important;margin:7px 0 5px!important}.job-apply-method{margin:0 0 12px}.job-contact-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:7px 0}.job-apply-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;margin-top:8px;border-radius:10px;background:var(--j-primary);color:#fff!important;font-size:14px;font-weight:900}\n.job-faq{padding:0;border:1px solid var(--j-border);border-radius:10px;margin:8px 0;background:#fff;overflow:hidden}.job-faq summary{min-height:48px;display:flex;align-items:center;padding:11px 13px;font-size:14px;font-weight:800;cursor:pointer;color:var(--j-text)}.job-faq p{padding:0 13px 13px;margin:0;font-size:14px}.job-more-info{margin:28px 0}.job-more-info-body{padding:0 13px 10px}.job-related-box{background:#fff}.job-related-links{display:flex;gap:7px;flex-wrap:wrap}.job-related-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 10px;border:1px solid var(--j-border);border-radius:999px;background:#fff;color:var(--j-primary)!important;font-size:12px;font-weight:800}.job-safety-box{background:#fff8e7;border-color:#f1dfb9}.job-verification{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--j-border);color:#98a2b3;font-size:12px}.job-verification h2{font-size:16px!important;color:#667085!important;margin:0 0 6px!important}\n@media(max-width:640px){.job-display-title{font-size:26px!important}.job-primary-cta{width:100%;min-height:46px}.job-intro-card{padding:15px}.job-intro-card p{font-size:15px}.job-facts-grid{grid-template-columns:1fr}.job-section{margin:26px 0}.job-section-heading h2{font-size:20px!important}.job-panel{padding:15px;margin:22px 0}.job-apply-section h2{font-size:22px!important}.job-apply-btn{width:100%}}\n</style>\n<script type='application/ld+json'>{\"@context\": \"https://schema.org\", \"@type\": \"JobPosting\", \"title\": \"منسق بضائع\", \"hiringOrganization\": {\"@type\": \"Organization\", \"name\": \"شركة منير سختيان التجارية\"}, \"description\": \"أعلنت شركة منير سختيان التجارية عن توفر شاغر لمنسق بضائع في محافظة العقبة. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، وحاصلاً على شهادة الثانوية العامة كحد أدنى، مع خبرة سابقة في تنسيق وترتيب البضائع. من الشروط الجوهرية امتلاك سيارة خاصة مسجلة باسم المتقدم لتسهيل التنقل بين نقاط البيع. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق متوقع بين 400 و600 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المعلن مع ذكر اسم الشاغر في العنوان. لم يحدد الإعلان موعداً نهائياً للتقديم.\", \"datePosted\": \"2026-09-04T23:01:09+00:00\", \"jobLocation\": {\"@type\": \"Place\", \"address\": {\"@type\": \"PostalAddress\", \"addressCountry\": \"JO\", \"addressLocality\": \"العقبة\"}}}</script>",
+        "schema": {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "منسق بضائع",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "شركة منير سختيان التجارية"
+          },
+          "description": "أعلنت شركة منير سختيان التجارية عن توفر شاغر لمنسق بضائع في محافظة العقبة. يشترط الإعلان أن يكون المتقدم من سكان المنطقة، وحاصلاً على شهادة الثانوية العامة كحد أدنى، مع خبرة سابقة في تنسيق وترتيب البضائع. من الشروط الجوهرية امتلاك سيارة خاصة مسجلة باسم المتقدم لتسهيل التنقل بين نقاط البيع. لم يحدد الإعلان راتباً رسمياً، لكن التقديرات تشير إلى نطاق متوقع بين 400 و600 دينار أردني شهرياً. يتم التقديم بإرسال السيرة الذاتية إلى البريد الإلكتروني المعلن مع ذكر اسم الشاغر في العنوان. لم يحدد الإعلان موعداً نهائياً للتقديم.",
+          "datePosted": "2026-09-04T23:01:09+00:00",
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "JO",
+              "addressLocality": "العقبة"
+            }
+          }
+        },
+        "meta_description": "فرصة عمل لمنسق بضائع في العقبة لدى شركة منير سختيان التجارية. يتطلب الإعلان شهادة ثانوية وسيارة خاصة. راتب متوقع 400-600 دينار. قدّم عبر البريد الإلكتروني.",
+        "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/d705ec48389e93ffc2f3c120-v12.png",
+        "quality_gate": {
+          "passed": true,
+          "errors": [],
+          "warnings": [],
+          "metrics": {
+            "title_chars": 74,
+            "summary_chars": 521,
+            "content_chars": 10980,
             "labels": 2
           }
         }
