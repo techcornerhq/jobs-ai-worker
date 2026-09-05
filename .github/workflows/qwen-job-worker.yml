@@ -32,8 +32,6 @@ jobs:
       GROQ_MODEL: "qwen/qwen3.8-27b"
       QWEN_MAX_TOKENS: "950"
       QWEN_TEMP: "0.20"
-      POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
-      JOB_IMAGE_MODEL: "flux"
 
     steps:
       - name: Checkout
@@ -110,7 +108,7 @@ jobs:
               assert "-ai-v1.png" in image_url
               assert image_path and Path(image_path).exists()
               with Image.open(image_path) as im:
-                  assert im.size == (1536, 1024)
+                  assert im.size == (1280, 720)
               assert d["policy"]["competitor_discovery_links_publicly_exposed"] is False
           print("ZERO-PAID-AI CHECK: PASS")
           print("Model:", d["ai"].get("model"))

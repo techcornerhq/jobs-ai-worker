@@ -19,6 +19,7 @@ from taxonomy import classify_labels
 
 MISSING = "غير مذكور في الإعلان"
 DISCOVERY_PATH = Path("data/discovery/jo-jobs.json")
+FINAL_IMAGE_MASTER_SHA256 = "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108"
 
 
 def now_iso() -> str:
@@ -133,7 +134,8 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "existing_campaign_id": dedupe.campaign_id,
         }
     else:
-        image_title = enriched.get("social_title") or enriched.get("seo_title") or canonical.get("job_title") or candidate.get("title")
+        # The final approved image system changes ONLY the clean vacancy title.
+        image_title = canonical.get("job_title") or enriched.get("social_title") or enriched.get("seo_title") or candidate.get("title")
         image_path, image_url = generate_job_image(canonical, image_title)
         canonical["featured_image_url"] = image_url
         rendered = render(canonical, enriched)
@@ -149,7 +151,7 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
         register(canonical, dedupe)
 
     return {
-        "worker_version": 12,
+        "worker_version": 13,
         "started_at": started,
         "completed_at": now_iso(),
         "policy": {
@@ -160,14 +162,13 @@ def process_candidate(index: int, register_state: bool = False) -> dict:
             "cross_source_duplicates_create_new_posts": False,
             "genuine_employer_reposts_allowed": True,
             "competitor_discovery_links_publicly_exposed": False,
-            "branded_featured_image_required": True,
-            "poster_version_required": "v12",
-            "poster_text_collision_guard": True,
-            "poster_dynamic_vertical_layout_required": True,
-            "poster_strict_unicode_sanitizer_required": True,
-            "poster_curated_company_photo_only": True,
-            "poster_sector_fallback_required": True,
-            "poster_distinct_info_icons_required": True,
+            "final_exact_master_image_required": True,
+            "image_background_variation_allowed": False,
+            "image_only_variable": "job_title",
+            "image_ai_generation_allowed": False,
+            "image_master_sha256": FINAL_IMAGE_MASTER_SHA256,
+            "image_output_size": "1280x720",
+            "image_production_url_contract_preserved": True,
             "quality_gate_required": True,
             "deterministic_taxonomy_required": True,
             "internal_links_required": True,

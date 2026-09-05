@@ -1,13 +1,16 @@
-name: Apply Unified Jordan Job Template
+name: Apply Final Exact Jordan Job Template
 
 on:
   push:
-    branches: ["unified-jordan-job-template-v1"]
+    branches: ["final-exact-job-template"]
     paths:
+      - "worker/exact_template_asset/**"
       - "worker/unified_job_template.py"
       - "worker/unified_template_runtime.py"
       - "worker/regenerate_unified_template_live.py"
       - "worker/job_image_v12.py"
+      - "worker/run_worker.py"
+      - "worker/quality_gate.py"
       - ".github/workflows/regenerate-unified-template.yml"
   workflow_dispatch:
 
@@ -15,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: unified-jordan-job-template-v1
+  group: final-exact-job-template
   cancel-in-progress: true
 
 jobs:
@@ -31,7 +34,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install exact Arabic font family used by renderer
+      - name: Install locked Arabic title font
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
@@ -39,18 +42,31 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Regenerate all 16 live-post images with unified design
+      - name: Verify exact approved master asset
+        run: |
+          PYTHONPATH=worker python - <<'PY'
+          from unified_job_template import _master, MASTER_SHA256
+          im=_master()
+          assert im.size==(1280,720), im.size
+          print('EXACT MASTER VERIFIED:', MASTER_SHA256)
+          PY
+
+      - name: Regenerate all 16 live-post images from exact master
         run: PYTHONPATH=worker python -u worker/regenerate_unified_template_live.py
 
-      - name: Validate unified image set
+      - name: Validate final exact image set
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           from PIL import Image
+          expected_sha='ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108'
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           assert d['count']==16 and d['failure_count']==0, (d.get('count'), d.get('failure_count'))
-          assert d.get('image_system')=='unified-template-v1', d.get('image_system')
+          assert d.get('image_system')=='final-exact-approved-master-v1', d.get('image_system')
+          assert d.get('master_sha256')==expected_sha
+          assert d.get('background_variation_allowed') is False
+          assert d.get('only_variable')=='job_title'
           ids=set()
           for item in d['items']:
               ids.add(str(item['post_id']))
@@ -59,22 +75,24 @@ jobs:
               assert p.name.startswith('job-') and p.name.endswith('-ai-v1.png'), p
               assert p.exists() and p.stat().st_size > 60000, (p, p.stat().st_size if p.exists() else None)
               assert '/main/data/images/' in u and u.endswith(p.name), u
+              assert item.get('master_sha256')==expected_sha
+              assert item.get('only_variable')=='job_title'
               with Image.open(p) as im:
-                  assert im.size==(1536,1024), im.size
+                  assert im.size==(1280,720), im.size
           assert len(ids)==16
-          print('UNIFIED TEMPLATE 16/16: PASS')
+          print('FINAL EXACT TEMPLATE 16/16: PASS')
           PY
 
       - name: Prepare review previews
         run: |
-          rm -rf data/unified-template-preview
-          mkdir -p data/unified-template-preview
+          rm -rf data/final-exact-template-preview
+          mkdir -p data/final-exact-template-preview
           python - <<'PY'
           import json, shutil
           from pathlib import Path
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           for i,item in enumerate(d['items'][:6],1):
-              shutil.copy2(item['featured_image_path'], Path('data/unified-template-preview')/f'preview-{i}.png')
+              shutil.copy2(item['featured_image_path'], Path('data/final-exact-template-preview')/f'preview-{i}.png')
           PY
 
       - name: Commit regenerated production images
@@ -86,12 +104,12 @@ jobs:
             echo "No image changes"
             exit 0
           fi
-          git commit -m "Apply unified Jordan jobs design to all live images"
-          git pull --rebase origin unified-jordan-job-template-v1
-          git push origin HEAD:unified-jordan-job-template-v1
+          git commit -m "Apply final exact approved master to all live images"
+          git pull --rebase origin final-exact-job-template
+          git push origin HEAD:final-exact-job-template
 
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
-          name: unified-jordan-job-template-previews
-          path: data/unified-template-preview
+          name: final-exact-jordan-job-template-previews
+          path: data/final-exact-template-preview

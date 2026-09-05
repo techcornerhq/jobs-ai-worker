@@ -7,12 +7,14 @@ from urllib.parse import urlparse
 
 from PIL import Image
 
+from unified_job_template import WIDTH, HEIGHT, MASTER_SHA256
 from unified_template_runtime import generate
 
 SOURCE = Path("data/migration/live-blogger-posts-2026-09-05.json")
 CURRENT_MAP = Path("data/results/live-blogger-ai-images.json")
 OUTPUT = Path("data/results/live-blogger-ai-images.json")
 EXPECTED = 16
+IMAGE_SYSTEM = "final-exact-approved-master-v1"
 
 
 def now_iso() -> str:
@@ -47,7 +49,7 @@ def main() -> None:
         if not p.exists() or p.stat().st_size < 60_000:
             raise RuntimeError(f"Invalid generated image for {post_id}: {p}")
         with Image.open(p) as im:
-            if im.size != (1536, 1024):
+            if im.size != (WIDTH, HEIGHT):
                 raise RuntimeError(f"Invalid dimensions for {post_id}: {im.size}")
 
         old = current_by_id.get(post_id) or {}
@@ -62,10 +64,12 @@ def main() -> None:
             **item,
             "featured_image_path": path,
             "featured_image_url": url,
-            "image_version": "unified-template-v1",
+            "image_version": IMAGE_SYSTEM,
+            "master_sha256": MASTER_SHA256,
+            "only_variable": "job_title",
             "generated_at": now_iso(),
         })
-        print(f"UNIFIED {idx}/{EXPECTED}: {post_id} | {item.get('job_title')} -> {new_name}", flush=True)
+        print(f"FINAL EXACT {idx}/{EXPECTED}: {post_id} | {item.get('job_title')} -> {new_name}", flush=True)
 
     payload = {
         "source": str(SOURCE),
@@ -73,7 +77,10 @@ def main() -> None:
         "count": len(results),
         "failure_count": 0,
         "failures": [],
-        "image_system": "unified-template-v1",
+        "image_system": IMAGE_SYSTEM,
+        "master_sha256": MASTER_SHA256,
+        "background_variation_allowed": False,
+        "only_variable": "job_title",
         "items": results,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
