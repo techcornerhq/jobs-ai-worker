@@ -1,0 +1,74 @@
+name: One Job Production Test
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "one-job-test-trigger.txt"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: one-job-production-test
+  cancel-in-progress: false
+
+jobs:
+  process-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      GROQ_MODEL: "qwen/qwen3.8-27b"
+      QWEN_MAX_TOKENS: "950"
+      QWEN_TEMP: "0.20"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Arabic fonts and dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
+          pip install -r requirements.txt
+      - name: Verify free AI secret
+        run: test -n "$GROQ_API_KEY"
+      - name: Refresh discovery
+        run: |
+          python -u worker/source_engine.py || test -s data/discovery/jo-jobs.json
+      - name: Process exactly one unseen candidate
+        run: python -u worker/run_batch.py --batch-size 1 --max-per-day 40 --output data/results/auto-batch.json
+      - name: Validate one-job result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          d=json.loads(Path('data/results/auto-batch.json').read_text(encoding='utf-8'))
+          assert d['selected_count'] <= 1, d['selected_count']
+          assert d['failure_count'] == 0, d['failures']
+          assert d['publishable_count'] <= 1, d['publishable_count']
+          for item in d.get('items', []):
+              assert item['ai']['paid_api_used'] is False
+              assert item['ai']['paid_fallback_used'] is False
+              assert item['quality_gate']['passed'] is True
+              p=Path(item['canonical']['featured_image_path'])
+              assert p.exists()
+              with Image.open(p) as im:
+                  assert im.size==(1280,720)
+          print('ONE JOB TEST PASS; publishable=', d['publishable_count'])
+          PY
+      - name: Save one-job batch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/discovery/jo-jobs.json data/results/auto-batch.json data/state/auto_cursor.json data/images/*.png 2>/dev/null || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "One job production test batch"
+          git pull --rebase origin main
+          git push origin HEAD:main
