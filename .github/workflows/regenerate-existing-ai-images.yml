@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: regenerate-existing-ai-images
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   regenerate:
