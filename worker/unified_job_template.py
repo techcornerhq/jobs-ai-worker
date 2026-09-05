@@ -21,7 +21,7 @@ except Exception:
 # Approved visual = the user-approved "إعلان توظيف" poster.
 # Fixed: Petra, Amman skyline, Jordan flags, مرصد الوظائف identity, watermarks,
 # "إعلان توظيف" headline and all decorative elements.
-# Variable: vacancy title inside the maroon application bar only.
+# Variable: vacancy title inside the original maroon application bar only.
 WIDTH, HEIGHT = 1280, 720
 VERSION = "ai-v1"  # preserve existing Blogger/raw-GitHub URL contract
 IMAGE_DIR = Path("data/images")
@@ -32,16 +32,16 @@ MASTER_SHA256 = "456d02ba6411390c3415855732299b04ec5d8d9bcb333c5359418528da60bb5
 # 03.b64 is an obsolete interrupted-upload fragment and is intentionally ignored.
 ASSET_FILES = ("00.b64", "01.b64", "02.b64", "03a.b64", "03b.b64", "04.b64", "05.b64")
 
-# The approved artwork already contains the full red/gold bar and chevron.
-# We repaint only its text-safe interior so the original sample title is removed,
-# then draw the current vacancy title without altering any other design element.
-BAR_BOX = (486, 375, 1018, 446)
-BAR_RADIUS = 28
-TITLE_CENTER = (752, 410)
-TITLE_MAX_WIDTH = 485
-TITLE_MAX_HEIGHT = 53
-MAROON_LEFT = (122, 6, 19)
-MAROON_RIGHT = (62, 1, 7)
+# Coordinates on the final 1280x720 render. Only the original title pixels are
+# reconstructed from clean pixels immediately above/below them. The original
+# pill, gold border and chevron remain untouched.
+ERASE_X1, ERASE_X2 = 485, 1065
+ERASE_Y1, ERASE_Y2 = 390, 438
+SAMPLE_TOP_Y, SAMPLE_BOTTOM_Y = 385, 445
+EDGE_FEATHER = 20
+TITLE_CENTER = (775, 413)
+TITLE_MAX_WIDTH = 535
+TITLE_MAX_HEIGHT = 50
 WHITE = (255, 255, 255)
 
 BAD_CHARS = re.compile(r"[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff□■▪▫�]")
@@ -110,29 +110,27 @@ def _draw_text(draw: ImageDraw.ImageDraw, xy, text: str, font, fill):
 
 
 def _fit_title_font(draw: ImageDraw.ImageDraw, role: str):
-    for size in range(38, 20, -1):
+    for size in range(36, 19, -1):
         font = _font(size)
         w, h = _measure(draw, role, font)
         if w <= TITLE_MAX_WIDTH and h <= TITLE_MAX_HEIGHT:
             return font
-    return _font(20)
+    return _font(19)
 
 
-def _paint_bar_text_area(image: Image.Image) -> None:
-    x1, y1, x2, y2 = BAR_BOX
-    w, h = x2 - x1, y2 - y1
-    grad = Image.new("RGB", (w, 1))
-    px = grad.load()
-    for x in range(w):
-        t = x / max(1, w - 1)
-        px[x, 0] = tuple(
-            round(MAROON_LEFT[i] * (1 - t) + MAROON_RIGHT[i] * t)
-            for i in range(3)
-        )
-    grad = grad.resize((w, h))
-    mask = Image.new("L", (w, h), 0)
-    ImageDraw.Draw(mask).rounded_rectangle((0, 0, w - 1, h - 1), radius=BAR_RADIUS, fill=255)
-    image.paste(grad, (x1, y1), mask)
+def _erase_original_bar_title(image: Image.Image) -> None:
+    """Remove only the sample vacancy text while retaining the approved bar artwork."""
+    px = image.load()
+    for x in range(ERASE_X1, ERASE_X2 + 1):
+        top = px[x, SAMPLE_TOP_Y]
+        bottom = px[x, SAMPLE_BOTTOM_Y]
+        edge_alpha = min(1.0, (x - ERASE_X1) / EDGE_FEATHER, (ERASE_X2 - x) / EDGE_FEATHER)
+        edge_alpha = max(0.0, edge_alpha)
+        for y in range(ERASE_Y1, ERASE_Y2 + 1):
+            t = (y - ERASE_Y1) / max(1, ERASE_Y2 - ERASE_Y1)
+            reconstructed = tuple(round(top[i] * (1 - t) + bottom[i] * t) for i in range(3))
+            original = px[x, y]
+            px[x, y] = tuple(round(original[i] * (1 - edge_alpha) + reconstructed[i] * edge_alpha) for i in range(3))
 
 
 @lru_cache(maxsize=1)
@@ -154,7 +152,7 @@ def _master() -> Image.Image:
 
 def render(job: dict, title: str) -> Image.Image:
     image = _master().copy()
-    _paint_bar_text_area(image)
+    _erase_original_bar_title(image)
     draw = ImageDraw.Draw(image)
     role = short(first(job.get("job_title"), title, job.get("title"), default="فرصة عمل جديدة"), 58)
     role = re.sub(r"^(?:مطلوب(?:ة)?|إعلان\s+توظيف)\s*[:\-–—]?\s*", "", role).strip() or "فرصة عمل جديدة"
