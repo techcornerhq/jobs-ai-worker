@@ -1,13 +1,15 @@
 {
   "source": "data/migration/live-blogger-posts-2026-09-05.json",
-  "generated_at": "2026-09-05T14:26:15.681447+00:00",
+  "generated_at": "2026-09-05T18:00:17.361517+00:00",
   "count": 16,
   "failure_count": 0,
   "failures": [],
-  "image_system": "final-exact-approved-master-v1",
-  "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+  "image_system": "marsad-approved-master-v2",
+  "brand": "مرصد الوظائف",
+  "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
   "background_variation_allowed": false,
   "only_variable": "job_title",
+  "title_prefix": "مطلوب",
   "items": [
     {
       "post_id": "5892538888192193401",
@@ -19,10 +21,13 @@
       "category_text": "transport driver field work",
       "featured_image_path": "data/images/job-b0466fc620847b-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-b0466fc620847b-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:11.743339+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:13.805691+00:00"
     },
     {
       "post_id": "2422730738342925485",
@@ -34,10 +39,13 @@
       "category_text": "university administration education",
       "featured_image_path": "data/images/job-ea0b152e544ab5-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-ea0b152e544ab5-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:12.038527+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:14.079396+00:00"
     },
     {
       "post_id": "5654586459364496702",
@@ -49,10 +57,13 @@
       "category_text": "medical radiology health",
       "featured_image_path": "data/images/job-96dd9392cff279-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-96dd9392cff279-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:12.301697+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:14.331967+00:00"
     },
     {
       "post_id": "1186299353623573055",
@@ -64,10 +75,13 @@
       "category_text": "logistics inventory merchandise",
       "featured_image_path": "data/images/job-e686221797441e-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e686221797441e-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:12.537630+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:14.524017+00:00"
     },
     {
       "post_id": "7480681638566471046",
@@ -79,10 +93,13 @@
       "category_text": "warehouse logistics inventory",
       "featured_image_path": "data/images/job-380604538e8269-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-380604538e8269-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:12.776640+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:14.714983+00:00"
     },
     {
       "post_id": "2383944653058531041",
@@ -94,10 +111,13 @@
       "category_text": "social work public relations office",
       "featured_image_path": "data/images/job-0e53b2feee51ae-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0e53b2feee51ae-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:13.037485+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:14.960593+00:00"
     },
     {
       "post_id": "7738278135740250876",
@@ -109,10 +129,13 @@
       "category_text": "travel airline reservations sales office",
       "featured_image_path": "data/images/job-8b24f8579031f0-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-8b24f8579031f0-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:13.313955+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:15.221385+00:00"
     },
     {
       "post_id": "6154715099081485890",
@@ -124,10 +147,13 @@
       "category_text": "general office recruitment",
       "featured_image_path": "data/images/job-33d43d1fd4ee65-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-33d43d1fd4ee65-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:13.611864+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:15.504908+00:00"
     },
     {
       "post_id": "7230816772730868179",
@@ -139,10 +165,13 @@
       "category_text": "education freelance teaching publishing",
       "featured_image_path": "data/images/job-ff69efe7c0cf85-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-ff69efe7c0cf85-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:13.908563+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:15.786488+00:00"
     },
     {
       "post_id": "2526912635054116521",
@@ -154,10 +183,13 @@
       "category_text": "utilities general field work",
       "featured_image_path": "data/images/job-b18fa46dfbcb8d-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-b18fa46dfbcb8d-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:14.167977+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:16.031995+00:00"
     },
     {
       "post_id": "5023365949103508893",
@@ -169,10 +201,13 @@
       "category_text": "public relations office customer service",
       "featured_image_path": "data/images/job-2186df22a9ea9d-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-2186df22a9ea9d-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:14.400939+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:16.223521+00:00"
     },
     {
       "post_id": "3868628047557582394",
@@ -184,10 +219,13 @@
       "category_text": "industrial machine operator",
       "featured_image_path": "data/images/job-021b502b63fbc9-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-021b502b63fbc9-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:14.635017+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:16.414684+00:00"
     },
     {
       "post_id": "8365193181682193979",
@@ -199,10 +237,13 @@
       "category_text": "field security guard outdoor",
       "featured_image_path": "data/images/job-cd3df69bbc243a-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-cd3df69bbc243a-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:14.870461+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:16.618155+00:00"
     },
     {
       "post_id": "5107433883990127965",
@@ -214,10 +255,13 @@
       "category_text": "coffee hospitality retail operations",
       "featured_image_path": "data/images/job-4480c7a891fbe6-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-4480c7a891fbe6-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:15.155544+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:16.889559+00:00"
     },
     {
       "post_id": "4132674610404587685",
@@ -229,10 +273,13 @@
       "category_text": "technology integration developer software",
       "featured_image_path": "data/images/job-eae7e2f12dd26b-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-eae7e2f12dd26b-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:15.390424+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:17.086675+00:00"
     },
     {
       "post_id": "8951969288421485327",
@@ -244,10 +291,13 @@
       "category_text": "industrial vehicle maintenance engineering",
       "featured_image_path": "data/images/job-d17325128d2bdf-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-d17325128d2bdf-ai-v1.png",
-      "image_version": "final-exact-approved-master-v1",
-      "master_sha256": "ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108",
+      "image_version": "marsad-approved-master-v2",
+      "brand": "مرصد الوظائف",
+      "master_sha256": "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe",
+      "background_variation_allowed": false,
       "only_variable": "job_title",
-      "generated_at": "2026-09-05T14:26:15.681406+00:00"
+      "title_prefix": "مطلوب",
+      "generated_at": "2026-09-05T18:00:17.361461+00:00"
     }
   ]
 }
