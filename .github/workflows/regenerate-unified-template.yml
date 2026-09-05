@@ -9,6 +9,8 @@ on:
       - "worker/unified_template_runtime.py"
       - "worker/regenerate_unified_template_live.py"
       - "worker/job_image_v12.py"
+      - "worker/run_worker.py"
+      - "worker/quality_gate.py"
       - ".github/workflows/regenerate-unified-template.yml"
   workflow_dispatch:
 
