@@ -1,0 +1,34 @@
+[
+  {
+    "index": 1,
+    "title": "طبيب أخصائي أشعة تشخيصية",
+    "employer": "مستشفى ابن الهيثم",
+    "path": "data/v2-preview/preview-1.png",
+    "source_path": "data/images/job-96dd9392cff279-ai-v2.png",
+    "size": 592898
+  },
+  {
+    "index": 2,
+    "title": "موظفة إدارية في مركز الاستشارات والتدريب",
+    "employer": "جامعة عمان العربية",
+    "path": "data/v2-preview/preview-2.png",
+    "source_path": "data/images/job-ea0b152e544ab5-ai-v2.png",
+    "size": 650704
+  },
+  {
+    "index": 3,
+    "title": "منسق بضائع",
+    "employer": "شركة منير سختيان التجارية",
+    "path": "data/v2-preview/preview-3.png",
+    "source_path": "data/images/job-e686221797441e-ai-v2.png",
+    "size": 747528
+  },
+  {
+    "index": 4,
+    "title": "موظف حجوزات وتذاكر طيران",
+    "employer": "Halawa Travel & Tourism",
+    "path": "data/v2-preview/preview-4.png",
+    "source_path": "data/images/job-f91a9d728e9468-ai-v2.png",
+    "size": 601658
+  }
+]
