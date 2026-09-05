@@ -14,7 +14,7 @@ SOURCE = Path("data/migration/live-blogger-posts-2026-09-05.json")
 CURRENT_MAP = Path("data/results/live-blogger-ai-images.json")
 OUTPUT = Path("data/results/live-blogger-ai-images.json")
 EXPECTED = 16
-IMAGE_SYSTEM = "marsad-approved-master-v2"
+IMAGE_SYSTEM = "marsad-approved-poster-v3"
 
 
 def now_iso() -> str:
@@ -69,7 +69,7 @@ def main() -> None:
             "master_sha256": MASTER_SHA256,
             "background_variation_allowed": False,
             "only_variable": "job_title",
-            "title_prefix": "مطلوب",
+            "fixed_headline": "إعلان توظيف",
             "generated_at": now_iso(),
         })
         print(f"MARSAD {idx}/{EXPECTED}: {post_id} | {item.get('job_title')} -> {new_name}", flush=True)
@@ -85,7 +85,7 @@ def main() -> None:
         "master_sha256": MASTER_SHA256,
         "background_variation_allowed": False,
         "only_variable": "job_title",
-        "title_prefix": "مطلوب",
+        "fixed_headline": "إعلان توظيف",
         "items": results,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
