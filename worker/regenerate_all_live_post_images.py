@@ -7,11 +7,12 @@ from pathlib import Path
 
 from PIL import Image
 
-from ai_job_image_runtime import generate
+from creative_image_v2 import generate
 
 SOURCE = Path("data/migration/live-blogger-posts-2026-09-05.json")
-OUTPUT = Path("data/results/live-blogger-ai-images.json")
+OUTPUT = Path("data/results/live-blogger-ai-images-v2.json")
 EXPECTED = 16
+VERSION = "ai-v2"
 
 
 def now_iso() -> str:
@@ -22,7 +23,7 @@ def valid_cached(record: dict) -> bool:
     try:
         path = Path(record.get("featured_image_path") or "")
         url = str(record.get("featured_image_url") or "")
-        if "-ai-v1.png" not in url or not path.exists() or path.stat().st_size <= 80_000:
+        if f"-{VERSION}.png" not in url or not path.exists() or path.stat().st_size <= 80_000:
             return False
         with Image.open(path) as im:
             return im.size == (1536, 1024)
@@ -34,6 +35,7 @@ def save_payload(items: list[dict], failures: list[dict]) -> None:
     payload = {
         "source": str(SOURCE),
         "generated_at": now_iso(),
+        "version": VERSION,
         "count": len(items),
         "failure_count": len(failures),
         "failures": failures,
@@ -59,7 +61,7 @@ def main() -> None:
                 if pid and valid_cached(record):
                     cached_by_post[pid] = record
         except Exception as exc:
-            print(f"Ignoring unreadable previous checkpoint: {exc}", flush=True)
+            print(f"Ignoring unreadable previous v2 checkpoint: {exc}", flush=True)
 
     results: list[dict] = []
     failures: list[dict] = []
@@ -85,22 +87,18 @@ def main() -> None:
                 **item,
                 "featured_image_path": path,
                 "featured_image_url": url,
-                "image_version": "ai-v1",
+                "image_version": VERSION,
                 "generated_at": now_iso(),
             }
             if not valid_cached(record):
-                raise RuntimeError("Generated image failed local validation")
+                raise RuntimeError("Generated v2 image failed local validation")
             results.append(record)
             print(f"DONE {idx}/{expected}: {post_id} | {item.get('job_title')} -> {url}", flush=True)
         except Exception as exc:
             failures.append({"post_id": post_id, "title": item.get("title"), "error": str(exc)})
             print(f"FAILED {idx}/{expected}: {post_id}: {exc}", flush=True)
 
-        # Persist a local checkpoint after each job. The workflow commits this even if
-        # one provider queue fails, so a retry only needs to generate the missing post.
         save_payload(results, failures)
-
-        # Deliberately pace the public image endpoint to reduce rate-limit bursts.
         if idx < expected:
             time.sleep(10)
 
@@ -109,11 +107,9 @@ def main() -> None:
         "count": len(results),
         "failure_count": len(failures),
         "complete": len(results) == expected and not failures,
+        "version": VERSION,
         "output": str(OUTPUT),
     }, ensure_ascii=False), flush=True)
-
-    # Do not fail this generation step on a partial provider outage. The workflow
-    # commits the checkpoint first, then the validation step marks the run incomplete.
 
 
 if __name__ == "__main__":
