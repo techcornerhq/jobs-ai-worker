@@ -1,9 +1,10 @@
 {
   "source": "data/migration/live-blogger-posts-2026-09-05.json",
-  "generated_at": "2026-09-05T12:03:09.759861+00:00",
+  "generated_at": "2026-09-05T13:20:18.226022+00:00",
   "count": 16,
   "failure_count": 0,
   "failures": [],
+  "image_system": "unified-template-v1",
   "items": [
     {
       "post_id": "5892538888192193401",
@@ -15,8 +16,8 @@
       "category_text": "transport driver field work",
       "featured_image_path": "data/images/job-b0466fc620847b-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-b0466fc620847b-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:00:05.674430+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:16.660137+00:00"
     },
     {
       "post_id": "2422730738342925485",
@@ -28,8 +29,8 @@
       "category_text": "university administration education",
       "featured_image_path": "data/images/job-ea0b152e544ab5-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-ea0b152e544ab5-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:00:17.847565+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:16.778439+00:00"
     },
     {
       "post_id": "5654586459364496702",
@@ -41,8 +42,8 @@
       "category_text": "medical radiology health",
       "featured_image_path": "data/images/job-96dd9392cff279-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-96dd9392cff279-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:00:29.748802+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:16.890845+00:00"
     },
     {
       "post_id": "1186299353623573055",
@@ -54,8 +55,8 @@
       "category_text": "logistics inventory merchandise",
       "featured_image_path": "data/images/job-e686221797441e-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-e686221797441e-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:00:42.126458+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:16.982851+00:00"
     },
     {
       "post_id": "7480681638566471046",
@@ -67,8 +68,8 @@
       "category_text": "warehouse logistics inventory",
       "featured_image_path": "data/images/job-380604538e8269-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-380604538e8269-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:00:54.667404+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.074038+00:00"
     },
     {
       "post_id": "2383944653058531041",
@@ -80,8 +81,8 @@
       "category_text": "social work public relations office",
       "featured_image_path": "data/images/job-0e53b2feee51ae-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-0e53b2feee51ae-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:01:06.814809+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.176952+00:00"
     },
     {
       "post_id": "7738278135740250876",
@@ -93,8 +94,8 @@
       "category_text": "travel airline reservations sales office",
       "featured_image_path": "data/images/job-8b24f8579031f0-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-8b24f8579031f0-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:01:18.925804+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.286382+00:00"
     },
     {
       "post_id": "6154715099081485890",
@@ -106,8 +107,8 @@
       "category_text": "general office recruitment",
       "featured_image_path": "data/images/job-33d43d1fd4ee65-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-33d43d1fd4ee65-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:01:30.725876+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.400799+00:00"
     },
     {
       "post_id": "7230816772730868179",
@@ -119,8 +120,8 @@
       "category_text": "education freelance teaching publishing",
       "featured_image_path": "data/images/job-ff69efe7c0cf85-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-ff69efe7c0cf85-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:01:42.509725+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.517469+00:00"
     },
     {
       "post_id": "2526912635054116521",
@@ -132,8 +133,8 @@
       "category_text": "utilities general field work",
       "featured_image_path": "data/images/job-b18fa46dfbcb8d-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-b18fa46dfbcb8d-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:01:54.335608+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.622609+00:00"
     },
     {
       "post_id": "5023365949103508893",
@@ -145,8 +146,8 @@
       "category_text": "public relations office customer service",
       "featured_image_path": "data/images/job-2186df22a9ea9d-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-2186df22a9ea9d-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:02:06.456714+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.715145+00:00"
     },
     {
       "post_id": "3868628047557582394",
@@ -158,8 +159,8 @@
       "category_text": "industrial machine operator",
       "featured_image_path": "data/images/job-021b502b63fbc9-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-021b502b63fbc9-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:02:21.141744+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.809251+00:00"
     },
     {
       "post_id": "8365193181682193979",
@@ -171,8 +172,8 @@
       "category_text": "field security guard outdoor",
       "featured_image_path": "data/images/job-cd3df69bbc243a-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-cd3df69bbc243a-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:02:32.815310+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:17.903953+00:00"
     },
     {
       "post_id": "5107433883990127965",
@@ -184,8 +185,8 @@
       "category_text": "coffee hospitality retail operations",
       "featured_image_path": "data/images/job-4480c7a891fbe6-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-4480c7a891fbe6-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:02:45.149860+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:18.017849+00:00"
     },
     {
       "post_id": "4132674610404587685",
@@ -197,8 +198,8 @@
       "category_text": "technology integration developer software",
       "featured_image_path": "data/images/job-eae7e2f12dd26b-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-eae7e2f12dd26b-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:02:56.991996+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:18.112945+00:00"
     },
     {
       "post_id": "8951969288421485327",
@@ -210,8 +211,8 @@
       "category_text": "industrial vehicle maintenance engineering",
       "featured_image_path": "data/images/job-d17325128d2bdf-ai-v1.png",
       "featured_image_url": "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images/job-d17325128d2bdf-ai-v1.png",
-      "image_version": "ai-v1",
-      "generated_at": "2026-09-05T12:03:09.759140+00:00"
+      "image_version": "unified-template-v1",
+      "generated_at": "2026-09-05T13:20:18.225976+00:00"
     }
   ]
 }

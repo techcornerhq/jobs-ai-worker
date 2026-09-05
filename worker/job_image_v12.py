@@ -1,3 +1,3 @@
-from ai_job_image_runtime import generate
+from unified_template_runtime import generate
 
 __all__ = ["generate"]

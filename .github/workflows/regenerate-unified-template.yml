@@ -1,0 +1,97 @@
+name: Apply Unified Jordan Job Template
+
+on:
+  push:
+    branches: ["unified-jordan-job-template-v1"]
+    paths:
+      - "worker/unified_job_template.py"
+      - "worker/unified_template_runtime.py"
+      - "worker/regenerate_unified_template_live.py"
+      - "worker/job_image_v12.py"
+      - ".github/workflows/regenerate-unified-template.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: unified-jordan-job-template-v1
+  cancel-in-progress: true
+
+jobs:
+  render-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install exact Arabic font family used by renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Regenerate all 16 live-post images with unified design
+        run: PYTHONPATH=worker python -u worker/regenerate_unified_template_live.py
+
+      - name: Validate unified image set
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from PIL import Image
+          d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
+          assert d['count']==16 and d['failure_count']==0, (d.get('count'), d.get('failure_count'))
+          assert d.get('image_system')=='unified-template-v1', d.get('image_system')
+          ids=set()
+          for item in d['items']:
+              ids.add(str(item['post_id']))
+              p=Path(item['featured_image_path'])
+              u=item['featured_image_url']
+              assert p.name.startswith('job-') and p.name.endswith('-ai-v1.png'), p
+              assert p.exists() and p.stat().st_size > 60000, (p, p.stat().st_size if p.exists() else None)
+              assert '/main/data/images/' in u and u.endswith(p.name), u
+              with Image.open(p) as im:
+                  assert im.size==(1536,1024), im.size
+          assert len(ids)==16
+          print('UNIFIED TEMPLATE 16/16: PASS')
+          PY
+
+      - name: Prepare review previews
+        run: |
+          rm -rf data/unified-template-preview
+          mkdir -p data/unified-template-preview
+          python - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
+          for i,item in enumerate(d['items'][:6],1):
+              shutil.copy2(item['featured_image_path'], Path('data/unified-template-preview')/f'preview-{i}.png')
+          PY
+
+      - name: Commit regenerated production images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/images/job-*-ai-v1.png data/results/live-blogger-ai-images.json
+          if git diff --cached --quiet; then
+            echo "No image changes"
+            exit 0
+          fi
+          git commit -m "Apply unified Jordan jobs design to all live images"
+          git pull --rebase origin unified-jordan-job-template-v1
+          git push origin HEAD:unified-jordan-job-template-v1
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: unified-jordan-job-template-previews
+          path: data/unified-template-preview
