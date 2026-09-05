@@ -18,24 +18,30 @@ except Exception:
     get_display = None
 
 # FINAL LOCKED MARSAD AL-WAZAAEF VISUAL SYSTEM
-# The approved Jordan-themed artwork (Petra, Amman skyline, flags,
-# مرصد الوظائف identity and watermarks) is fixed. Only the vacancy title changes.
+# Approved visual = the user-approved "إعلان توظيف" poster.
+# Fixed: Petra, Amman skyline, Jordan flags, مرصد الوظائف identity, watermarks,
+# "إعلان توظيف" headline and all decorative elements.
+# Variable: vacancy title inside the maroon application bar only.
 WIDTH, HEIGHT = 1280, 720
 VERSION = "ai-v1"  # preserve existing Blogger/raw-GitHub URL contract
 IMAGE_DIR = Path("data/images")
 RAW_BASE = "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images"
 ASSET_DIR = Path(__file__).with_name("exact_template_asset")
 MASTER_SIZE = (960, 540)
-MASTER_SHA256 = "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe"
+MASTER_SHA256 = "1fbad6749fa43e39cf1daf50ac1154088bef4dd5542ada9fb74fa29aa0b00aa7"
 ASSET_PARTS = 5
 
-TITLE_CENTER = (675, 350)
-TITLE_MAX_WIDTH = 600
-TITLE_MAX_HEIGHT = 78
-TITLE_GAP = 12
-PREFIX = "مطلوب"
+# The approved artwork already contains the full red/gold bar and chevron.
+# We repaint only its text-safe interior so the original sample title is removed,
+# then draw the current vacancy title without altering any other design element.
+BAR_BOX = (486, 375, 1018, 446)
+BAR_RADIUS = 28
+TITLE_CENTER = (752, 410)
+TITLE_MAX_WIDTH = 485
+TITLE_MAX_HEIGHT = 53
+MAROON_LEFT = (122, 6, 19)
+MAROON_RIGHT = (62, 1, 7)
 WHITE = (255, 255, 255)
-GOLD = (235, 178, 75)
 
 BAD_CHARS = re.compile(r"[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff□■▪▫�]")
 ARABIC_RE = re.compile(r"[\u0600-\u06ff]")
@@ -56,7 +62,7 @@ def first(*values, default="") -> str:
     return default
 
 
-def short(value: str, limit: int = 55) -> str:
+def short(value: str, limit: int = 58) -> str:
     s = clean(value)
     if len(s) <= limit:
         return s
@@ -68,11 +74,11 @@ def _font(size: int):
     candidates = [
         "/usr/share/fonts/truetype/noto/NotoSansArabic-Black.ttf",
         "/usr/share/fonts/truetype/noto/NotoSansArabic-ExtraBold.ttf",
-        "/usr/share/fonts/opentype/noto/NotoSansArabic-Black.ttf",
-        "/usr/share/fonts/opentype/noto/NotoSansArabic-ExtraBold.ttf",
-        "/usr/share/fonts/truetype/noto/NotoSansArabic-Bold.ttf",
+        "/usr/share/opentype/noto/NotoSansArabic-Black.ttf",
+        "/usr/share/opentype/noto/NotoSansArabic-ExtraBold.ttf",
+        "/usr/share/truetype/noto/NotoSansArabic-Bold.ttf",
         "/usr/share/opentype/noto/NotoSansArabic-Bold.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/truetype/dejavu/DejaVuSans-Bold.ttf",
     ]
     for path in candidates:
         if Path(path).exists():
@@ -91,13 +97,9 @@ def _display(text: str):
     return text, {}
 
 
-def _bbox(draw: ImageDraw.ImageDraw, text: str, font):
-    rendered, kwargs = _display(text)
-    return draw.textbbox((0, 0), rendered, font=font, **kwargs)
-
-
 def _measure(draw: ImageDraw.ImageDraw, text: str, font) -> tuple[int, int]:
-    box = _bbox(draw, text, font)
+    rendered, kwargs = _display(text)
+    box = draw.textbbox((0, 0), rendered, font=font, **kwargs)
     return box[2] - box[0], box[3] - box[1]
 
 
@@ -107,13 +109,32 @@ def _draw_text(draw: ImageDraw.ImageDraw, xy, text: str, font, fill):
 
 
 def _fit_title_font(draw: ImageDraw.ImageDraw, role: str):
-    for size in range(52, 24, -1):
+    for size in range(38, 20, -1):
         font = _font(size)
-        role_w, role_h = _measure(draw, role, font)
-        prefix_w, prefix_h = _measure(draw, PREFIX, font)
-        if role_w + TITLE_GAP + prefix_w <= TITLE_MAX_WIDTH and max(role_h, prefix_h) <= TITLE_MAX_HEIGHT:
+        w, h = _measure(draw, role, font)
+        if w <= TITLE_MAX_WIDTH and h <= TITLE_MAX_HEIGHT:
             return font
-    return _font(24)
+    return _font(20)
+
+
+def _paint_bar_text_area(image: Image.Image) -> None:
+    x1, y1, x2, y2 = BAR_BOX
+    w, h = x2 - x1, y2 - y1
+
+    # Horizontal maroon gradient approximates the approved bar's original fill.
+    grad = Image.new("RGB", (w, 1))
+    px = grad.load()
+    for x in range(w):
+        t = x / max(1, w - 1)
+        px[x, 0] = tuple(
+            round(MAROON_LEFT[i] * (1 - t) + MAROON_RIGHT[i] * t)
+            for i in range(3)
+        )
+    grad = grad.resize((w, h))
+
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, w - 1, h - 1), radius=BAR_RADIUS, fill=255)
+    image.paste(grad, (x1, y1), mask)
 
 
 @lru_cache(maxsize=1)
@@ -135,20 +156,13 @@ def _master() -> Image.Image:
 
 def render(job: dict, title: str) -> Image.Image:
     image = _master().copy()
+    _paint_bar_text_area(image)
     draw = ImageDraw.Draw(image)
-    role = short(first(job.get("job_title"), title, job.get("title"), default="فرصة عمل جديدة"), 55)
-    role = re.sub(r"^مطلوب(?:ة)?\s+", "", role).strip() or "فرصة عمل جديدة"
+
+    role = short(first(job.get("job_title"), title, job.get("title"), default="فرصة عمل جديدة"), 58)
+    role = re.sub(r"^(?:مطلوب(?:ة)?|إعلان\s+توظيف)\s*[:\-–—]?\s*", "", role).strip() or "فرصة عمل جديدة"
     font = _fit_title_font(draw, role)
-
-    role_w, _ = _measure(draw, role, font)
-    prefix_w, _ = _measure(draw, PREFIX, font)
-    total_w = role_w + TITLE_GAP + prefix_w
-    left = TITLE_CENTER[0] - total_w / 2
-    role_x = left + role_w / 2
-    prefix_x = left + role_w + TITLE_GAP + prefix_w / 2
-
-    _draw_text(draw, (role_x, TITLE_CENTER[1]), role, font, WHITE)
-    _draw_text(draw, (prefix_x, TITLE_CENTER[1]), PREFIX, font, GOLD)
+    _draw_text(draw, TITLE_CENTER, role, font, WHITE)
     return image
 
 
@@ -164,5 +178,5 @@ def generate(job: dict, title: str) -> tuple[str, str]:
 
 __all__ = [
     "generate", "render", "clean", "first", "short", "WIDTH", "HEIGHT",
-    "VERSION", "IMAGE_DIR", "RAW_BASE", "MASTER_SHA256", "PREFIX"
+    "VERSION", "IMAGE_DIR", "RAW_BASE", "MASTER_SHA256"
 ]
