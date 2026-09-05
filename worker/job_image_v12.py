@@ -1,3 +1,3 @@
-from unified_job_template import generate
+from unified_template_runtime import generate
 
 __all__ = ["generate"]
