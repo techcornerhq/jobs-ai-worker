@@ -1,0 +1,58 @@
+name: Test Dynamic AI Job Image
+
+on:
+  push:
+    branches: ["dynamic-ai-job-images"]
+    paths:
+      - "worker/ai_job_image.py"
+      - "worker/job_image_v12.py"
+      - ".github/workflows/test-dynamic-ai-image.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate representative image
+        env:
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+        run: |
+          PYTHONPATH=worker python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          from ai_job_image import generate
+
+          job = {
+              "employer_name": "مستشفى ابن الهيثم",
+              "job_title": "طبيب أخصائي أشعة تشخيصية",
+              "location_text": "عمّان",
+              "employment_type": "دوام كامل",
+          }
+          path, url = generate(job, job["job_title"])
+          p = Path(path)
+          assert p.exists() and p.stat().st_size > 80000, p.stat().st_size
+          assert "-ai-v1.png" in url
+          with Image.open(p) as im:
+              assert im.size == (1536, 1024), im.size
+          print(path)
+          print(url)
+          PY
+      - name: Upload sample
+        uses: actions/upload-artifact@v4
+        with:
+          name: dynamic-ai-image-sample
+          path: data/images/*-ai-v1.png
