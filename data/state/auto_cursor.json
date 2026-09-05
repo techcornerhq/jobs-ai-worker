@@ -1,23 +1,26 @@
 {
   "date": "2026-09-05",
-  "processed_today": 5,
+  "processed_today": 8,
   "seen_candidate_ids": [
-    "40c5310359f4c3e5af36",
-    "79c68e0e08d9f62227fc",
-    "5ea2b0a795fef22d13d4",
-    "940816c94607baaf5460",
-    "62de0d89d32737450d34",
-    "338f80588bc5797afa7e",
+    "11b36dfd84fecd96bad2",
     "c03d32c6d291083f6037",
-    "9564f94d3541fe0074e8",
-    "b2822986c4f8e23fda91",
-    "b4b475d54e6383520cfb",
-    "205e7c2d8c136b4a6af9",
-    "e491a2d3f5244df8487e",
-    "13fa956904292b97b59e",
-    "0299946153c0a8bfa153",
+    "338f80588bc5797afa7e",
     "5c3c2ebe9cbfe6a49f1e",
-    "9e27a125aabdfd4a103c"
+    "0299946153c0a8bfa153",
+    "e491a2d3f5244df8487e",
+    "ce8fa34e0c8e378b4061",
+    "205e7c2d8c136b4a6af9",
+    "5ea2b0a795fef22d13d4",
+    "9564f94d3541fe0074e8",
+    "62de0d89d32737450d34",
+    "9e27a125aabdfd4a103c",
+    "b2822986c4f8e23fda91",
+    "940816c94607baaf5460",
+    "88e8c8930a99aad41c9a",
+    "40c5310359f4c3e5af36",
+    "b4b475d54e6383520cfb",
+    "79c68e0e08d9f62227fc",
+    "13fa956904292b97b59e"
   ],
-  "updated_at": "2026-09-05T02:24:05.077312+00:00"
+  "updated_at": "2026-09-05T04:24:11.905488+00:00"
 }
