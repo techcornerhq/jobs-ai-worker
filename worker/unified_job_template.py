@@ -29,7 +29,8 @@ RAW_BASE = "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/d
 ASSET_DIR = Path(__file__).with_name("exact_template_asset")
 MASTER_SIZE = (720, 405)
 MASTER_SHA256 = "456d02ba6411390c3415855732299b04ec5d8d9bcb333c5359418528da60bb52"
-ASSET_PARTS = 6
+# 03.b64 is an obsolete interrupted-upload fragment and is intentionally ignored.
+ASSET_FILES = ("00.b64", "01.b64", "02.b64", "03a.b64", "03b.b64", "04.b64", "05.b64")
 
 # The approved artwork already contains the full red/gold bar and chevron.
 # We repaint only its text-safe interior so the original sample title is removed,
@@ -120,7 +121,6 @@ def _fit_title_font(draw: ImageDraw.ImageDraw, role: str):
 def _paint_bar_text_area(image: Image.Image) -> None:
     x1, y1, x2, y2 = BAR_BOX
     w, h = x2 - x1, y2 - y1
-
     grad = Image.new("RGB", (w, 1))
     px = grad.load()
     for x in range(w):
@@ -130,7 +130,6 @@ def _paint_bar_text_area(image: Image.Image) -> None:
             for i in range(3)
         )
     grad = grad.resize((w, h))
-
     mask = Image.new("L", (w, h), 0)
     ImageDraw.Draw(mask).rounded_rectangle((0, 0, w - 1, h - 1), radius=BAR_RADIUS, fill=255)
     image.paste(grad, (x1, y1), mask)
@@ -138,10 +137,10 @@ def _paint_bar_text_area(image: Image.Image) -> None:
 
 @lru_cache(maxsize=1)
 def _master() -> Image.Image:
-    parts = sorted(ASSET_DIR.glob("*.b64"))
-    expected = [f"{i:02d}.b64" for i in range(ASSET_PARTS)]
-    if [p.name for p in parts] != expected:
-        raise RuntimeError(f"Approved مرصد الوظائف template asset is incomplete: {[p.name for p in parts]}")
+    parts = [ASSET_DIR / name for name in ASSET_FILES]
+    missing = [p.name for p in parts if not p.exists()]
+    if missing:
+        raise RuntimeError(f"Approved مرصد الوظائف template asset is incomplete: {missing}")
     encoded = "".join(p.read_text(encoding="ascii").strip() for p in parts)
     raw = base64.b64decode(encoded, validate=True)
     digest = hashlib.sha256(raw).hexdigest()
@@ -157,7 +156,6 @@ def render(job: dict, title: str) -> Image.Image:
     image = _master().copy()
     _paint_bar_text_area(image)
     draw = ImageDraw.Draw(image)
-
     role = short(first(job.get("job_title"), title, job.get("title"), default="فرصة عمل جديدة"), 58)
     role = re.sub(r"^(?:مطلوب(?:ة)?|إعلان\s+توظيف)\s*[:\-–—]?\s*", "", role).strip() or "فرصة عمل جديدة"
     font = _fit_title_font(draw, role)
