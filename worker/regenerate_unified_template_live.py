@@ -14,7 +14,7 @@ SOURCE = Path("data/migration/live-blogger-posts-2026-09-05.json")
 CURRENT_MAP = Path("data/results/live-blogger-ai-images.json")
 OUTPUT = Path("data/results/live-blogger-ai-images.json")
 EXPECTED = 16
-IMAGE_SYSTEM = "final-exact-approved-master-v1"
+IMAGE_SYSTEM = "marsad-approved-master-v2"
 
 
 def now_iso() -> str:
@@ -65,11 +65,14 @@ def main() -> None:
             "featured_image_path": path,
             "featured_image_url": url,
             "image_version": IMAGE_SYSTEM,
+            "brand": "مرصد الوظائف",
             "master_sha256": MASTER_SHA256,
+            "background_variation_allowed": False,
             "only_variable": "job_title",
+            "title_prefix": "مطلوب",
             "generated_at": now_iso(),
         })
-        print(f"FINAL EXACT {idx}/{EXPECTED}: {post_id} | {item.get('job_title')} -> {new_name}", flush=True)
+        print(f"MARSAD {idx}/{EXPECTED}: {post_id} | {item.get('job_title')} -> {new_name}", flush=True)
 
     payload = {
         "source": str(SOURCE),
@@ -78,14 +81,16 @@ def main() -> None:
         "failure_count": 0,
         "failures": [],
         "image_system": IMAGE_SYSTEM,
+        "brand": "مرصد الوظائف",
         "master_sha256": MASTER_SHA256,
         "background_variation_allowed": False,
         "only_variable": "job_title",
+        "title_prefix": "مطلوب",
         "items": results,
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"count": len(results), "complete": len(results) == EXPECTED}, ensure_ascii=False))
+    print(json.dumps({"count": len(results), "complete": len(results) == EXPECTED, "brand": "مرصد الوظائف"}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
