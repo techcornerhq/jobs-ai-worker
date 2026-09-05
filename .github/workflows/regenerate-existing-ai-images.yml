@@ -5,8 +5,9 @@ on:
   push:
     branches: ["dynamic-ai-job-images"]
     paths:
-      - "worker/regenerate_existing_images.py"
+      - "worker/regenerate_existing_images_dynamic.py"
       - "worker/ai_job_image.py"
+      - "worker/ai_job_image_runtime.py"
       - ".github/workflows/regenerate-existing-ai-images.yml"
 
 permissions:
@@ -37,7 +38,7 @@ jobs:
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           JOB_IMAGE_MODEL: "flux"
-        run: PYTHONPATH=worker python -u worker/regenerate_existing_images.py
+        run: PYTHONPATH=worker python -u worker/regenerate_existing_images_dynamic.py
       - name: Validate migration package
         run: |
           python - <<'PY'
@@ -55,7 +56,9 @@ jobs:
               assert fp.exists() and fp.stat().st_size > 80000, fp
               with Image.open(fp) as im:
                   assert im.size == (1536, 1024), im.size
-              assert u in (item['publication_package'].get('content') or '')
+              content = item['publication_package'].get('content') or ''
+              assert u in content
+              assert not any(ch in content for ch in ('□','\ufffd','■','▪','▫'))
           print('AI IMAGE MIGRATION VALIDATION: PASS')
           PY
       - name: Commit generated migration assets
