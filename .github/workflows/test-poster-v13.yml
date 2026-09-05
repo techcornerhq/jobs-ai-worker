@@ -57,3 +57,5 @@ jobs:
         with:
           name: poster-v13-samples
           path: data/images/*-v13.png
+
+# smoke-test trigger 2026-09-05
