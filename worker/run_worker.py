@@ -19,7 +19,7 @@ from taxonomy import classify_labels
 
 MISSING = "غير مذكور في الإعلان"
 DISCOVERY_PATH = Path("data/discovery/jo-jobs.json")
-FINAL_IMAGE_MASTER_SHA256 = "93c65e5def577fe64ef5e64b345121b5f9436662ed7e4b0007df917da3493f20"
+FINAL_IMAGE_MASTER_SHA256 = "74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe"
 
 
 def now_iso() -> str:
