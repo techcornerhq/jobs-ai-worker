@@ -27,9 +27,9 @@ VERSION = "ai-v1"  # preserve existing Blogger/raw-GitHub URL contract
 IMAGE_DIR = Path("data/images")
 RAW_BASE = "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images"
 ASSET_DIR = Path(__file__).with_name("exact_template_asset")
-MASTER_SIZE = (960, 540)
-MASTER_SHA256 = "1fbad6749fa43e39cf1daf50ac1154088bef4dd5542ada9fb74fa29aa0b00aa7"
-ASSET_PARTS = 5
+MASTER_SIZE = (720, 405)
+MASTER_SHA256 = "456d02ba6411390c3415855732299b04ec5d8d9bcb333c5359418528da60bb52"
+ASSET_PARTS = 6
 
 # The approved artwork already contains the full red/gold bar and chevron.
 # We repaint only its text-safe interior so the original sample title is removed,
@@ -121,7 +121,6 @@ def _paint_bar_text_area(image: Image.Image) -> None:
     x1, y1, x2, y2 = BAR_BOX
     w, h = x2 - x1, y2 - y1
 
-    # Horizontal maroon gradient approximates the approved bar's original fill.
     grad = Image.new("RGB", (w, 1))
     px = grad.load()
     for x in range(w):
