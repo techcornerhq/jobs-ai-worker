@@ -27,7 +27,7 @@ concurrency:
 jobs:
   process-batch:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     env:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       GROQ_MODEL: "qwen/qwen3.8-27b"
@@ -48,10 +48,13 @@ jobs:
       - name: Install Arabic fonts
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-noto-core
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      - name: Install Chromium for deterministic poster rendering
+        run: python -m playwright install --with-deps chromium
 
       - name: Verify Groq secret exists
         run: |
@@ -83,17 +86,25 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from PIL import Image
+
           d = json.loads(Path('data/results/auto-batch.json').read_text(encoding='utf-8'))
           assert d['daily_cap'] <= 40
           for item in d.get('items', []):
               assert item['ai']['paid_api_used'] is False
               assert item['ai']['paid_fallback_used'] is False
               assert item['quality_gate']['passed'] is True
-              assert '-v11.png' in (item['canonical'].get('featured_image_url') or '')
+              image_url = item['canonical'].get('featured_image_url') or ''
+              image_path = item['canonical'].get('featured_image_path') or ''
+              assert '-v13.png' in image_url, image_url
+              assert image_path and Path(image_path).exists(), image_path
+              with Image.open(image_path) as im:
+                  assert im.size == (1536, 1024), im.size
               content = item['publication_package'].get('content') or ''
               assert 'jo-jobs.com' not in content
               assert 'job-related-box' in content
               assert 'application/ld+json' in content
+              assert not any(ch in content for ch in ('□', '\ufffd', '■', '▪', '▫'))
           print('Production batch validation: PASS')
           print('Publishable:', d.get('publishable_count'))
           PY
