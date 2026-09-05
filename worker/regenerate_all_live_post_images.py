@@ -42,8 +42,8 @@ def main() -> None:
 
     results_by_index: dict[int, dict] = {}
     failures = []
-    # Four workers keeps load modest while avoiding a long serial migration.
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    # Keep concurrency intentionally low because the public image endpoint rate-limits bursts.
+    with ThreadPoolExecutor(max_workers=2) as pool:
         futures = {pool.submit(render_one, idx, item): (idx, item) for idx, item in enumerate(items)}
         for future in as_completed(futures):
             idx, item = futures[future]
