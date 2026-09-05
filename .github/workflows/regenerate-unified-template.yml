@@ -45,7 +45,7 @@ jobs:
         run: |
           PYTHONPATH=worker python - <<'PY'
           from unified_job_template import _master, MASTER_SHA256, PREFIX
-          expected='5d595c48f023560b4ca6c2d3d2327c55510af2df6842e427469c6316b707da11'
+          expected='74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe'
           im=_master()
           assert im.size==(1280,720), im.size
           assert MASTER_SHA256==expected, MASTER_SHA256
@@ -62,7 +62,7 @@ jobs:
           import json
           from pathlib import Path
           from PIL import Image
-          expected_sha='5d595c48f023560b4ca6c2d3d2327c55510af2df6842e427469c6316b707da11'
+          expected_sha='74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe'
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           assert d['count']==16 and d['failure_count']==0, (d.get('count'), d.get('failure_count'))
           assert d.get('image_system')=='marsad-approved-master-v2', d.get('image_system')
