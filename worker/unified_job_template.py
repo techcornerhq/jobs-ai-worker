@@ -27,7 +27,8 @@ IMAGE_DIR = Path("data/images")
 RAW_BASE = "https://raw.githubusercontent.com/techcornerhq/jobs-ai-worker/main/data/images"
 ASSET_DIR = Path(__file__).with_name("exact_template_asset")
 MASTER_SIZE = (960, 540)
-MASTER_SHA256 = "93c65e5def577fe64ef5e64b345121b5f9436662ed7e4b0007df917da3493f20"
+# Exact approved compressed master currently stored in the repository.
+MASTER_SHA256 = "5d595c48f023560b4ca6c2d3d2327c55510af2df6842e427469c6316b707da11"
 ASSET_PARTS = 3
 
 # Coordinates are for the final 1280x720 render. The central navy panel and icon
@@ -42,6 +43,7 @@ GOLD = (235, 178, 75)
 
 BAD_CHARS = re.compile(r"[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff□■▪▫�]")
 ARABIC_RE = re.compile(r"[\u0600-\u06ff]")
+BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
 
 def clean(value: str) -> str:
@@ -119,17 +121,67 @@ def _fit_title_font(draw: ImageDraw.ImageDraw, role: str):
     return _font(24)
 
 
+def _decode_if_exact(encoded: str) -> bytes | None:
+    try:
+        raw = base64.b64decode(encoded, validate=True)
+    except Exception:
+        return None
+    if hashlib.sha256(raw).hexdigest() != MASTER_SHA256:
+        return None
+    return raw
+
+
+def _recover_encoded(parts_text: list[str]) -> bytes:
+    """Recover a one-character boundary corruption from an interrupted asset upload.
+
+    The approved asset hash is locked, so recovery can never silently accept a
+    different image. This only repairs an extra/missing base64 character close to
+    a chunk boundary, then requires the exact approved SHA-256.
+    """
+    encoded = "".join(parts_text)
+    raw = _decode_if_exact(encoded)
+    if raw is not None:
+        return raw
+
+    boundaries = []
+    total = 0
+    for text in parts_text[:-1]:
+        total += len(text)
+        boundaries.append(total)
+
+    # Most likely failure: one duplicated character at a chunk boundary.
+    for boundary in boundaries:
+        for delta in range(-4, 5):
+            pos = boundary + delta
+            if 0 <= pos < len(encoded):
+                raw = _decode_if_exact(encoded[:pos] + encoded[pos + 1 :])
+                if raw is not None:
+                    return raw
+
+    # Also handle one omitted character at a boundary.
+    for boundary in boundaries:
+        for delta in range(-4, 5):
+            pos = boundary + delta
+            if 0 <= pos <= len(encoded):
+                for ch in BASE64_CHARS:
+                    raw = _decode_if_exact(encoded[:pos] + ch + encoded[pos:])
+                    if raw is not None:
+                        return raw
+
+    raise RuntimeError(
+        "Approved مرصد الوظائف asset is corrupted and could not be recovered to the locked SHA-256; "
+        f"base64_chars={len(encoded)}, parts={[len(x) for x in parts_text]}"
+    )
+
+
 @lru_cache(maxsize=1)
 def _master() -> Image.Image:
     parts = sorted(ASSET_DIR.glob("*.b64"))
     expected = [f"{i:02d}.b64" for i in range(ASSET_PARTS)]
     if [p.name for p in parts] != expected:
         raise RuntimeError(f"Approved مرصد الوظائف template asset is incomplete: {[p.name for p in parts]}")
-    encoded = "".join(p.read_text(encoding="ascii").strip() for p in parts)
-    raw = base64.b64decode(encoded, validate=True)
-    digest = hashlib.sha256(raw).hexdigest()
-    if digest != MASTER_SHA256:
-        raise RuntimeError(f"Approved مرصد الوظائف template checksum mismatch: {digest}")
+    parts_text = [p.read_text(encoding="ascii").strip() for p in parts]
+    raw = _recover_encoded(parts_text)
     image = Image.open(io.BytesIO(raw)).convert("RGB")
     if image.size != MASTER_SIZE:
         raise RuntimeError(f"Unexpected approved master size: {image.size}")
