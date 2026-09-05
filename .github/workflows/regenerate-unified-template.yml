@@ -1,8 +1,8 @@
-name: Apply Final Exact Jordan Job Template
+name: Apply Approved Marsad Job Image Template
 
 on:
   push:
-    branches: ["final-exact-job-template"]
+    branches: ["main"]
     paths:
       - "worker/exact_template_asset/**"
       - "worker/unified_job_template.py"
@@ -10,7 +10,6 @@ on:
       - "worker/regenerate_unified_template_live.py"
       - "worker/job_image_v12.py"
       - "worker/run_worker.py"
-      - "worker/quality_gate.py"
       - ".github/workflows/regenerate-unified-template.yml"
   workflow_dispatch:
 
@@ -18,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: final-exact-job-template
+  group: marsad-approved-job-images
   cancel-in-progress: true
 
 jobs:
@@ -42,31 +41,36 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Verify exact approved master asset
+      - name: Verify approved مرصد الوظائف master asset
         run: |
           PYTHONPATH=worker python - <<'PY'
-          from unified_job_template import _master, MASTER_SHA256
+          from unified_job_template import _master, MASTER_SHA256, PREFIX
+          expected='93c65e5def577fe64ef5e64b345121b5f9436662ed7e4b0007df917da3493f20'
           im=_master()
           assert im.size==(1280,720), im.size
-          print('EXACT MASTER VERIFIED:', MASTER_SHA256)
+          assert MASTER_SHA256==expected, MASTER_SHA256
+          assert PREFIX=='مطلوب'
+          print('MARSAD MASTER VERIFIED:', MASTER_SHA256)
           PY
 
-      - name: Regenerate all 16 live-post images from exact master
+      - name: Regenerate all 16 current live-post images
         run: PYTHONPATH=worker python -u worker/regenerate_unified_template_live.py
 
-      - name: Validate final exact image set
+      - name: Validate final مرصد الوظائف image set
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           from PIL import Image
-          expected_sha='ef48897a491f8b2aa0bc34420cafc311b6362cd8969c5021d24b51b50003c108'
+          expected_sha='93c65e5def577fe64ef5e64b345121b5f9436662ed7e4b0007df917da3493f20'
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           assert d['count']==16 and d['failure_count']==0, (d.get('count'), d.get('failure_count'))
-          assert d.get('image_system')=='final-exact-approved-master-v1', d.get('image_system')
+          assert d.get('image_system')=='marsad-approved-master-v2', d.get('image_system')
+          assert d.get('brand')=='مرصد الوظائف', d.get('brand')
           assert d.get('master_sha256')==expected_sha
           assert d.get('background_variation_allowed') is False
           assert d.get('only_variable')=='job_title'
+          assert d.get('title_prefix')=='مطلوب'
           ids=set()
           for item in d['items']:
               ids.add(str(item['post_id']))
@@ -75,27 +79,29 @@ jobs:
               assert p.name.startswith('job-') and p.name.endswith('-ai-v1.png'), p
               assert p.exists() and p.stat().st_size > 60000, (p, p.stat().st_size if p.exists() else None)
               assert '/main/data/images/' in u and u.endswith(p.name), u
+              assert item.get('brand')=='مرصد الوظائف'
               assert item.get('master_sha256')==expected_sha
               assert item.get('only_variable')=='job_title'
+              assert item.get('title_prefix')=='مطلوب'
               with Image.open(p) as im:
                   assert im.size==(1280,720), im.size
           assert len(ids)==16
-          print('FINAL EXACT TEMPLATE 16/16: PASS')
+          print('MARSAD APPROVED TEMPLATE 16/16: PASS')
           PY
 
       - name: Prepare review previews
         run: |
-          rm -rf data/final-exact-template-preview
-          mkdir -p data/final-exact-template-preview
+          rm -rf data/marsad-template-preview
+          mkdir -p data/marsad-template-preview
           python - <<'PY'
           import json, shutil
           from pathlib import Path
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           for i,item in enumerate(d['items'][:6],1):
-              shutil.copy2(item['featured_image_path'], Path('data/final-exact-template-preview')/f'preview-{i}.png')
+              shutil.copy2(item['featured_image_path'], Path('data/marsad-template-preview')/f'preview-{i}.png')
           PY
 
-      - name: Commit regenerated production images
+      - name: Commit regenerated production images in place
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -104,12 +110,13 @@ jobs:
             echo "No image changes"
             exit 0
           fi
-          git commit -m "Apply final exact approved master to all live images"
-          git pull --rebase origin final-exact-job-template
-          git push origin HEAD:final-exact-job-template
+          git commit -m "Apply approved مرصد الوظائف master to all live images"
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
-          name: final-exact-jordan-job-template-previews
-          path: data/final-exact-template-preview
+          name: marsad-approved-job-image-previews
+          path: data/marsad-template-preview
+          retention-days: 30
