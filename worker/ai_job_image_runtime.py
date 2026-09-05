@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import os
 import time
 
 import ai_job_image as base
@@ -8,6 +9,7 @@ import ai_job_image as base
 _original_build_prompt = base.build_prompt
 _original_draw_line = base._draw_line
 _original_generate = base.generate
+_original_generate_scene = base.generate_scene
 
 
 def _subject_instruction(job: dict, title: str) -> str:
@@ -42,7 +44,7 @@ def _subject_instruction(job: dict, title: str) -> str:
 
 
 def _build_prompt(job: dict, title: str) -> str:
-    # The image should be driven by the job itself, not by a company logo/building.
+    # The visual is driven by the actual job activity, not a company logo/building.
     prompt_job = copy.deepcopy(job)
     prompt_job["employer_name"] = ""
     return (
@@ -55,16 +57,53 @@ def _build_prompt(job: dict, title: str) -> str:
 
 
 def _draw_line(draw, xy, text, font, fill, anchor):
-    # Avoid decorative Unicode separators that can turn into tofu squares on some runners/fonts.
+    # Avoid decorative Unicode separators that can render as tofu boxes on some runners/fonts.
     safe_text = str(text or "")
     for token in ("•", "·", "▪", "▫", "|", "-"):
         safe_text = safe_text.replace(token, "  ")
     return _original_draw_line(draw, xy, safe_text, font, fill, anchor)
 
 
+def _is_transient(exc: Exception) -> bool:
+    msg = str(exc)
+    return any(token in msg for token in (
+        "429", "Too Many Requests", "502", "503", "504", "timed out", "Connection", "temporarily unavailable"
+    ))
+
+
+def _generate_scene(prompt: str, seed: int):
+    """Try multiple current image models so one busy queue cannot block publishing."""
+    preferred = os.getenv("JOB_IMAGE_MODEL", "flux").strip() or "flux"
+    models = []
+    for model in (preferred, "zimage", "dreamshaper"):
+        if model not in models:
+            models.append(model)
+
+    previous = os.environ.get("JOB_IMAGE_MODEL")
+    errors = []
+    try:
+        for index, model in enumerate(models):
+            os.environ["JOB_IMAGE_MODEL"] = model
+            try:
+                # A slightly different seed prevents repeated requests from being identical
+                # when switching provider queues/models.
+                return _original_generate_scene(prompt, seed + index * 104729)
+            except Exception as exc:
+                errors.append(f"{model}: {exc}")
+                if not _is_transient(exc):
+                    raise
+                print(f"Image model {model} transiently unavailable; trying fallback model", flush=True)
+    finally:
+        if previous is None:
+            os.environ.pop("JOB_IMAGE_MODEL", None)
+        else:
+            os.environ["JOB_IMAGE_MODEL"] = previous
+    raise RuntimeError("All image model queues failed: " + " | ".join(errors))
+
+
 def generate(job: dict, title: str):
-    # Keep metadata short and readable. Folding location into the employer line with
-    # an Arabic comma avoids unsupported separator glyphs and produces a fresh seed.
+    # Keep the visible metadata short and readable. Folding location into the employer
+    # line avoids decorative separators and gives each job a stable unique seed.
     j = copy.deepcopy(job)
     employer = base.first(j.get("employer_name"), default="")
     location = base.first(j.get("location_text"), j.get("city"), j.get("governorate"), default="")
@@ -74,7 +113,7 @@ def generate(job: dict, title: str):
         j["city"] = ""
         j["governorate"] = ""
 
-    waits = [0, 12, 25, 45, 70]
+    waits = [0, 15, 35, 70]
     last_exc = None
     for attempt, wait in enumerate(waits, 1):
         if wait:
@@ -83,17 +122,14 @@ def generate(job: dict, title: str):
             return _original_generate(j, title)
         except Exception as exc:
             last_exc = exc
-            msg = str(exc)
-            # Retry only transient provider/network failures; hard image validation
-            # failures should still stop immediately.
-            transient = any(token in msg for token in ("429", "Too Many Requests", "502", "503", "504", "timed out", "Connection"))
-            if not transient or attempt == len(waits):
+            if not _is_transient(exc) or attempt == len(waits):
                 raise
-            print(f"Image provider transient failure; retry {attempt}/{len(waits)-1}: {msg[:240]}", flush=True)
+            print(f"Image provider transient failure; retry {attempt}/{len(waits)-1}: {str(exc)[:240]}", flush=True)
     raise last_exc if last_exc else RuntimeError("Image generation failed")
 
 
 base.build_prompt = _build_prompt
 base._draw_line = _draw_line
+base.generate_scene = _generate_scene
 
 __all__ = ["generate"]
