@@ -1,0 +1,59 @@
+name: Test Poster V13
+
+on:
+  push:
+    branches: ["job-image-v13-template"]
+    paths:
+      - "worker/job_image_v13.py"
+      - "worker/company_visual_v13.py"
+      - "worker/job_image_v12.py"
+      - "requirements.txt"
+      - ".github/workflows/test-poster-v13.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
+      - name: Python dependencies
+        run: pip install -r requirements.txt
+      - name: Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Render representative employers
+        run: |
+          PYTHONPATH=worker python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          from job_image_v13 import generate
+
+          samples = [
+              ({"employer_name":"جامعة عمان العربية","job_title":"موظفة إدارية في مركز الاستشارات والتدريب","location_text":"الأردن","salary_text":"حتى 700 دينار","vacancy_count":"عدة وظائف"}, "موظفة إدارية في مركز الاستشارات والتدريب"),
+              ({"employer_name":"مستشفى ابن الهيثم","job_title":"طبيب أخصائي أشعة تشخيصية","location_text":"الأردن","employment_type":"دوام كامل"}, "طبيب أخصائي أشعة تشخيصية"),
+              ({"employer_name":"شركة منير سختيان التجارية","job_title":"منسق بضائع","location_text":"العقبة","salary_text":"حتى 600 دينار"}, "منسق بضائع"),
+              ({"employer_name":"Halawa Travel & Tourism","job_title":"Executive Secretary, HR Officer, Sales Agent - Airline Ticketing & Reservations","location_text":"الأردن","vacancy_count":"3"}, "Executive Secretary, HR Officer, Sales Agent - Airline Ticketing & Reservations"),
+          ]
+          for job, title in samples:
+              path, url = generate(job, title)
+              p = Path(path)
+              assert p.exists() and p.stat().st_size > 35000, (path, p.stat().st_size if p.exists() else None)
+              with Image.open(p) as im:
+                  assert im.size == (1536, 1024), im.size
+              print(path, url, p.stat().st_size)
+          PY
+      - name: Upload rendered samples
+        uses: actions/upload-artifact@v4
+        with:
+          name: poster-v13-samples
+          path: data/images/*-v13.png
