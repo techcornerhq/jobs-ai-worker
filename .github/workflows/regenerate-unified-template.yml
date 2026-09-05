@@ -41,16 +41,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Verify approved مرصد الوظائف master asset
+      - name: Verify approved مرصد الوظائف poster master
         run: |
           PYTHONPATH=worker python - <<'PY'
-          from unified_job_template import _master, MASTER_SHA256, PREFIX
-          expected='74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe'
+          from unified_job_template import _master, MASTER_SHA256
+          expected='456d02ba6411390c3415855732299b04ec5d8d9bcb333c5359418528da60bb52'
           im=_master()
           assert im.size==(1280,720), im.size
           assert MASTER_SHA256==expected, MASTER_SHA256
-          assert PREFIX=='مطلوب'
-          print('MARSAD MASTER VERIFIED:', MASTER_SHA256)
+          print('MARSAD APPROVED POSTER VERIFIED:', MASTER_SHA256)
           PY
 
       - name: Regenerate all 16 current live-post images
@@ -62,31 +61,31 @@ jobs:
           import json
           from pathlib import Path
           from PIL import Image
-          expected_sha='74b242e85105249849995846a39e9bc13285ace4be15d3a90879f4d6d0d37fbe'
+          expected_sha='456d02ba6411390c3415855732299b04ec5d8d9bcb333c5359418528da60bb52'
           d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
           assert d['count']==16 and d['failure_count']==0, (d.get('count'), d.get('failure_count'))
-          assert d.get('image_system')=='marsad-approved-master-v2', d.get('image_system')
+          assert d.get('image_system')=='marsad-approved-poster-v3', d.get('image_system')
           assert d.get('brand')=='مرصد الوظائف', d.get('brand')
           assert d.get('master_sha256')==expected_sha
           assert d.get('background_variation_allowed') is False
           assert d.get('only_variable')=='job_title'
-          assert d.get('title_prefix')=='مطلوب'
+          assert d.get('fixed_headline')=='إعلان توظيف'
           ids=set()
           for item in d['items']:
               ids.add(str(item['post_id']))
               p=Path(item['featured_image_path'])
               u=item['featured_image_url']
               assert p.name.startswith('job-') and p.name.endswith('-ai-v1.png'), p
-              assert p.exists() and p.stat().st_size > 60000, (p, p.stat().st_size if p.exists() else None)
+              assert p.exists() and p.stat().st_size > 60_000, (p, p.stat().st_size if p.exists() else None)
               assert '/main/data/images/' in u and u.endswith(p.name), u
               assert item.get('brand')=='مرصد الوظائف'
               assert item.get('master_sha256')==expected_sha
               assert item.get('only_variable')=='job_title'
-              assert item.get('title_prefix')=='مطلوب'
+              assert item.get('fixed_headline')=='إعلان توظيف'
               with Image.open(p) as im:
                   assert im.size==(1280,720), im.size
           assert len(ids)==16
-          print('MARSAD APPROVED TEMPLATE 16/16: PASS')
+          print('MARSAD APPROVED POSTER 16/16: PASS')
           PY
 
       - name: Prepare review previews
@@ -110,7 +109,7 @@ jobs:
             echo "No image changes"
             exit 0
           fi
-          git commit -m "Apply approved مرصد الوظائف master to all live images"
+          git commit -m "Apply approved مرصد الوظائف poster to all live images"
           git pull --rebase origin main
           git push origin HEAD:main
 
