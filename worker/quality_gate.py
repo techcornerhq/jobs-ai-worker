@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 
 MISSING = "غير مذكور في الإعلان"
-REQUIRED_POSTER_VERSION = "-v12.png"
+REQUIRED_IMAGE_VERSION = "-ai-v1.png"
 
 
 def validate(job: dict, enriched: dict, rendered: dict) -> dict:
@@ -24,13 +24,13 @@ def validate(job: dict, enriched: dict, rendered: dict) -> dict:
         errors.append("summary_too_thin")
     if len(content) < 2200:
         errors.append("article_too_thin")
-    if REQUIRED_POSTER_VERSION not in image:
-        errors.append("poster_v12_required")
+    if REQUIRED_IMAGE_VERSION not in image:
+        errors.append("dynamic_ai_image_required")
     if image and image not in content:
-        errors.append("poster_not_embedded")
+        errors.append("featured_image_not_embedded")
     if "jo-jobs.com" in content.lower():
         errors.append("competitor_url_exposed")
-    if any(ch in content for ch in ("□", "\ufffd", "■")):
+    if any(ch in content for ch in ("□", "\ufffd", "■", "▪", "▫")):
         errors.append("broken_character_detected")
     if len(labels) < 2:
         errors.append("insufficient_taxonomy_labels")
