@@ -1,10 +1,10 @@
-name: Regenerate All Live Post Images
+name: Regenerate All Live Post Images V2
 
 on:
   push:
-    branches: ["dynamic-ai-job-images"]
+    branches: ["dynamic-ai-image-v2"]
     paths:
-      - "worker/ai_job_image_runtime.py"
+      - "worker/creative_image_v2.py"
       - "worker/regenerate_all_live_post_images.py"
       - "data/migration/live-blogger-posts-2026-09-05.json"
       - ".github/workflows/regenerate-all-live-post-images.yml"
@@ -14,13 +14,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: regenerate-all-live-post-images
+  group: regenerate-all-live-post-images-v2
   cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,49 +34,51 @@ jobs:
           sudo apt-get install -y -qq fonts-noto-core fonts-noto-extra fonts-dejavu-core
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Generate missing dynamic images
+      - name: Generate missing creative v2 images
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           JOB_IMAGE_MODEL: "flux"
         run: PYTHONPATH=worker python -u worker/regenerate_all_live_post_images.py
-      - name: Commit image checkpoint
+      - name: Commit v2 image checkpoint
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/images/*-ai-v1.png data/results/live-blogger-ai-images.json 2>/dev/null || true
+          git add data/images/*-ai-v2.png data/results/live-blogger-ai-images-v2.json 2>/dev/null || true
           if git diff --cached --quiet; then
-            echo "No checkpoint changes"
+            echo "No v2 checkpoint changes"
             exit 0
           fi
-          git commit -m "Checkpoint dynamic AI images for live Blogger posts"
-          git pull --rebase origin dynamic-ai-job-images
-          git push origin HEAD:dynamic-ai-job-images
-      - name: Validate complete image set
+          git commit -m "Checkpoint creative v2 images for live Blogger posts"
+          git pull --rebase origin dynamic-ai-image-v2
+          git push origin HEAD:dynamic-ai-image-v2
+      - name: Validate complete v2 image set
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           from PIL import Image
-          d=json.loads(Path('data/results/live-blogger-ai-images.json').read_text(encoding='utf-8'))
+          d=json.loads(Path('data/results/live-blogger-ai-images-v2.json').read_text(encoding='utf-8'))
           assert d['count']==16 and d['failure_count']==0, (d['count'], d['failure_count'])
+          assert d.get('version')=='ai-v2', d.get('version')
           ids=set()
           for item in d['items']:
               ids.add(item['post_id'])
               u=item.get('featured_image_url') or ''
               p=Path(item.get('featured_image_path') or '')
-              assert '-ai-v1.png' in u, u
+              assert '-ai-v2.png' in u, u
               assert p.exists() and p.stat().st_size > 80000, p
               with Image.open(p) as im:
                   assert im.size==(1536,1024), im.size
           assert len(ids)==16
-          print('COMPLETE 16-POST IMAGE SET: PASS')
+          print('COMPLETE 16-POST V2 IMAGE SET: PASS')
           PY
-      - name: Upload preview/checkpoint
+      - name: Upload v2 preview/checkpoint
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: all-live-post-ai-images
+          name: all-live-post-ai-images-v2
           path: |
-            data/images/*-ai-v1.png
-            data/results/live-blogger-ai-images.json
+            data/images/*-ai-v2.png
+            data/results/live-blogger-ai-images-v2.json
