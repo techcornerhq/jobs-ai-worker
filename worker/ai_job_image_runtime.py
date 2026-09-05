@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import time
 
 import ai_job_image as base
 
@@ -72,7 +73,24 @@ def generate(job: dict, title: str):
         j["location_text"] = ""
         j["city"] = ""
         j["governorate"] = ""
-    return _original_generate(j, title)
+
+    waits = [0, 12, 25, 45, 70]
+    last_exc = None
+    for attempt, wait in enumerate(waits, 1):
+        if wait:
+            time.sleep(wait)
+        try:
+            return _original_generate(j, title)
+        except Exception as exc:
+            last_exc = exc
+            msg = str(exc)
+            # Retry only transient provider/network failures; hard image validation
+            # failures should still stop immediately.
+            transient = any(token in msg for token in ("429", "Too Many Requests", "502", "503", "504", "timed out", "Connection"))
+            if not transient or attempt == len(waits):
+                raise
+            print(f"Image provider transient failure; retry {attempt}/{len(waits)-1}: {msg[:240]}", flush=True)
+    raise last_exc if last_exc else RuntimeError("Image generation failed")
 
 
 base.build_prompt = _build_prompt
